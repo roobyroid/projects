@@ -1,0 +1,24 @@
+<header class="header first-faded @@if (context.home) {header--home}">
+  <div class="container">
+    <a class="header__logo" @@if (!context.home) { href="home.html" }>
+      A-AUTO.RU
+    </a>
+    <div class="header__menu-wrap">
+      <nav class="header__menu">
+        <ul>
+          <li class="header__nav-item">
+            <a class="header__nav-link js_scroll-link" href="#catalog">КАТАЛОГ АВТО</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link js_scroll-link" href="#warranty">УСЛОВИЯ И ГАРАНТИИ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link js_scroll-link" href="#salon">НАШ САЛОН</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__menu-tel" href="tel:+78005005050">+7 800 500-50-50</a>
+    </div>
+    <button class="header__burger"><span></span></button>
+  </div>
+</header>

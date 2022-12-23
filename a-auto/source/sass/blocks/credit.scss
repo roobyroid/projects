@@ -1,0 +1,152 @@
+.credit {
+  padding: 0 0 11rem;
+
+  @include lg {
+    padding: 0 0 80px;
+  }
+
+  @include md {
+    padding: 0 0 100px;
+  }
+
+  @include xs {
+    padding: 0 0 80px;
+  }
+
+  &__slider {
+    margin: 1rem 0 0;
+
+    @include md {
+      width: calc(100% + 60px);
+      margin: 10px -30px 45px;
+    }
+
+    @include xs {
+      width: calc(100% + 50px);
+      margin: 10px -25px 45px;
+    }
+
+    .swiper-wrapper {
+      display: block;
+
+      @include md {
+        display: flex;
+      }
+    }
+
+    .swiper-slide:nth-child(even) .credit__slider-item {
+      flex-direction: row-reverse;
+
+      @include md {
+        flex-direction: column-reverse;
+      }
+
+      .credit__info {
+        margin: 0 0 0 -26rem;
+
+        @include lg {
+          margin: 0 0 0 -220px;
+        }
+
+        @include md {
+          margin: -100px 30px 0;
+        }
+      }
+    }
+  }
+
+  &__slider-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 6rem;
+
+    @include md {
+      flex-direction: column-reverse;
+      margin: 0;
+    }
+  }
+
+  &__info {
+    max-width: 51rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    padding: 5rem 5rem 8rem 6rem;
+    margin: 0 -26rem 0 0;
+
+    @include lg {
+      max-width: 400px;
+      padding: 30px;
+      margin: 0 -220px 0 0;
+    }
+
+    @include md {
+      max-width: none;
+      width: calc(100% - 60px);
+      margin: -100px 30px 0;
+    }
+
+    p {
+      &:not(:last-of-type) {
+        margin: 0 0 2rem;
+
+        @include md {
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+
+  &__info-title {
+    margin: 0 0 2rem;
+    visibility: visible;
+
+    @include md {
+      margin: 0 0 12px;
+    }
+  }
+
+  &__img {
+    max-width: 132.6rem;
+    width: 100%;
+
+    @include md {
+      height: 483px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 20% 0;
+      }
+    }
+  }
+
+  &__pagination {
+    display: none;
+
+    @include md {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0 0;
+
+      .swiper-pagination-bullet {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background .3s;
+
+        &:not(:last-of-type) {
+          margin: 0 8px 0 0;
+        }
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #000;
+      }
+    }
+  }
+}

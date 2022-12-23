@@ -1,0 +1,27 @@
+<section class="catalog section" id="catalog">
+  <div class="container">
+    <h2 class="catalog__title title js_text">КАТАЛОГ</h2>
+    <p class="subtitle js_text">ВЫ МОЖЕТЕ КУПИТЬ ЭЛЕКТРОМОБИЛЬ ИЗ НАШЕГО САЛОНА, ЛИБО ЗАКАЗАТЬ ОПЕРАТИВНУЮ
+      ПОСТАВКУ</p>
+
+    <div class="catalog__head-tabs js_tabs js_faded">
+      <button class="catalog__head-tabs-btn btn active js_tab" type="button">В НАЛИЧИИ В
+        МОСКВЕ (20)</button>
+      <button class="catalog__head-tabs-btn btn js_tab" type="button">В ПУТИ (30)</button>
+      <button class="catalog__head-tabs-btn btn js_tab" type="button">НА ЗАКАЗ</button>
+    </div>
+    <div class="catalog__grid active js_tab-content">
+      @@include("source/html/base/catalog-items.html")
+    </div>
+    <div class="catalog__grid js_tab-content">
+      @@include("source/html/base/catalog-items2.html")
+    </div>
+    <div class="catalog__grid js_tab-content">
+      @@include("source/html/base/catalog-items.html")
+    </div>
+
+    <div class="catalog__more">
+      <a class="btn" href="#">ПОКАЗАТЬ ВСЕ</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+.footer {
+  font-family: $font-family-gilroy;
+  padding: 0 0 10rem;
+  color: #0D0B0B;
+
+  @include lg {
+    padding: 0 0 40px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__col {
+    padding: 0 3rem 0 0;
+
+    @include lg {
+      flex: 0 1 50%;
+      text-align: center;
+      padding: 0 20px 60px;
+    }
+
+    @include sm {
+      flex: 0 1 100%;
+      padding: 0 0 60px;
+    }
+  }
+
+  &__col-title {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0 0 2.2rem;
+  }
+
+  &__col-list {}
+
+  &__col-list-item {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 .5rem;
+  }
+
+  &__link {
+    color: #0D0B0B;
+    transition: color .3s;
+
+    &:hover {
+      color: rgba($color: #0D0B0B, $alpha: .5);
+    }
+  }
+}

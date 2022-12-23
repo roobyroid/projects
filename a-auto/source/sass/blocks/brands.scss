@@ -1,0 +1,60 @@
+.brands {
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include sm {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    @include sm {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      flex: 0 1 50%;
+      padding: 0 20px 30px;
+
+      img {
+        width: 42px;
+      }
+
+      &:first-of-type {
+        img {
+          width: 95px;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          width: 66px;
+        }
+      }
+
+      &:last-of-type {
+        flex: 0 1 100%;
+        padding: 0;
+
+        img {
+          width: 164px;
+        }
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin: 0 11.8rem 0 0;
+
+      @include lg {
+        margin: 0 50px 0 0;
+      }
+
+      @include sm {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.salon {
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 0;
+
+    @include md {
+      display: block;
+      margin: 15px -30px 0;
+    }
+
+    @include xs {
+      margin: 15px -25px 0;
+    }
+  }
+
+  &__gallery {
+    min-width: 0;
+    max-width: 134.7rem;
+    width: 100%;
+
+  }
+
+  &__gallery-slider {
+    margin: 0 0 1rem;
+
+    @include md {
+      margin: 0;
+    }
+  }
+
+  &__gallery-slide {
+    display: block;
+    height: 65.6rem;
+    cursor: pointer;
+
+    @include lg {
+      height: 450px;
+    }
+
+    @include sm {
+      height: 420px;
+    }
+
+    @include xs {
+      height: 388px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__gallery-scroll {
+    display: none;
+
+    @include md {
+      display: block;
+      position: absolute;
+      bottom: 35px;
+      left: 35px;
+      z-index: 2;
+      width: calc(100% - 70px);
+      height: 1px;
+      background: #DFDFDF;
+
+      .swiper-scrollbar-drag {
+        background: #fff;
+        border-radius: 21px;
+        height: 15px;
+        margin: -7px 0 0;
+      }
+    }
+  }
+
+  &__gallery-thumbs {
+    @include md {
+      display: none;
+    }
+
+    .swiper-slide {
+      opacity: .5;
+      transition: opacity .3s;
+
+      &:hover:not(.swiper-slide-thumb-active) {
+        opacity: .7;
+      }
+
+      &.swiper-slide-thumb-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__gallery-thumb {
+    height: 10.8rem;
+    cursor: pointer;
+
+    @include lg {
+      height: 85px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    max-width: 56rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    padding: 5rem 5rem 4rem 6rem;
+    margin: 0 0 0 -33rem;
+
+    @include lg {
+      max-width: 400px;
+      padding: 40px 40px 28px;
+      margin: 0 0 0 -220px;
+    }
+
+    @include md {
+      max-width: none;
+      margin: 20px 0 0;
+    }
+  }
+
+  &__info-title {
+    margin: 0 0 1.2rem;
+    visibility: visible;
+  }
+
+  &__info-text {
+    font-family: $font-family-gilroy;
+    margin: 0 0 1.2rem;
+
+    @include md {
+      margin: 0 0 16px;
+    }
+
+    a {
+      color: #000000;
+      transition: color .3s;
+
+      &:hover {
+        color: rgba($color: #000000, $alpha: .5);
+      }
+    }
+  }
+}

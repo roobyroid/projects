@@ -1,0 +1,159 @@
+.first-faded {
+  opacity: 0;
+  transition: faded .5s;
+  animation: faded 1s forwards .5s;
+}
+
+.section {
+  padding: 0 0 17rem;
+
+  @include lg {
+    padding: 0 0 140px;
+  }
+
+  @include md {
+    padding: 0 0 100px;
+  }
+
+  @include xs {
+    padding: 0 0 80px;
+  }
+}
+
+.title {
+  font-family: $font-family-gilroy;
+  font-weight: 400;
+  font-size: 6.4rem;
+  line-height: 1.2;
+  letter-spacing: 0.055em;
+  color: #0D0B0B;
+  text-transform: uppercase;
+  visibility: hidden;
+
+  @include lg {
+    font-size: 48px;
+  }
+
+  @include md {
+    font-size: 42px;
+  }
+
+  @include xs {
+    font-size: 36px;
+  }
+
+  &--main {
+    font-size: 8rem;
+    letter-spacing: 0.05em;
+
+    @include lg {
+      font-size: 56px;
+    }
+
+    @include md {
+      font-size: 48px;
+    }
+
+    @include xs {
+      font-size: 34px;
+    }
+  }
+
+  &--sm {
+    font-size: 3.6rem;
+
+    @include lg {
+      font-size: 32px;
+    }
+
+    @include md {
+      font-size: 28px;
+    }
+
+    @include xs {
+      font-size: 24px;
+    }
+  }
+
+  &--text-r {
+    text-align: right;
+
+    .line {
+      justify-content: flex-end;
+
+      @include xs {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.line {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.subtitle {
+  font-family: $font-family-gilroy;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+  visibility: hidden;
+
+  &--text-r {
+    text-align: right;
+
+    .line {
+      justify-content: flex-end;
+
+      @include xs {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.btn {
+  min-height: 5.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  color: #0D0B0B;
+  text-transform: uppercase;
+  border: .1rem solid rgba(13, 11, 11, 0.5);
+  padding: 0 3.4rem;
+  transition: border .3s, background .3s, color .3s;
+
+  @include lg {
+    min-height: 50px;
+    padding: 0 20px;
+  }
+
+  @include xs {
+    min-height: 40px;
+    padding: 0 15px;
+  }
+
+  &--black {
+    color: #ffffff;
+    border: .1rem solid $colorBlack;
+    background: $colorBlack;
+
+    &:hover {
+      border-color: $colorWhite;
+    }
+  }
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

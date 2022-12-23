@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  max-width: 162rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  @media (max-width: 1700px) {
+    max-width: 140rem;
+
+    &--middle {
+      max-width: 107rem;
+    }
+
+    &--sm {
+      max-width: 97.7rem;
+    }
+  }
+
+  @include xs {
+    padding: 0 25px;
+  }
+
+  &--middle {
+    max-width: 107rem;
+  }
+
+  &--sm {
+    max-width: 97.7rem;
+  }
+
+  &--no-padding {
+    @include xs {
+      padding: 0;
+    }
+  }
+}

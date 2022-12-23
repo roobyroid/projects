@@ -1,0 +1,54 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "SFProDisplay";
+
+  font-display: swap;
+  src:
+    url("../fonts/Sfpro/SFProDisplay-Light.woff2") format("woff2"),
+    url("../fonts/Sfpro/SFProDisplay-Light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "SFProDisplay";
+
+  font-display: swap;
+  src:
+    url("../fonts/Sfpro/SFProDisplay-Light.woff2") format("woff2"),
+    url("../fonts/Sfpro/SFProDisplay-Light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src:
+    url("../fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src:
+    url("../fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Gilroy";
+
+  font-display: swap;
+  src:
+    url("../fonts/Gilroy/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy/Gilroy-Semibold.woff") format("woff");
+}

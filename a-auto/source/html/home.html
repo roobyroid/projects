@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>A-AUTO</title>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html", {
+    "home": true
+    })
+    <main class="main">
+      <section class="hero swiper js_hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero__slide">
+              <picture>
+                <source srcset="img/page/hero-car-mob.jpg" type="image/jpeg" media="(max-width: 575px)">
+                <img class="hero__bg" src="img/page/hero-car.jpg" alt="car">
+              </picture>
+              <div class="container">
+                <div class="hero__wrap">
+                  <h1 class="hero__title title title--main">
+                    <span class="hero__title-text js_text">ЭЛЕКТРОМОБИЛИ</span>
+                    <span class="hero__title-text hero__title-sm js_text">БУДУЩЕЕ УЖЕ СЕЙЧАС</span>
+                  </h1>
+                  <p class="hero__subtitle subtitle js_text">В НАШЕМ САЛОН В НАЛИЧИИ НОВЕЙШИЕ АВТОМОБИЛИ</p>
+                  <div class="hero__btns first-faded" style="animation-delay: 1s;">
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">AUDI Q5 ETRON 40</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">VW ID.4/6 Сrozz</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">HONQI e-hs9</a>
+                  </div>
+                </div>
+                <div class="hero__logos first-faded" style="animation-delay: 1.5s;">
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-1.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-2.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-3.svg" alt="logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero__slide">
+              <video preload autoplay muted loop class="hero__video">
+                <source src="video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="container">
+                <div class="hero__wrap">
+                  <h1 class="hero__title title title--main">
+                    <span class="js_text">ЭЛЕКТРОМОБИЛИ</span>
+                    <span class="hero__title-sm js_text">БУДУЩЕЕ УЖЕ СЕЙЧАС</span>
+                  </h1>
+                  <p class="hero__subtitle subtitle js_text">В НАШЕМ САЛОН В НАЛИЧИИ НОВЕЙШИЕ АВТОМОБИЛИ</p>
+                  <div class="hero__btns first-faded" style="animation-delay: 1s;">
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">AUDI Q5 ETRON 40</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">VW ID.4/6 Сrozz</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">HONQI e-hs9</a>
+                  </div>
+                </div>
+                <div class="hero__logos first-faded" style="animation-delay: 1.5s;">
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-1.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-2.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-3.svg" alt="logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      @@include("source/html/base/catalog.html")
+
+      @@include("source/html/base/warranty.html")
+
+      @@include("source/html/base/credit.html")
+
+      @@include("source/html/base/salon.html")
+
+      @@include("source/html/base/brands.html")
+    </main>
+    @@include("source/html/base/footer.html")
+  </div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

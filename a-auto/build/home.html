@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Название сайта - описание">
+
+<!-- <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"> -->
+
+<link rel="preload" href="fonts/Sfpro/SFProDisplay-Light.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/Gilroy/Gilroy-Medium.woff2" as="font" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>A-AUTO</title>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header first-faded header--home">
+  <div class="container">
+    <a class="header__logo" >
+      A-AUTO.RU
+    </a>
+    <div class="header__menu-wrap">
+      <nav class="header__menu">
+        <ul>
+          <li class="header__nav-item">
+            <a class="header__nav-link js_scroll-link" href="#catalog">КАТАЛОГ АВТО</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link js_scroll-link" href="#warranty">УСЛОВИЯ И ГАРАНТИИ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link js_scroll-link" href="#salon">НАШ САЛОН</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__menu-tel" href="tel:+78005005050">+7 800 500-50-50</a>
+    </div>
+    <button class="header__burger"><span></span></button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero swiper js_hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero__slide">
+              <picture>
+                <source srcset="img/page/hero-car-mob.jpg" type="image/jpeg" media="(max-width: 575px)">
+                <img class="hero__bg" src="img/page/hero-car.jpg" alt="car">
+              </picture>
+              <div class="container">
+                <div class="hero__wrap">
+                  <h1 class="hero__title title title--main">
+                    <span class="hero__title-text js_text">ЭЛЕКТРОМОБИЛИ</span>
+                    <span class="hero__title-text hero__title-sm js_text">БУДУЩЕЕ УЖЕ СЕЙЧАС</span>
+                  </h1>
+                  <p class="hero__subtitle subtitle js_text">В НАШЕМ САЛОН В НАЛИЧИИ НОВЕЙШИЕ АВТОМОБИЛИ</p>
+                  <div class="hero__btns first-faded" style="animation-delay: 1s;">
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">AUDI Q5 ETRON 40</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">VW ID.4/6 Сrozz</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">HONQI e-hs9</a>
+                  </div>
+                </div>
+                <div class="hero__logos first-faded" style="animation-delay: 1.5s;">
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-1.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-2.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-3.svg" alt="logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero__slide">
+              <video preload autoplay muted loop class="hero__video">
+                <source src="video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="container">
+                <div class="hero__wrap">
+                  <h1 class="hero__title title title--main">
+                    <span class="js_text">ЭЛЕКТРОМОБИЛИ</span>
+                    <span class="hero__title-sm js_text">БУДУЩЕЕ УЖЕ СЕЙЧАС</span>
+                  </h1>
+                  <p class="hero__subtitle subtitle js_text">В НАШЕМ САЛОН В НАЛИЧИИ НОВЕЙШИЕ АВТОМОБИЛИ</p>
+                  <div class="hero__btns first-faded" style="animation-delay: 1s;">
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">AUDI Q5 ETRON 40</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">VW ID.4/6 Сrozz</a>
+                    <a class="hero__btns-item btn btn--black js_scroll-link" href="#catalog">HONQI e-hs9</a>
+                  </div>
+                </div>
+                <div class="hero__logos first-faded" style="animation-delay: 1.5s;">
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-1.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-2.svg" alt="logo">
+                  </div>
+                  <div class="hero__logos-item">
+                    <img src="img/page/hero-logo-3.svg" alt="logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="catalog section" id="catalog">
+  <div class="container">
+    <h2 class="catalog__title title js_text">КАТАЛОГ</h2>
+    <p class="subtitle js_text">ВЫ МОЖЕТЕ КУПИТЬ ЭЛЕКТРОМОБИЛЬ ИЗ НАШЕГО САЛОНА, ЛИБО ЗАКАЗАТЬ ОПЕРАТИВНУЮ
+      ПОСТАВКУ</p>
+
+    <div class="catalog__head-tabs js_tabs js_faded">
+      <button class="catalog__head-tabs-btn btn active js_tab" type="button">В НАЛИЧИИ В
+        МОСКВЕ (20)</button>
+      <button class="catalog__head-tabs-btn btn js_tab" type="button">В ПУТИ (30)</button>
+      <button class="catalog__head-tabs-btn btn js_tab" type="button">НА ЗАКАЗ</button>
+    </div>
+    <div class="catalog__grid active js_tab-content">
+      <div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-1.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">AUDI Q5 ETRON 40 (ЧЁРНЫЙ)</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 4</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-2.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.6 Сrozz Pro</p>
+    <p>ТЕМНО-СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-3.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.6 Сrozz PURE +</p>
+    <p>ТЕМНО-СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-4.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.4 Сrozz PRO</p>
+    <p>СЕРЫЙ ИЛИ СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-5.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.4 Сrozz PURE+</p>
+    <p>СЕРЕБРЯННЫЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-6.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">hongqi e-hs9</p>
+    <a class="catalog__item-btn btn btn--black" href="#">СКОРО В САЛОНЕ</a>
+  </div>
+</div>
+
+    </div>
+    <div class="catalog__grid js_tab-content">
+      <div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-2.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.6 Сrozz Pro</p>
+    <p>ТЕМНО-СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-4.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.4 Сrozz PRO</p>
+    <p>СЕРЫЙ ИЛИ СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-1.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">AUDI Q5 ETRON 40 (ЧЁРНЫЙ)</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 4</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-3.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.6 Сrozz PURE +</p>
+    <p>ТЕМНО-СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-5.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.4 Сrozz PURE+</p>
+    <p>СЕРЕБРЯННЫЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-6.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">hongqi e-hs9</p>
+    <a class="catalog__item-btn btn btn--black" href="#">СКОРО В САЛОНЕ</a>
+  </div>
+</div>
+
+    </div>
+    <div class="catalog__grid js_tab-content">
+      <div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-1.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">AUDI Q5 ETRON 40 (ЧЁРНЫЙ)</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 4</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-2.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.6 Сrozz Pro</p>
+    <p>ТЕМНО-СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-3.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.6 Сrozz PURE +</p>
+    <p>ТЕМНО-СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-4.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.4 Сrozz PRO</p>
+    <p>СЕРЫЙ ИЛИ СИНИЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-5.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">VW ID.4 Сrozz PURE+</p>
+    <p>СЕРЕБРЯННЫЙ</p>
+    <a class="catalog__item-btn btn btn--black" href="#">В НАЛИЧИИ В МОСКВЕ - 2</a>
+  </div>
+</div>
+
+<div class="catalog__item js_faded">
+  <a class="catalog__item-img" href="#">
+    <img src="img/page/car-6.png" alt="car">
+  </a>
+  <div class="catalog__item-info">
+    <p class="catalog__item-name">hongqi e-hs9</p>
+    <a class="catalog__item-btn btn btn--black" href="#">СКОРО В САЛОНЕ</a>
+  </div>
+</div>
+
+    </div>
+
+    <div class="catalog__more">
+      <a class="btn" href="#">ПОКАЗАТЬ ВСЕ</a>
+    </div>
+  </div>
+</section>
+
+
+      <section class="warranty section" id="warranty">
+  <div class="container">
+    <h2 class="title js_text">УСЛОВИЯ И ГАРАНТИИ</h2>
+    <p class="subtitle js_text">САМОЕ ЦЕННОЕ ДЛЯ НАС — ЭТО НАШИ КЛИЕНТЫ</p>
+
+    <div class="warranty__wrap js_move-parent">
+      <div class="warranty__item js_faded">
+        <div class="warranty__item-img">
+          <img src="img/page/warranty-1.jpg" alt="photo">
+        </div>
+        <div class="warranty__item-info js_move-block">
+          <h3 class="warranty__item-title">ЮРИДИЧЕСКИ<br> ЧИСТЫЕ АВТО</h3>
+          <p class="warranty__item-text">Мы проверяем всю юридическую историю автомобиля и предоставляем полный
+            отчёт, осуществляем помощь в
+            регистрации авто в ГИБДД после покупки</p>
+        </div>
+      </div>
+
+      <div class="warranty__item js_faded">
+        <div class="warranty__item-img">
+          <img src="img/page/warranty-2.jpg" alt="photo">
+        </div>
+        <div class="warranty__item-info js_move-block">
+          <h3 class="warranty__item-title">ТЕХНИЧЕСКАЯ<br> ГАРАНТИЯ</h3>
+          <p class="warranty__item-text">Как только авто приезжает в наш салон, оно проходит полный цикл
+            тестирование и проверок, чтобы вы были уверены на 100% в вашем авто</p>
+        </div>
+      </div>
+
+      <div class="warranty__item js_faded">
+        <div class="warranty__item-img">
+          <img src="img/page/warranty-3.jpg" alt="photo">
+        </div>
+        <div class="warranty__item-info js_move-block">
+          <h3 class="warranty__item-title">ПОЛНЫЙ<br> ТЕСТ-ДРАЙВ</h3>
+          <p class="warranty__item-text">Мы ценим отношения с нашими клиентами,<br> поэтому вы можете провести
+            тест-драйв в любой момент</p>
+        </div>
+      </div>
+
+      <div class="warranty__item js_faded">
+        <div class="warranty__item-img">
+          <img src="img/page/warranty-4.jpg" alt="photo">
+        </div>
+        <div class="warranty__item-info js_move-block">
+          <h3 class="warranty__item-title">ПОЛНЫЙ ЦИКЛ<br> ОБСЛУЖИВАНИЯ</h3>
+          <p class="warranty__item-text">Мы ценим отношения с нашими клиентами,<br> поэтому вы можете провести
+            тест-драйв в любой момент</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      <section class="credit section" id="credit">
+  <div class="container">
+    <h2 class="title title--text-r js_text">КРЕДИТОВАНИЕ И TRADE-IN</h2>
+    <p class="subtitle subtitle--text-r js_text">ДЛЯ ВАС МЫ ПРЕДУСМОТРЕЛИ САМЫЕ ЛУЧШИЕ УСЛОВИЯ</p>
+    <div class="credit__slider swiper js_move-parent">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="credit__slider-item js_faded">
+            <div class="credit__info js_move-block">
+              <h3 class="credit__info-title title title--sm">КРЕДИТОВАНИЕ</h3>
+              <p>Мы предоставляем варианты кредитов от нащих 12 банков партнёров на самых выгодных условиях.</p>
+              <p>Детали уточняйте у наших партнёров</p>
+            </div>
+            <div class="credit__img">
+              <img src="img/page/credit.jpg" alt="car">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="credit__slider-item js_faded">
+            <div class="credit__info js_move-block">
+              <h3 class="credit__info-title title title--sm">TRADE IN</h3>
+              <p>Текст про trade in</p>
+            </div>
+            <div class="credit__img">
+              <img src="img/page/credit-2.jpg" alt="car">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit__pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="salon section js_move-parent" id="salon">
+  <div class="container">
+    <h2 class="title js_text">НАШ САЛОН</h2>
+    <div class="salon__wrap js_faded">
+      <div class="salon__gallery">
+        <div class="swiper salon__gallery-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-1.jpg">
+                <img src="img/page/salon-1.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-2.jpg">
+                <img src="img/page/salon-2.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-3.jpg">
+                <img src="img/page/salon-3.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-4.jpg">
+                <img src="img/page/salon-4.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-5.jpg">
+                <img src="img/page/salon-5.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-1.jpg">
+                <img src="img/page/salon-1.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-2.jpg">
+                <img src="img/page/salon-2.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-3.jpg">
+                <img src="img/page/salon-3.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-4.jpg">
+                <img src="img/page/salon-4.jpg" alt="photo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="salon__gallery-slide" data-fancybox data-src="img/page/salon-5.jpg">
+                <img src="img/page/salon-5.jpg" alt="photo">
+              </a>
+            </div>
+          </div>
+          <div class="salon__gallery-scroll"></div>
+        </div>
+
+        <div class="swiper salon__gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-1-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-2-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-3-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-4-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-5-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-1-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-2-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-3-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-4-sm.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="salon__gallery-thumb">
+                <img src="img/page/salon-5-sm.jpg" alt="photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="salon__info js_move-block">
+        <h3 class="salon__info-title title title--sm">A-AUTO</h3>
+        <p class="salon__info-text">г. Москва, Кутузовский проспект 54</p>
+        <p class="salon__info-text">
+          <a href="tel:+74955555555">+7 495 555-55-55</a>
+        </p>
+        <p class="salon__info-text">Ежедневно с 10.00 до 22.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="brands section">
+  <div class="container">
+    <div class="brands__wrap js_faded">
+      <div class="brands__item">
+        <img src="img/page/logo-1.svg" alt="logo">
+      </div>
+      <div class="brands__item">
+        <img src="img/page/logo-2.svg" alt="logo">
+      </div>
+      <div class="brands__item">
+        <img src="img/page/logo-3.svg" alt="logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer js_faded">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__col">
+        <h2 class="footer__col-title">КАТАЛОГ АВТО</h2>
+        <ul class="footer__col-list">
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">В наличии</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">В пути</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">На заказ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__col-title">ГАРАНТИИ И УСЛОВИЯ</h2>
+        <ul class="footer__col-list">
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">Юридическая чистота</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">Техническое тестирование</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">Быстрый заказ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__col-title">КРЕДИТЫ И TRADE-IN</h2>
+        <ul class="footer__col-list">
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">О кредитных программах</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">Кредитный калькулятор</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">Условия Trade-In</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="#">Оценить ваше авто</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__col-title">НАШ САЛОН</h2>
+        <ul class="footer__col-list">
+          <li class="footer__col-list-item">
+            г. Москва, Кутузовский проспект 54
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="tel:+78005554932">+7 800 555-49-32</a>
+          </li>
+          <li class="footer__col-list-item">
+            <a class="footer__link" href="tel:+749556848">+7 495 568-48</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

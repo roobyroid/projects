@@ -1,0 +1,32 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+@import "./node_modules/@fancyapps/ui/dist/fancybox";
+@import "./node_modules/swiper/swiper.min";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+//---------------------------------
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/catalog";
+@import "blocks/warranty";
+@import "blocks/credit";
+@import "blocks/brands";
+@import "blocks/salon";
+@import "blocks/car";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-form";

@@ -1,0 +1,189 @@
+.catalog {
+  padding-top: 14rem;
+
+  @include lg {
+    padding-top: 140px;
+  }
+
+  @include md {
+    padding-top: 100px;
+  }
+
+  @include xs {
+    padding-top: 80px;
+  }
+
+  &__title {
+    @include xs {
+      font-size: 40px;
+      margin: 0 0 15px;
+    }
+  }
+
+
+  &__head-tabs {
+    display: flex;
+    margin: 0 0 9rem;
+
+    @include md {
+      margin: 0 0 40px;
+    }
+
+    @include xs {
+      margin: 0 0 20px;
+      display: block;
+    }
+  }
+
+  &__head-tabs-btn {
+    margin: 0 2.5rem 0 0;
+    transition: color .3s, background .3s, border .3s;
+
+    &.active,
+    &:hover {
+      border-color: #000000;
+      background: #000;
+      color: #fff;
+    }
+
+    @include sm {
+      font-size: 14px;
+    }
+
+    @include xs {
+      width: 100%;
+      margin: 0 0 12px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
+  }
+
+  &__grid {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 -3.5rem;
+
+    @include md {
+      margin: 0 0 -24px;
+    }
+
+    @include xs {
+      margin: 0 0 -22px;
+    }
+
+    &.active {
+      display: flex;
+      animation: faded .3s;
+    }
+  }
+
+  &__item {
+    width: calc(50% - 3.5rem / 2);
+    margin: 0 0 10rem;
+
+    @include lg {
+      margin: 0 0 40px;
+    }
+
+    @include md {
+      margin: 0 0 24px;
+    }
+
+    @include xs {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+
+    &:hover {
+      .catalog__item-img img {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__item-img {
+    display: block;
+    height: 35rem;
+    overflow: hidden;
+    background: #F1F1F1;
+
+    @include lg {
+      height: 250px;
+      margin: 0 0 10px;
+    }
+
+    @include md {
+      height: 197px;
+    }
+
+    @include sm {
+      height: 165px;
+    }
+
+    img {
+      margin: 0 auto;
+      height: 100%;
+      object-fit: cover;
+      mix-blend-mode: darken;
+      transition: transform 1s ease;
+    }
+  }
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.1;
+    min-height: 12.5rem;
+    margin: -3rem 0 0;
+
+    @include sm {
+      min-height: 110px;
+    }
+
+    @include xs {
+      min-height: auto;
+    }
+  }
+
+  &__item-name {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @include md {
+      font-size: 18px;
+    }
+  }
+
+  &__item-btn {
+    margin: auto 0 0;
+
+    @include xs {
+      margin: 10px 0 0;
+    }
+
+    &:hover {
+      border-color: $colorBlack;
+      background: $colorWhite;
+      color: $colorBlack;
+    }
+  }
+
+  &__more {
+    display: none;
+    text-align: center;
+    margin: 4rem 0 0;
+
+    @include sm {
+      display: block;
+    }
+
+  }
+}

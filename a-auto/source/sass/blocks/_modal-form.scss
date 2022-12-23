@@ -1,0 +1,99 @@
+.modal-form {
+  background: $colorWhite;
+  padding: 4.7rem 8rem 6rem;
+
+  @include md {
+    padding: 25px 20px;
+  }
+
+  &__title {
+    font-family: $font-family-gilroy;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    color: #0E0E0E;
+    margin: 0 0 3rem;
+
+    @include xs {
+      font-size: 36px;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin: 0 0 3.5rem;
+
+    @include xs {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__label-name {
+    font-family: $font-family-gilroy;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #4E4E4E;
+    margin: 0 0 1rem;
+
+    @include md {
+      font-size: 16px;
+    }
+
+    @include xs {
+      font-size: 14px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 7rem;
+    font-size: 2rem;
+    background: #F7F7F7;
+    border: none;
+    padding: 0 2rem;
+
+    @include xs {
+      font-size: 18px;
+      height: 50px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 14.7rem;
+    font-size: 2rem;
+    background: #F7F7F7;
+    border: none;
+    padding: 1.5rem 2rem;
+
+    @include xs {
+      font-size: 18px;
+      height: 100px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    min-height: 7rem;
+
+    @include lg {
+      min-height: 7rem;
+    }
+
+    @include xs {
+      min-height: 7rem;
+      font-size: 18px;
+    }
+
+    &:hover {
+      border-color: $colorBlack;
+      background: $colorWhite;
+      color: $colorBlack;
+    }
+  }
+}
