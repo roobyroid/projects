@@ -1,0 +1,196 @@
+.form {
+  background: $c-green;
+  border-radius: 2rem;
+  padding: 2.5rem 2rem 8rem;
+  @include border;
+  @include shadow;
+
+  @include md {
+    padding: 20px 25px 50px;
+  }
+
+
+  &--ready {
+    .form__title {
+      font-size: 3.6rem;
+
+      @include md {
+        font-size: 26px;
+        margin: 0 0 20px;
+      }
+
+      @include xs {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 20rem;
+        margin: 0 0 -5rem;
+
+        @include md {
+          font-size: 120px;
+          margin: 0 0 -30px;
+        }
+
+        @include xs {
+          font-size: 100px;
+        }
+      }
+    }
+
+    .form__subtitle {
+      font-size: 2.4rem;
+
+      @include md {
+        font-size: 16px;
+      }
+
+      @include xs {
+        font-size: 15px;
+      }
+    }
+
+    .form__input {
+      border-radius: 0;
+    }
+  }
+
+  &__wrap {
+    max-width: 72rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $font-family-inter;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 0 3rem;
+
+    @include md {
+      font-size: 26px;
+      margin: 0 0 20px;
+    }
+
+    @include xs {
+      font-size: 20px;
+    }
+
+    span {
+      display: block;
+      font-family: $font-family-vasek;
+      font-style: italic;
+      font-size: 12rem;
+      line-height: 1.1;
+      margin: 0 0 -1rem;
+
+      @include md {
+        font-size: 80px;
+      }
+
+      @include xs {
+        font-size: 60px;
+      }
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0 0 3rem;
+
+    @include md {
+      font-size: 16px;
+    }
+
+    @include xs {
+      font-size: 15px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 4rem;
+
+    @include xs {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    flex-grow: 1;
+    width: 100%;
+    height: 7.9rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1;
+    background: $c-white;
+    border: .3rem solid $c-black;
+    border-radius: 2rem;
+    filter: drop-shadow(.8rem .8rem 0 $c-black);
+    padding: 0 4rem;
+
+    &::placeholder {
+      color: #B5B5B5;
+    }
+
+    @include md {
+      height: 65px;
+      font-size: 16px;
+      padding: 0 22px;
+    }
+
+    @include xs {
+      font-size: 15px;
+      height: 57px;
+    }
+  }
+
+  &__btn {
+    width: 8.9rem;
+    height: 8.9rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: $c-violet;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: .3rem solid $c-black;
+    margin: 0 0 0 2rem;
+    @include shadow;
+
+    @include md {
+      width: 65px;
+      height: 65px;
+    }
+
+    @include xs {
+      width: 57px;
+      height: 57px;
+      margin: 22px 0 0;
+    }
+
+    &:hover {
+      svg {
+        stroke: $c-green;
+      }
+    }
+
+    svg {
+      stroke: $c-black;
+      transition: stroke .3s;
+    }
+  }
+
+  &__sign {
+    font-weight: 500;
+    text-align: right;
+
+    @include md {
+      text-align: center;
+    }
+  }
+}

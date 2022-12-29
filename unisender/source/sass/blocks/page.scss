@@ -1,0 +1,169 @@
+.section {
+
+  &__head {
+    text-align: center;
+  }
+}
+
+.title {
+  font-family: $font-family-inter;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1.1;
+
+  @include md {
+    font-size: 44px;
+  }
+
+  @include xs {
+    font-size: 40px;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &__outline {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 49.7rem;
+      height: 9.3rem;
+      position: absolute;
+      background: url('../img/page/outline-green.svg') no-repeat center/cover;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+
+      @include md {
+        width: 360px;
+        height: 66px;
+      }
+
+      @include xs {
+        width: 316px;
+        height: 59px;
+      }
+    }
+  }
+}
+
+.subtitle {
+
+  p {
+    &:not(:last-of-type) {
+      margin: 0 0 2rem;
+
+      @include md {
+        margin: 0 0 12px;
+      }
+    }
+  }
+}
+
+.btn {
+  min-height: 6.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 2rem;
+  background: $c-white;
+  color: $c-black;
+  padding: 0 2.8rem;
+  @include border;
+  @include shadow;
+  transition: background .3s;
+
+  &:hover {
+    background: $c-violet;
+  }
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 7.5rem;
+
+  .slider-btn {
+    &:first-of-type {
+      margin: 0 2.5rem 0 0;
+    }
+  }
+}
+
+.slider-btn {
+  width: 8rem;
+  height: 6rem;
+
+  @include md {
+    width: 70px;
+    height: 55px;
+  }
+
+  @include xs {
+    width: 60px;
+    height: 44px;
+  }
+
+  &.swiper-button-disabled {
+    cursor: inherit;
+
+    .slider-btn__icon {
+      opacity: .5;
+    }
+  }
+
+  &:hover:not(.swiper-button-disabled) {
+    .slider-btn__icon {
+      fill: $c-violet;
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    fill: $c-white;
+    stroke: $c-black;
+    filter: drop-shadow(0 .8rem 0 $c-black);
+    transition: fill .3s, opacity .3s;
+
+
+  }
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+
+  &.swiper-pagination-lock {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: .3rem solid $c-black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .3s;
+
+    &:hover:not(.swiper-pagination-bullet-active) {
+      background: $c-violet;
+    }
+
+    &:not(:last-of-type) {
+      margin: 0 2.5rem 0 0;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $c-black;
+  }
+}

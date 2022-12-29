@@ -1,0 +1,166 @@
+.trends {
+  padding: 26rem 0 35rem;
+
+  @include md {
+    padding: 100px 0;
+  }
+
+  @include xs {
+    padding: 64px 0 100px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 0 5rem;
+
+    @include xs {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    max-width: 102.6rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10rem;
+
+    @include md {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    max-width: 61.2rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 5rem;
+  }
+
+  &__item-info {
+    background: $c-green;
+    border-radius: 2rem;
+    padding: 6.5rem 4rem 24rem;
+    @include shadow;
+    @include border;
+
+    @include md {
+      padding: 45px 40px 165px;
+    }
+
+    @include xs {
+      padding: 30px 40px 165px;
+    }
+  }
+
+  &__item-title {
+    font-family: $font-family-inter;
+    font-weight: 500;
+    font-size: 3.6rem;
+    text-align: center;
+    margin: 0 0 1.5rem;
+
+    @include md {
+      line-height: 1.2;
+      font-size: 32px;
+      margin: 0 0 20px;
+    }
+
+    @include xs {
+      font-size: 28px;
+    }
+  }
+
+  &__item-descr {
+    font-size: 1.6rem;
+    max-width: 41.5rem;
+    width: 100%;
+    margin: 0 auto;
+
+    p {
+      &:not(:last-of-type) {
+        margin: 0 0 1.2rem;
+      }
+    }
+
+    a {
+      color: $c-black;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__item-descr-big {
+    font-size: 1.8rem;
+
+    @include md {
+      font-size: 16px;
+    }
+
+    @include xs {
+      font-size: 15px;
+    }
+  }
+
+  &__item-img {
+    max-width: 40rem;
+    width: 100%;
+    margin: -19rem auto 0;
+
+    @include xs {
+      max-width: none;
+      width: calc(100% - 80px);
+    }
+
+    img {
+      @include border;
+      filter: drop-shadow(.8rem .8rem 0 #000000);
+      border-radius: 2rem;
+    }
+
+    @include md {
+      margin: -120px auto 0;
+    }
+  }
+
+  .slider-btns {
+    margin: 0;
+
+    @include md {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include md {
+      position: static;
+      top: auto;
+      transform: translateY(0);
+    }
+
+    &--prev {
+      left: 0;
+
+      @include md {
+        left: auto;
+      }
+    }
+
+    &--next {
+      right: 0;
+
+      @include md {
+        right: auto;
+      }
+    }
+  }
+
+
+}
