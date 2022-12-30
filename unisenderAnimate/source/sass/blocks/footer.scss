@@ -1,0 +1,163 @@
+.footer {
+  background: $c-violet;
+  padding: 9rem 0 10rem;
+  font-size: 1.6rem;
+
+  @include md {
+    font-size: 16px;
+    padding: 60px 0 90px;
+  }
+
+  @include xs {
+    font-size: 15px;
+    text-align: center;
+    padding: 40px 0 80px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include md {
+      display: block;
+    }
+  }
+
+  &__col {
+    margin: 0 15rem 0 0;
+
+    @include md {
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    width: 24rem;
+    margin: 0 0 3.5rem;
+
+    @include xs {
+      width: 170px;
+      margin: 0 auto 15px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 3.5rem;
+
+    @include xs {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__col-soc {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 2.5rem;
+
+    @include xs {
+      justify-content: center;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__col-soc-item {
+    margin: 0 4rem 1rem 0;
+
+    @include xs {
+      margin: 0 10px 10px;
+    }
+
+    &:hover {
+      svg {
+        fill: $c-green;
+      }
+    }
+
+    svg {
+      fill: #0E0E0E;
+      transition: fill .3s;
+    }
+  }
+
+  &__copy {
+    @include md {
+      position: absolute;
+      bottom: -60px;
+      left: 30px;
+      right: 30px;
+      width: calc(100% - 60px);
+    }
+
+    @include xs {
+      left: 20px;
+      right: 20px;
+      width: calc(100% - 40px);
+      text-align: center;
+    }
+  }
+
+  &__menu {
+    flex-grow: 1;
+    display: flex;
+
+    @include xs {
+      display: block;
+    }
+  }
+
+  &__menu-col {
+    &:not(:first-of-type) {
+      margin: 0 0 0 15rem;
+
+      @include sm {
+        margin: 0 0 0 50px;
+      }
+
+      @include xs {
+        margin: 30px 0 0;
+      }
+    }
+  }
+
+  &__menu-col-title {
+    font-family: $font-family-inter;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 4rem;
+
+    @include md {
+      margin: 0 0 20px;
+    }
+
+    @include xs {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__menu-col-list {
+    line-height: 1.2;
+
+    li {
+      &:not(:last-of-type) {
+        margin: 0 0 1.5rem;
+      }
+    }
+
+    a {
+      color: $c-black;
+      transition: color .3s;
+
+      &:hover {
+        color: $c-green;
+      }
+    }
+  }
+}

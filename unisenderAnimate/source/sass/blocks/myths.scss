@@ -1,0 +1,257 @@
+.myths {
+  padding: 0 0 22rem;
+
+  @include md {
+    padding: 0 0 150px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 0 4rem;
+  }
+
+  &__slider {
+    position: relative;
+    padding: 0 0 15rem;
+
+    .swiper-slide {
+      width: auto;
+      padding: 0 0 3rem 5rem;
+
+      @include md {
+        padding: 0 0 30px 40px;
+      }
+
+      @include xs {
+        width: 100%;
+        height: auto;
+        padding: 0 20px 40px;
+      }
+
+      &:first-of-type {
+        margin-left: calc((100vw - 130rem) / 2);
+
+        @include md {
+          margin-left: 25px;
+        }
+
+        @include xs {
+          margin-left: 0;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: calc((100vw - 130rem) / 2);
+
+        @include md {
+          margin-right: 75px;
+        }
+
+        @include xs {
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(2n) {
+        .myths__item-info {
+          margin-top: -8rem;
+          background: #B8EEF4;
+
+          @include md {
+            margin-top: -20px;
+          }
+        }
+      }
+    }
+  }
+
+  .slider-btns {
+    @include xs {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__arrow {}
+
+  &__arrow--prev {}
+
+  &__arrow--next {}
+
+  &__item {
+    max-width: 80rem;
+    width: 100%;
+
+    @include md {
+      max-width: 450px;
+    }
+
+    @include xs {
+      max-width: none;
+    }
+  }
+
+  &__item-head {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 58.7rem;
+    max-width: 65.2rem;
+    min-height: 25rem;
+    font-weight: 500;
+    background: $c-white;
+    border-radius: 8rem 2rem 2rem 2rem;
+    filter: drop-shadow(.8rem .8rem 0 $c-black);
+    padding: 3rem 3rem 9rem 8rem;
+    @include border;
+
+    @include md {
+      min-width: auto;
+      max-width: none;
+      width: calc(100% - 30px);
+      min-height: auto;
+      padding: 50px 55px 50px;
+    }
+
+    @include xs {
+      padding: 50px 40px;
+    }
+  }
+
+  &__item-head-text {
+    font-family: $font-family-inter;
+    font-size: 2.8rem;
+
+    @include md {
+      font-size: 20px;
+    }
+  }
+
+  &__item-info {
+    position: relative;
+    z-index: 1;
+    max-width: 71.7rem;
+    width: 100%;
+    background: $c-green;
+    border-radius: 2rem 2rem 8rem 2rem;
+    padding: 7rem 8rem 8rem;
+    margin: -4.6rem 0 0 8.4rem;
+    @include border;
+    @include shadow;
+
+    @include md {
+      padding: 40px 30px 60px;
+      max-width: none;
+      width: calc(100% - 30px);
+      margin: -20px 0 0 auto;
+    }
+  }
+
+  &__item-title {
+    font-family: $font-family-inter;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 1.22;
+    margin: 0 0 4rem;
+
+    @include md {
+      font-size: 28px;
+      margin: 0 0 25px;
+    }
+
+    @include xs {
+      font-size: 22px;
+    }
+  }
+
+  &__item-info-descr {
+
+    p {
+      &:not(:last-child) {
+        margin: 0 0 2.5rem;
+
+        @include md {
+          margin: 0 0 12px;
+        }
+      }
+    }
+
+    ul {
+      margin: -2.5rem 0 0;
+
+      @include md {
+        margin: -12px 0 0;
+      }
+
+      li {
+        position: relative;
+        padding: 0 0 0 2rem;
+
+        &::before {
+          content: '';
+          width: 4px;
+          height: 4px;
+          background: $c-black;
+          border-radius: 100%;
+          position: absolute;
+          top: 1.3rem;
+          left: .8rem;
+        }
+      }
+    }
+
+    a {
+      color: $c-black;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__item-info-link {
+    display: inline-flex;
+    align-items: flex-end;
+    font-weight: 700;
+    color: $c-black;
+    margin: 4rem 0 0;
+    transition: color .3s;
+
+    @include md {
+      margin: 25px 0 0;
+    }
+
+    &:hover {
+      color: $c-violet;
+
+      .myths__item-info-link-arrow {
+        stroke: $c-violet;
+      }
+    }
+  }
+
+  &__item-info-link-arrow {
+    flex-shrink: 0;
+    stroke: $c-black;
+    transition: stroke .3s;
+    margin: 0 0 .5rem 1.3rem;
+  }
+
+  &__bg {
+    content: '';
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    background: url(../img/page/myths-bg.svg) no-repeat center/cover;
+    height: 37rem;
+    bottom: 0;
+
+    @media (min-width: 2000px) {
+      background: url(../img/page/myths-bg.svg) no-repeat center/contain;
+    }
+  }
+}

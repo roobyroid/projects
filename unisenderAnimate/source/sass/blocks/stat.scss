@@ -1,0 +1,542 @@
+.stat {
+  @include xs {
+    padding: 60px 0 0;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 123.2rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @include md {
+      text-align: center;
+      padding: 0 35px;
+    }
+  }
+
+  &__title-icon {
+    width: 16.2rem;
+    height: 16.2rem;
+    position: absolute;
+    top: -5rem;
+    left: -15.8rem;
+    z-index: -1;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__title-violet {
+    display: inline-block;
+    font-weight: 400;
+    font-family: $font-family-vasek;
+    font-style: italic;
+    font-size: 16.9rem;
+    color: $c-violet;
+    vertical-align: middle;
+    margin: 0 0 1.8rem 0;
+
+    @include md {
+      display: block;
+      font-size: 120px;
+      margin: 0 0 25px;
+    }
+
+    @include xs {
+      font-size: 70px;
+    }
+  }
+
+  &__content {
+    background: #B8EEF4;
+    padding: 11rem 0 9rem;
+
+    @include md {
+      padding: 80px 0 70px;
+    }
+
+    @include xs {
+      padding: 50px 0 70px;
+    }
+  }
+
+  &__head {
+    max-width: 103.4rem;
+    width: 100%;
+    margin: 0 auto 4rem;
+
+    a {
+      color: $c-black;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__head-title {
+    font-family: $font-family-inter;
+    font-weight: 500;
+    font-size: 3.6rem;
+    margin: 0 0 3.5rem;
+
+    @include md {
+      font-size: 32px;
+      margin: 0 0 20px;
+    }
+
+    @include xs {
+      font-size: 28px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    max-width: 124.1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10rem;
+
+    @include md {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    padding: 0 0 5rem;
+
+    @include md {
+      padding: 0 0 20px;
+    }
+  }
+
+  &__item-circles {
+    height: 60rem;
+    margin: 0 0 10rem;
+
+    @include md {
+      height: 520px;
+      margin: 0 0 50px;
+    }
+
+    @include sm {
+      height: 600px;
+      margin: 0 0 70px;
+    }
+  }
+
+  &__item-circles-item {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $c-white;
+    text-align: center;
+    border-radius: 50%;
+    @include border;
+
+    @include sm {
+      border-width: 2px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      z-index: -1;
+      border: .3rem solid $c-black;
+      @include shadow;
+    }
+
+    &--1 {
+      width: 41.4rem;
+      height: 41.4rem;
+      font-size: 2rem;
+      top: 4%;
+      left: 0;
+
+      @include md {
+        width: 250px;
+        font-size: 16px;
+        height: 250px;
+      }
+
+      @include sm {
+        width: 206px;
+        font-size: 10px;
+        height: 206px;
+        left: 3%;
+      }
+
+      &::before {
+        top: 1.9rem;
+        left: 2.2rem;
+        background: #BF96F8;
+
+        @include sm {
+          top: 9px;
+          left: 11px;
+        }
+      }
+
+      .stat__item-circles-item-val {
+        font-size: 7rem;
+        margin: 0 0 4rem;
+
+        @include md {
+          font-size: 50px;
+          margin: 0 0 20px;
+        }
+
+        @include sm {
+          font-size: 37px;
+        }
+      }
+    }
+
+    &--2 {
+      width: 25.6rem;
+      height: 25.6rem;
+      top: 1%;
+      left: 43%;
+
+      @include md {
+        width: 200px;
+        height: 200px;
+        left: 40%;
+      }
+
+      @include sm {
+        width: 127px;
+        font-size: 10px;
+        height: 127px;
+        top: 26%;
+        left: 54%;
+      }
+
+      &::before {
+        top: 1rem;
+        left: 1.5rem;
+        background: #FE4040;
+
+        @include sm {
+          top: 8px;
+          left: 8px;
+        }
+      }
+    }
+
+    &--3 {
+      width: 29.1rem;
+      height: 29.1rem;
+      top: 32%;
+      left: 39%;
+
+      @include md {
+        width: 220px;
+        height: 220px;
+        left: 35%;
+      }
+
+      @include sm {
+        width: 145px;
+        font-size: 10px;
+        height: 145px;
+        top: 34%;
+        left: 9%;
+      }
+
+      &::before {
+        top: 1.6rem;
+        left: 2rem;
+        background: #4B62DE;
+
+        @include sm {
+          top: 8px;
+          left: 10px;
+        }
+      }
+    }
+
+    &--4 {
+      width: 20rem;
+      height: 20rem;
+      top: 20%;
+      left: 69%;
+
+      @include md {
+        width: 170px;
+        height: 170px;
+        left: 65%;
+      }
+
+      @include sm {
+        width: 100px;
+        font-size: 10px;
+        height: 100px;
+        top: 46%;
+        left: 57%;
+      }
+
+      &::before {
+        top: 1.2rem;
+        left: 1.8rem;
+        background: #5AC565;
+
+        @include sm {
+          top: 6px;
+          left: 9px;
+        }
+      }
+
+      .stat__item-circles-item-val {
+        font-size: 3rem;
+        margin: 0 0 1.4rem;
+
+        @include md {
+          font-size: 24px;
+        }
+
+        @include sm {
+          font-size: 18px;
+          margin: 0 0 5px;
+        }
+      }
+    }
+
+    &--5 {
+      width: 14.7rem;
+      height: 14.7rem;
+      font-size: 1.6rem;
+      top: 2%;
+      left: 79%;
+
+      @include md {
+        width: 120px;
+        height: 120px;
+        font-size: 12px;
+      }
+
+      @include sm {
+        width: 74px;
+        font-size: 7px;
+        height: 74px;
+        top: 60%;
+        left: 45%;
+      }
+
+      &::before {
+        top: .9rem;
+        left: .8rem;
+        background: #C718B5;
+
+        @include sm {
+          top: 8px;
+          left: 8px;
+        }
+      }
+
+      .stat__item-circles-item-val {
+        font-size: 2.6rem;
+        margin: 0 0 1.1rem;
+
+        @include md {
+          font-size: 22px;
+        }
+
+        @include sm {
+          font-size: 14px;
+          margin: 0 0 4px;
+        }
+      }
+    }
+
+    &--6 {
+      width: 10rem;
+      height: 10rem;
+      font-size: 1.6rem;
+      top: 45%;
+      left: 83%;
+
+      @include md {
+        width: 80px;
+        height: 80px;
+        font-size: 11px;
+      }
+
+      @include sm {
+        width: 50px;
+        font-size: 7px;
+        height: 50px;
+        top: 56%;
+        left: 28%;
+      }
+
+      &::before {
+        top: .8rem;
+        left: .9rem;
+        background: #848484;
+
+        @include sm {
+          top: 8px;
+          left: 8px;
+        }
+      }
+
+      .stat__item-circles-item-val {
+        font-size: 1.8rem;
+        margin: 0 0 .8rem;
+
+        @include md {
+          font-size: 16px;
+          margin: 0 0 4px;
+        }
+
+        @include sm {
+          font-size: 10px;
+          margin: 0 0 2px;
+        }
+      }
+    }
+
+    &--7 {
+      width: 5.5rem;
+      height: 5.5rem;
+      font-size: 1rem;
+      top: 18%;
+      left: 93%;
+
+      @include md {
+        width: 40px;
+        height: 40px;
+        font-size: 11px;
+        font-size: 8px;
+        left: 88%;
+        top: 20%;
+      }
+
+      @include sm {
+        width: 30px;
+        font-size: 6px;
+        height: 30px;
+        left: 68%;
+        top: 69%;
+      }
+
+      &::before {
+        top: .8rem;
+        left: .8rem;
+        background: #298AE2;
+
+        @include sm {
+          top: 4px;
+          left: 4px;
+        }
+      }
+
+      .stat__item-circles-item-val {
+        font-size: 1.2rem;
+        margin: 0;
+
+        @include md {
+          font-size: 8px;
+        }
+
+        @include sm {
+          font-size: 6px;
+        }
+      }
+    }
+  }
+
+  &__item-circles-item-val {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0 0 3rem;
+
+    @include md {
+      font-size: 30px;
+      margin: 0 0 20px;
+    }
+
+    @include sm {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__item-text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+
+    @include md {
+      font-size: 18px;
+    }
+
+    @include xs {
+      font-size: 15px;
+      padding: 0 20px;
+    }
+  }
+
+  &__item-val {
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    font-family: $font-family-vasek;
+    font-size: 12rem;
+    color: $c-violet;
+
+    @include md {
+      font-size: 80px;
+    }
+
+    @include xs {
+      font-size: 60px;
+    }
+  }
+
+  .slider-btns {
+    margin: 0;
+
+    @include md {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+
+    @include md {
+      position: static;
+      top: auto;
+      transform: translateY(0);
+    }
+
+    &--prev {
+      left: -12rem;
+
+      @include md {
+        left: auto;
+      }
+    }
+
+    &--next {
+      right: -12rem;
+
+      @include md {
+        left: auto;
+      }
+    }
+  }
+}

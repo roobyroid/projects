@@ -1,0 +1,172 @@
+.examples {
+  padding: 0 0 32rem;
+
+  @include md {
+    overflow-x: hidden;
+    padding: 0 0 250px;
+  }
+
+  @include xs {
+    padding: 0 0 200px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__arrow {
+    width: 44.1rem;
+    height: 26.5rem;
+    position: absolute;
+    top: 100%;
+    right: 10rem;
+
+    @include md {
+      width: 300px;
+      height: 200px;
+      right: 50px;
+    }
+
+    @include xs {
+      width: 253px;
+      height: 152px;
+      right: -50px;
+    }
+  }
+
+  &__head {
+    position: relative;
+    margin: 0 0 8rem;
+
+    @include sm {
+      padding: 180px 0 0;
+      margin: 0 0 40px;
+    }
+  }
+
+  &__head-icon {
+    width: 18.1rem;
+    height: 29.2rem;
+    position: absolute;
+    bottom: 0;
+    left: -5rem;
+    z-index: -1;
+
+    @include md {
+      width: 100px;
+      height: 180px;
+    }
+
+    @include sm {
+      width: 83px;
+      height: 134px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    margin: 0 0 4.5rem;
+
+    @include sm {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__wrap {
+    margin: 0 -10px;
+    padding: 0 10px;
+
+    .swiper-wrapper {
+      flex-wrap: wrap;
+
+      @include md {
+        justify-content: space-between;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+      }
+    }
+
+    .swiper-slide {
+      width: calc(33.33% - 4rem * 2 / 3);
+      margin: 0 4rem 7rem 0;
+
+      @include md {
+        width: calc(50% - 3rem / 2);
+        margin: 0 0 50px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+    .slider-pagination {
+      display: none;
+
+      @include sm {
+        display: flex;
+        margin: 60px 0 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+    min-height: 39.4rem;
+    border-radius: 2rem;
+    padding: 3rem 3rem 0;
+    @include border;
+    @include shadow;
+
+    &--green {
+      background: $c-green;
+    }
+
+    &--violet {
+      background: $c-violet;
+
+      .examples__item-link {
+        &:hover {
+          background: $c-green;
+        }
+      }
+    }
+
+    &--blue {
+      background: #B8EEF4;
+    }
+
+    &--orange {
+      background: #FCDC41;
+    }
+  }
+
+  &__item-name {
+    display: inline-flex;
+    align-items: center;
+    min-height: 10rem;
+
+    @include sm {
+      min-height: auto;
+    }
+  }
+
+  &__item-link {
+    margin: 4rem 0 -3.2rem;
+
+    @include sm {
+      margin: 20px 0 -32px;
+    }
+  }
+}

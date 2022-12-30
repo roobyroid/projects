@@ -1,0 +1,35 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+@import "./node_modules/swiper/swiper.min";
+@import "./node_modules/locomotive-scroll/dist/locomotive-scroll.min";
+// @import "./node_modules/@fancyapps/ui/dist/fancybox";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+//---------------------------------
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/work";
+@import "blocks/marketing";
+@import "blocks/stat";
+@import "blocks/trends";
+@import "blocks/examples";
+@import "blocks/register";
+@import "blocks/form";
+@import "blocks/myths";
+@import "blocks/business";
+@import "blocks/ready";
+@import "blocks/footer";

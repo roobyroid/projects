@@ -1,0 +1,36 @@
+// Default
+
+
+// Color
+
+$c-white:                      #fff;
+$c-black:                      #000;
+$c-violet:                     #BF96F8;
+$c-green:                      #DCF672;
+// Typography
+//---------------------------------
+
+$font-family-nkd:               "NKDuyMono", serif;
+$font-family-inter:             "Inter", sans-serif;
+$font-family-vasek:             "Vasek", sans-serif;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+// Viewports
+//---------------------------------
+
+$viewport--xs:                      575px;
+$viewport--sm:                      768px;
+$viewport--md:                      992px;
+$viewport--lg:                      1200px;
+$viewport--xl:                      1441px;
+$viewport--xxl:                     1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

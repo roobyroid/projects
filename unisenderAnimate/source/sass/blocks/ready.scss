@@ -1,0 +1,7 @@
+.ready {
+  padding: 0 0 15rem;
+
+  @include md {
+    padding: 0 0 100px;
+  }
+}
