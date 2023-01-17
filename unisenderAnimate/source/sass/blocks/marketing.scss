@@ -135,12 +135,11 @@
           margin-left: 0;
         }
 
-        .marketing__item-icon {
-          margin-top: -3rem;
-          margin-right: -3rem;
+        .marketing__item-icon img {
+          margin: 0 0 0 3rem;
 
           @include md {
-            margin-top: -50px;
+            margin: 0;
           }
         }
       }
@@ -194,7 +193,7 @@
 
   &__item-info {
     position: relative;
-    min-height: 90rem;
+    min-height: 79rem;
     border-radius: 2rem;
     background: $c-violet;
     @include shadow;
@@ -211,8 +210,8 @@
   }
 
   &__item-icon {
-    max-width: 66rem;
-    margin: -5rem auto 3rem;
+    max-width: 45rem;
+    margin: -8rem auto 3rem;
 
     @include md {
       margin: -50px auto 20px;

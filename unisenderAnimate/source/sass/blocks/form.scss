@@ -73,6 +73,7 @@
   &__title-text {
 
     img {
+      max-width: 51rem;
       margin: 0 auto;
 
       @include xs {
