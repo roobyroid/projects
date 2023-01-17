@@ -1,0 +1,42 @@
+.modal-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #DCF672;
+  border-radius: 20px;
+  @include border;
+  @include shadow;
+  padding: 7rem 5rem 0;
+  max-width: 73.6rem;
+  width: 100%;
+  margin: 0 auto;
+
+  @include xs {
+    padding: 30px 10px 0;
+  }
+
+  &__title {
+    font-family: $font-family-inter;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 0 0 2.5rem;
+
+    @include xs {
+      font-size: 22px;
+    }
+  }
+
+  &__descr {
+    margin: 0 0 4rem;
+
+    @include xs {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__btn {
+    padding: 0 8rem;
+    margin: 0 0 -3.2rem;
+  }
+}

@@ -51,6 +51,18 @@
     @include xs {
       padding: 30px 40px 165px;
     }
+
+    &--orange {
+      background: #FCDC41;
+    }
+
+    &--blue {
+      background: #B8EEF4;
+    }
+
+    &--violet {
+      background: $c-violet;
+    }
   }
 
   &__item-title {
@@ -72,7 +84,7 @@
   }
 
   &__item-descr {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     max-width: 41.5rem;
     width: 100%;
     margin: 0 auto;
@@ -84,24 +96,13 @@
     }
 
     a {
+      font-weight: 700;
       color: $c-black;
       text-decoration: underline;
 
       &:hover {
         text-decoration: none;
       }
-    }
-  }
-
-  &__item-descr-big {
-    font-size: 1.8rem;
-
-    @include md {
-      font-size: 16px;
-    }
-
-    @include xs {
-      font-size: 15px;
     }
   }
 

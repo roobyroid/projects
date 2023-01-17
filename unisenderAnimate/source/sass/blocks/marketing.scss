@@ -43,35 +43,20 @@
     margin: 0 auto 4rem;
   }
 
-  &__head-icon-1 {
-    width: 20.6rem;
-    height: 15rem;
-    filter: drop-shadow(.8rem .8rem 0 $c-black);
-    position: absolute;
-    top: -10rem;
-    right: -23rem;
-    z-index: -1;
-
-    @include md {
-      display: none;
-    }
-  }
-
-  &__head-icon-2 {
+  &__head-icon {
     width: 10.9rem;
     height: 10.4rem;
     filter: drop-shadow(.8rem .8rem 0 $c-black);
     position: absolute;
-    top: 0;
-    left: -12rem;
-    z-index: -1;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 
     @include md {
       width: 61px;
       height: 58px;
-      left: -50px;
-      top: auto;
-      bottom: -60px;
+      top: -30px;
     }
   }
 
@@ -128,11 +113,13 @@
     .swiper-slide {
       width: auto;
       height: auto;
-      padding: 16rem 0 7.6rem 7.5rem;
+      padding: 16rem 0 7.6rem 0;
+      margin: 0 0 0 7.5rem;
 
       @include md {
         height: 100%;
         padding: 120px 0 55px 30px;
+        margin: 0;
       }
 
       @include xs {
@@ -150,6 +137,17 @@
 
         .marketing__item-icon {
           margin-top: -3rem;
+          margin-right: -3rem;
+
+          @include md {
+            margin-top: -50px;
+          }
+        }
+      }
+
+      &:last-of-type {
+        .marketing__item-icon {
+          margin-top: -12rem;
 
           @include md {
             margin-top: -50px;
@@ -160,11 +158,21 @@
   }
 
   &__item {
-    max-width: 70rem;
+    max-width: 60rem;
     width: 100%;
 
     @include md {
       max-width: 450px;
+    }
+
+    a {
+      font-weight: 700;
+      color: $c-black;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     &--orange {
@@ -189,9 +197,31 @@
     min-height: 90rem;
     border-radius: 2rem;
     background: $c-violet;
-    padding: 0 7rem 7rem 10rem;
     @include shadow;
     @include border;
+
+    @include md {
+      max-width: 450px;
+      min-height: auto;
+    }
+
+    @include xs {
+      max-width: none;
+    }
+  }
+
+  &__item-icon {
+    max-width: 66rem;
+    margin: -5rem auto 3rem;
+
+    @include md {
+      margin: -50px auto 20px;
+    }
+
+  }
+
+  &__item-info-wrap {
+    padding: 0 6rem 18rem 6rem;
 
     @include md {
       max-width: 450px;
@@ -202,20 +232,6 @@
     @include xs {
       max-width: none;
       padding: 0 30px 80px;
-    }
-  }
-
-  &__item-icon {
-    min-height: 43.3rem;
-    margin: -10rem auto 6rem;
-
-    @include md {
-      min-height: 320px;
-      margin: -50px auto 20px;
-    }
-
-    @include xs {
-      min-height: 250px;
     }
   }
 
@@ -245,16 +261,6 @@
         @include md {
           margin: 0 0 12px;
         }
-      }
-    }
-
-    a {
-      font-weight: 700;
-      color: $c-black;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
       }
     }
   }

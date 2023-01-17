@@ -1,23 +1,27 @@
 /* eslint-disable no-unused-vars */
-import imagesLoaded from 'imagesloaded';
 import LocomotiveScroll from 'locomotive-scroll';
 import {ieFix} from './utils/ie-fix';
 import Swiper, {Pagination, Navigation} from 'swiper';
 import mobMenuScroll from './modules/mobmenu-scroll';
-
+import {initModals} from './modules/init-modals';
 
 Swiper.use([Pagination, Navigation]);
 
 document.addEventListener('DOMContentLoaded', function () {
   ieFix();
   mobMenuScroll();
-
+  try {
+    initModals();
+  } catch (e) { }
   // Work Slider
   const workSlider = new Swiper('.js_work-slider .swiper', {
     slidesPerView: 'auto',
     speed: 1000,
     freeMode: true,
     centeredSlides: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       nextEl: '.js_work-slider .js_btn-slide-next',
       prevEl: '.js_work-slider .js_btn-slide-prev',
@@ -37,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
     speed: 1000,
     freeMode: true,
     centeredSlides: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       nextEl: '.js_marketing-slider .js_btn-slide-next',
       prevEl: '.js_marketing-slider .js_btn-slide-prev',
@@ -54,7 +61,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Stat Slider
   const statSlider = new Swiper('.js_stat-slider .swiper', {
     slidesPerView: 1,
-    spaceBetween: 20,
+    autoHeight: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       nextEl: '.js_stat-slider .js_btn-slide-next',
       prevEl: '.js_stat-slider .js_btn-slide-prev',
@@ -70,6 +80,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const trendsSlider = new Swiper('.js_trends-slider .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       nextEl: '.js_trends-slider .js_btn-slide-next',
       prevEl: '.js_trends-slider .js_btn-slide-prev',
@@ -92,6 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
         swiperExamples = new Swiper('.examples__wrap.swiper', {
           slidesPerView: 1,
           spaceBetween: 32,
+          mousewheel: {
+            forceToAxis: true,
+          },
           pagination: {
             el: '.js_examples-pagination',
             clickable: true,
@@ -110,6 +126,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const businessSlider = new Swiper('.js_business-slider .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
+    autoHeight: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       nextEl: '.js_business-slider .js_btn-slide-next',
       prevEl: '.js_business-slider .js_btn-slide-prev',
@@ -126,6 +146,9 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 'auto',
     speed: 1000,
     freeMode: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
     navigation: {
       nextEl: '.js_myths-slider .js_btn-slide-next',
       prevEl: '.js_myths-slider .js_btn-slide-prev',
@@ -142,13 +165,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   // Animate
-
   const media = window.matchMedia('(max-width: calc(993px - 1px))');
   if (!media.matches) {
+    const header = document.querySelector('header');
     window.onload = function () {
       const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
+        getDirection: true,
         mobile: {
           breakpoint: 0,
           smooth: false,
@@ -161,12 +185,27 @@ document.addEventListener('DOMContentLoaded', function () {
       scroller.update();
 
       scroller.on('call', (func, state, obj) => {
-        if (!obj.target.classList.contains('fade-in-bottom')) {
-          obj.target.classList.add('fade-in-bottom');
+        if (!obj.target.classList.contains('animate-in-up')) {
+          obj.target.classList.add('animate-in-up');
         }
-
       });
+      scroller.on('scroll', (instance) => {
+        if (instance.scroll.y > 50) {
+          header.classList.add('is-scroll');
+        } else {
+          header.classList.remove('is-scroll');
+        }
+      });
+
+      new ResizeObserver(() => scroller.update()).observe(
+          document.querySelector('[data-scroll-container]')
+      );
     };
   }
-});
 
+  document.querySelectorAll('.form__btn').forEach((item) => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+    });
+  });
+});

@@ -12,6 +12,7 @@
 
   .container {
     position: relative;
+    max-width: 133rem;
   }
 
   &__arrow {
@@ -83,16 +84,22 @@
 
       @include md {
         justify-content: space-between;
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
       }
 
       @include sm {
         justify-content: flex-start;
         flex-wrap: nowrap;
+        max-width: none;
+        margin: 0;
       }
     }
 
     .swiper-slide {
       width: calc(33.33% - 4rem * 2 / 3);
+      max-width: 40rem;
       margin: 0 4rem 7rem 0;
 
       @include md {
@@ -100,8 +107,20 @@
         margin: 0 0 50px;
       }
 
+      @include sm {
+        margin: 0 0 10px;
+      }
+
       &:nth-child(3n) {
         margin-right: 0;
+      }
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        .examples__item-icon {
+          margin-top: 2.5rem;
+        }
       }
     }
 
@@ -118,14 +137,13 @@
   &__item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    text-align: center;
     align-items: center;
+    text-align: center;
     font-weight: 500;
     width: 100%;
     min-height: 39.4rem;
     border-radius: 2rem;
-    padding: 3rem 3rem 0;
+    padding: 0 3rem;
     @include border;
     @include shadow;
 
@@ -152,21 +170,48 @@
     }
   }
 
+  &__item-icon {
+    margin: 0 -3rem;
+    width: calc(100% + 6.4rem);
+    height: 26rem;
+
+    img {
+      max-height: 100%;
+      margin: 0 auto;
+    }
+  }
+
   &__item-name {
     display: inline-flex;
     align-items: center;
     min-height: 10rem;
+    line-height: 1.3;
 
     @include sm {
-      min-height: auto;
+      min-height: 70px;
+      margin: 0 0 20px;
     }
   }
 
   &__item-link {
-    margin: 4rem 0 -3.2rem;
+    margin: 2rem 0 -3.2rem;
 
     @include sm {
-      margin: 20px 0 -32px;
+      margin: auto 0 -32px;
+    }
+  }
+
+  &__more {
+    text-align: center;
+    margin: 4rem 0 0;
+
+    .btn {
+      padding: 0 6rem;
+      background: #DCF672;
+
+      &:hover {
+        background: $c-violet;
+      }
     }
   }
 }

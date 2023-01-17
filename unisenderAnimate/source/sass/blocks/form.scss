@@ -1,12 +1,12 @@
 .form {
   background: $c-green;
   border-radius: 2rem;
-  padding: 2.5rem 2rem 8rem;
+  padding: 4rem 2rem 8rem;
   @include border;
   @include shadow;
 
   @include md {
-    padding: 20px 25px 50px;
+    padding: 30px 25px 50px;
   }
 
 
@@ -22,18 +22,14 @@
       @include xs {
         font-size: 20px;
       }
+    }
 
-      span {
-        font-size: 20rem;
-        margin: 0 0 -5rem;
+    .form__title-text {
+      margin: 0 0 2rem;
 
-        @include md {
-          font-size: 120px;
-          margin: 0 0 -30px;
-        }
-
-        @include xs {
-          font-size: 100px;
+      @include xs {
+        img {
+          max-width: 60%;
         }
       }
     }
@@ -48,10 +44,6 @@
       @include xs {
         font-size: 15px;
       }
-    }
-
-    .form__input {
-      border-radius: 0;
     }
   }
 
@@ -76,21 +68,15 @@
     @include xs {
       font-size: 20px;
     }
+  }
 
-    span {
-      display: block;
-      font-family: $font-family-vasek;
-      font-style: italic;
-      font-size: 12rem;
-      line-height: 1.1;
-      margin: 0 0 -1rem;
+  &__title-text {
 
-      @include md {
-        font-size: 80px;
-      }
+    img {
+      margin: 0 auto;
 
       @include xs {
-        font-size: 60px;
+        max-width: 80%;
       }
     }
   }

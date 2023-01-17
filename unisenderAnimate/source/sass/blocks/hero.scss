@@ -6,27 +6,17 @@
     padding: 30px 0 90px;
   }
 
-
   &__grid {
+    display: none;
     width: 100%;
-    height: 49.2rem;
-    background: url('../img/page/hero-bg.svg') no-repeat center/cover;
+    background: url('../img/page/hero-bg-mob.svg') no-repeat center/cover;
     position: absolute;
-    bottom: 40rem;
-    left: 0;
+    height: 223px;
+    bottom: 0;
     z-index: -1;
 
-    @media (min-width: 2000px) {
-      background: url('../img/page/hero-bg.svg') no-repeat center/contain;
-    }
-
-    @include md {
-      height: 223px;
-      bottom: 0;
-    }
-
     @include xs {
-      background: url('../img/page/hero-bg-mob.svg') no-repeat center/cover;
+      display: block;
     }
   }
 
@@ -34,22 +24,29 @@
     position: relative;
   }
 
-  &__man {
-    max-width: 71.5rem;
+  &__woman {
+    max-width: 75rem;
     width: 100%;
     position: absolute;
-    top: 12rem;
+    top: 5rem;
     right: -16rem;
-    z-index: -1;
+    z-index: 1;
 
     @include md {
-      max-width: 400px;
+      max-width: 300px;
       right: 0;
+      top: 147px;
     }
 
     @include sm {
+      max-width: 500px;
       position: static;
       margin: 0 0 0 auto;
+    }
+
+    @include xs {
+      width: calc(100% + 50px);
+      margin: 0 -20px 0 -30px;
     }
   }
 
@@ -113,6 +110,7 @@
   }
 
   &__info {
+    position: relative;
     max-width: 72.3rem;
     width: 100%;
     display: flex;
@@ -126,6 +124,21 @@
     margin: 0 0 16rem -3rem;
     @include shadow;
     @include border;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: -2.3rem;
+      bottom: -9rem;
+      z-index: 1;
+      width: 10.5rem;
+      height: 11.9rem;
+      background: url('../img/page/hero-currency.svg') no-repeat center/cover;
+
+      @include md {
+        content: none;
+      }
+    }
 
     @include md {
       max-width: 500px;
@@ -234,6 +247,21 @@
         }
       }
 
+      &::after {
+        content: '';
+        position: absolute;
+        left: -5.9rem;
+        top: -24.4rem;
+        z-index: -1;
+        width: 76.2rem;
+        height: 37.4rem;
+        background: url('../img/page/hero-el.svg') no-repeat center/cover;
+
+        @include md {
+          content: none;
+        }
+      }
+
       .hero__stat-item-val {
         font-size: 7rem;
 
@@ -336,6 +364,20 @@
           margin: 30px 0 0;
         }
       }
+    }
+  }
+
+  &__plane {
+    position: absolute;
+    left: 18rem;
+    bottom: 1rem;
+    z-index: -1;
+    max-width: 105rem;
+
+    @include md {
+      left: -50px;
+      bottom: -80px;
+      max-width: 100%;
     }
   }
 }

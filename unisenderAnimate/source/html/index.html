@@ -9,8 +9,8 @@
 </head>
 
 <body>
+  @@include("source/html/base/header.html")
   <div data-scroll-container>
-    @@include("source/html/base/header.html")
     <main class="main">
       <section class="hero">
         <div class="hero__grid first-faded" style="animation-delay: 1s;" data-scroll data-scroll-speed="-1"></div>
@@ -36,19 +36,25 @@
           </h1>
           <p class="hero__subtitle first-faded" style="animation-delay: 1.6s;">статистика, эффективность, мнения
             экспертов, исследования</p>
-          <img class="hero__man first-faded" style="animation-delay: 2.5s;" data-scroll data-scroll-speed="1"
-            src="img/page/hero-man.svg" alt="">
+          <picture>
+            <source srcset="img/page/hero-woman.svg" type="image/jpeg" media="(min-width: 565px)">
+            <source srcset="img/page/hero-woman-mob.svg" type="image/jpeg" media="(max-width: 564.98px)">
+            <img class="hero__woman first-faded" style="animation-delay: 2.5s;" data-scroll data-scroll-speed="1"
+              src="img/page/hero-woman.svg" alt="">
+          </picture>
           <div class="hero__info first-faded" style="animation-delay: 1.9s;">
             <h2 class="hero__info-title">Email-маркетинг 2022-2023:</h2>
-            <p class="hero__info-descr">тренды, актуальность, мнения экспертов, исследования<br> и статистика об
-              эффективности email-рассылок.</p>
+            <p class="hero__info-descr">тренды, актуальность, мнения экспертов, исследования<br> и&nbsp;статистика
+              об&nbsp;эффективности email-рассылок.</p>
             <a class="hero__info-link btn" href="#">Хочу знать!</a>
           </div>
           <div class="hero__stat first-faded" style="animation-delay: 2.2s;">
             <div class="hero__stat-item hero__stat-item--main">
               <p class="hero__stat-item-val">$8 490 000 000</p>
               <div class="hero__stat-item-descr">
-                <p>Столько <a href="#">приносит email-маркетинг</a> бизнесу по всему миру.</p>
+                <p>Столько <a href="https://www.statista.com/topics/1446/e-mail-marketing/#dossierKeyfigures"
+                    target="_blank">приносит
+                    email-маркетинг</a> бизнесу по всему миру.</p>
                 <p>Рассылки — в топ-3 каналов для распространения контента, вместе с соцсетями и официальными сайтами
                   брендов.</p>
               </div>
@@ -58,25 +64,34 @@
               <div class="hero__stat-item">
                 <p class="hero__stat-item-val">71%</p>
                 <div class="hero__stat-item-descr">
-                  <p>маркетологов <a href="#">используют<br> email-маркетинг в сегменте B2C</a></p>
+                  <p>маркетологов <a
+                      href="https://contentmarketinginstitute.com/wp-content/uploads/2021/01/b2c-research-report-2021.pdf"
+                      target="_blank">используют<br>
+                      email-маркетинг в сегменте B2C</a></p>
                 </div>
               </div>
               <div class="hero__stat-item">
                 <p class="hero__stat-item-val">75%</p>
                 <div class="hero__stat-item-descr">
-                  <p>маркетологов <a href="#">используют<br> email-маркетинг в сегменте B2C</a></p>
+                  <p>маркетологов <a
+                      href="https://contentmarketinginstitute.com/wp-content/uploads/2021/10/B2B_2022_Research.pdf"
+                      target="_blank">используют<br>
+                      email-маркетинг в сегменте B2B</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <img class="hero__plane" src="img/page/hero-plane.svg" alt="">
       </section>
 
       <section class="work section" id="work">
         <div class="work__cube" data-scroll data-scroll-speed="-1"></div>
         <div class="container">
           <div class="work__head section__head" data-scroll data-scroll-call="fade">
-            <img class="work__head-icon" data-scroll data-scroll-speed="3" src="img/page/work-head-icon.svg" alt="">
+            <div class="work__head-icon" data-scroll data-scroll-speed="3">
+              <img src="img/page/work-head-icon.png" alt="">
+            </div>
             <h2 class="work__title title">
               <span class="work__title-violet">Email</span> —
               <span class="work__title-line">
@@ -133,9 +148,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="work__item work__item--violet">
-                  <div class="work__item-icon work__item-icon--empty">
+                  <div class="work__item-icon">
+                    <img src="img/page/work-2.svg" alt="">
                   </div>
-                  <h3 class="work__item-title">№2: Письма не кричат: «Прочитай меня прямо сейчас!»</h3>
+                  <h3 class="work__item-title">&#8470;&nbsp;2: Письма не&nbsp;кричат: &laquo;Прочитай меня прямо
+                    сейчас!&raquo;</h3>
                   <div class="work__item-descr">
                     <p>Их читают тогда, когда удобно. И отвечают тоже.</p>
 
@@ -151,7 +168,7 @@
               <div class="swiper-slide">
                 <div class="work__item work__item--blue">
                   <div class="work__item-icon">
-                    <img src="img/page/work-2.svg" alt="">
+                    <img src="img/page/work-3.svg" alt="">
                   </div>
                   <h3 class="work__item-title">№3: Любой контент, любой дизайн, любые приёмы</h3>
                   <div class="work__item-descr">
@@ -168,21 +185,20 @@
               </div>
               <div class="swiper-slide">
                 <div class="work__item work__item--orange">
-                  <div class="work__item-icon work__item-icon--empty">
+                  <div class="work__item-icon">
+                    <img src="img/page/work-4.svg" alt="">
                   </div>
                   <h3 class="work__item-title">№4: Рассылку нельзя запретить</h3>
                   <div class="work__item-descr">
                     <blockquote>
-                      <p>«Как видите, заблокировать, удалить и ограничить можно что угодно — сайты, соцсети,
-                        мессенджеры
-                        и
-                        стриминг. Но остаётся один незаслуженно забытый способ связи — email-рассылка.</p>
+                      <p>&quot;Как видите, заблокировать, удалить и&nbsp;ограничить можно что угодно&nbsp;&mdash; сайты,
+                        соцсети, мессенджеры и&nbsp;стриминг. Но&nbsp;остаётся один незаслуженно забытый способ
+                        связи&nbsp;&mdash; email-рассылка.</p>
 
-                      <p>Рассылка консервативна, как берестяная грамота, и надёжна, как Nokia 3310. Она проникает в
-                        хижины
-                        и дворцы, потому что бесплатна — как и всё, что к ней можно прикрепить.
-                        Рассылка не знает слова лайк и не ищет моментального удовлетворения. Она играет в долгую,
-                        качественную игру».</p>
+                      <p>Рассылка консервативна, как берестяная грамота, и&nbsp;надёжна, как Nokia 3310. Она проникает
+                        в&nbsp;хижины и&nbsp;дворцы, потому что бесплатна&nbsp;&mdash; как и&nbsp;всё, что к&nbsp;ней
+                        можно прикрепить. Рассылка не&nbsp;знает слова лайк и&nbsp;не&nbsp;ищет моментального
+                        удовлетворения. Она играет в&nbsp;долгую, качественную игру&quot;.</p>
                     </blockquote>
                     <p>Oxxxymiron</p>
                   </div>
@@ -195,7 +211,8 @@
         <div class="container">
           <div class="work__quote" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">
             <p class="work__quote-name">Анастасия
-              Сычёва, руководитель направления email-маркетинга REG.RU:</p>
+              Сычёва, руководитель направления email-маркетинга <a href="https://www.reg.ru/"
+                target="_blank">REG.RU</a>:</p>
             <p>Рассылки помогают нам вовремя
               донести до клиентов важную информацию. Особенно, когда привычные каналы
               коммуникации и некоторые популярные соцсети оказались заблокированы.</p>
@@ -204,14 +221,12 @@
       </section>
 
       <section class="marketing section">
+        <img class="marketing__head-icon" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1"
+          src="img/page/marketing-head-icon-2.svg" alt="">
         <div class="marketing__grid" data-scroll data-scroll-speed="-1"></div>
         <div class="marketing__bg" data-scroll data-scroll-speed="1"></div>
         <div class="container">
           <div class="marketing__head section__head">
-            <img class="marketing__head-icon-1" data-scroll data-scroll-speed="-1"
-              src="img/page/marketing-head-icon-1.svg" alt="">
-            <img class="marketing__head-icon-2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1"
-              src="img/page/marketing-head-icon-2.svg" alt="">
             <h2 class="marketing__title title" data-scroll data-scroll-call="fade">
               Но и это ещё <span class="marketing__title-violet">не всё</span><br>
               <span class="marketing__title--sm">Присмотримся к тому, как работает email в маркетинге.</span>
@@ -249,10 +264,12 @@
                     <div class="marketing__item-icon">
                       <img src="img/page/marketing-1.svg" alt="">
                     </div>
-                    <h3 class="marketing__item-title">Email — универсальный<br> ID человека</h3>
-                    <div class="marketing__item-descr">
-                      <p>По нему можно найти пользователя в других каналах и запустить любую маркетинговую активность:
-                        ретаргетинг, рассылку контента, продажи, допродажи и многое другое.</p>
+                    <div class="marketing__item-info-wrap">
+                      <h3 class="marketing__item-title">Email — универсальный<br> ID человека</h3>
+                      <div class="marketing__item-descr">
+                        <p>По нему можно найти пользователя в других каналах и запустить любую маркетинговую активность:
+                          ретаргетинг, рассылку контента, продажи, допродажи и многое другое.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -263,18 +280,20 @@
                     <div class="marketing__item-icon">
                       <img src="img/page/marketing-2.svg" alt="">
                     </div>
-                    <h3 class="marketing__item-title">Объединяет все инструменты маркетинга</h3>
-                    <div class="marketing__item-descr">
-                      <p>Помогает наращивать подписчиков в разных каналах. Продвигает контент-маркетинг. Встраивается
-                        в
-                        омниканальную цепочку коммуникаций — работает в команде с соцсетями, чат-ботами, SMS и другими
-                        инструментами.
-                      </p>
+                    <div class="marketing__item-info-wrap">
+                      <h3 class="marketing__item-title">Объединяет все инструменты маркетинга</h3>
+                      <div class="marketing__item-descr">
+                        <p>Помогает наращивать подписчиков в разных каналах. Продвигает контент-маркетинг. Встраивается
+                          в
+                          омниканальную цепочку коммуникаций — работает в команде с соцсетями, чат-ботами, SMS и другими
+                          инструментами.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div class="marketing__item-text">
                     <p class="marketing__item-text-name">Ольга Бортникова, CEO маркетплейса авторских путешествий
-                      YouTravel.me</p>
+                      <a href="https://youtravel.me/" target="_blank">YouTravel.me</a></p>
                     <p>Email у нас далеко не единственный канал коммуникации. Он часть комплексной стратегии
                       интернет-маркетинга: здесь и соцсети, и performance, и мессенджеры, и мобильное приложение с
                       push-уведомлениями. Всё это периодически кроссим и смотрим за тем, как сработало. Например,
@@ -288,23 +307,28 @@
                 <div class="marketing__item marketing__item--blue">
                   <div class="marketing__item-info">
                     <div class="marketing__item-icon">
+                      <img src="img/page/marketing-3.svg" alt="">
                     </div>
-                    <h3 class="marketing__item-title">Лучше всех удерживает клиентов</h3>
-                    <div class="marketing__item-descr">
-                      <p><a href="#">По данным Gigaom</a>, email эффективнее других каналов увеличивает допродажи и
-                        возвращает
-                        «уснувших» клиентов. В этом помогают: письма о брошенных корзинах, напоминания о незавершённых
-                        покупках и отложенных товарах, цепочки писем после сделанных заказов.
-                      </p>
+                    <div class="marketing__item-info-wrap">
+                      <h3 class="marketing__item-title">Лучше всех удерживает клиентов</h3>
+                      <div class="marketing__item-descr">
+                        <p><a href="https://www.extole.com/wp-content/uploads/2015/03/Gigaom-and-Extole-Research.pdf"
+                            target="_blank">По
+                            данным Gigaom</a>, email эффективнее других каналов увеличивает допродажи
+                          и&nbsp;возвращает &laquo;уснувших&raquo; клиентов. В&nbsp;этом помогают: письма
+                          о&nbsp;брошенных корзинах, напоминания о&nbsp;незавершённых покупках и&nbsp;отложенных
+                          товарах, цепочки писем после сделанных заказов.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div class="marketing__item-text">
                     <p class="marketing__item-text-name">Анастасия Сычёва, руководитель направления email-маркетинга
-                      REG.RU</p>
-                    <p>У тех наших клиентов, кто подписан на рекламные рассылки, количество активных услуг на аккаунте
-                      больше, чем у тех, кто не подписан на рассылки. С помощью email-маркетинга мы работаем на
-                      коммуникационные цели, возвращаем клиента на сайт, раскрываем пользу услуг и повышаем нашу
-                      экспертность в глазах клиента.
+                      <a href="https://www.reg.ru/" target="_blank">REG.RU</a></p>
+                    <p>У&nbsp;тех наших клиентов, кто подписан на&nbsp;рекламные рассылки, количество активных услуг
+                      на&nbsp;аккаунте больше, чем у&nbsp;тех, кто не&nbsp;подписан на&nbsp;рассылки. С&nbsp;помощью
+                      email-маркетинга мы&nbsp;работаем на&nbsp;коммуникационные цели, возвращаем клиента на&nbsp;сайт,
+                      раскрываем пользу услуг и&nbsp;повышаем нашу экспертность в&nbsp;глазах клиента.
                     </p>
                   </div>
                 </div>
@@ -319,60 +343,27 @@
           <img class="stat__title-icon" data-scroll data-scroll-speed="1" src="img/page/stat-star.svg" alt="">
           Так какой ты, <span class="stat__title-violet">email в 2002?</span>
         </h2>
-        <div class="stat__content">
-          <div class="container">
-            <div class="stat__head section__head" data-scroll data-scroll-call="fade">
-              <h3 class="stat__head-title">Каждый год — ещё больше пользователей</h3>
-              <div class="subtitle">
-                Вот что говорит статистика. <a href="#">По данным Statista</a>, электронной почтой в 2022 году
-                пользуются
-                4,14 млрд
-                человек в мире. Ежедневно они отправляют и получают 319,6 млрд email-писем.
-              </div>
-            </div>
 
-            <div class="stat__slider js_stat-slider" data-scroll data-scroll-call="fade">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="stat__item">
-                      <div class="stat__item-circles">
-                        <div class="stat__item-circles-item stat__item-circles-item--1">
-                          <p class="stat__item-circles-item-val">4,14<br> млрд</p>
-                          <p>пользователи email</p>
-                        </div>
-                        <div class="stat__item-circles-item stat__item-circles-item--2">
-                          <p class="stat__item-circles-item-val">2,55<br> млрд</p>
-                          <p>Youtube</p>
-                        </div>
-                        <div class="stat__item-circles-item stat__item-circles-item--3">
-                          <p class="stat__item-circles-item-val">2,91<br> млрд</p>
-                          <p>Facebook</p>
-                        </div>
-                        <div class="stat__item-circles-item stat__item-circles-item--4">
-                          <p class="stat__item-circles-item-val">2,00<br> млрд</p>
-                          <p>Whatsapp</p>
-                        </div>
-                        <div class="stat__item-circles-item stat__item-circles-item--5">
-                          <p class="stat__item-circles-item-val">1,47<br> млрд</p>
-                          <p>Instagramm</p>
-                        </div>
-                        <div class="stat__item-circles-item stat__item-circles-item--6">
-                          <p class="stat__item-circles-item-val">1,00<br> млрд</p>
-                          <p>TikTok</p>
-                        </div>
-                        <div class="stat__item-circles-item stat__item-circles-item--7">
-                          <p class="stat__item-circles-item-val">0,55<br> млрд</p>
-                          <p>Tlg</p>
-                        </div>
+        <div class="stat__slider js_stat-slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="stat__content">
+                  <div class="container">
+                    <div class="stat__head section__head" data-scroll data-scroll-call="fade">
+                      <h3 class="stat__head-title">Каждый год — ещё больше пользователей</h3>
+                      <div class="subtitle">
+                        Вот что говорит статистика. <a
+                          href="https://www.statista.com/topics/1446/e-mail-marketing/#dossierKeyfigures"
+                          target="_blank">По данным
+                          Statista</a>, электронной почтой в 2022 году
+                        пользуются
+                        4,14 млрд
+                        человек в мире. Ежедневно они отправляют и получают 319,6 млрд email-писем.
                       </div>
-                      <p class="stat__item-text">По прогнозам Statista, к 2025 году количество пользователей
-                        увеличится
-                      </p>
-                      <p class="stat__item-val">до 4,6 млрд</p>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+
+
                     <div class="stat__item">
                       <div class="stat__item-circles">
                         <div class="stat__item-circles-item stat__item-circles-item--1">
@@ -404,28 +395,258 @@
                           <p>Tlg</p>
                         </div>
                       </div>
-                      <p class="stat__item-text">По прогнозам Statista, к 2025 году количество пользователей
+                      <p class="stat__item-text"><a
+                          href="https://www.statista.com/topics/1446/e-mail-marketing/#dossierKeyfigures"
+                          target="_blank">По прогнозам
+                          Statista</a>, к 2025 году количество пользователей
                         увеличится
                       </p>
                       <p class="stat__item-val">до 4,6 млрд</p>
                     </div>
                   </div>
                 </div>
-                <div class="slider-pagination js_stat-pagination"></div>
               </div>
-              <div class="slider-btns">
-                <button class="stat__arrow stat__arrow--prev slider-btn js_btn-slide-prev" type="button">
-                  <svg class="slider-btn__icon">
-                    <use xlink:href="img/sprite_auto.svg#arrow-left-slider"></use>
-                  </svg>
-                </button>
-                <button class="stat__arrow stat__arrow--next slider-btn js_btn-slide-next" type="button">
-                  <svg class="slider-btn__icon">
-                    <use xlink:href="img/sprite_auto.svg#arrow-right-slider"></use>
-                  </svg>
-                </button>
+              <div class="swiper-slide">
+                <div class="stat__content stat__content--yellow">
+                  <div class="container">
+                    <div class="stat__head section__head">
+                      <h3 class="stat__head-title">Высокий ROI</h3>
+                      <div class="subtitle">
+                        <b><a href="https://www.litmus.com/blog/infographic-the-roi-of-email-marketing/"
+                            target="_blank">Исследование
+                            Litmus выявило:</a></b> за&nbsp;каждый&nbsp;$1, вложенный
+                        в&nbsp;email-маркетинг,<br> компании получают от&nbsp;$32 до&nbsp;$45&nbsp;прибыли.
+                      </div>
+                    </div>
+
+                    <div class="stat__content-quote">
+                      <p class="stat__content-quote-name">Владислав Сувернев, email-маркетолог</p>
+                      <p>Самый большой плюс рассылок&nbsp;&mdash; окупаемость. Минимум
+                        каждый третий месяц в&nbsp;году приносит компании больше денег именно благодаря
+                        email-маркетингу,
+                        а&nbsp;не&nbsp;рекламы в&nbsp;Яндекс.Директ или в&nbsp;других каналах.</p>
+                    </div>
+
+                    <div class="stat__chart">
+                      <h3 class="stat__chart-title">ROI email-рассылок в&nbsp;разных отраслях</h3>
+                      <div class="stat__chart-content">
+                        <div class="stat__chart-item">
+                          <div class="stat__chart-val">32:1</div>
+                          <p class="stat__chart-item-descr">СМИ и&nbsp;медиа, event индустрия, спорт, развлечения</p>
+                        </div>
+                        <div class="stat__chart-item">
+                          <div class="stat__chart-val stat__chart-val--orange">36:1</div>
+                          <p class="stat__chart-item-descr">Программное обеспечение,IT</p>
+                        </div>
+                        <div class="stat__chart-item">
+                          <div class="stat__chart-val stat__chart-val--violet">42:1</div>
+                          <p class="stat__chart-item-descr">Маркетинг, PR, реклама</p>
+                        </div>
+                        <div class="stat__chart-item">
+                          <div class="stat__chart-val stat__chart-val--blue">45:1</div>
+                          <p class="stat__chart-item-descr">Ecommerce, розничная торговля, потребительские товары</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="stat__content stat__content--orange">
+                  <div class="container">
+                    <div class="stat__head section__head">
+                      <h3 class="stat__head-title">От&nbsp;образования и&nbsp;сельского хозяйства до&nbsp;ресторанов
+                        и&nbsp;розничной торговли</h3>
+                      <div class="subtitle">
+                        Email-рассылки гонят трафик на&nbsp;сайты, улучшают конверсию и&nbsp;помогают
+                        наращивать продажи. В&nbsp;самых разных сферах.
+                      </div>
+                    </div>
+
+                    <div class="stat__content-quote">
+                      <p class="stat__content-quote-name">Даниил Козлов, маркетолог МАГАМАКС</p>
+                      <p>
+                        У&nbsp;нас два топ-источника трафика на&nbsp;сайт: контекстная реклама и&nbsp;email. Email
+                        обходит даже органические визиты! На&nbsp;сегодняшний день средний Open Rate составляет&nbsp;43%
+                        c&nbsp;учётом доотправок.</p>
+                    </div>
+
+                    <div class="stat__table">
+                      <h3 class="stat__table-title">Ключевые показатели email-рассылок по&nbsp;<b><a
+                            href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
+                            target="_blank">данным
+                            Campaign Monitor:</a></b>
+                      </h3>
+                      <div class="stat__table-content">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Сфера деятельности</th>
+                              <th>Открываемость</th>
+                              <th>CTR</th>
+                              <th>CTOR</th>
+                              <th>Отписки</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Образование</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Сельское, рыболовное, лесное хозяйство, охота</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Финансовые услуги</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>НКО</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>СМИ, развлечениея, издательское дело</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Медицинские услуги</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Логистики и оптовая торговля</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>ИТ/Технологии/ПО</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Недвижимость, дизайн, строительство</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Реклама и маркетинг</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Путешествия, гостеприимство, отдых</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Потребительнские товары</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Другое</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Правительство и политика</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Профессиональные услуги</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>ЗОЖ и фитнес</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Рестораны, еда и напитки</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                            <tr>
+                              <td>Розничная торговля</td>
+                              <td>28,00%</td>
+                              <td>4,40%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                          </tbody>
+
+                          <tfoot>
+                            <tr>
+                              <td>В среднем</td>
+                              <td>28,00%</td>
+                              <td>28,00%</td>
+                              <td>15,70%</td>
+                              <td>0,20%</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
+            <div class="stat__pagination slider-pagination js_stat-pagination"></div>
+          </div>
+          <div class="slider-btns">
+            <button class="stat__arrow stat__arrow--prev slider-btn js_btn-slide-prev" type="button">
+              <svg class="slider-btn__icon">
+                <use xlink:href="img/sprite_auto.svg#arrow-left-slider"></use>
+              </svg>
+            </button>
+            <button class="stat__arrow stat__arrow--next slider-btn js_btn-slide-next" type="button">
+              <svg class="slider-btn__icon">
+                <use xlink:href="img/sprite_auto.svg#arrow-right-slider"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -460,7 +681,8 @@
                       <div class="trends__item-descr">
                         <p>Письма, у которых есть своё лицо. В таких рассылках — акцент на искренность, личный опыт и
                           честное авторское мнение.</p>
-                        <p class="trends__item-descr-big">*Источник: рассылка <a href="#">Setters Education</a></p>
+                        <p>*Источник: <a href="https://setters.education/" target="_blank">рассылка Setters
+                            Education</a></p>
                       </div>
                     </div>
                     <div class="trends__item-img">
@@ -470,31 +692,73 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="trends__item">
-                    <div class="trends__item-info">
-                      <h3 class="trends__item-title">Авторские рассылки</h3>
+                    <div class="trends__item-info trends__item-info--blue">
+                      <h3 class="trends__item-title">Персонализация</h3>
                       <div class="trends__item-descr">
-                        <p>Письма, у которых есть своё лицо. В таких рассылках — акцент на искренность, личный опыт и
-                          честное авторское мнение.</p>
-                        <p class="trends__item-descr-big">*Источник: рассылка <a href="#">Setters Education</a></p>
+                        <p>Письма, созданные под клиента и бьющие точно в цель. Персонализированные коммуникации
+                          повышают кликабельность <a href="https://www.cossa.ru/news/279175/" target="_blank">на
+                            90%.</a></p>
+                        <p>*Источник: <a href="https://www.tinkoff.ru/" target="_blank">рассылка &laquo;Тинькофф
+                            Банка&raquo;</a></p>
                       </div>
                     </div>
                     <div class="trends__item-img">
-                      <img src="img/page/trends.jpg" alt="">
+                      <img src="img/page/trends-2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="trends__item">
+                    <div class="trends__item-info trends__item-info--orange">
+                      <h3 class="trends__item-title">Интерактив и геймификация</h3>
+                      <div class="trends__item-descr">
+                        <p>Письма, в которых пользователь может листать карусель из товаров, заполнять форму, лайкать
+                          фото, подтверждать регистрацию и бронирование — не уходя на другие сайты.</p>
+                        <p>*Источник: рассылка <a href="https://market.yandex.ru/" target="_blank">Яндекс.Маркета</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="trends__item-img">
+                      <img src="img/page/trends-3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="trends__item">
+                    <div class="trends__item-info trends__item-info--violet">
+                      <h3 class="trends__item-title">Plain text</h3>
+                      <div class="trends__item-descr">
+                        <p>Письма вне дизайнерского шаблона, без картинок и гифок, набранные обычным текстом.
+                          <a href="https://blog.hubspot.com/marketing/plain-text-vs-html-emails-data"
+                            target="_blank">Тесты
+                            показывают</a> , что минималистичное оформление улучшает показатели открываемости и
+                          кликабельности.
+                        </p>
+                        <p>*Источник: рассылка <a href="https://arzamas.academy/" target="_blank">Arzamas</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="trends__item-img">
+                      <img src="img/page/trends-4.jpg" alt="">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="trends__item">
                     <div class="trends__item-info">
-                      <h3 class="trends__item-title">Авторские рассылки</h3>
+                      <h3 class="trends__item-title">Омниканальность</h3>
                       <div class="trends__item-descr">
-                        <p>Письма, у которых есть своё лицо. В таких рассылках — акцент на искренность, личный опыт и
-                          честное авторское мнение.</p>
-                        <p class="trends__item-descr-big">*Источник: рассылка <a href="#">Setters Education</a></p>
+                        <p>Письма, которые работают в связке
+                          с чат-ботами, SMS и Viber, соцсетями. Омниканальность помогает увеличить конверсию сайта
+                          <a href="https://www.salesforce.com/content/dam/web/en_us/www/documents/reports/researchscape-evergage-2020-trends-in-personalization-report.pdf"
+                            target="_blank">на
+                            60%</a>
+                          .
+                        </p>
                       </div>
                     </div>
                     <div class="trends__item-img">
-                      <img src="img/page/trends.jpg" alt="">
+                      <img src="img/page/trends-4.jpg" alt="">
                     </div>
                   </div>
                 </div>
@@ -548,6 +812,10 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="examples__item examples__item--green">
+                  <div class="examples__item-icon">
+                    <img src="img/page/examples-1.svg" alt="">
+                  </div>
+
                   <p class="examples__item-name">Продать 2 трактора<br> за 12 миллионов</p>
                   <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
                 </div>
@@ -555,13 +823,21 @@
 
               <div class="swiper-slide">
                 <div class="examples__item examples__item--violet">
-                  <p class="examples__item-name">Собрать полный<br> «Олимпийский»</p>
+                  <div class="examples__item-icon">
+                    <img src="img/page/examples-2.svg" alt="">
+                  </div>
+
+                  <p class="examples__item-name">Собрать полный<br> &laquo;Олимпийский&raquo;</p>
                   <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="examples__item examples__item--blue">
+                  <div class="examples__item-icon">
+                    <img src="img/page/examples-3.svg" alt="">
+                  </div>
+
                   <p class="examples__item-name">Принести 4 миллиона дохода авторам курса по копирайтингу</p>
                   <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
                 </div>
@@ -569,6 +845,10 @@
 
               <div class="swiper-slide">
                 <div class="examples__item examples__item--blue">
+                  <div class="examples__item-icon">
+                    <img src="img/page/examples-4.svg" alt="">
+                  </div>
+
                   <p class="examples__item-name">Собирать на 75% больше качественных контактов<br> на выставках,
                     форумах<br>
                     и
@@ -579,6 +859,9 @@
 
               <div class="swiper-slide">
                 <div class="examples__item examples__item--orange">
+                  <div class="examples__item-icon">
+                    <img src="img/page/examples-5.svg" alt="">
+                  </div>
                   <p class="examples__item-name">Поднять доход<br> на 1 миллион<br> в месяц — с нуля</p>
                   <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
                 </div>
@@ -586,15 +869,22 @@
 
               <div class="swiper-slide">
                 <div class="examples__item examples__item--violet">
-                  <p class="examples__item-name">Вернуть «уснувших»<br> клиентов и получить с них<br> 10% выручки за
+                  <div class="examples__item-icon">
+                    <img src="img/page/examples-6.svg" alt="">
+                  </div>
+                  <p class="examples__item-name">Вернуть &laquo;уснувших&raquo;<br> клиентов и получить с них<br> 10%
+                    выручки за
                     месяц
                   </p>
                   <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
                 </div>
               </div>
-
             </div>
             <div class="slider-pagination js_examples-pagination"></div>
+          </div>
+
+          <div class="examples__more">
+            <a class="btn" href="https://www.unisender.com/ru/blog/keysy/" target="_blank">Больше кейсов</a>
           </div>
         </div>
       </section>
@@ -606,13 +896,15 @@
           <div class="form" data-scroll data-scroll-call="fade">
             <div class="form__wrap">
               <h2 class="form__title">
-                <span>Зарегистрируйтесь</span>
+                <div class="form__title-text">
+                  <img src="img/page/reg.svg" alt="">
+                </div>
                 в сервисе
               </h2>
               <p class="form__subtitle">и получите доступ к готовым инструментам<br> email-маркетолога</p>
               <form class="form__content">
                 <input class="form__input" type="email" placeholder="Введите e-mail">
-                <button class="form__btn" type="submit">
+                <button class="form__btn" type="submit" data-modal="feedback">
                   <svg width="28" height="20">
                     <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
                   </svg>
@@ -669,19 +961,20 @@
                   <div class="myths__item-info">
                     <h3 class="myths__item-title">Как на самом деле:</h3>
                     <div class="myths__item-info-descr">
-                      <p>Спам — это письма, которые пользователи не соглашались получать. База адресатов собирается
-                        нелегально, письма приходят с неизвестного адреса, внутри — некачественный контент.
-                        Доставляемость таких писем редко достигает 10%.</p>
+                      <p>Спам&nbsp;&mdash; это письма, которые пользователи не&nbsp;соглашались получать. База адресатов
+                        собирается нелегально, письма приходят с&nbsp;неизвестного адреса, внутри&nbsp;&mdash;
+                        некачественный контент. Доставляемость таких писем редко достигает&nbsp;10%.</p>
 
-                      <p>Спам — это плохо, незаконно и невыгодно.
-                        Email-маркетинг — совсем другое дело. Пользователь даёт согласие на получение писем и сам
-                        оставляет свой адрес. Доставляемость рассылок — выше 99%, а внутри полезная и интересная для
-                        адресата информация. Если вы пишете классные письма, читатель ждёт их с нетерпением.<br>
-                        Всем выгодно и приятно.</p>
+                      <p>Спам&nbsp;&mdash; это плохо, незаконно и&nbsp;невыгодно. Email-маркетинг&nbsp;&mdash; совсем
+                        другое дело. Пользователь даёт согласие на&nbsp;получение писем и&nbsp;сам оставляет свой адрес.
+                        Доставляемость рассылок&nbsp;&mdash; выше&nbsp;99%, а&nbsp;внутри полезная и&nbsp;интересная для
+                        адресата информация. Если вы&nbsp;пишете классные письма, читатель ждёт
+                        их&nbsp;с&nbsp;нетерпением.<br> Всем выгодно и&nbsp;приятно.</p>
                     </div>
-                    <a class="myths__item-info-link" href="#">
-                      Узнать больше о разнице<br> между email-рассылкой и
-                      спамом
+                    <a class="myths__item-info-link"
+                      href="https://www.unisender.com/ru/blog/idei/email-rassylka-i-spam-v-chem-raznitsa/"
+                      target="_blank">
+                      Узнать больше о&nbsp;разнице<br> между email-рассылкой и&nbsp;спамом
                       <svg class="myths__item-info-link-arrow" width="30" height="18">
                         <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
                       </svg>
@@ -693,30 +986,34 @@
                 <div class="myths__item">
                   <div class="myths__item-head">
                     <p>Что говорят:</p>
-                    <p class="myths__item-head-text">Рассылки давно никто не читает, все сидят в мессенджерах и
-                      соцсетях</p>
+                    <p class="myths__item-head-text">Рассылки давно никто не&nbsp;читает, все сидят в&nbsp;мессенджерах
+                      и&nbsp;соцсетях</p>
                   </div>
                   <div class="myths__item-info">
                     <h3 class="myths__item-title">Как на самом деле:</h3>
                     <div class="myths__item-info-descr">
-                      <p>В 2020 году во мире ежедневно отправлялось и получалось около 306 млрд email-писем.
-                        <a href="#">По прогнозам</a>, к 2025 году эта цифра обгонит 376 млрд писем в день.
-                        Популярность
-                        мессенджеров,
-                        соцсетей и онлайн-чатов действительно растёт, но email-рассылки продолжают занимать
-                        центральное
-                        место в digital-коммуникациях с пользователем:</p>
+                      <p>В&nbsp;2020 году во&nbsp;мире ежедневно отправлялось и&nbsp;получалось около 306 млрд
+                        email-писем.
+                        <a href="https://www.statista.com/statistics/255080/number-of-e-mail-users-worldwide/"
+                          target="_blank">По
+                          прогнозам</a>, к&nbsp;2025 году эта цифра обгонит 376 млрд писем в&nbsp;день.
+                        Популярность мессенджеров, соцсетей и&nbsp;онлайн-чатов действительно растёт,
+                        но&nbsp;email-рассылки продолжают занимать центральное место в&nbsp;digital-коммуникациях
+                        с&nbsp;пользователем:</p>
                       <ul>
-                        <li>средняя открываемость email-рассылок — <a href="#">примерно 22%</a>;</li>
-                        <li><a href="#">кликабельность рассылок выше</a> примерно 3,5% по сравнению с соцсетями и
-                          мессенджерами.</li>
+                        <li>средняя открываемость email-рассылок — <a
+                            href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
+                            target="_blank">примерно
+                            22%</a>;</li>
+                        <li><a href="https://www.statista.com/statistics/456500/daily-number-of-e-mails-worldwide/"
+                            target="_blank">кликабельность
+                            рассылок выше</a> примерно 3,5% по&nbsp;сравнению
+                          с&nbsp;соцсетями и&nbsp;мессенджерами.</li>
                       </ul>
-                      <p>Email-рассылки — не конкурент чат-ботов и соцсетей. Лучше всего разные каналы работают в
-                        связке.
-                        Это помогает наращивать общую базу подписчиков и выстраивать омниканальные цепочки
-                        коммуникаций.
-                        Например: знакомство с пользователем и презентации в email → прогрев в соцсетях → продажа в
-                        мессенджере.</p>
+                      <p>Email-рассылки&nbsp;&mdash; не&nbsp;конкурент чат-ботов и&nbsp;соцсетей. Лучше всего разные
+                        каналы работают в&nbsp;связке. Это помогает наращивать общую базу подписчиков и&nbsp;выстраивать
+                        омниканальные цепочки коммуникаций. Например: знакомство с&nbsp;пользователем и&nbsp;презентации
+                        в&nbsp;email &rarr; прогрев в&nbsp;соцсетях &rarr; продажа в&nbsp;мессенджере.</p>
                     </div>
                   </div>
                 </div>
@@ -725,59 +1022,53 @@
                 <div class="myths__item">
                   <div class="myths__item-head">
                     <p>Что говорят:</p>
-                    <p class="myths__item-head-text">Все рассылки — это спам!</p>
+                    <p class="myths__item-head-text">Рассылки&nbsp;&mdash; это сложно.</p>
                   </div>
-                  <div class="myths__item-info">
+                  <div class="myths__item-info myths__item-info--pb">
                     <h3 class="myths__item-title">Как на самом деле:</h3>
                     <div class="myths__item-info-descr">
-                      <p>Спам — это письма, которые пользователи не соглашались получать. База адресатов собирается
-                        нелегально, письма приходят с неизвестного адреса, внутри — некачественный контент.
-                        Доставляемость таких писем редко достигает 10%.</p>
-
-                      <p>Спам — это плохо, незаконно и невыгодно.
-                        Email-маркетинг — совсем другое дело. Пользователь даёт согласие на получение писем и сам
-                        оставляет свой адрес. Доставляемость рассылок — выше 99%, а внутри полезная и интересная для
-                        адресата информация. Если вы пишете классные письма, читатель ждёт их с нетерпением.<br>
-                        Всем выгодно и приятно.</p>
+                      <p>Современные сервисы email-рассылок экономят время и&nbsp;нервы. Чтобы создать красивое
+                        и&nbsp;эффективное письмо, не&nbsp;обязательно верстать и&nbsp;дизайнить как боженька.
+                        Достаточно воспользоваться готовыми инструментами. Они помогают:
+                        <ul>
+                          <li>создавать красивые письма без навыков в&nbsp;дизайне и&nbsp;вёрстке;</li>
+                          <li>настраивать и&nbsp;отправлять массовые рассылки;</li>
+                          <li>собирать статистику и&nbsp;улучшать эффективность рассылок.</li>
+                        </ul>
+                        Все процессы оптимизированы. Все данные хранятся в&nbsp;одном месте. Удобно!<br>
+                        Если возникли сложности, всегда можно обратиться в&nbsp;техподдержку сервиса.</p>
                     </div>
-                    <a class="myths__item-info-link" href="#">
-                      Узнать больше о разнице<br> между email-рассылкой и
-                      спамом
+                    <a class="myths__item-info-link"
+                      href="https://www.unisender.com/ru/blog/sovety/kak-pravilno-sdelat-rassylku/" target="_blank">
+                      Как отправить первую рассылку
                       <svg class="myths__item-info-link-arrow" width="30" height="18">
                         <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
                       </svg>
                     </a>
                   </div>
+                  <div class="myths__item-text">
+                    <p class="myths__item-text-name">Яна Евстигнеева, маркетолог <a href="https://aspro.ru/"
+                        target="_blank">&quot;Аспро&quot;</a></p>
+                    <p>Нам удобна автоматичность процессов. Не&nbsp;нужно
+                      волноваться за&nbsp;судьбу каждого письма. Главная задача&nbsp;&mdash; продумать и&nbsp;настроить
+                      сценарии коммуникации с&nbsp;клиентом ещё до&nbsp;этапа отправки. Это классная разгрузка
+                      от&nbsp;рутины и&nbsp;лишней траты времени. Так можно сфокусироваться на&nbsp;задачах
+                      по&nbsp;стратегии.</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="myths__item">
                   <div class="myths__item-head">
                     <p>Что говорят:</p>
-                    <p class="myths__item-head-text">Рассылки давно никто не читает, все сидят в мессенджерах и
-                      соцсетях</p>
+                    <p class="myths__item-head-text">Рассылки&nbsp;&mdash; это дорого.</p>
                   </div>
                   <div class="myths__item-info">
                     <h3 class="myths__item-title">Как на самом деле:</h3>
                     <div class="myths__item-info-descr">
-                      <p>В 2020 году во мире ежедневно отправлялось и получалось около 306 млрд email-писем.
-                        <a href="#">По прогнозам</a>, к 2025 году эта цифра обгонит 376 млрд писем в день.
-                        Популярность
-                        мессенджеров,
-                        соцсетей и онлайн-чатов действительно растёт, но email-рассылки продолжают занимать
-                        центральное
-                        место в digital-коммуникациях с пользователем:</p>
-                      <ul>
-                        <li>средняя открываемость email-рассылок — <a href="#">примерно 22%</a>;</li>
-                        <li><a href="#">кликабельность рассылок выше</a> примерно 3,5% по сравнению с соцсетями и
-                          мессенджерами.</li>
-                      </ul>
-                      <p>Email-рассылки — не конкурент чат-ботов и соцсетей. Лучше всего разные каналы работают в
-                        связке.
-                        Это помогает наращивать общую базу подписчиков и выстраивать омниканальные цепочки
-                        коммуникаций.
-                        Например: знакомство с пользователем и презентации в email → прогрев в соцсетях → продажа в
-                        мессенджере.</p>
+                      <p>В&nbsp;сервисах рассылок запустить email-маркетинг можно даже бесплатно. Большинство платформ
+                        предлагают тестовые тарифы&nbsp;&mdash; у&nbsp;вас будет возможность оценить возможности
+                        сервиса, &laquo;пощупать&raquo; его руками и&nbsp;понять, как работают ваши рассылки.</p>
                     </div>
                   </div>
                 </div>
@@ -823,39 +1114,34 @@
                   <div class="business__item">
                     <div class="business__item-inner">
                       <div class="business__item-photo">
-                        <img src="img/page/business-avatar.jpg" alt="Полина Мартынова">
+                        <img src="img/page/business-1.jpg" alt="Полина Мартынова">
                       </div>
                       <p class="business__item-name">Полина Мартынова</p>
-                      <p class="business__item-post">маркетолог агентства Markway</p>
+                      <p class="business__item-post">маркетолог агентства <a href="https://markway.ru/"
+                          target="_blank">Markway</a></p>
                       <div class="business__item-descr">
-                        <p>Email-маркетинг позволяет точечно «греть» клиентов, когда не получается это сделать через
-                          другие
-                          каналы продвижения. К примеру, в сложной сфере B2B. Мы как агентство по комплексному
-                          управлению
-                          репутацией сталкиваемся с этим регулярно.</p>
-                        <p>Активно с рассылками стали работать 1,5 года назад. Было чёткое понимание, что холодные
-                          базы
-                          в
-                          B2B
-                          — это проблема номер один. И нужно «прогревать» конкретных сотрудников, которые находятся на
-                          конкретных позициях в компаниях-клиентах. А заодно и напоминать о себе тем, с кем мы по
-                          разным
-                          причинам перестали работать.</p>
-                        <p>Рассылки, — это, в первую очередь, узнаваемость и имиджевая история, в которой мы выступаем
-                          помощниками бизнеса. И только во вторую очередь — лидогенерация.</p>
-                        <p>Мы на регулярной основе направляем дайджесты лучших статей, анонсируем крупные кейсы,
-                          исследования. Трафик ведём как на сайт, так и на корпоративный Telegram-канал. В кризисный
-                          период
-                          переключаемся на mindful-контент: окружаем клиента заботой и вниманием, готовим полезные
-                          инструкции и методички по продвижению. У этих материалов был высокий Open Rate в пандемию,
-                          высоким
-                          он остаётся и сейчас.</p>
+                        <p>Email-маркетинг позволяет точечно &laquo;греть&raquo; клиентов, когда не&nbsp;получается это
+                          сделать через другие каналы продвижения. К&nbsp;примеру, в&nbsp;сложной сфере B2B. Мы&nbsp;как
+                          агентство по&nbsp;комплексному управлению репутацией сталкиваемся с&nbsp;этим регулярно.</p>
+                        <p>Активно с&nbsp;рассылками стали работать 1,5 года назад. Было чёткое понимание, что холодные
+                          базы в&nbsp;B2B&nbsp;&mdash; это проблема номер один. И&nbsp;нужно &laquo;прогревать&raquo;
+                          конкретных сотрудников, которые находятся на&nbsp;конкретных позициях
+                          в&nbsp;компаниях-клиентах. А&nbsp;заодно и&nbsp;напоминать о&nbsp;себе тем, с&nbsp;кем
+                          мы&nbsp;по&nbsp;разным причинам перестали работать.</p>
+                        <p>Рассылки,&nbsp;&mdash; это, в&nbsp;первую очередь, узнаваемость и&nbsp;имиджевая история,
+                          в&nbsp;которой мы&nbsp;выступаем помощниками бизнеса. И&nbsp;только во&nbsp;вторую
+                          очередь&nbsp;&mdash; лидогенерация.</p>
+                        <p>Мы&nbsp;на&nbsp;регулярной основе направляем дайджесты лучших статей, анонсируем крупные
+                          кейсы, исследования. Трафик ведём как на&nbsp;сайт, так и&nbsp;на&nbsp;корпоративный
+                          Telegram-канал. В&nbsp;кризисный период переключаемся на&nbsp;mindful-контент: окружаем
+                          клиента заботой и&nbsp;вниманием, готовим полезные инструкции и&nbsp;методички
+                          по&nbsp;продвижению. У&nbsp;этих материалов был высокий Open Rate в&nbsp;пандемию, высоким
+                          он&nbsp;остаётся и&nbsp;сейчас.</p>
                         <p>
-                          <b>Лиды нам приносят рассылки с публикациями кейсов по работе с крупными известными
-                            брендами.
-                            Происходит эффект «вау»: бизнес переходит по ссылке, знакомится с инструментарием и
-                            моментально
-                            отправляет заявку на аудит своей компании.</b>
+                          <b>Лиды нам приносят рассылки с&nbsp;публикациями кейсов по&nbsp;работе с&nbsp;крупными
+                            известными брендами. Происходит эффект &laquo;вау&raquo;: бизнес переходит по&nbsp;ссылке,
+                            знакомится с&nbsp;инструментарием и&nbsp;моментально отправляет заявку на&nbsp;аудит своей
+                            компании.</b>
                         </p>
                       </div>
                     </div>
@@ -865,40 +1151,355 @@
                   <div class="business__item">
                     <div class="business__item-inner">
                       <div class="business__item-photo">
-                        <img src="img/page/business-avatar.jpg" alt="Полина Мартынова">
+                        <img src="img/page/business-2.jpg" alt="Илья Еремин">
                       </div>
-                      <p class="business__item-name">Полина Мартынова</p>
-                      <p class="business__item-post">маркетолог агентства Markway</p>
+                      <p class="business__item-name">Илья Еремин</p>
+                      <p class="business__item-post">контент-маркетолог агентства &laquo;Сделаем&raquo;</p>
                       <div class="business__item-descr">
-                        <p>Email-маркетинг позволяет точечно «греть» клиентов, когда не получается это сделать через
-                          другие
-                          каналы продвижения. К примеру, в сложной сфере B2B. Мы как агентство по комплексному
-                          управлению
-                          репутацией сталкиваемся с этим регулярно.</p>
-                        <p>Активно с рассылками стали работать 1,5 года назад. Было чёткое понимание, что холодные
-                          базы
-                          в
-                          B2B
-                          — это проблема номер один. И нужно «прогревать» конкретных сотрудников, которые находятся на
-                          конкретных позициях в компаниях-клиентах. А заодно и напоминать о себе тем, с кем мы по
-                          разным
-                          причинам перестали работать.</p>
-                        <p>Рассылки, — это, в первую очередь, узнаваемость и имиджевая история, в которой мы выступаем
-                          помощниками бизнеса. И только во вторую очередь — лидогенерация.</p>
-                        <p>Мы на регулярной основе направляем дайджесты лучших статей, анонсируем крупные кейсы,
-                          исследования. Трафик ведём как на сайт, так и на корпоративный Telegram-канал. В кризисный
-                          период
-                          переключаемся на mindful-контент: окружаем клиента заботой и вниманием, готовим полезные
-                          инструкции и методички по продвижению. У этих материалов был высокий Open Rate в пандемию,
-                          высоким
-                          он остаётся и сейчас.</p>
-                        <p>
-                          <b>Лиды нам приносят рассылки с публикациями кейсов по работе с крупными известными
-                            брендами.
-                            Происходит эффект «вау»: бизнес переходит по ссылке, знакомится с инструментарием и
-                            моментально
-                            отправляет заявку на аудит своей компании.</b>
-                        </p>
+                        <p>Мы&nbsp;занимаемся контент-маркетингом и&nbsp;обучаем копирайтеров. Рассылки отправляем
+                          с&nbsp;2019&nbsp;года. Задача email-маркетинга у&nbsp;нас&nbsp;&mdash; генерировать заявки
+                          и&nbsp;продажи на&nbsp;платные копирайтерские продукты. Вот основные результаты:</p>
+                        <ul>
+                          <li><b>Провели две
+                              распродажи, email&nbsp;&mdash; в&nbsp;лидерах по&nbsp;продажам. Например,
+                              на&nbsp;последней
+                              распродаже он&nbsp;дал 43/173&nbsp;продаж. Это больше, чем любой другой канал.</b></li>
+                          <li>Когда стартуют
+                            потоки обучения, email идеально подходит, чтобы разом оповестить об&nbsp;этом всю базу
+                            и&nbsp;получить заявки. 15-25% заявок приходят с&nbsp;почтовыми UTM.</li>
+                        </ul>
+                        <p>Главная сложность
+                          в&nbsp;рассылках для нас&nbsp;&mdash; подобрать сервис для email-маркетинга, потому что
+                          у&nbsp;каждого из&nbsp;них свои особенности. Например, мы&nbsp;пользовались Mailchimp,
+                          Unisender, GetResponse&nbsp;&mdash; во&nbsp;всех нашли и&nbsp;плюсы, и&nbsp;минусы.</p>
+
+                        <p>Основные
+                          плюсы email-маркетинга, которые мы&nbsp;видим:</p>
+                        <ul>
+                          <li>универсальность&nbsp;&mdash; почта есть у&nbsp;всех;</li>
+                          <li>можно следить за&nbsp;активностью базы и&nbsp;чистить неактивные контакты;</li>
+                          <li>есть результат в&nbsp;виде заявок и&nbsp;продаж;</li>
+                          <li>легко автоматизировать прогревы, не&nbsp;нужно выпускать всё время что-то новое, как
+                            в&nbsp;соцсетях.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="business__item">
+                    <div class="business__item-inner">
+                      <div class="business__item-photo">
+                        <img src="img/page/business-3.jpg" alt="Ольга Бортникова">
+                      </div>
+                      <p class="business__item-name">Ольга Бортникова</p>
+                      <p class="business__item-post">CEO маркетплейса авторских путешествий <a
+                          href="https://youtravel.me/" target="_blank">YouTravel.me</a></p>
+                      <div class="business__item-descr">
+                        <p>Мы&nbsp;работаем на&nbsp;стыке&nbsp;IT и&nbsp;Travel: помогаем путешественникам найти крутые
+                          туры и&nbsp;локации, а&nbsp;ответственным гидам и&nbsp;тревел-экспертам помогаем собирать
+                          группы
+                          по&nbsp;всему миру. Получается целая экосистема путешествий.</p>
+                        <p>Первые рассылки начали отправлять
+                          в&nbsp;2019&nbsp;году, тогда нашему стартапу было чуть меньше года. Делаем
+                          и&nbsp;маркетинговые
+                          рассылки, и&nbsp;триггерные, и&nbsp;транзакционные. Для нас email&nbsp;&mdash; стабильный
+                          канал
+                          для связи с&nbsp;путешественниками и&nbsp;тревел-экспертами.</p>
+                        <p>Задачи более или менее стандартные
+                          для email-маркетинга: сначала собирали базу подписчиков и&nbsp;фокусировались на&nbsp;темпах
+                          роста. Потом работали над увеличением доли трафика с&nbsp;email в&nbsp;общем трафике. Сейчас
+                          работаем над тем, чтобы увеличить количество целевых действий с&nbsp;email и&nbsp;доход
+                          от&nbsp;них в&nbsp;общем обороте проекта.<br>Наверное, самое актуальное
+                          на&nbsp;сейчас&nbsp;&mdash;
+                          соблюсти баланс в&nbsp;отношении пользовательских данных. С&nbsp;одной стороны, эти данные
+                          бесконечно важны: они нужны для сегментации и&nbsp;более персонализированных предложений.
+                          С&nbsp;другой&nbsp;&mdash; чем легче интерфейс, тем удобнее пользоваться сервисом,
+                          а&nbsp;большое количество полей для заполнения ввергает человека в&nbsp;уныние.</p>
+
+                        <p><b>Рассылками
+                            мы&nbsp;одновременно обращаемся к&nbsp;большому числу путешественников&nbsp;&mdash;
+                            устанавливаем долгосрочные отношения с&nbsp;клиентами и&nbsp;получаем обратную связь. Это
+                            круто:
+                            сейчас мы&nbsp;создали лояльное сообщество из&nbsp;подписчиков, которые помогают нам сделать
+                            платформу для поиска путешествий лучше.</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="business__item">
+                    <div class="business__item-inner">
+                      <div class="business__item-photo">
+                        <img src="img/page/business-4.jpg" alt="Владислав Сувернев">
+                      </div>
+                      <p class="business__item-name">Владислав Сувернев</p>
+                      <p class="business__item-post"><a href="https://suvernev.ru/" target="_blank">email-маркетолог</a>
+                      </p>
+                      <div class="business__item-descr">
+                        <p>Среди моих клиентов компания Estateline, для которой я&nbsp;делаю email-маркетинг больше
+                          1,5&nbsp;лет. Основной продукт&nbsp;&mdash; база строительных объектов. Самое ценное, что
+                          получают клиенты Estateline&nbsp;&mdash; доступ к&nbsp;контактам отделов снабжения
+                          генподрядчиков и&nbsp;застройщиков, которым могут продавать строительные материалы
+                          и&nbsp;технику. Т.е. работаем в&nbsp;B2B, ЦА&nbsp;проекта&nbsp;&mdash; это стройкомпании.</p>
+
+                        <p>Две
+                          глобальные задачи, которые ставим перед email-маркетингом:</p>
+                        <ul>
+                          <li>привлечь как можно больше новых
+                            клиентов на&nbsp;демо-доступ&nbsp;&mdash; 99% всех продаж происходит именно после него;</li>
+                          <li>удержать
+                            действующих клиентов&nbsp;&mdash; в&nbsp;таком случае используем рассылки как важную точку
+                            контакта. Постоянного контакта, потому что минимум 1-2 письма в&nbsp;неделю
+                            мы&nbsp;им&nbsp;отправляем.</li>
+                        </ul>
+
+
+                        <p>ЦА проекта проводит в&nbsp;почте львиную долю своего рабочего
+                          времени, поэтому процент открытий у&nbsp;нас около&nbsp;30% на&nbsp;холодную аудиторию
+                          и&nbsp;до&nbsp;80% на&nbsp;свою. Так что для Estateline это один из&nbsp;самых эффективных
+                          и&nbsp;дешевых способов &laquo;докоснуться&raquo; до&nbsp;своего клиента.</p>
+
+                        <p>Также
+                          я&nbsp;настраиваю
+                          рекламу в&nbsp;Яндекс.Директе и&nbsp;могу сказать, что связка &laquo;Директ для привлечения
+                          новых клиентов + email-рассылки для прогрева до&nbsp;демо-доступа&raquo; работает очень
+                          хорошо.
+                          Специфика бизнеса такова, что человек сначала долго изучает конкурентов и&nbsp;пытается выбить
+                          лучшие цены для себя. С&nbsp;помощью регулярных писем как раз рассказываем потенциальным
+                          клиентам о&nbsp;том, чем мы&nbsp;лучше конкурентов + один раз в&nbsp;месяц даём хорошую
+                          скидку,
+                          если отделу продаж нужна помощь для выполнения плана</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="business__item">
+                    <div class="business__item-inner">
+                      <div class="business__item-photo">
+                        <img src="img/page/business-5.jpg" alt="Дмитрий Молчанов">
+                      </div>
+                      <p class="business__item-name">Дмитрий Молчанов</p>
+                      <p class="business__item-post">CEO и&nbsp;собственник лаборатории разработки и&nbsp;автоматизации
+                        &laquo;Стоквелл&raquo;</p>
+                      <div class="business__item-descr">
+                        <p>Мы&nbsp;занимаемся внедрением CRM Битрикс24, оказываем техническую поддержку, выполняем
+                          доработки и&nbsp;обучение.</p>
+
+                        <p>В&nbsp;B2B сегменте почта&nbsp;&mdash; один из&nbsp;рабочих каналов
+                          коммуникаций. Письма читают, они дают возможность клиенту в&nbsp;удобное ему время
+                          ознакомиться
+                          с&nbsp;информацией, а&nbsp;также не&nbsp;требуют срочной реакции. Если клиент подписан
+                          на&nbsp;рассылку, то&nbsp;наши письма вызывают у&nbsp;него высокий уровень доверия.</p>
+
+                        <p>Email-канал
+                          позволяет регулярно напоминать о&nbsp;себе, подогревать другие коммуникации с&nbsp;клиентами.
+                          Это часть&nbsp;&mdash; полноценной маркетинговой стратегии работы нашей команды.</p>
+
+                        <p>Рассылки
+                          отправляем уже несколько лет и&nbsp;решаем с&nbsp;их&nbsp;помощью такие задачи:</p>
+                        <ul>
+                          <li>информируем и&nbsp;прогреваем аудиторию;</li>
+
+                          <li>оживляем&raquo; тех клиентов, которые перестали с&nbsp;нами
+                            коммуницировать по&nbsp;каким-то причинам.</li>
+                        </ul>
+
+                        <p>Email используем в&nbsp;связке с&nbsp;другими
+                          каналами, они прекрасно друг друга дополняют. Регулярные рассылки с&nbsp;полезным контентом,
+                          кейсами, позволяют оставаться в&nbsp;краткосрочной памяти клиента. Классно показывает себя
+                          email-маркетинг, когда мы&nbsp;организуем офлайн и&nbsp;онлайн мероприятия&nbsp;&mdash; есть
+                          высокая конверсия регистраций клиентов.</p>
+
+                        <p>При ведении email-маркетинга важно поддерживать
+                          актуальность баз и&nbsp;адресов, чтобы не&nbsp;делать лишних отправок, а&nbsp;также
+                          синхронизировать данные по&nbsp;ящикам между системами. Чтобы избежать двойной работы,
+                          мы&nbsp;реализовали интеграцию между Unisender и&nbsp;Битрикс24 для оперативного обновления
+                          списков рассылок, отбора сегментов.</p>
+
+                        <p>Самые большие плюсы рассылок для нас&nbsp;&mdash; простота
+                          запуска, высокий процент открытия и&nbsp;конверсии.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="business__item">
+                    <div class="business__item-inner">
+                      <div class="business__item-photo">
+                        <img src="img/page/business-6.jpg" alt="Ирина Шахова">
+                      </div>
+                      <p class="business__item-name">Ирина Шахова</p>
+                      <p class="business__item-post">CRM-маркетолог платформы <a href="https://www.uiscom.ru/"
+                          target="_blank">UIS</a> и
+                        <a href="https://www.comagic.ru/" target="_blank">CoMagic</a></p>
+                      <div class="business__item-descr">
+                        <p>Наша платформа&nbsp;&mdash; комплексное бесшовное решение для коммуникаций с&nbsp;клиентами,
+                          аналитики рекламы и&nbsp;продаж. UIS предоставляет инструменты для коммуникаций и&nbsp;продаж,
+                          а&nbsp;CoMagic&nbsp;&mdash; сервис для профессионального маркетолога.</p>
+
+                        <p>Мы начали активно
+                          отправлять массовые рассылки в&nbsp;2020&nbsp;году. В&nbsp;разгар пандемии
+                          и&nbsp;во&nbsp;время
+                          самоизоляции у&nbsp;наших действующих и&nbsp;потенциальных клиентов появилась необходимость
+                          в&nbsp;стабильной связи для удалённых сотрудников. Возникли новые задачи: например, появился
+                          спрос на&nbsp;обучающие вебинары.</p>
+
+                        <p>Мы задействовали по&nbsp;максимуму все каналы, в&nbsp;том числе
+                          и&nbsp;email. Задачи ставили такие: лидогенерация, &laquo;утепление&raquo; базы,
+                          информирование
+                          о&nbsp;новых релизах продукта.</p>
+
+                        <p>Мы получили пул клиентов клиентов из&nbsp;нашей так называемой
+                          &laquo;спящей базы&raquo;&nbsp;&mdash; тех, кто надолго отложил принятие решения
+                          о&nbsp;подключении, или ранее отключившихся клиентов. </p>
+
+                        <p>Оперативно настроили триггерные цепочки
+                          с&nbsp;приглашениями на&nbsp;вебинар, подтверждением регистрации, напоминанием о&nbsp;начале
+                          и&nbsp;с&nbsp;отправкой записи после окончания вебинара. Вместе с&nbsp;email-подтверждением
+                          начали использовать боты в&nbsp;мессенджерах и&nbsp;увеличили &laquo;доходимость&raquo;
+                          зарегистрированных пользователей на&nbsp;вебинары до&nbsp;30%.</p>
+
+                        <p>Кроме того, мы&nbsp;стали
+                          регулярно использовать попапы и&nbsp;персонализированные блоки для акционных предложений
+                          на&nbsp;наших сайтах. Их&nbsp;удобно сочетать с&nbsp;каналом email: например, показывать
+                          на&nbsp;сайте попапы и&nbsp;баннеры для новых посетителей и&nbsp;догонять рассылкой тех, кто
+                          заполнил форму или кликнул.</p>
+
+                        <p>Самый большой плюс от&nbsp;работы с&nbsp;каналом email: возможность
+                          прямой коммуникации с&nbsp;клиентом, который заинтересован в&nbsp;продукте и&nbsp;сам оставил
+                          согласие на&nbsp;получение информации. Мы&nbsp;видим, что подписчики неоднократно открывают
+                          письма с&nbsp;описанием нового продукта, процент прочтений и&nbsp;количество прочтений
+                          на&nbsp;одного пользователя у&nbsp;них выше, чем у&nbsp;писем-дайджестов или анонсов
+                          мероприятий.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="business__item">
+                    <div class="business__item-inner">
+                      <div class="business__item-photo">
+                        <img src="img/page/business-7.jpg" alt="Яна Евстигнеева">
+                      </div>
+                      <p class="business__item-name">Яна Евстигнеева</p>
+                      <p class="business__item-post">маркетолог <a href="https://aspro.ru/"
+                          target="_blank">&laquo;Аспро&raquo;</a></p>
+                      <div class="business__item-descr">
+                        <p>Наша компания разрабатывает программное обеспечение. Сюда входят готовые сайты
+                          на&nbsp;1С-Битрикс и&nbsp;CRM-системы. Продукты сами по&nbsp;себе сложные, поэтому цикл
+                          принятия
+                          решения о&nbsp;покупке может надолго затянуться. Для коммуникации с&nbsp;пользователями
+                          мы&nbsp;ведём социальные сети, отвечаем на&nbsp;отзывы на&nbsp;внешних площадках, отправляем
+                          рассылки.</p>
+
+                        <p>Email-маркетинг помогает нам решать такие задачи:</p>
+
+                        <ul>
+                          <li>Онбординг&nbsp;&mdash; чтобы
+                            пользователю было проще разобраться с&nbsp;продуктом, мы&nbsp;отправляем приветственную
+                            цепочку
+                            писем для погружения в&nbsp;функциональную часть.</li>
+
+                          <li>Анонс мероприятий&nbsp;&mdash; рассылаем
+                            письма-приглашения на&nbsp;свою аудиторию, чтобы набрать участников.</li>
+
+                          <li>Привлечение трафика
+                            на&nbsp;сайт&nbsp;&mdash; адаптируем новые материалы под формат рассылок и&nbsp;приглашаем
+                            подписчиков прочитать материал на&nbsp;сайте.</li>
+
+                          <li>Поддержка партнёрского комьюнити&nbsp;&mdash;
+                            рассказываем о&nbsp;новинках партнёрской программы, апгрейдах личного кабинета
+                            и&nbsp;конкурсах.</li>
+
+                          <li>Прогрев пользователя&nbsp;&mdash; напоминаем о&nbsp;брошенной корзине,
+                            заканчивающейся лицензии/тарифа и&nbsp;анонсируем акции.</li>
+                        </ul>
+
+                        <p>С помощью рассылок мы&nbsp;можем
+                          отправлять клиенту/пользователю контент, который действительно ему интересен. При покупке или
+                          запросу демо-доступов к&nbsp;продукту можно сразу получить полезные материалы, которые
+                          адаптированы под тематику бизнеса или продукта.</p>
+
+                        <p>Email&nbsp;&mdash; один из&nbsp;самых продающих
+                          каналов во&nbsp;время акций. Здесь радует вариативность в&nbsp;сегментации аудитории.
+                          Например,
+                          можно сделать предложение сомневающимся и&nbsp;добавить в&nbsp;письмо промокод
+                          на&nbsp;дополнительную скидку. Или&nbsp;же предложить продление тем, у&nbsp;кого закончился
+                          период действия лицензии. Вариантов много.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="business__item">
+                    <div class="business__item-inner">
+                      <div class="business__item-photo">
+                        <img src="img/page/business-8.jpg" alt="Анастасия Сычёва">
+                      </div>
+                      <p class="business__item-name">Анастасия Сычёва</p>
+                      <p class="business__item-post">руководитель направления email-маркетинга <a
+                          href="https://www.reg.ru/" target="_blank">REG.RU</a>
+                      </p>
+                      <div class="business__item-descr">
+                        <p>Мы&nbsp;работаем в&nbsp;сфере IT. Регистрируем домены, предоставляем услуги хостинга, аренду
+                          облачных и&nbsp;выделенных серверов, помогаем клиентам в&nbsp;создании, обслуживании
+                          и&nbsp;продвижении сайтов. Из&nbsp;рассылок REG.RU наши клиенты узнают, как развивать свой
+                          сайт
+                          (или онлайн-проект) и&nbsp;как правильно пользоваться подключёнными услугами.</p>
+
+                        <p>Мы делаем рассылки
+                          уже больше 10&nbsp;лет&nbsp;&mdash; используем как автоматические, так и&nbsp;ручные рассылки.
+                          Среди ручных&nbsp;&mdash; дайджесты, продуктовые письма, скидочные и&nbsp;event-рассылки.
+                          С&nbsp;их&nbsp;помощью мы&nbsp;влияем на&nbsp;лояльность клиентов, прогреваем аудиторию,
+                          информируем о&nbsp;важном, а&nbsp;также работаем на&nbsp;продажи и&nbsp;допродажи.</p>
+
+                        <p>В автоматических у&nbsp;нас сотни триггерных писем и&nbsp;множество цепочек (в&nbsp;т.ч.
+                          welcome)&nbsp;&mdash; они выполняют важную роль в&nbsp;онбординге клиентов, апсейле,
+                          кросс-сейле, движении клиента по&nbsp;воронке, удержании и&nbsp;возврате пользователей.</p>
+
+                        <p>Несмотря
+                          на&nbsp;то, что у&nbsp;нас достаточно крупная база рекламной рассылки&nbsp;&mdash; более
+                          900&nbsp;000&nbsp;подписчиков, и&nbsp;сложный IT-продукт, который мы&nbsp;продвигаем, средняя
+                          открываемость наших писем достигает&nbsp;20%, что для такой базы очень хороший показатель.
+                          Средние цифры при базе от&nbsp;500&nbsp;000&nbsp;&mdash; примерно 8-9%.</p>
+
+                        <p>На мой взгляд,
+                          в&nbsp;IT-сфере email-рассылки незаменимы. Они не&nbsp;только помогают познакомить
+                          пользователей
+                          со&nbsp;сложным IT-продуктом и&nbsp;обучить&nbsp;их, но&nbsp;и&nbsp;приносят большую пользу
+                          бизнесу: помогают увеличить повторные продажи, средний чек и&nbsp;LTV клиента.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="business__item">
+                    <div class="business__item-inner">
+                      <div class="business__item-photo">
+                        <img src="img/page/business-9.jpg" alt="Даниил Козлов">
+                      </div>
+                      <p class="business__item-name">Даниил Козлов</p>
+                      <p class="business__item-post">маркетолог <a href="https://magamax.ru/"
+                          target="_blank">&laquo;МАГАМАКС&raquo;</a>
+                      </p>
+                      <div class="business__item-descr">
+                        <p>Используем email-рассылки, потому что они реально работают. Мы&nbsp;продаём мебельную
+                          фурнитуру
+                          и&nbsp;товары для дома B2B-клиентам. Особенность ниши в&nbsp;том, что клиенты очень любят
+                          персонализированные коммуникации, но&nbsp;вообще не&nbsp;реагируют на&nbsp;коммуникации
+                          от&nbsp;компании. Согласно результатам наших опросов, соцсети ЛПР не&nbsp;используют, сайт
+                          не&nbsp;всегда видят, а&nbsp;вот почта под рукой ежеминутно.</p>
+
+                        <p>Главные плюсы рассылок для
+                          нас&nbsp;&mdash; высокая открываемость писем, понятное влияние на&nbsp;продажи и&nbsp;точечное
+                          взаимодействие с&nbsp;ЦА.</p>
+
+                        <p>Сейчас ведём переупаковку рассылок. Видоизменяем welcome-цепочку,
+                          обновим лид-форму на&nbsp;сайте, попробуем связку лендинг + email и&nbsp;внедрим
+                          к&nbsp;товарным
+                          рассылкам ещё и&nbsp;контентные.</p>
                       </div>
                     </div>
                   </div>
@@ -927,13 +1528,15 @@
           <div class="form form--ready" data-scroll data-scroll-call="fade">
             <div class="form__wrap">
               <h2 class="form__title">
-                <span>готовы</span>
+                <div class="form__title-text">
+                  <img src="img/page/ready.svg" alt="">
+                </div>
                 запустить свою первую рассылку, но не знаете, с чего начать?
               </h2>
-              <p class="form__subtitle">Рассказываем в бесплатном курсе «Рок-email»</p>
+              <p class="form__subtitle">Рассказываем в&nbsp;бесплатном курсе &laquo;Рок-email&raquo;</p>
               <form class="form__content">
                 <input class="form__input" type="email" placeholder="Введите e-mail">
-                <button class="form__btn" type="submit">
+                <button class="form__btn" type="submit" data-modal="feedback">
                   <svg width="28" height="20">
                     <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
                   </svg>
@@ -947,7 +1550,11 @@
 
     </main>
     @@include("source/html/base/footer.html")
+
   </div>
+  @@include("source/html/base/modal.html", {
+  "name": "feedback"
+  })
   <script src="js/scripts.min.js"></script>
 </body>
 

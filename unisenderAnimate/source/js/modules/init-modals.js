@@ -1,8 +1,8 @@
 import {setupModal, closeModal} from '../utils/modal';
 
 const modals = document.querySelectorAll('.modal');
-const modalForm = document.querySelector('.modal--form');
-const modalFormBtns = document.querySelectorAll('[data-modal="form"]');
+const modalFeedback = document.querySelector('.modal--feedback');
+const modalFeedbackBtns = document.querySelectorAll('[data-modal="feedback"]');
 
 // аргументы setupModal(modal, closeCallback, modalBtns, openCallback, noPrevDefault)
 // возможна инициализация только с первыми аргументом,
@@ -19,8 +19,8 @@ const initModals = () => {
     }
   });
 
-  if (modalForm && modalFormBtns.length) {
-    setupModal(modalForm, false, modalFormBtns, false, false);
+  if (modalFeedback && modalFeedbackBtns.length) {
+    setupModal(modalFeedback, false, modalFeedbackBtns, false, false);
   }
 };
 
