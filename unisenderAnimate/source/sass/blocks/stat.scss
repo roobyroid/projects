@@ -115,31 +115,55 @@
     @include border;
     margin: 0 auto 6rem;
 
-    &:before {
-      content: '';
-      position: absolute;
-      left: 6rem;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 8.6rem;
-      height: 8.6rem;
-      background: $c-violet;
-      border: .3rem solid $c-black;
-      box-shadow: .8rem .8rem 0 $c-black;
-      border-radius: 50%;
-
-      @include md {
-        content: none;
-      }
-    }
 
     @include md {
-      padding: 30px 40px;
+      padding: 30px 40px 30px 120px;
+    }
+
+    @include xs {
+      margin-top: 50px;
+      padding: 50px 30px 30px;
+    }
+  }
+
+  &__content-quote-photo {
+    position: absolute;
+    left: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8.6rem;
+    height: 8.6rem;
+    background: $c-violet;
+    border: .3rem solid $c-black;
+    box-shadow: .8rem .8rem 0 $c-black;
+    border-radius: 50%;
+
+    @include md {
+      width: 69px;
+      height: 69px;
+      left: 30px;
+    }
+
+    @include xs {
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
     }
   }
 
   &__content-quote-name {
     font-weight: 700;
+
+    @include xs {
+      text-align: center;
+    }
   }
 
   // CHART

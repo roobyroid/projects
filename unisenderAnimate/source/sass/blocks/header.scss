@@ -1,12 +1,23 @@
 .header {
   padding: 3.5rem 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
   transition: transform .3s;
 
   &.is-scroll {
     z-index: -1;
     transform: translateY(-100%);
+  }
+
+  @include md {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
   }
 
   @include xs {

@@ -1246,7 +1246,11 @@ button,
 
 .header {
   padding: 3.5rem 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -1319,7 +1323,7 @@ button,
 
 .hero {
   position: relative;
-  padding: 6rem 0 30rem;
+  padding: 15rem 0 30rem;
 }
 
 .hero__grid {
@@ -1642,6 +1646,11 @@ button,
 
 .work__slider .swiper-slide:first-of-type .work__item-icon {
   margin-top: -7.7rem;
+  margin-bottom: 7rem;
+}
+
+.work__slider .swiper-slide:last-of-type .work__item-icon {
+  margin-bottom: 5rem;
 }
 
 .work__item {
@@ -1670,7 +1679,7 @@ button,
 }
 
 .work__item-icon {
-  margin: -5rem auto 4rem;
+  margin: -6rem auto 2rem;
   text-align: center;
 }
 
@@ -1681,7 +1690,7 @@ button,
 .work__item-title {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 1.22;
   text-align: center;
   margin: 0 0 3.5rem;
@@ -1759,8 +1768,7 @@ button,
   padding: 0 0 0 14.8rem;
 }
 
-.work__quote::before {
-  content: '';
+.work__quote-photo {
   width: 10.7rem;
   height: 10.7rem;
   background: #FCDC41;
@@ -1771,6 +1779,14 @@ button,
   position: absolute;
   top: -.5rem;
   left: 0;
+}
+
+.work__quote-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .work__quote-name {
@@ -1908,7 +1924,7 @@ button,
 
 .marketing__item-info {
   position: relative;
-  min-height: 79rem;
+  min-height: 68rem;
   border-radius: 2rem;
   background: #BF96F8;
   -webkit-box-shadow: .8rem .8rem 0 #000000;
@@ -1928,10 +1944,14 @@ button,
 .marketing__item-title {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 1.22;
   text-align: center;
   margin: 0 0 3.5rem;
+}
+
+.marketing__item-descr {
+  font-size: 1.5rem;
 }
 
 .marketing__item-descr p:not(:last-of-type) {
@@ -1953,8 +1973,7 @@ button,
   border: .4rem solid #000000;
 }
 
-.marketing__item-text:before {
-  content: '';
+.marketing__item-text-photo {
   position: absolute;
   bottom: -3.4rem;
   left: 50%;
@@ -1967,6 +1986,14 @@ button,
   background: #DCF672;
   -webkit-box-shadow: .8rem .8rem 0 #000000;
   box-shadow: .8rem .8rem 0 #000000;
+}
+
+.marketing__item-text-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .marketing__item-text-name {
@@ -2051,8 +2078,7 @@ button,
   margin: 0 auto 6rem;
 }
 
-.stat__content-quote:before {
-  content: '';
+.stat__content-quote-photo {
   position: absolute;
   left: 6rem;
   top: 50%;
@@ -2065,6 +2091,14 @@ button,
   -webkit-box-shadow: 0.8rem 0.8rem 0 #000;
   box-shadow: 0.8rem 0.8rem 0 #000;
   border-radius: 50%;
+}
+
+.stat__content-quote-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .stat__content-quote-name {
@@ -2841,7 +2875,7 @@ button,
 
 .form__sign {
   font-weight: 500;
-  text-align: right;
+  text-align: center;
 }
 
 .myths {
@@ -2936,6 +2970,10 @@ button,
   margin: 0 0 4rem;
 }
 
+.myths__item-info-descr {
+  font-size: 1.6rem;
+}
+
 .myths__item-info-descr p:not(:last-child) {
   margin: 0 0 2.5rem;
 }
@@ -3014,8 +3052,16 @@ button,
   border: .4rem solid #000000;
 }
 
-.myths__item-text:before {
-  content: '';
+.myths__item-text a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.myths__item-text a:hover {
+  text-decoration: none;
+}
+
+.myths__item-text-photo {
   position: absolute;
   bottom: -3.4rem;
   left: 50%;
@@ -3028,6 +3074,14 @@ button,
   background: #BF96F8;
   -webkit-box-shadow: .8rem .8rem 0 #000000;
   box-shadow: .8rem .8rem 0 #000000;
+}
+
+.myths__item-text-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .myths__item-text-name {
@@ -3115,6 +3169,14 @@ button,
   -webkit-box-shadow: .8rem .8rem 0 #000000;
   box-shadow: .8rem .8rem 0 #000000;
   border: .4rem solid #000000;
+}
+
+.business__item-inner--orange {
+  background: #FCDC41;
+}
+
+.business__item-inner--violet {
+  background: #BF96F8;
 }
 
 .business__item-photo {
@@ -3432,6 +3494,51 @@ button,
   margin: 0 0 -3.2rem;
 }
 
+.modal-screenshot {
+  max-width: 61rem;
+  width: 100%;
+  position: relative;
+}
+
+.modal-screenshot img {
+  border-radius: 2rem;
+}
+
+.modal-screenshot .modal__close-btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+}
+
+.modal-screenshot .modal__close-btn::before,
+.modal-screenshot .modal__close-btn::after {
+  content: '';
+  background: #000;
+  width: 20px;
+  height: 2px;
+  left: 0;
+  border-radius: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.modal-screenshot .modal__close-btn::before {
+  position: absolute;
+  top: 12px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-screenshot .modal__close-btn::after {
+  position: absolute;
+  bottom: 11px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 @media (min-width: 2000px) {
   .marketing__grid {
     background: url("../img/page/grid-bg.svg") no-repeat center/contain;
@@ -3482,6 +3589,13 @@ button,
   .slider-btn {
     width: 70px;
     height: 55px;
+  }
+
+  .header {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
   }
 
   .header__logo {
@@ -3765,6 +3879,11 @@ button,
 
   .work__slider .swiper-slide:first-of-type .work__item-icon {
     margin-top: -105px;
+    margin-bottom: 20px;
+  }
+
+  .work__slider .swiper-slide:last-of-type .work__item-icon {
+    margin-bottom: 20px;
   }
 
   .work__item {
@@ -3773,7 +3892,7 @@ button,
   }
 
   .work__item-title {
-    font-size: 30px;
+    font-size: 26px;
     margin: 0 0 20px;
   }
 
@@ -3804,7 +3923,7 @@ button,
     padding: 0 0 0 90px;
   }
 
-  .work__quote::before {
+  .work__quote-photo {
     width: 69px;
     height: 69px;
   }
@@ -3869,7 +3988,7 @@ button,
   }
 
   .marketing__item-title {
-    font-size: 32px;
+    font-size: 26px;
     margin: 0 0 20px;
   }
 
@@ -3886,7 +4005,7 @@ button,
     margin: -70px auto 0;
   }
 
-  .marketing__item-text:before {
+  .marketing__item-text-photo {
     width: 60px;
     height: 60px;
     bottom: -30px;
@@ -3920,12 +4039,14 @@ button,
     margin: 0 0 20px;
   }
 
-  .stat__content-quote:before {
-    content: none;
+  .stat__content-quote {
+    padding: 30px 40px 30px 120px;
   }
 
-  .stat__content-quote {
-    padding: 30px 40px;
+  .stat__content-quote-photo {
+    width: 69px;
+    height: 69px;
+    left: 30px;
   }
 
   .stat__chart-title {
@@ -4182,10 +4303,6 @@ button,
     height: 65px;
   }
 
-  .form__sign {
-    text-align: center;
-  }
-
   .myths {
     padding: 0 0 150px;
   }
@@ -4259,7 +4376,7 @@ button,
     margin: -70px auto 0;
   }
 
-  .myths__item-text:before {
+  .myths__item-text-photo {
     width: 60px;
     height: 60px;
     bottom: -30px;
@@ -4720,7 +4837,7 @@ button,
   }
 
   .work__item-title {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .work__item-descr blockquote + p {
@@ -4732,7 +4849,7 @@ button,
     font-size: 15px;
   }
 
-  .work__quote::before {
+  .work__quote-photo {
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -4779,7 +4896,11 @@ button,
   }
 
   .marketing__item-title {
-    font-size: 28px;
+    font-size: 20px;
+  }
+
+  .marketing__item-descr {
+    font-size: 14px;
   }
 
   .marketing__item-text {
@@ -4804,6 +4925,22 @@ button,
 
   .stat__head-title {
     font-size: 28px;
+  }
+
+  .stat__content-quote {
+    margin-top: 50px;
+    padding: 50px 30px 30px;
+  }
+
+  .stat__content-quote-photo {
+    top: -35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .stat__content-quote-name {
+    text-align: center;
   }
 
   .stat__chart-content {
@@ -4985,6 +5122,10 @@ button,
     font-size: 22px;
   }
 
+  .myths__item-info-descr {
+    font-size: 14px;
+  }
+
   .myths__item-text {
     font-size: 14px;
   }
@@ -5063,6 +5204,11 @@ button,
 
   .modal-feedback__descr {
     margin: 0 0 20px;
+  }
+
+  .modal-screenshot .modal__close-btn {
+    top: -30px;
+    right: 0;
   }
 }
 

@@ -1,0 +1,46 @@
+.modal-screenshot {
+  max-width: 61rem;
+  width: 100%;
+  position: relative;
+
+  img {
+    border-radius: 2rem;
+  }
+
+  .modal__close-btn {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+
+    @include xs {
+      top: -30px;
+      right: 0;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      background: #000;
+      width: 20px;
+      height: 2px;
+      left: 0;
+      border-radius: 5px;
+      transition: .3s;
+    }
+
+    &::before {
+      position: absolute;
+      top: 12px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 11px;
+      transform: rotate(-45deg);
+    }
+  }
+}

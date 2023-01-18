@@ -174,10 +174,6 @@
 
   &__sign {
     font-weight: 500;
-    text-align: right;
-
-    @include md {
-      text-align: center;
-    }
+    text-align: center;
   }
 }

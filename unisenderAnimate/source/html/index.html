@@ -46,7 +46,7 @@
             <h2 class="hero__info-title">Email-маркетинг 2022-2023:</h2>
             <p class="hero__info-descr">тренды, актуальность, мнения экспертов, исследования<br> и&nbsp;статистика
               об&nbsp;эффективности email-рассылок.</p>
-            <a class="hero__info-link btn" href="#">Хочу знать!</a>
+            <a class="hero__info-link btn" data-scroll-to href="#work">Хочу знать!</a>
           </div>
           <div class="hero__stat first-faded" style="animation-delay: 2.2s;">
             <div class="hero__stat-item hero__stat-item--main">
@@ -180,7 +180,7 @@
                       лучше
                       работает.</p>
                   </div>
-                  <a class="work__item-btn btn" href="#">Показать пример</a>
+                  <a class="work__item-btn btn" href="#" data-modal="screenshot">Показать пример</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -210,6 +210,9 @@
 
         <div class="container">
           <div class="work__quote" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">
+            <div class="work__quote-photo">
+              <img src="img/page/business-8.jpg" alt="">
+            </div>
             <p class="work__quote-name">Анастасия
               Сычёва, руководитель направления email-маркетинга <a href="https://www.reg.ru/"
                 target="_blank">REG.RU</a>:</p>
@@ -220,7 +223,7 @@
         </div>
       </section>
 
-      <section class="marketing section">
+      <section class="marketing section" id="marketing">
         <img class="marketing__head-icon" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1"
           src="img/page/marketing-head-icon-2.svg" alt="">
         <div class="marketing__grid" data-scroll data-scroll-speed="-1"></div>
@@ -292,6 +295,9 @@
                     </div>
                   </div>
                   <div class="marketing__item-text">
+                    <div class="marketing__item-text-photo">
+                      <img src="img/page/business-3.jpg" alt="">
+                    </div>
                     <p class="marketing__item-text-name">Ольга Бортникова, CEO маркетплейса авторских путешествий
                       <a href="https://youtravel.me/" target="_blank">YouTravel.me</a></p>
                     <p>Email у нас далеко не единственный канал коммуникации. Он часть комплексной стратегии
@@ -323,6 +329,9 @@
                     </div>
                   </div>
                   <div class="marketing__item-text">
+                    <div class="marketing__item-text-photo">
+                      <img src="img/page/business-8.jpg" alt="">
+                    </div>
                     <p class="marketing__item-text-name">Анастасия Сычёва, руководитель направления email-маркетинга
                       <a href="https://www.reg.ru/" target="_blank">REG.RU</a></p>
                     <p>У&nbsp;тех наших клиентов, кто подписан на&nbsp;рекламные рассылки, количество активных услуг
@@ -341,7 +350,7 @@
       <section class="stat" id="stat">
         <h2 class="stat__title title" data-scroll data-scroll-call="fade">
           <img class="stat__title-icon" data-scroll data-scroll-speed="1" src="img/page/stat-star.svg" alt="">
-          Так какой ты, <span class="stat__title-violet">email в 2002?</span>
+          Так какой ты, <span class="stat__title-violet">email в 2022?</span>
         </h2>
 
         <div class="stat__slider js_stat-slider">
@@ -420,6 +429,9 @@
                     </div>
 
                     <div class="stat__content-quote">
+                      <div class="stat__content-quote-photo">
+                        <img src="img/page/business-4.jpg" alt="">
+                      </div>
                       <p class="stat__content-quote-name">Владислав Сувернев, email-маркетолог</p>
                       <p>Самый большой плюс рассылок&nbsp;&mdash; окупаемость. Минимум
                         каждый третий месяц в&nbsp;году приносит компании больше денег именно благодаря
@@ -464,6 +476,9 @@
                     </div>
 
                     <div class="stat__content-quote">
+                      <div class="stat__content-quote-photo">
+                        <img src="img/page/business-9.jpg" alt="">
+                      </div>
                       <p class="stat__content-quote-name">Даниил Козлов, маркетолог МАГАМАКС</p>
                       <p>
                         У&nbsp;нас два топ-источника трафика на&nbsp;сайт: контекстная реклама и&nbsp;email. Email
@@ -817,7 +832,9 @@
                   </div>
 
                   <p class="examples__item-name">Продать 2 трактора<br> за 12 миллионов</p>
-                  <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
+                  <a class="examples__item-link btn"
+                    href="https://www.unisender.com/ru/blog/keysy/email-na-million-kak-my-prodali-2-traktora-za-12-mln-pri-pomoshchi-pisem/"
+                    target="_blank">Посмотреть кейс</a>
                 </div>
               </div>
 
@@ -828,7 +845,9 @@
                   </div>
 
                   <p class="examples__item-name">Собрать полный<br> &laquo;Олимпийский&raquo;</p>
-                  <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
+                  <a class="examples__item-link btn"
+                    href="https://www.unisender.com/ru/blog/keysy/keys-black-star-email-rassylki-prinesli-50-prodazh-na-kontsert-l-one-v-olimpiyskom/"
+                    target="_blank">Посмотреть кейс</a>
                 </div>
               </div>
 
@@ -839,7 +858,8 @@
                   </div>
 
                   <p class="examples__item-name">Принести 4 миллиона дохода авторам курса по копирайтингу</p>
-                  <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
+                  <a class="examples__item-link btn" href="https://www.unisender.com/ru/blog/keysy/sdelaem/"
+                    target="_blank">Посмотреть кейс</a>
                 </div>
               </div>
 
@@ -853,7 +873,9 @@
                     форумах<br>
                     и
                     конференциях</p>
-                  <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
+                  <a class="examples__item-link btn"
+                    href="https://www.unisender.com/ru/blog/keysy/teper-my-sobiraem-na-nbsp-75-bolshe-podpischikov-na-nbsp-meropriyatiyah-keys-mbm-ru/"
+                    target="_blank">Посмотреть кейс</a>
                 </div>
               </div>
 
@@ -863,7 +885,9 @@
                     <img src="img/page/examples-5.svg" alt="">
                   </div>
                   <p class="examples__item-name">Поднять доход<br> на 1 миллион<br> в месяц — с нуля</p>
-                  <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
+                  <a class="examples__item-link btn"
+                    href="https://www.unisender.com/ru/blog/keysy/s-nulya-do-1-milliona-rubley-v-mesyats-s-email-rassylki/"
+                    target="_blank">Посмотреть кейс</a>
                 </div>
               </div>
 
@@ -876,7 +900,8 @@
                     выручки за
                     месяц
                   </p>
-                  <a class="examples__item-link btn" href="#">Посмотреть кейс</a>
+                  <a class="examples__item-link btn" href="https://www.unisender.com/ru/blog/keysy/hoff-reactivation/"
+                    target="_blank">Посмотреть кейс</a>
                 </div>
               </div>
             </div>
@@ -1047,6 +1072,9 @@
                     </a>
                   </div>
                   <div class="myths__item-text">
+                    <div class="myths__item-text-photo">
+                      <img src="img/page/business-7.jpg" alt="">
+                    </div>
                     <p class="myths__item-text-name">Яна Евстигнеева, маркетолог <a href="https://aspro.ru/"
                         target="_blank">&quot;Аспро&quot;</a></p>
                     <p>Нам удобна автоматичность процессов. Не&nbsp;нужно
@@ -1149,7 +1177,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="business__item">
-                    <div class="business__item-inner">
+                    <div class="business__item-inner business__item-inner--orange">
                       <div class="business__item-photo">
                         <img src="img/page/business-2.jpg" alt="Илья Еремин">
                       </div>
@@ -1188,7 +1216,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="business__item">
-                    <div class="business__item-inner">
+                    <div class="business__item-inner business__item-inner--violet">
                       <div class="business__item-photo">
                         <img src="img/page/business-3.jpg" alt="Ольга Бортникова">
                       </div>
@@ -1276,7 +1304,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="business__item">
-                    <div class="business__item-inner">
+                    <div class="business__item-inner business__item-inner--orange">
                       <div class="business__item-photo">
                         <img src="img/page/business-5.jpg" alt="Дмитрий Молчанов">
                       </div>
@@ -1326,7 +1354,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="business__item">
-                    <div class="business__item-inner">
+                    <div class="business__item-inner business__item-inner--violet">
                       <div class="business__item-photo">
                         <img src="img/page/business-6.jpg" alt="Ирина Шахова">
                       </div>
@@ -1434,7 +1462,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="business__item">
-                    <div class="business__item-inner">
+                    <div class="business__item-inner business__item-inner--orange">
                       <div class="business__item-photo">
                         <img src="img/page/business-8.jpg" alt="Анастасия Сычёва">
                       </div>
@@ -1476,7 +1504,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="business__item">
-                    <div class="business__item-inner">
+                    <div class="business__item-inner business__item-inner--violet">
                       <div class="business__item-photo">
                         <img src="img/page/business-9.jpg" alt="Даниил Козлов">
                       </div>
@@ -1554,6 +1582,9 @@
   </div>
   @@include("source/html/base/modal.html", {
   "name": "feedback"
+  })
+  @@include("source/html/base/modal.html", {
+  "name": "screenshot"
   })
   <script src="js/scripts.min.js"></script>
 </body>

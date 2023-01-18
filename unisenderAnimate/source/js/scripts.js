@@ -2,14 +2,12 @@
 import LocomotiveScroll from 'locomotive-scroll';
 import {ieFix} from './utils/ie-fix';
 import Swiper, {Pagination, Navigation} from 'swiper';
-import mobMenuScroll from './modules/mobmenu-scroll';
 import {initModals} from './modules/init-modals';
 
 Swiper.use([Pagination, Navigation]);
 
 document.addEventListener('DOMContentLoaded', function () {
   ieFix();
-  mobMenuScroll();
   try {
     initModals();
   } catch (e) { }
@@ -17,11 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const workSlider = new Swiper('.js_work-slider .swiper', {
     slidesPerView: 'auto',
     speed: 1000,
-    freeMode: true,
     centeredSlides: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
+    mousewheel: true,
+    cssMode: false,
     navigation: {
       nextEl: '.js_work-slider .js_btn-slide-next',
       prevEl: '.js_work-slider .js_btn-slide-prev',
@@ -29,9 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       320: {
         autoHeight: true,
+        cssMode: false,
       },
       575: {
         autoHeight: false,
+        cssMode: true,
       },
     },
   });
@@ -39,11 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const marketingSlider = new Swiper('.js_marketing-slider .swiper', {
     slidesPerView: 'auto',
     speed: 1000,
-    freeMode: true,
     centeredSlides: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
+    mousewheel: true,
+    cssMode: false,
     navigation: {
       nextEl: '.js_marketing-slider .js_btn-slide-next',
       prevEl: '.js_marketing-slider .js_btn-slide-prev',
@@ -51,9 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       320: {
         autoHeight: true,
+        cssMode: false,
       },
       575: {
         autoHeight: false,
+        cssMode: true,
       },
     },
   });
@@ -61,10 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Stat Slider
   const statSlider = new Swiper('.js_stat-slider .swiper', {
     slidesPerView: 1,
-    autoHeight: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
+    mousewheel: true,
+    cssMode: false,
     navigation: {
       nextEl: '.js_stat-slider .js_btn-slide-next',
       prevEl: '.js_stat-slider .js_btn-slide-prev',
@@ -74,15 +70,24 @@ document.addEventListener('DOMContentLoaded', function () {
       type: 'bullets',
       clickable: true,
     },
+    breakpoints: {
+      320: {
+        autoHeight: true,
+        cssMode: false,
+      },
+      575: {
+        autoHeight: false,
+        cssMode: true,
+      },
+    },
   });
 
   // Trend Slider
   const trendsSlider = new Swiper('.js_trends-slider .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
-    mousewheel: {
-      forceToAxis: true,
-    },
+    mousewheel: true,
+    cssMode: true,
     navigation: {
       nextEl: '.js_trends-slider .js_btn-slide-next',
       prevEl: '.js_trends-slider .js_btn-slide-prev',
@@ -105,9 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
         swiperExamples = new Swiper('.examples__wrap.swiper', {
           slidesPerView: 1,
           spaceBetween: 32,
-          mousewheel: {
-            forceToAxis: true,
-          },
           pagination: {
             el: '.js_examples-pagination',
             clickable: true,
@@ -126,10 +128,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const businessSlider = new Swiper('.js_business-slider .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
-    autoHeight: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
+    mousewheel: true,
+    cssMode: false,
     navigation: {
       nextEl: '.js_business-slider .js_btn-slide-next',
       prevEl: '.js_business-slider .js_btn-slide-prev',
@@ -139,16 +139,25 @@ document.addEventListener('DOMContentLoaded', function () {
       type: 'bullets',
       clickable: true,
     },
+    breakpoints: {
+      320: {
+        autoHeight: true,
+        cssMode: false,
+      },
+      575: {
+        autoHeight: false,
+        cssMode: true,
+      },
+    },
   });
 
   // Myths Slider
   const mythsSlider = new Swiper('.js_myths-slider .swiper', {
     slidesPerView: 'auto',
     speed: 1000,
-    freeMode: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
+    mousewheel: true,
+    cssMode: false,
+    centeredSlides: true,
     navigation: {
       nextEl: '.js_myths-slider .js_btn-slide-next',
       prevEl: '.js_myths-slider .js_btn-slide-prev',
@@ -156,9 +165,11 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       320: {
         autoHeight: true,
+        cssMode: false,
       },
       575: {
         autoHeight: false,
+        cssMode: true,
       },
     },
   });
@@ -166,10 +177,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Animate
   const media = window.matchMedia('(max-width: calc(993px - 1px))');
+  let scroller;
   if (!media.matches) {
     const header = document.querySelector('header');
     window.onload = function () {
-      const scroller = new LocomotiveScroll({
+      scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         getDirection: true,
@@ -202,6 +214,52 @@ document.addEventListener('DOMContentLoaded', function () {
       );
     };
   }
+
+  // mob menu
+  const body = document.querySelector('body');
+  const header = document.querySelector('header');
+  const headerMenu = document.querySelector('.header__menu');
+  const headerBurger = document.querySelector('.header__burger');
+
+  headerBurger.addEventListener('click', () => {
+    body.classList.toggle('scroll-lock');
+    headerMenu.classList.toggle('active');
+    headerBurger.classList.toggle('active');
+  });
+
+  // scroll
+  const scrollLinks = document.querySelectorAll('[data-scroll-to]');
+  scrollLinks.forEach((el) => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (media.matches) {
+        if (headerMenu.classList.contains('active')) {
+          body.classList.remove('scroll-lock');
+          headerMenu.classList.remove('active');
+          headerBurger.classList.remove('active');
+        }
+
+        let href = this.getAttribute('href').substring(1);
+        const scrollTarget = document.getElementById(href);
+        if (!scrollTarget) {
+          return;
+        }
+        const topOffset = 30;
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
+
+        window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+
+      } else if (!media.matches && e.target.className === 'header__nav-link') {
+        let href = e.target.getAttribute('href');
+        scroller.scrollTo(href);
+      }
+    });
+  });
+
 
   document.querySelectorAll('.form__btn').forEach((item) => {
     item.addEventListener('click', (e) => {
