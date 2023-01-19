@@ -260,7 +260,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
   document.querySelectorAll('.form__btn').forEach((item) => {
     item.addEventListener('click', (e) => {
       e.preventDefault();

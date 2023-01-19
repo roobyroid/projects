@@ -129,7 +129,7 @@
     }
   }
 
-  &__title-line-svg {
+  &__title-line-img {
     width: 32rem;
     max-width: none;
     height: .8rem;
@@ -181,11 +181,11 @@
 
           @include md {
             margin-top: -105px;
-            margin-bottom: 20px;
+            margin-bottom: 35px;
           }
 
           @include xs {
-            margin-top: -101px;
+            margin-top: -50px;
           }
         }
       }
@@ -248,7 +248,8 @@
       margin: 0 auto;
 
       @include xs {
-        max-height: 320px;
+        max-height: 250px;
+        object-fit: contain;
       }
     }
   }

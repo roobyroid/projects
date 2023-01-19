@@ -134,14 +134,6 @@
         @include md {
           margin-left: 0;
         }
-
-        .marketing__item-icon img {
-          margin: 0 0 0 3rem;
-
-          @include md {
-            margin: 0;
-          }
-        }
       }
 
       &:last-of-type {
@@ -210,13 +202,22 @@
   }
 
   &__item-icon {
-    max-width: 45rem;
-    margin: -8rem auto 3rem;
+    margin: -8rem 0 3rem;
 
     @include md {
-      margin: -50px auto 20px;
+      margin: -50px 0 20px;
+
+
     }
 
+    img {
+      max-width: 45rem;
+      margin: 0 auto;
+
+      @include md {
+        max-width: 80%;
+      }
+    }
   }
 
   &__item-info-wrap {
