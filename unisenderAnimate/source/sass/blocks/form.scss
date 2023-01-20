@@ -109,6 +109,11 @@
       min-height: 8.1rem;
       font-size: 2.1rem;
 
+      @include md {
+        padding: 0 30px;
+        min-height: 71px;
+      }
+
       &:hover {
         background: $c-green;
       }

@@ -107,9 +107,11 @@
   }
 
   &__item-img {
+    display: block;
     max-width: 40rem;
     width: 100%;
     margin: -19rem auto 0;
+    cursor: pointer;
 
     @include xs {
       max-width: none;

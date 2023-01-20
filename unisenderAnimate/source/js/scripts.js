@@ -2,6 +2,7 @@
 import LocomotiveScroll from 'locomotive-scroll';
 import {ieFix} from './utils/ie-fix';
 import Swiper, {Pagination, Navigation} from 'swiper';
+import {Fancybox} from '@fancyapps/ui';
 import {initModals} from './modules/init-modals';
 
 Swiper.use([Pagination, Navigation]);
@@ -10,6 +11,19 @@ document.addEventListener('DOMContentLoaded', function () {
   ieFix();
   try {
     initModals();
+  } catch (e) { }
+
+  try {
+    Fancybox.bind('[data-fancybox]', {
+      Toolbar: {
+        display: [
+          {id: 'close', position: 'right'}
+        ],
+      },
+      Thumbs: {
+        autoStart: false,
+      },
+    });
   } catch (e) { }
   // Work Slider
   const workSlider = new Swiper('.js_work-slider .swiper', {
