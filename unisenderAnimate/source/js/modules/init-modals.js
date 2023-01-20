@@ -3,8 +3,6 @@ import {setupModal, openModal, closeModal} from '../utils/modal';
 const modals = document.querySelectorAll('.modal');
 const modalFeedback = document.querySelector('.modal--feedback');
 const modalFeedbackBtns = document.querySelectorAll('[data-modal="feedback"]');
-const modalThanks = document.querySelector('.modal--thanks');
-const modalThanksBtns = document.querySelectorAll('[data-modal="thanks"]');
 const modalScreenshot = document.querySelector('.modal--screenshot');
 const modalScreenshotBtns = document.querySelectorAll('[data-modal="screenshot"]');
 
@@ -25,9 +23,6 @@ const initModals = () => {
 
   if (modalFeedback && modalFeedbackBtns.length) {
     setupModal(modalFeedback, false, modalFeedbackBtns, false, false);
-  }
-  if (modalThanks && modalThanksBtns.length) {
-    setupModal(modalThanks, false, modalThanksBtns, false, true);
   }
   if (modalScreenshot && modalScreenshotBtns.length) {
     setupModal(modalScreenshot, false, modalScreenshotBtns, false, false);
