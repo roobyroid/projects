@@ -274,9 +274,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  document.querySelectorAll('.form__btn').forEach((item) => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-    });
+  // clear input
+  const formBtn = document.querySelector('.form__btn');
+  const formInput = document.querySelector('.form__input');
+  formBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    formInput.value = '';
   });
 });
