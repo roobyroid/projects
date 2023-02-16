@@ -1,4 +1,4 @@
-import {setupModal, openModal, closeModal} from '../utils/modal';
+import {setupModal, openModal, setModalListeners} from '../utils/modal';
 
 const modals = document.querySelectorAll('.modal');
 const modalFeedback = document.querySelector('.modal--feedback');
@@ -29,4 +29,4 @@ const initModals = () => {
   }
 };
 
-export {initModals, openModal, closeModal};
+export {initModals, openModal, setModalListeners};

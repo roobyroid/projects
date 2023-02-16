@@ -3,7 +3,8 @@ import LocomotiveScroll from 'locomotive-scroll';
 import {ieFix} from './utils/ie-fix';
 import Swiper, {Pagination, Navigation} from 'swiper';
 import {Fancybox} from '@fancyapps/ui';
-import {initModals} from './modules/init-modals';
+import {initModals, openModal, setModalListeners} from './modules/init-modals';
+import $ from 'jquery';
 
 Swiper.use([Pagination, Navigation]);
 
@@ -275,10 +276,28 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // clear input
-  const formBtn = document.querySelector('.form__btn');
-  const formInput = document.querySelector('.form__input');
-  formBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    formInput.value = '';
+  // const formBtn = document.querySelector('.form__btn');
+  // const formInput = document.querySelector('.form__input');
+  // formBtn.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   formInput.value = '';
+  // });
+
+
+  // Форма подписки
+  $('form.form__content').submit(function (event) {
+    event.preventDefault();
+    let $this = $(this);
+    let $email = $this.find('input[type=email]').val();
+    let body = 'action=subscribeGrishaMary&email=' + $email;
+    if ($email) {
+      $.post('https://' + window.location.host + '/wp-admin/admin-ajax.php', body)
+          .done(function () {
+            let modal = document.querySelector('.modal--feedback');
+            openModal(modal);
+            setModalListeners(modal);
+            $this.trigger('reset');
+          });
+    }
   });
 });

@@ -1,4 +1,4 @@
-import { disableScrolling, enableScrolling } from './scroll-lock';
+import {disableScrolling, enableScrolling} from './scroll-lock';
 
 const openModal = (modal, callback) => {
   modal.classList.add('modal--active');
@@ -63,4 +63,4 @@ const setupModal = (modal, closeCallback, modalBtns, openCallback, noPrevDefault
   setModalListeners(modal, closeCallback);
 };
 
-export { setupModal, openModal, closeModal };
+export {setupModal, openModal, setModalListeners};
