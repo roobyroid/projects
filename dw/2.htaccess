@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Area"
+AuthUserFile /home/v/vitalyeo/donbasswomen.ru/public_html/.htpasswd
+Require valid-user
