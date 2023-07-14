@@ -1,0 +1,225 @@
+.payments {
+  position: relative;
+  z-index: 1;
+  padding: 0 0 12rem;
+
+  @include md {
+    padding: 0 0 80px;
+  }
+
+  @include xs {
+    padding: 0 0 40px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: calc(100% + 10rem);
+    background: url('../img/page/payments-bg.svg') no-repeat center/cover;
+
+    @include md {
+      content: none;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 139rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__screens {
+    max-width: 46rem;
+    width: 100%;
+    flex-shrink: 0;
+    margin: 3rem 10rem 0 0;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__screens-item {
+    display: none;
+
+    &.active {
+      display: block;
+      animation: faded 1.5s;
+    }
+  }
+
+  &__content {
+    max-width: 83.2rem;
+    width: 100%;
+
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__title {
+    color: $colorGold;
+    margin: 0 0 4rem;
+
+    @include md {
+      margin: 0 0 30px;
+    }
+
+    @include xs {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__slider {
+    @media (min-width: 992px) {
+      .slider-pagination {
+        display: none;
+      }
+
+      .swiper {
+        margin: 0;
+        overflow: inherit;
+      }
+
+      .swiper-wrapper {
+        flex-direction: column;
+
+        .swiper-slide {
+          width: 100%;
+
+          &:not(:last-child) {
+            margin: 0 0 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__slide {
+
+    .payments__screens-item {
+      display: none;
+
+      @include md {
+        max-width: 250px;
+        height: 350px;
+        display: block;
+        margin: 0 auto 30px;
+        overflow: hidden;
+      }
+
+      @include xs {
+        max-width: 177px;
+        height: 250px;
+      }
+    }
+  }
+
+  &__slide-info {
+    border-radius: 4rem;
+    border: 1px solid #707070;
+    background-color: $colorBlack;
+    padding: 4rem;
+    max-width: 80rem;
+    cursor: pointer;
+    transition: color .3s, border .3s, background .3;
+
+    @media (min-width: 992px) {
+
+      &.active,
+      &:hover {
+        background: $colorWhite;
+        color: $colorBlack;
+        border-color: transparent;
+      }
+    }
+
+    @include md {
+      background: $colorWhite;
+      color: $colorBlack;
+      border-color: transparent;
+      max-width: none;
+      pointer-events: all;
+      font-size: 18px;
+      padding: 30px;
+      border-radius: 30px;
+    }
+
+    @include sm {
+      font-size: 14px;
+      border-radius: 20px;
+    }
+
+    @include xs {
+      border-radius: 10px;
+      font-size: 12px;
+      line-height: 1.1;
+      padding: 20px;
+    }
+
+
+    h3 {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      font-family: $font-family-belgro;
+      border-bottom: 1px solid #707070;
+      padding: 0 0 2.6rem;
+      margin: 0 0 2.6rem;
+
+      @include md {
+        font-size: 20px;
+        padding: 0 0 20px;
+        margin: 0 0 20px;
+      }
+
+      @include xs {
+        padding: 0 0 10px;
+        margin: 0 0 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__slider-pagination {
+    display: none;
+    justify-content: center;
+    margin: 35px 0 0;
+
+    @include md {
+      display: flex;
+    }
+
+    @include xs {
+      margin: 20px 0 0;
+    }
+
+    .swiper-pagination-bullet {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border: 1px solid $colorGold;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background .3s;
+
+      &:hover {
+        background: $colorGold;
+      }
+
+      &:not(:last-of-type) {
+        margin: 0 40px 0 0;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $colorGold;
+    }
+  }
+}
