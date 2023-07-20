@@ -6336,14 +6336,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: faded 2s;
-  animation: faded 2s;
 }
 
 .header__soc.open .header__soc-close {
   display: block;
-  -webkit-animation: faded 1.5s;
-  animation: faded 1.5s;
 }
 
 .header__soc-inner {
@@ -6699,7 +6695,7 @@ button,
   justify-content: center;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  border: 0.1rem solid #707070;
+  border: 0.1rem solid #fff;
   border-radius: 50%;
   -webkit-transition: background .3s, border .3s;
   transition: background .3s, border .3s;
@@ -6735,7 +6731,7 @@ button,
 }
 
 .soc-sm__item svg {
-  fill: #707070;
+  fill: #fff;
   -webkit-transition: fill .3s;
   transition: fill .3s;
 }

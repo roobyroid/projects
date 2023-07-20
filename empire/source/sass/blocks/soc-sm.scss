@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    border: 0.1rem solid #707070;
+    border: 0.1rem solid #fff;
     border-radius: 50%;
     transition: background .3s, border .3s;
 
@@ -63,7 +63,7 @@
     }
 
     svg {
-      fill: #707070;
+      fill: #fff;
       transition: fill .3s;
     }
   }
