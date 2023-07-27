@@ -36,6 +36,7 @@
   }
 
   &__screens {
+    position: relative;
     max-width: 46rem;
     width: 100%;
     flex-shrink: 0;
@@ -48,10 +49,20 @@
 
   &__screens-item {
     display: none;
+    transform: translateX(0);
+    transition: transform 1s;
+
+    &.animate {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: block;
+      animation: moveLeft 1s ease;
+    }
 
     &.active {
       display: block;
-      animation: faded 1.5s;
     }
   }
 
@@ -103,6 +114,9 @@
   }
 
   &__slide {
+    @include md {
+      padding: 0 20px;
+    }
 
     .payments__screens-item {
       display: none;
@@ -142,26 +156,17 @@
     }
 
     @include md {
-      background: $colorWhite;
-      color: $colorBlack;
-      border-color: transparent;
+      background: transparent;
+      color: $colorWhite;
       max-width: none;
       pointer-events: all;
-      font-size: 18px;
-      padding: 30px;
-      border-radius: 30px;
-    }
-
-    @include sm {
-      font-size: 14px;
-      border-radius: 20px;
-    }
-
-    @include xs {
-      border-radius: 10px;
-      font-size: 12px;
-      line-height: 1.1;
-      padding: 20px;
+      max-width: 350px;
+      margin: 0 auto;
+      text-align: right;
+      padding: 8px 36px 0;
+      border-radius: 0;
+      border: none;
+      border-top: 1px solid #707070;
     }
 
 
@@ -169,20 +174,9 @@
       font-size: 3.6rem;
       text-transform: uppercase;
       font-family: $font-family-belgro;
-      border-bottom: 1px solid #707070;
-      padding: 0 0 2.6rem;
-      margin: 0 0 2.6rem;
 
       @include md {
-        font-size: 20px;
-        padding: 0 0 20px;
-        margin: 0 0 20px;
-      }
-
-      @include xs {
-        padding: 0 0 10px;
-        margin: 0 0 10px;
-        font-size: 16px;
+        font-size: 23px;
       }
     }
   }
@@ -190,7 +184,7 @@
   &__slider-pagination {
     display: none;
     justify-content: center;
-    margin: 35px 0 0;
+    margin: 30px 0 0;
 
     @include md {
       display: flex;
@@ -221,5 +215,16 @@
     .swiper-pagination-bullet-active {
       background: $colorGold;
     }
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    // transform: translateX(calc((-100vw - 163.8rem) / 2));
+    transform: translateX(-50vw);
   }
 }

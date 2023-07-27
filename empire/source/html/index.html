@@ -23,7 +23,7 @@
         <div class="container">
           <div class="hero__wrap">
             <div class="hero__title">
-              <h1 class="title">Convert your traffic with</h1>
+              <h1 class="title" data-lang="overheadHeroTitle">Convert your traffic with</h1>
               <picture>
                 <source srcset="img/page/title.png" type="image/png" media="(min-width: 768px)">
                 <source srcset="img/page/title-mob.png" type="image/png" media="(max-width: 767.98px)">
@@ -31,12 +31,12 @@
               </picture>
             </div>
             <div class="hero__text">
-              <span>Betting and Gamblig offers</span>
-              <span>Direct Advertiser</span>
-              <span>Inhouse offers</span>
-              <p> IN / BD / PK / TR / CA </p>
+              <span data-lang="itemHero1">Betting and Gamblig offers</span>
+              <span data-lang="itemHero2">Direct Advertiser</span>
+              <span data-lang="itemHero3">Inhouse offers</span>
+              <p data-lang="countryHero"> IN / BD / PK / TR / CA </p>
             </div>
-            <a class="hero__btn btn" href="#">REGISTRATION</a>
+            <a class="hero__btn btn" data-lang="btnHero" href="#">REGISTRATION</a>
           </div>
         </div>
 
@@ -81,7 +81,7 @@
                     <svg>
                       <use xlink:href="img/sprite_auto.svg#card-4"></use>
                     </svg>
-                    From 25$ to 300$
+                    <span data-lang="cardCost"> From 25$ to 300$</span>
                   </li>
                 </ul>
                 <p class="cards__item-text">CPA/Revenue Share/Hybrid</p>
@@ -114,7 +114,7 @@
                     <svg>
                       <use xlink:href="img/sprite_auto.svg#card-4"></use>
                     </svg>
-                    From 25$ to 300$
+                    <span data-lang="cardCost"> From 25$ to 300$</span>
                   </li>
                 </ul>
                 <p class="cards__item-text">CPA/Revenue Share/Hybrid</p>
@@ -127,7 +127,7 @@
       <section class="benefits" id="benefits">
         <div class="container">
           <div class="benefits__head">
-            <h2 class="title">What are the&nbsp;benefits of&nbsp;Empire Partners?</h2>
+            <h2 class="title" data-lang="benefitsTitle">What are the&nbsp;benefits of&nbsp;Empire Partners?</h2>
             <div class="benefits__nav">
               <button class="benefits__nav-btn benefits__nav-btn--prev js_btn-benefits-prev" type="button"
                 aria-label="Предыдущий">
@@ -155,13 +155,13 @@
                         <use xlink:href="img/sprite_auto.svg#benefits-bg-1"></use>
                       </svg>
                       <div class="benefits__item-icon">
-                        <svg width="20" height="27">
+                        <svg width="29" height="32">
                           <use xlink:href="img/sprite_auto.svg#benefits-1"></use>
                         </svg>
                       </div>
                       <div class="benefits__item-content">
                         <span class="benefits__item-num">01.</span>
-                        <p class="benefits__item-name">High rates</p>
+                        <p class="benefits__item-name" data-lang="benefitsCard1">High rates</p>
                       </div>
                     </div>
                   </div>
@@ -174,13 +174,14 @@
                         <use xlink:href="img/sprite_auto.svg#benefits-bg-2"></use>
                       </svg>
                       <div class="benefits__item-icon">
-                        <svg width="32" height="25">
+                        <svg width="32" height="28">
                           <use xlink:href="img/sprite_auto.svg#benefits-2"></use>
                         </svg>
                       </div>
                       <div class="benefits__item-content">
                         <span class="benefits__item-num">02.</span>
-                        <p class="benefits__item-name">Payouts every 2&nbsp;weeks or upon request</p>
+                        <p class="benefits__item-name" data-lang="benefitsCard2">Payouts every 2&nbsp;weeks or upon
+                          request</p>
                       </div>
                     </div>
                   </div>
@@ -193,13 +194,13 @@
                         <use xlink:href="img/sprite_auto.svg#benefits-bg-3"></use>
                       </svg>
                       <div class="benefits__item-icon">
-                        <svg width="18" height="25">
+                        <svg width="32" height="30">
                           <use xlink:href="img/sprite_auto.svg#benefits-3"></use>
                         </svg>
                       </div>
                       <div class="benefits__item-content">
                         <span class="benefits__item-num">03.</span>
-                        <p class="benefits__item-name">Unique promo materials</p>
+                        <p class="benefits__item-name" data-lang="benefitsCard3">Unique promo materials</p>
                       </div>
                     </div>
                   </div>
@@ -218,11 +219,31 @@
                       </div>
                       <div class="benefits__item-content">
                         <span class="benefits__item-num">04.</span>
-                        <p class="benefits__item-name">Easy-to-use affiliate account</p>
+                        <p class="benefits__item-name" data-lang="benefitsCard4">Easy-to-use affiliate account</p>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="swiper-slide">
+                  <div class="benefits__item">
+                    <div class="benefits__item-inner">
+                      <svg class="benefits__item-bg">
+                        <use xlink:href="img/sprite_auto.svg#benefits-bg-4"></use>
+                      </svg>
+                      <div class="benefits__item-icon">
+                        <svg width="32" height="30">
+                          <use xlink:href="img/sprite_auto.svg#benefits-5"></use>
+                        </svg>
+                      </div>
+                      <div class="benefits__item-content">
+                        <span class="benefits__item-num">05.</span>
+                        <p class="benefits__item-name" data-lang="benefitsCard5">Individual Terms</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="swiper-slide">
                   <div class="benefits__item">
                     <div class="benefits__item-inner">
@@ -231,12 +252,51 @@
                       </svg>
                       <div class="benefits__item-icon">
                         <svg width="32" height="32">
-                          <use xlink:href="img/sprite_auto.svg#benefits-4"></use>
+                          <use xlink:href="img/sprite_auto.svg#benefits-6"></use>
                         </svg>
                       </div>
                       <div class="benefits__item-content">
-                        <span class="benefits__item-num">05.</span>
-                        <p class="benefits__item-name">Easy-to-use affiliate account</p>
+                        <span class="benefits__item-num">06.</span>
+                        <p class="benefits__item-name" data-lang="benefitsCard6">Personal Manager 24/7</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="benefits__item">
+                    <div class="benefits__item-inner">
+                      <svg class="benefits__item-bg">
+                        <use xlink:href="img/sprite_auto.svg#benefits-bg-4"></use>
+                      </svg>
+                      <div class="benefits__item-icon">
+                        <svg width="32" height="32">
+                          <use xlink:href="img/sprite_auto.svg#benefits-7"></use>
+                        </svg>
+                      </div>
+                      <div class="benefits__item-content">
+                        <span class="benefits__item-num">07.</span>
+                        <p class="benefits__item-name" data-lang="benefitsCard7">Detailed statistics for
+                          every&nbsp;partner</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="benefits__item">
+                    <div class="benefits__item-inner">
+                      <svg class="benefits__item-bg">
+                        <use xlink:href="img/sprite_auto.svg#benefits-bg-4"></use>
+                      </svg>
+                      <div class="benefits__item-icon">
+                        <svg width="32" height="32">
+                          <use xlink:href="img/sprite_auto.svg#benefits-8"></use>
+                        </svg>
+                      </div>
+                      <div class="benefits__item-content">
+                        <span class="benefits__item-num">08.</span>
+                        <p class="benefits__item-name" data-lang="benefitsCard8">25% to&nbsp;your first<br> payment</p>
                       </div>
                     </div>
                   </div>
@@ -246,7 +306,7 @@
           </div>
 
           <div class="benefits__footer">
-            <a class="btn" href="#">JOIN NOW</a>
+            <a class="btn" data-lang="benefitsBtn" href="#">JOIN NOW</a>
           </div>
         </div>
       </section>
@@ -266,7 +326,7 @@
               </div>
             </div>
             <div class="payments__content">
-              <h2 class="payments__title title">Quick payments to webmasters</h2>
+              <h2 class="payments__title title" data-lang="paymentsTitle">Quick payments to webmasters</h2>
               <div class="payments__slider js_payment-slider js_payments-tabs">
                 <div class="swiper">
                   <div class="swiper-wrapper">
@@ -276,11 +336,7 @@
                           <img src="img/page/phone.png" alt="">
                         </div>
                         <div class="payments__slide-info active js_payments-tabs-item">
-                          <h3>Bank Cards</h3>
-                          <p>Ideological requirements of&nbsp;a&nbsp;high order, as&nbsp;well as&nbsp;constant
-                            information
-                            and propaganda support, require the definition and definition of&nbsp;development
-                            requirements.</p>
+                          <h3 data-lang="paymentsItem1">Bank Cards</h3>
                         </div>
                       </div>
                     </div>
@@ -290,11 +346,7 @@
                           <img src="img/page/phone2.png" alt="">
                         </div>
                         <div class="payments__slide-info js_payments-tabs-item">
-                          <h3>Crypto</h3>
-                          <p>Ideological requirements of&nbsp;a&nbsp;high order, as&nbsp;well as&nbsp;constant
-                            information
-                            and propaganda support, require the definition and definition of&nbsp;development
-                            requirements.</p>
+                          <h3 data-lang="paymentsItem2">Crypto</h3>
                         </div>
                       </div>
                     </div>
@@ -304,11 +356,7 @@
                           <img src="img/page/phone3.png" alt="">
                         </div>
                         <div class="payments__slide-info js_payments-tabs-item">
-                          <h3>E-Wallet</h3>
-                          <p>Ideological requirements of&nbsp;a&nbsp;high order, as&nbsp;well as&nbsp;constant
-                            information
-                            and propaganda support, require the definition and definition of&nbsp;development
-                            requirements.</p>
+                          <h3 data-lang="paymentsItem3">E-Wallet</h3>
                         </div>
                       </div>
                     </div>
@@ -330,7 +378,7 @@
 
       <section class="soc" id="communication">
         <div class="container">
-          <h2 class="soc__title title">Communication<br> with the manager</h2>
+          <h2 class="soc__title title" data-lang="socTitle">Communication<br> with the manager</h2>
         </div>
         <div class="soc__inner">
           <div class="container">
@@ -361,7 +409,7 @@
           <div class="faq__wrap">
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                What does your affiliate programm offer?
+                <span data-lang="question1">What does your affiliate programm offer?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">
@@ -372,7 +420,7 @@
             </div>
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                Traffic from which countries do&nbsp;you accept?
+                <span data-lang="question2">Traffic from which countries do&nbsp;you accept?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">
@@ -383,7 +431,7 @@
             </div>
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                How much do&nbsp;you pay for engaged user?
+                <span data-lang="question3">How much do&nbsp;you pay for engaged user?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">
@@ -394,7 +442,7 @@
             </div>
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                What are the restrictions on&nbsp;the sources of&nbsp;traffic?
+                <span data-lang="question4">What are the restrictions on&nbsp;the sources of&nbsp;traffic?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">
@@ -405,7 +453,7 @@
             </div>
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                What payment methods do&nbsp;you support?
+                <span data-lang="question5">What payment methods do&nbsp;you support?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">
@@ -416,7 +464,7 @@
             </div>
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                What is&nbsp;the minimum payment?
+                <span data-lang="question6">What is&nbsp;the minimum payment?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">
@@ -427,7 +475,7 @@
             </div>
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                Does your affiliate programe offer creatives?
+                <span data-lang="question7">Does your affiliate programe offer creatives?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">
@@ -438,7 +486,7 @@
             </div>
             <div class="faq__item">
               <button class="faq__question accordion__control" type="button" aria-expanded="false">
-                Where can&nbsp;I get promo materials?
+                <span data-lang="question8">Where can&nbsp;I get promo materials?</span>
                 <span class="faq__question-el"></span>
               </button>
               <div class="faq__answer accordion__content" aria-hidden="true">

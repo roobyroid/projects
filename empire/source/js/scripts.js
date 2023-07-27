@@ -6,6 +6,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import mobMenuScroll from './modules/mobmenu-scroll';
 import accordion from './modules/accordion';
 import tabs from './modules/tabs';
+import lang from './modules/lang';
 
 Swiper.use([Navigation, Pagination]);
 gsap.registerPlugin(ScrollTrigger);
@@ -13,6 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 document.addEventListener('DOMContentLoaded', function () {
   ieFix();
   mobMenuScroll();
+  lang();
   tabs(
       '.js_payments-tabs',
       '.js_payments-tabs-item',
@@ -30,26 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     socClose.addEventListener('click', () => {
       socParent.classList.remove('open');
-    });
-  } catch (e) {}
-  // lang
-  try {
-    const langParent = document.querySelector('.js_lang');
-    const langHead = langParent.querySelector('.js_lang-head');
-    const langHeadVal = langHead.querySelector('.js_lang-val');
-    const langItems = langParent.querySelectorAll('li');
-
-    langHead.addEventListener('click', () => {
-      langParent.classList.toggle('open');
-    });
-
-    langItems.forEach((langItem) => {
-      langItem.addEventListener('click', (event) => {
-        let langText = event.target.textContent;
-        event.target.textContent = langHeadVal.textContent;
-        langHeadVal.textContent = langText;
-        langParent.classList.remove('open');
-      });
     });
   } catch (e) {}
 
