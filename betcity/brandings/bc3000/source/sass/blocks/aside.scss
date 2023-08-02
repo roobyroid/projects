@@ -1,0 +1,58 @@
+.aside {
+  padding: 86px 0 0;
+
+  @media (max-width: 1582px) {
+    padding: 65px 0 0;
+  }
+
+  @media (max-width: 1262px) {}
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 133px;
+
+    @media (max-width: 1582px) {
+      width: 107px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 86px;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto 40px;
+    width: 102px;
+
+    @media (max-width: 1582px) {
+      width: 88px;
+      margin: 0 auto 33px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 70px;
+      margin: 0 auto 29px;
+    }
+  }
+
+  &__an-btn {
+    width: 100px;
+    margin: 22px auto 0;
+
+    @media (max-width: 1582px) {
+      width: 85px;
+      margin: 21px auto 0;
+    }
+
+    @media (max-width: 1262px) {
+      width: 71px;
+      padding: 3px;
+      margin: 17px auto 0;
+    }
+  }
+
+}
