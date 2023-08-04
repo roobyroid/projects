@@ -1,0 +1,136 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #fff;
+  font-family: 'StyreneALC';
+}
+
+.body-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  min-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.fluid-center-block {
+  width: 1274px;
+  min-width: 1274px;
+  display: block;
+}
+
+.body-wrap__bg {
+  top: 0;
+  right: 0;
+  width: 100%
+}
+
+.banner-text {
+  color: #06DCFF;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+  &__bottom {
+    position: relative;
+
+    span {
+      color: #fff;
+      font-size: 38px;
+      margin: 0 0 0 2px;
+
+      &::after {
+        content: '*';
+        display: inline-block;
+        margin: 5px 0 0 4px;
+        font-size: 14px;
+        vertical-align: top;
+      }
+    }
+  }
+
+  &--aside {
+    font-size: 11px;
+
+    .banner-text__top {
+      margin: 0 0 3px;
+    }
+
+    .banner-text__bottom {
+      span {
+        font-size: 24px;
+        margin: 0 0 0 1px;
+
+        @media (max-width: 1582px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 1262px) {
+          font-size: 16px;
+        }
+
+        &::after {
+          margin: 3px 0 0 2px;
+          font-size: 6px;
+        }
+      }
+    }
+  }
+}
+
+.text-anim {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity .3s, transform .3s;
+
+  &.animate {
+    animation: move-text .8s ease-in-out forwards;
+  }
+
+  &--2 {
+
+    &.animate {
+      animation: move-text .8s ease-in-out .3s forwards;
+    }
+  }
+
+  &--3 {
+
+    &.animate {
+      animation: move-text .8s ease-in-out .5s forwards;
+    }
+  }
+
+}
+
+
+@keyframes move-text {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

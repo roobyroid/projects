@@ -1,0 +1,31 @@
+.aside {
+  padding: 99px 0 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 133px;
+
+    @media (max-width: 1582px) {
+      width: 107px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 86px;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto 40px;
+    width: 102px;
+  }
+
+  &__an-btn {
+    width: 100px;
+    margin: 22px auto 0;
+  }
+
+}
