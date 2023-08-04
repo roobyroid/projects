@@ -8,6 +8,16 @@
     url("../fonts/Belgro/Belgro.woff2") format("woff2"),
     url("../fonts/Belgro/Belgro.woff") format("woff");
 }
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Druk";
+
+  font-display: swap;
+  src:
+    url("../fonts/Druk/DrukTextWide-Medium-Desktop.woff2") format("woff2"),
+    url("../fonts/Druk/DrukTextWide-Medium-Desktop.woff") format("woff");
+}
 
 @font-face {
   font-style: normal;

@@ -1,3 +1,21 @@
+body {
+
+  &.lang-ru {
+
+    .title,
+    .faq__question {
+      font-weight: 500;
+      font-family: $font-family-druk;
+    }
+
+    @media (min-width: 992px) {
+      .hero__title .title {
+        font-size: 5.4rem;
+      }
+    }
+  }
+}
+
 .wrapper {
   position: relative;
 }

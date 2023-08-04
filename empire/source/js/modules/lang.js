@@ -207,6 +207,14 @@ const lang = () => {
         }
       });
     }
+
+    // change fonts title
+    const body = document.querySelector('body');
+    if (currentLang === 'ru') {
+      body.classList.add('lang-ru');
+    } else {
+      body.classList.remove('lang-ru');
+    }
   }
 
   langBtns.forEach((langBtn) => {

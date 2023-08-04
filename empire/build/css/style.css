@@ -5887,6 +5887,14 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 @font-face {
   font-style: normal;
+  font-weight: 500;
+  font-family: "Druk";
+  font-display: swap;
+  src: url("../fonts/Druk/DrukTextWide-Medium-Desktop.woff2") format("woff2"), url("../fonts/Druk/DrukTextWide-Medium-Desktop.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: "Montserrat";
   font-display: swap;
@@ -6109,6 +6117,12 @@ button,
   max-width: 163.8rem;
   margin: 0 auto;
   padding: 0 3rem;
+}
+
+body.lang-ru .title,
+body.lang-ru .faq__question {
+  font-weight: 500;
+  font-family: "Druk", sans-serif;
 }
 
 .wrapper {
@@ -7489,6 +7503,10 @@ button,
 }
 
 @media (min-width: 992px) {
+  body.lang-ru .hero__title .title {
+    font-size: 5.4rem;
+  }
+
   .payments__slider .slider-pagination {
     display: none;
   }
