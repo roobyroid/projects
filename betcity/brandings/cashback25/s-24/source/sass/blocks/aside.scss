@@ -1,0 +1,91 @@
+.aside {
+  padding: 86px 0 0;
+
+  @media (max-width: 1582px) {
+    padding: 65px 0 0;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 120px;
+
+    @media (max-width: 1582px) {
+      width: 107px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 86px;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto 36px;
+    width: 102px;
+
+    @media (max-width: 1582px) {
+      width: 88px;
+      margin: 0 auto 33px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 70px;
+      margin: 0 auto 29px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 5px;
+  }
+
+  &__phone {
+    width: 105px;
+
+    @media (max-width: 1582px) {
+      width: 91px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 70px;
+    }
+
+    .phone__cup {
+      left: -10px;
+      width: 115px;
+      max-width: none;
+
+      @media (max-width: 1582px) {
+        width: 101px;
+        bottom: 10px;
+      }
+
+      @media (max-width: 1262px) {
+        width: 83px;
+        bottom: 8px;
+      }
+    }
+  }
+
+  &__an-btn {
+    width: 116px;
+    height: 25px;
+    margin: 9px auto 0;
+
+    @media (max-width: 1582px) {
+      width: 100%;
+      height: 21px;
+      margin: 8px auto 0;
+    }
+
+    @media (max-width: 1262px) {
+      width: 86px;
+      padding: 3px;
+      height: 18px;
+      margin: 3px auto 0;
+    }
+  }
+
+}
