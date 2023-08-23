@@ -1,0 +1,102 @@
+.header {
+  position: relative;
+  height: 100px;
+  width: 1253px;
+  min-width: 1253px;
+  margin: 0 auto;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 244px;
+    margin-top: 22px;
+  }
+
+  &__phone {
+    width: 102px;
+    position: absolute;
+    top: 4px;
+    transform: translateX(-60%);
+    left: 34%;
+
+    .phone__cup {
+      max-width: none;
+      width: 110px;
+      left: -16px;
+      bottom: 13px;
+    }
+  }
+
+  &__right {
+    width: 581px;
+    position: relative;
+    margin: 7px -13px 0 0;
+  }
+
+  &__right-text {
+    margin: 0 42px 0 0;
+  }
+
+  &__an-btn.an-btn {
+    position: absolute;
+    top: 14px;
+    right: -14px;
+    width: 274px;
+    height: 39px;
+    border-radius: 8px;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  &__reklama {
+    display: flex;
+    position: absolute;
+    bottom: 22px;
+  }
+
+  &__reklama-18 {
+    width: 28px;
+    margin: 0 5px 0 0;
+  }
+
+  &__reklama-text {
+    width: 174px;
+    height: auto;
+    margin: 1px 0 0;
+  }
+
+  &__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+    overflow: hidden;
+  }
+
+  &__textline {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    will-change: transform;
+    backface-visibility: hidden;
+    font-weight: 100;
+    font-family: sans-serif;
+    transform: translateZ(1px) translateX(0);
+    white-space: nowrap;
+    z-index: 3;
+    animation: moveTextRow 30s linear infinite;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}

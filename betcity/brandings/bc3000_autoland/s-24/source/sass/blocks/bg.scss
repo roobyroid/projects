@@ -1,0 +1,187 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, #051854 0%, #0092F3 100%);
+
+
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2362px;
+    height: 1150px;
+
+    @media (min-width: 2360px) {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 1902px) {
+      width: 1920px;
+    }
+
+    @media (max-width: 1582px) {
+      width: 1582px;
+      height: 1120px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 1262px;
+    }
+  }
+
+  &__layer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__balls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__ball {
+    transform: translateY(calc(-100% - 200px));
+    position: absolute;
+    transition: transform .3s;
+
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__tball {
+    width: 96px;
+    height: 96px;
+    top: 20px;
+    left: 104px;
+
+    &.animate {
+      animation: moveDown 1s ease-out forwards, gravity 2s ease-in-out 1s alternate infinite;
+    }
+
+    @media (max-width: 1902px) {
+      top: 29px;
+      left: 50px;
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (max-width: 1582px) {
+      top: 35px;
+      left: 27px;
+      width: 67px;
+      height: 67px;
+    }
+
+    @media (max-width: 1262px) {
+      top: 14px;
+      left: 16px;
+    }
+  }
+
+  &__bball {
+    width: 190px;
+    height: 190px;
+    top: 45px;
+    left: 234px;
+
+    &.animate {
+      animation: moveDown 1s ease-out .2s forwards, gravityReverse 2s ease-in-out 1.2s alternate infinite;
+    }
+
+    @media (max-width: 1902px) {
+      width: 160px;
+      height: 160px;
+      top: 50px;
+      left: 147px;
+    }
+
+    @media (max-width: 1582px) {
+      top: 53px;
+      left: 113px;
+      width: 132px;
+      height: 132px;
+    }
+
+    @media (max-width: 1262px) {
+      top: 84px;
+      left: 56px;
+    }
+  }
+
+  &__fball {
+    width: 277px;
+    height: 274px;
+    top: 15px;
+    right: 115px;
+
+    &.animate {
+      animation: moveDown 1s ease-out .4s forwards, gravity 2s ease-in-out 1.4s alternate infinite;
+    }
+
+    @media (max-width: 1902px) {
+      width: 233px;
+      height: 231px;
+      top: 13px;
+      right: 87px;
+    }
+
+    @media (max-width: 1582px) {
+      top: 20px;
+      right: 55px;
+      width: 192px;
+      height: 190px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 164px;
+      height: 162px;
+      top: 25px;
+      right: 20px;
+    }
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(calc(-100% - 50px));
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(.5em);
+  }
+}
+
+@keyframes gravityReverse {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-.5em);
+  }
+}
