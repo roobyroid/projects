@@ -674,6 +674,7 @@ body {
 
 .aside__item {
   width: 133px;
+  margin: 0 20px;
 }
 
 .aside__logo {
@@ -682,7 +683,8 @@ body {
 }
 
 .aside__an-btn {
-  width: 100px;
+  width: 115px;
+  padding: 5px 6px;
   margin: 22px auto 0;
 }
 
@@ -845,7 +847,7 @@ body {
   }
 
   .aside__an-btn {
-    width: 85px;
+    width: 98px;
     margin: 21px auto 0;
   }
 }
@@ -933,7 +935,7 @@ body {
   }
 
   .aside__an-btn {
-    width: 71px;
+    width: 85px;
     padding: 3px;
     margin: 17px auto 0;
   }

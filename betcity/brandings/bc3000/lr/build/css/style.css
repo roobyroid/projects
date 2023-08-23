@@ -136,8 +136,8 @@ body {
 }
 
 .fluid-center-block {
-  width: 1274px;
-  min-width: 1274px;
+  width: 1300px;
+  min-width: 1300px;
   display: block;
 }
 
@@ -681,6 +681,7 @@ body {
 
 .aside__item {
   width: 133px;
+  margin: 0 20px;
 }
 
 .aside__logo {
@@ -689,7 +690,7 @@ body {
 }
 
 .aside__an-btn {
-  width: 100px;
+  width: 115px;
   margin: 22px auto 0;
 }
 

@@ -12,6 +12,7 @@
 
   &__item {
     width: 133px;
+    margin: 0 20px;
 
     @media (max-width: 1582px) {
       width: 107px;
@@ -38,16 +39,17 @@
   }
 
   &__an-btn {
-    width: 100px;
+    width: 115px;
+    padding: 5px 6px;
     margin: 22px auto 0;
 
     @media (max-width: 1582px) {
-      width: 85px;
+      width: 98px;
       margin: 21px auto 0;
     }
 
     @media (max-width: 1262px) {
-      width: 71px;
+      width: 85px;
       padding: 3px;
       margin: 17px auto 0;
     }
