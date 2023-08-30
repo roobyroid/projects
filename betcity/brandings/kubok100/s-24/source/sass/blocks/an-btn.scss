@@ -1,0 +1,68 @@
+.an-btn {
+  background: #da5035;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 5px;
+  box-sizing: border-box;
+  opacity: 0;
+
+  &.animate {
+    opacity: 1;
+    animation: scaleBtn 1s forwards;
+  }
+
+  @media (max-width: 1582px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 1262px) {
+    font-size: 10px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg, hsla(9, 73%, 74%, 0), #ed998a 50%, hsla(9, 73%, 74%, 0));
+    z-index: -1;
+    transform: skewX(-15deg) translateX(-300%);
+    animation: flickerBtn 3s linear infinite
+  }
+}
+
+@keyframes scaleBtn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes flickerBtn {
+  0% {
+    transform: skewX(-15deg) translateX(-300%)
+  }
+
+  30% {
+    transform: skewX(-15deg) translateX(300%)
+  }
+
+  to {
+    transform: skewX(-15deg) translateX(300%)
+  }
+}

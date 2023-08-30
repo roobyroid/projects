@@ -1,0 +1,155 @@
+.header {
+  position: relative;
+  height: 192px;
+  width: 1448px;
+  min-width: 1448px;
+  margin: 0 auto;
+
+  @media (max-width: 1902px) {
+    width: 1253px;
+    min-width: 1253px;
+  }
+
+  @media (max-width: 1582px) {
+    width: 1058px;
+    min-width: 1058px;
+  }
+
+  @media (max-width: 1262px) {
+    width: 870px;
+    min-width: 870px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 138px;
+    margin: 13px 0 0 30px;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1902px) {
+      width: 130px;
+      margin-left: 67px;
+    }
+  }
+
+  &__bonus {
+    width: 400px;
+    position: absolute;
+    top: 26px;
+    transform: translateX(-83%);
+    left: 50%;
+
+    @media (max-width: 1902px) {
+      width: 360px;
+      top: 34px;
+    }
+
+
+    @media (max-width: 1582px) {
+      transform: translateX(-61%);
+    }
+
+    @media (max-width: 1262px) {
+      width: 285px;
+      top: 36px;
+      transform: translateX(-59%);
+    }
+  }
+
+  &__right {
+    width: 392px;
+    margin: 64px 64px 0 0;
+
+    @media (max-width: 1902px) {
+      width: 347px;
+      margin-right: 98px;
+    }
+
+    @media (max-width: 1582px) {
+      width: 306px;
+      margin-right: 0;
+      margin-top: 70px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 250px;
+      margin-top: 66px;
+    }
+  }
+
+  &__an-btn.an-btn {
+    height: 57px;
+    font-size: 28px;
+
+    @media (max-width: 1902px) {
+      height: 51px;
+      font-size: 24px;
+    }
+
+    @media (max-width: 1582px) {
+      height: 45px;
+      font-size: 22px;
+    }
+
+    @media (max-width: 1262px) {
+      height: 37px;
+      font-size: 18px;
+    }
+  }
+
+  &__reklama {
+    display: flex;
+    position: absolute;
+    bottom: 29px;
+  }
+
+  &__reklama-18 {
+    width: 41px;
+    margin: 0 8px 0 0;
+  }
+
+  &__reklama-text {
+    width: 174px;
+    height: auto;
+    margin: 6px 0 0;
+  }
+
+  &__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+    overflow: hidden;
+  }
+
+  &__textline {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    will-change: transform;
+    backface-visibility: hidden;
+    font-weight: 100;
+    font-family: sans-serif;
+    transform: translateZ(1px) translateX(0);
+    white-space: nowrap;
+    z-index: 3;
+    animation: moveTextRow 30s linear infinite;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}
