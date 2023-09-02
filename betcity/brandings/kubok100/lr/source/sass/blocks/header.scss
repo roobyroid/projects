@@ -1,0 +1,99 @@
+.header {
+  position: relative;
+  height: 100px;
+  width: 1253px;
+  min-width: 1253px;
+  margin: 0 auto;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 80px;
+    margin: 3px 0 0 40px;
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__bonus {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 460px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-71%);
+    left: 50%;
+
+    .banner-text__bottom {
+      margin: 0 0 0 5px;
+
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__right {
+    width: 260px;
+    margin: 28px 52px 0 0;
+  }
+
+  &__an-btn.an-btn {
+    height: 38px;
+    font-size: 19px;
+  }
+
+  &__reklama {
+    display: flex;
+    position: absolute;
+    top: 6px;
+    right: -16px;
+  }
+
+  &__reklama-18 {
+    width: 23px;
+    margin: 0 8px 0 0;
+  }
+
+  &__reklama-text {
+    width: 134px;
+    height: auto;
+    margin: 0px 0 0;
+  }
+
+  &__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+    overflow: hidden;
+  }
+
+  &__textline {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    will-change: transform;
+    backface-visibility: hidden;
+    font-weight: 100;
+    font-family: sans-serif;
+    transform: translateZ(1px) translateX(0);
+    white-space: nowrap;
+    z-index: 3;
+    animation: moveTextRow 30s linear infinite;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}

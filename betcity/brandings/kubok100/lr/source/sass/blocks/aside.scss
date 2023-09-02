@@ -1,0 +1,56 @@
+.aside {
+  padding: 100px 0 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 150px;
+    margin: 0 20px;
+  }
+
+  &__logo {
+    width: 90px;
+    margin: 0 auto 20px;
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__ball {
+    margin: -10px 0 0;
+    opacity: 0;
+
+    &.animate {
+      opacity: 1;
+      animation: moveBall 5.15s ease-in-out infinite;
+    }
+  }
+
+  &__an-btn {
+    width: 110px;
+    padding: 5px 6px;
+    margin: 2px auto 0;
+  }
+
+}
+
+@keyframes moveBall {
+  0% {
+    transform: translateX(100%) scale(.2) rotate(0);
+  }
+
+  20% {
+    transform: translateX(0) scale(1) rotate(-360deg);
+  }
+
+  80% {
+    transform: translateX(0) scale(1) rotate(-360deg);
+  }
+
+  100% {
+    transform: translateX(-100%) scale(.2) rotate(-720deg);
+  }
+}
