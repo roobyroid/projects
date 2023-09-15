@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: 174rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+
+  &--no-padding {
+    @include xs {
+      padding: 0;
+    }
+  }
+}

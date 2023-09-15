@@ -1,0 +1,99 @@
+.about {
+  position: relative;
+  z-index: 1;
+  padding: 0 0 74rem;
+
+  @include md {
+    padding: 0 0 500px;
+  }
+
+  @include xs {
+    padding: 0 0 440px;
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 116.3rem;
+    max-height: calc(100% - 5rem);
+    z-index: -1;
+    object-fit: cover;
+
+    @include md {
+      height: 800px;
+    }
+
+    @include xs {
+      height: 577px;
+      object-position: 60% 0;
+    }
+  }
+
+  &__banner {
+    height: 39rem;
+    margin: 0 0 8rem;
+
+    @include md {
+      height: 300px;
+      margin: 0 0 50px;
+    }
+
+    @include xs {
+      height: 210px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__overhead {
+    font-family: "DrukTextWideCyr";
+    font-size: 2.6rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: transparent;
+
+    -webkit-text-stroke: 1px #7E7E7E;
+    text-stroke: 1px #7E7E7E;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &__title {
+    margin: 0 0 4rem;
+
+    @include md {
+      margin: 0 0 22px;
+    }
+  }
+
+  &__descr {
+    max-width: 96rem;
+    font-size: 3.2rem;
+
+    @include md {
+      font-size: 24px;
+    }
+
+    @include xs {
+      font-size: 16px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin: 0 0 4rem;
+
+        @include md {
+          margin: 0 0 20px;
+        }
+      }
+    }
+  }
+}

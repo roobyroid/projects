@@ -1,0 +1,37 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+// Desktop first
+
+@mixin xl {
+  @media (max-width: $viewport--xl - 1) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $viewport--lg - 1) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $viewport--md - 1) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: $viewport--sm - 1) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: $viewport--xs - 1) {
+    @content;
+  }
+}

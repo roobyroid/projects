@@ -1,0 +1,152 @@
+.title {
+  position: relative;
+  font-family: "DrukTextWideCyr";
+  font-size: 6.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 0 2rem;
+
+  @include md {
+    font-size: 48px;
+  }
+
+  @include xs {
+    font-size: 36px;
+  }
+
+  &::after {
+    content: '';
+    width: 0;
+    height: .4rem;
+    background: linear-gradient(180deg, #CE9744 0%, #F0CA91 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include md {
+      height: 3px;
+    }
+  }
+
+  &.animate {
+    &::after {
+      animation: titleLine 1s forwards;
+
+      @include md {
+        animation-name: titleLine2;
+      }
+    }
+  }
+
+  &--center {
+    text-align: center;
+
+    @include xs {
+      text-align: left;
+    }
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include xs {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+@keyframes titleLine {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 27rem;
+  }
+}
+
+@keyframes titleLine2 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+
+  &__nav {
+    @include md {
+      margin: 0 0 40px;
+    }
+
+    ul {
+      display: flex;
+
+      @include md {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    li {
+      padding: 0 3rem;
+
+      @include md {
+        padding: 10px 0;
+      }
+
+      a {
+        font-size: 2rem;
+        color: $colorWhite;
+        text-transform: uppercase;
+        transition: color .3s;
+
+        &:hover {
+          color: #CE9744;
+        }
+      }
+    }
+  }
+}
+
+.lang {
+  display: flex;
+
+  button {
+    flex-shrink: 0;
+    font-size: 2rem;
+    color: #636363;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color .3s;
+
+    &:not(:last-child) {
+      margin: 0 1.2rem 0 0;
+    }
+
+    &:hover,
+    &.active {
+      color: $colorWhite;
+    }
+  }
+}
+
+@keyframes faded {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

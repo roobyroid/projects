@@ -1,0 +1,48 @@
+.footer {
+  background: #1C1C1C;
+  padding: 8rem 0 10rem;
+
+  @include md {
+    padding: 80px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      display: block;
+    }
+  }
+
+  &__logo {
+    width: 41rem;
+    flex-shrink: 0;
+
+    @include md {
+      width: 300px;
+      margin: 0 auto 50px;
+    }
+
+    @include xs {
+      width: 210px;
+    }
+  }
+
+  &__inner {
+    @include md {
+      display: block;
+    }
+  }
+
+
+  &__lang {
+    margin: 0 0 0 10rem;
+
+    @include md {
+      justify-content: center;
+      margin: 0;
+    }
+  }
+}

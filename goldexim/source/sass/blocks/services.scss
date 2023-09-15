@@ -1,0 +1,61 @@
+.services {
+  padding: 0 0 22rem;
+
+  @include md {
+    padding: 0 0 90px;
+  }
+
+  &__title {
+    margin: 0 0 6rem;
+
+    @include md {
+      margin: 0 0 35px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+
+  &__item {
+    text-align: center;
+    flex: 0 1 calc(25% - 6rem * 3 / 4);
+
+    @include md {
+      flex: 0 1 calc(50% - 6rem / 2);
+    }
+
+    @include sm {
+      flex: 1 1 100%;
+    }
+
+    &:hover {
+      .services__photo img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__photo {
+    height: 37.5rem;
+    border-radius: 5.5rem;
+    margin: 0 0 4rem;
+    overflow: hidden;
+
+    @include md {
+      height: 250px;
+      border-radius: 40px;
+      margin: 0 0 35px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      transition: transform 1s;
+    }
+  }
+}

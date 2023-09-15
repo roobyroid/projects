@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>GOLDEXIM</title>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html")
+    <main class="main">
+
+      <section class="hero">
+        <picture>
+          <source srcset="img/page/hand-1-mob.png" type="image/jpeg" media="(max-width: 575px)">
+          <img class="hero__hand-left js_animation" loading="lazy" src="img/page/hand-1.png" alt="hero background">
+        </picture>
+        <picture>
+          <source srcset="img/page/hand-2-mob.png" type="image/jpeg" media="(max-width: 575px)">
+          <img class="hero__hand-right js_animation" loading="lazy" src="img/page/hand-2.png" alt="hero background">
+        </picture>
+        <div class="container">
+          <h1 class="hero__title js_animation">
+            <span>PRECIOS</span><br> METAL&amp;<br>MINERALS<br> WORLDWIDE<br> <span>TRADING</span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <img class="about__bg js_parallax-bg" loading="lazy" src="img/page/about.jpg" alt="">
+        <div class="container js_parallax-text">
+          <h2 class="about__title title js_title-animate">ABOUT&nbsp;US</h2>
+          <div class="about__descr">
+            <p>Welcome to&nbsp;Goldexim, your premier global destination for precious metals and stones trading. Based
+              in&nbsp;the heart of&nbsp;Dubai, UAE, we&nbsp;specialize in&nbsp;the seamless trading of&nbsp;gold
+              bullion,
+              silver, rough diamonds, and other precious metals and stones across international markets.</p>
+            <p>With
+              a&nbsp;steadfast commitment to&nbsp;integrity and excellence, we&nbsp;empower partners and investors with
+              unparalleled opportunities in&nbsp;the world of&nbsp;precious metals and stones. Join&nbsp;us
+              to&nbsp;discover a&nbsp;world of&nbsp;value, trust, and limitless potential.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container">
+          <h2 class="products__title title title--center js_title-animate">our products</h2>
+          <div class="products__wrap">
+            <a class="products__item" href="#">
+              <div class="products__photo">
+                <img loading="lazy" src="img/page/product-1.jpg" alt="Precious metals">
+              </div>
+              <h3>Precious metals</h3>
+              <p>Gold, Silver, Platinum, Palladium (Bullion, coins)</p>
+            </a>
+            <a class="products__item" href="#">
+              <div class="products__photo">
+                <img loading="lazy" src="img/page/product-2.jpg" alt="Precious stones">
+              </div>
+              <h3>Precious stones</h3>
+              <p>Rough diamonds, Emeralds, Rubies, Sapphires</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="services__title title title--center js_title-animate">OUR SERVICES</h2>
+          <div class="services__wrap">
+            <div class="services__item">
+              <div class="services__photo">
+                <img loading="lazy" src="img/page/service-1.jpg" alt="Bullion trading">
+              </div>
+              <p>Bullion trading</p>
+            </div>
+            <div class="services__item">
+              <div class="services__photo">
+                <img loading="lazy" src="img/page/service-2.jpg" alt="Refining">
+              </div>
+              <p>Refining</p>
+            </div>
+            <div class="services__item">
+              <div class="services__photo">
+                <img loading="lazy" src="img/page/service-3.jpg" alt="Smelting">
+              </div>
+              <p>Smelting</p>
+            </div>
+            <div class="services__item">
+              <div class="services__photo">
+                <img loading="lazy" src="img/page/service-4.jpg" alt="Minting coins and bars">
+              </div>
+              <p>Minting coins and bars</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="world" id="world">
+        <img loading="lazy" class="world__bg js_parallax-bg" src="img/page/world.jpg" alt="">
+        <div class="container">
+          <h2 class="world__title title js_title-animate">WORLDWIDE</h2>
+
+          <div class="world__descr">
+            <div class="world__item js_parallax-text2">
+              Boundless Collaborations, Worldwide Presence: Goldexim proudly stands as&nbsp;a&nbsp;global hub
+              of&nbsp;partnerships, encompassing diverse regions across the world.
+            </div>
+            <div class="world__item js_parallax-text3">
+              <p>From the vibrant markets of&nbsp;the UAE to&nbsp;the industrious landscapes of&nbsp;China, India, and
+                Russia, extending further to&nbsp;the European Union, Southeast Asia, and Central Asia, our network
+                knows
+                no&nbsp;boundaries.</p>
+              <p>This expansive reach ensures that our clients benefit from a&nbsp;truly international
+                perspective, accessing the world&rsquo;s most coveted precious metals and stones with unparalleled ease
+                and assurance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="world__line">
+          <p class="js_text-line-left">
+            upto<span>100billions$</span>montlhy<span>morethan</span>99countriesupto<span>100billions$</span>montlhy<span>morethan</span>99countries
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title title title--center js_title-animate">contact&nbsp;us</h2>
+          <div class="contacts__wrap">
+            <div class="contacts__item">
+              <h3 class="contacts__item-name">Dubai, UAE</h3>
+              <p>Al&nbsp;Sarayat Street, Jumeirah Lakes<br> Towers,DMCC, Sheikh Zayed Road,<br> P.O. Box 24305,</p>
+              <p>
+                <a href="mailto:dubai@goldexim.ae">dubai@goldexim.ae</a><br>
+                <a href="tel:+646641234">+646 641234</a>
+              </p>
+            </div>
+            <div class="contacts__item">
+              <h3 class="contacts__item-name">Gonkong, China</h3>
+              <p>Al&nbsp;Sarayat Street, Jumeirah Lakes<br> Towers,DMCC, Sheikh Zayed Road,<br> P.O. Box 24305,</p>
+              <p>
+                <a href="mailto:dubai@goldexim.ae">dubai@goldexim.ae</a><br>
+                <a href="tel:+646641234">+646 641234</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    @@include("source/html/base/footer.html")
+  </div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
