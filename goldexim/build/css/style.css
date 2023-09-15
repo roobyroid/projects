@@ -899,11 +899,12 @@ button,
   object-fit: cover;
   -webkit-transform: translate(-100%, 20rem);
   transform: translate(-100%, 20rem);
+  opacity: 0;
 }
 
 .hero__hand-left.animate {
-  -webkit-animation: leftHand 1s forwards 1.5s linear, gravity 2s ease-in-out 2.5s alternate infinite;
-  animation: leftHand 1s forwards 1.5s linear, gravity 2s ease-in-out 2.5s alternate infinite;
+  -webkit-animation: leftHand 2s forwards 1.5s ease, gravity 2s ease-in-out 3.5s alternate infinite;
+  animation: leftHand 2s forwards 1.5s ease, gravity 2s ease-in-out 3.5s alternate infinite;
 }
 
 .hero__hand-right {
@@ -917,11 +918,12 @@ button,
   object-fit: cover;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+  opacity: 0;
 }
 
 .hero__hand-right.animate {
-  -webkit-animation: rightHand 1s forwards 2s linear, gravity 2s ease-in-out 3s alternate infinite;
-  animation: rightHand 1s forwards 2s linear, gravity 2s ease-in-out 3s alternate infinite;
+  -webkit-animation: rightHand 2s forwards 2s ease, gravity 2s ease-in-out 4s alternate infinite;
+  animation: rightHand 2s forwards 2s ease, gravity 2s ease-in-out 4s alternate infinite;
 }
 
 .hero__title {
@@ -955,11 +957,17 @@ button,
   0% {
     -webkit-transform: translate(-100%, 20rem);
     transform: translate(-100%, 20rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
@@ -967,11 +975,17 @@ button,
   0% {
     -webkit-transform: translate(-100%, 20rem);
     transform: translate(-100%, 20rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
@@ -979,11 +993,17 @@ button,
   0% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -991,11 +1011,17 @@ button,
   0% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
