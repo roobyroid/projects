@@ -12,8 +12,9 @@
   }
 
   &__logo {
-    width: 90px;
+    width: 95px;
     margin: 0 auto 20px;
+
     canvas {
       width: 100%;
     }
@@ -21,11 +22,9 @@
 
   &__ball {
     margin: -10px 0 0;
-    opacity: 0;
 
-    &.animate {
-      opacity: 1;
-      animation: moveBall 5.15s ease-in-out infinite;
+    canvas {
+      width: 100%;
     }
   }
 
@@ -33,6 +32,10 @@
     width: 110px;
     padding: 5px 6px;
     margin: 2px auto 0;
+
+    canvas {
+      width: 100%;
+    }
   }
 
 }

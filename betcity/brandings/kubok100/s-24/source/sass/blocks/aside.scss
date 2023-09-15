@@ -51,18 +51,19 @@
   }
 
   &__ball {
-    opacity: 0;
-
-    &.animate {
-      opacity: 1;
-      animation: moveBall 10.5s ease-in-out infinite;
+    canvas {
+      width: 100%;
     }
   }
 
   &__an-btn {
-    width: 126px;
+    width: 122px;
     padding: 5px 6px;
     margin: 22px auto 0;
+
+    canvas {
+      width: 100%;
+    }
 
     @media (max-width: 1902px) {
       width: 110px;
@@ -88,11 +89,11 @@
     transform: translateX(100%) scale(.2) rotate(0);
   }
 
-  10% {
+  20% {
     transform: translateX(0) scale(1) rotate(-360deg);
   }
 
-  90% {
+  80% {
     transform: translateX(0) scale(1) rotate(-360deg);
   }
 

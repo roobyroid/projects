@@ -6,6 +6,21 @@ body {
   font-size: 19px;
   color: #fff;
   font-family: 'StyreneALC';
+
+  &.firefox {
+
+    .an-btn.animate {
+      animation: scaleBtn 11.3s ease-in infinite;
+    }
+
+    .text-anim.animate {
+      animation: move-text 5.65s alternate infinite;
+
+      &--2 {
+        animation: move-text 5.65s .3s alternate infinite;
+      }
+    }
+  }
 }
 
 .body-wrap {
@@ -47,127 +62,9 @@ body {
 }
 
 .banner-text {
-  color: #06DCFF;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: center;
 
-  @media (max-width: 1262px) {
-    font-size: 26px;
-  }
-
-  &__top {
-    font-family: 'Nekst';
-    font-weight: 700;
-    font-size: 80px;
-    white-space: nowrap;
-
-    span {
-
-      &:first-child {
-        display: inline-block;
-        position: relative;
-        transform: translateY(-7px);
-      }
-
-      &:last-child {
-        vertical-align: top;
-        font-size: 45px;
-      }
-    }
-
-    @media (max-width: 1902px) {
-      font-size: 70px;
-
-      span:last-child {
-        font-size: 30px;
-      }
-    }
-
-    @media (max-width: 1262px) {
-      font-size: 57px;
-
-      span:last-child {
-        font-size: 20px;
-      }
-    }
-  }
-
-  &__bottom {
-    color: #fff;
-    font-size: 34px;
-    white-space: nowrap;
-
-    @media (max-width: 1902px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 1262px) {
-      font-size: 25px;
-    }
-  }
-
-  &--aside {
-
-    line-height: 0.6;
-
-    @media (max-width: 1902px) {
-      line-height: 0.5;
-    }
-
-    .banner-text__top {
-      font-size: 29px;
-
-      span {
-        display: inline-block;
-        position: relative;
-        font-size: inherit;
-        transform: translateY(-3px);
-      }
-
-      @media (max-width: 1902px) {
-        font-size: 25px;
-
-        span {
-          font-size: inherit;
-        }
-      }
-
-      @media (max-width: 1582px) {
-        font-size: 23px;
-
-        span {
-          font-size: inherit;
-        }
-      }
-
-      @media (max-width: 1262px) {
-        font-size: 19px;
-
-        span {
-          font-size: inherit;
-        }
-      }
-    }
-
-    .banner-text__bottom {
-      font-size: 12px;
-
-      @media (max-width: 1902px) {
-        font-size: 10px;
-      }
-
-      @media (max-width: 1582px) {
-        font-size: 9px;
-      }
-
-      @media (max-width: 1262px) {
-        font-size: 8px;
-      }
-    }
-
+  canvas {
+    width: 100%;
   }
 }
 
@@ -177,13 +74,13 @@ body {
   transition: opacity .3s, transform .3s;
 
   &.animate {
-    animation: move-text .8s ease-in-out forwards;
+    animation: move-text 4s alternate infinite;
   }
 
   &--2 {
 
     &.animate {
-      animation: move-text .8s ease-in-out .3s forwards;
+      animation: move-text 4s .3s alternate infinite;
     }
   }
 }
@@ -195,14 +92,24 @@ body {
     transform: translateY(-50px);
   }
 
-  80% {
+  5% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  7% {
     opacity: 1;
     transform: translateY(3px);
   }
 
-  90% {
+  10% {
     opacity: 1;
     transform: translateY(-3px);
+  }
+
+  13% {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   100% {

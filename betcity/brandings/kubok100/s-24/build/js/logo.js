@@ -872,19 +872,19 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.logo_1();
-	this.instance.setTransform(68.6,64.15,0.9916,0.9918,0,0,0,68.9,64.1);
+	this.instance.setTransform(137.25,128.35,1.9833,1.9835,0,0,0,68.9,64.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(232).to({alpha:0},5).wait(3));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(68.8,64.6,68.10000000000001,63);
+p.nominalBounds = new cjs.Rectangle(137.6,129.2,136.20000000000002,126);
 // library properties:
 lib.properties = {
 	id: 'A426DF23C071AB468D763CF9194D8D24',
-	width: 137,
-	height: 128,
+	width: 274,
+	height: 256,
 	fps: 30,
 	color: "#FFFFFF",
 	opacity: 0.00,

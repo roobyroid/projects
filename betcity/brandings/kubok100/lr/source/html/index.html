@@ -54,17 +54,15 @@ maximum-scale=1, user-scalable=no, viewport-fit=contain" />
     <div class="header">
       <div class="header__wrap">
         <div class="header__logo">
-          <canvas id="canvasLogo3" width="137" height="128"></canvas>
+          <canvas id="canvasLogo3" width="274" height="256"></canvas>
         </div>
         <div class="header__bonus banner-text">
-          <p class="banner-text__top text-anim js_anim-el">100 000 <span>&#8381;</span><span>*</span></p>
-          <p class="banner-text__bottom text-anim text-anim--2 js_anim-el"><span>Новым</span> игрокам</p>
+          <canvas id="canvasText" width="560" height="140"></canvas>
+
         </div>
 
         <div class="header__right">
-          <div class="header__an-btn an-btn">
-            получить бонус
-          </div>
+          <canvas id="canvasBtnTop" width="640" height="114"></canvas>
         </div>
       </div>
 
@@ -90,17 +88,16 @@ maximum-scale=1, user-scalable=no, viewport-fit=contain" />
       <div class="aside__wrap">
         <div class="aside__item aside__item--left">
           <div class="aside__logo">
-            <canvas id="canvasLogo" width="137" height="128"></canvas>
+            <canvas id="canvasLogo" width="274" height="256"></canvas>
           </div>
           <div class="aside-text banner-text banner-text--aside">
-            <p class="banner-text__top text-anim js_anim-el">100 000 <span>&#8381;</span>*</p>
-            <p class="banner-text__bottom text-anim text-anim--2 js_anim-el">Новым игрокам</p>
+            <canvas id="canvasText2" width="778" height="320"></canvas>
           </div>
           <div class="aside__ball">
-            <img src="img/ball.png" alt="">
+            <canvas id="canvasBall" width="328" height="416"></canvas>
           </div>
-          <div class="aside__an-btn an-btn">
-            получить бонус
+          <div class="aside__an-btn an-btn js_anim-el">
+            <canvas id="canvasBtnSide" width="250" height="104"></canvas>
           </div>
         </div>
 
@@ -108,17 +105,16 @@ maximum-scale=1, user-scalable=no, viewport-fit=contain" />
 
         <div class="aside__item aside__item--right">
           <div class="aside__logo">
-            <canvas id="canvasLogo2" width="137" height="128"></canvas>
+            <canvas id="canvasLogo2" width="274" height="256"></canvas>
           </div>
           <div class="aside-text banner-text banner-text--aside">
-            <p class="banner-text__top text-anim js_anim-el">100 000 <span>&#8381;</span>*</p>
-            <p class="banner-text__bottom text-anim text-anim--2 js_anim-el">Новым игрокам</p>
+            <canvas id="canvasText3" width="778" height="320"></canvas>
           </div>
           <div class="aside__ball">
-            <img src="img/ball.png" alt="">
+            <canvas id="canvasBall2" width="328" height="416"></canvas>
           </div>
-          <div class="aside__an-btn an-btn">
-            получить бонус
+          <div class="aside__an-btn an-btn js_anim-el">
+            <canvas id="canvasBtnSide2" width="250" height="104"></canvas>
           </div>
         </div>
       </div>
@@ -128,6 +124,11 @@ maximum-scale=1, user-scalable=no, viewport-fit=contain" />
   <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   <script src="js/bg.js"></script>
   <script src="js/logo.js"></script>
+  <script src="js/ball.js"></script>
+  <script src="js/Text_lr.js"></script>
+  <script src="js/btn_up.js"></script>
+  <script src="js/btn_side.js"></script>
+  <script src="js/Text.js"></script>
   <script src="js/scripts.min.js"></script>
 
 </body>

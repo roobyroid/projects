@@ -32,57 +32,8 @@ body {
 }
 
 .banner-text {
-  color: #06DCFF;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-
-  &__top {
-    font-family: 'Nekst';
-    font-weight: 700;
-    font-size: 64px;
-    white-space: nowrap;
-
-    span {
-
-      &:first-child {
-        display: inline-block;
-        position: relative;
-        transform: translateY(-7px);
-      }
-
-      &:last-child {
-        vertical-align: top;
-        font-size: 30px;
-      }
-    }
-  }
-
-  &__bottom {
-    color: #fff;
-    font-size: 23px;
-  }
-
-  &--aside {
-    line-height: .7;
-
-    .banner-text__top {
-      font-size: 25px;
-      line-height: 0.5;
-
-      span {
-        display: inline-block;
-        position: relative;
-        font-size: inherit;
-        transform: translateY(-3px);
-      }
-    }
-
-    .banner-text__bottom {
-      font-size: 11px;
-      line-height: 0.5;
-    }
-
+  canvas {
+    width: 100%;
   }
 }
 
