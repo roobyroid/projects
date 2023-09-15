@@ -179,6 +179,14 @@ const lang = () => {
       en: 'At the moment we pay partners twice a month.',
       ru: 'На данный момент мы платим партнерам два раза в месяц',
     },
+    modalTitle: {
+      en: 'CHOOSE GEO',
+      ru: 'ВЫБЕРИ ГЕО',
+    },
+    modalBtn: {
+      en: 'ANOTHER COUNTRY',
+      ru: 'ДРУГАЯ СТРАНА',
+    },
   };
 
   const langParent = document.querySelector('.js_lang');
