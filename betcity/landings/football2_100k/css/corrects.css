@@ -1,0 +1,77 @@
+
+.title__freebet span._top{
+  display: inline-block;
+  font-size: 20%;
+  margin-top: 4%;
+  vertical-align: top;
+}
+
+
+@media print, screen and (min-width: 48em) {
+
+.b-match__info-team {
+    max-width: 10em;
+}}
+
+.modal .close {
+  top:0.8em;
+}
+
+
+.title * {
+  color:white;
+  text-shadow: none;
+}
+
+.b-match__date  {
+  color:white;
+}
+
+@media print, screen and (min-width: 48em) {
+.s-hero__bg-main.bg-img {
+  background-position: 0% 0%;
+background-size: cover;
+}
+
+.b-match {
+  background:#1F2B5B;
+  border-radius: 3rem;
+  padding: 4rem 2rem;
+}
+
+
+
+
+.title__txt{
+  font-size: 6em;
+}
+
+.title__info {
+  padding-left: 0;
+}
+
+
+.title {
+flex-direction: column;
+align-items: flex-start;
+margin-top: 2rem;
+
+
+}
+
+}
+
+@media print, screen and (max-width: 47.99875em){
+.s-hero__bg-main.bg-img {
+  background-position: 50% 0%;
+  background-size: 100% auto;
+  }
+}
+
+
+
+
+.s-hero__content {
+margin-top:0 !important;
+
+}

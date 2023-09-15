@@ -1,0 +1,24 @@
+@media (min-width:900px) {
+
+  .only-destkop {
+    display: block;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+}
+
+
+@media (max-width:899px) {
+
+  .only-destkop {
+    display: none;    
+  }
+
+  .only-mobile {
+    display: block;
+  }
+
+}

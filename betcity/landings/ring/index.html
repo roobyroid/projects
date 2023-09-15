@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="gtm_name" content="ring">
+    <meta name="img_src" content="./img/">
+
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+
+    <meta name="apple-mobile-web-app-title" content="БЕТСИТИ">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- -->
+    <link rel="stylesheet" href="./css/vendor.css?v=1.0.4">
+    <link rel="stylesheet" href="./css/foundation-lib.css?v=1.0.4">
+    <link rel="stylesheet" href="./css/style.css?v=1.0.4">
+    <link rel="stylesheet" href="./css/add.css?v=1.0.4">
+
+
+</head>
+
+<body class="has-transparent-header height-100% cera-pro no-recaptcha static-form-mob theme-form-aside detect-lang qr-bg-aside landing-ru team-">
+
+
+    <div class="l-wrapper body-wrap">
+        <main class="l-main" id="main">
+
+            <!------>
+            <section class="section s-hero section-bg h100 theme-noreg">
+
+                <!-- bg-->
+                <div class="s-hero__bg ">
+                    <canvas id="canvas-webgl" class="glith p-canvas-webgl"></canvas>
+                    <div class="s-hero__bg-main _desktop bg-img hide-for-small-only hide" data-image-src="./img/bg/bg2.jpg"></div>
+                    <div class="s-hero__bg-main _mob bg-img show-for-small-only hide" data-image-src="./img/bg/bg2_mob.jpg"></div>
+                </div>
+                <img width="585" class="bg-ringe _filter show-for-tablet hide" src="./img/bg/bg-ringe.png" alt="ringe">
+
+                <!-- header-->
+                <header class="s-hero__header">
+                    <div class="container">
+                        <div class="row align-middle">
+                            <div class="column shrink s-hero__header-logo">
+                                <a data-gtm="header_logo" class="b-logo show-for-tablet" href="https://betcity.ru/?utm_content=header_logo">
+                                    <img width="387" class="img-fluid" src="./img/logo.svg" alt="">
+                                </a>
+                                <a data-gtm="header_logo_mobile" class="b-logo hide-for-tablet" href="https://betcity.ru/?utm_content=header_logo">
+                                    <img width="134" class="img-fluid" src="./img/logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="column shrink ml-auto s-hero__header-btn hide-for-tablet">
+                                <a id="downloadApp" class="app-link text-right">
+                                    <span class="block">скачать <br>приложение</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- content-->
+                <div class="container s-hero__content hidden ">
+                    <div class="row">
+                        <div class="column s-hero__content-info _column-content">
+
+                            <!-- -->
+                            <div class="s-hero__content-header">
+
+                                <!-- title-->
+                                <h1 class="s-hero__title _title-main mob-center">
+                                    <div class="s-hero__title-top _mask">У ТЕБЯ ЕСТЬ <br>7 ДНЕЙ</div>
+                                </h1>
+
+                                <div class="s-hero__subtitle uppercase animated">
+                                    <span>
+                                        РЕГИСТРИРУЙСЯ <br>
+                                        И ПОЛУЧАЙ 300&thinsp;₽ <br>
+                                        КАЖДЫЙ ДЕНЬ <br>
+                                        БЕЗ&nbsp;УСЛОВИЙ*
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <!-- -->
+                            <div class="s-hero__noreg text-center mt-auto mb-auto">
+                                <div class="s-hero__noreg-btn">
+                                    <a id="reg" href="https://betcity.ru/ru/reg" class="show-for-tablet button btn fullwidth btn--animate animation--pulse">
+                                        <span>Забрать бонус</span>
+                                    </a>
+                                    <a id="reg" href="http://betcity.onelink.me/bthX/" class="hide-for-tablet button btn fullwidth btn--animate animation--pulse">
+                                        <span>Забрать бонус</span>
+                                    </a>
+                                    <button class="btn btn-promo fullwidth middle__btn middle__promo" type="button">
+                                        <span>промокод&nbsp;</span>
+                                        <span class="color promo-text">RING</span>
+                                        <img src="./img/icon/copy.svg">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- -->
+                            <div class="s-hero__content-footer mt-auto">
+                                <p class="copy">
+                                    <span class="block">18+ * 300 ₽ начисляются в форме фрибетов за полную регистрацию в приложении БЕТСИТИ.</span>
+                                    ** Фрибет – бонусные средства, зачисляемые Участнику Конкурса на бонусный счет, по факту выполнения условий.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="column shrink s-hero__content-form _column-aside show-for-tablet">
+
+                            <div class="s-hero__content-form-inner">
+                                <!-- sidebar header-->
+                                <div class="s-hero__content-form-header show-for-tablet">
+                                    <div class="s-hero__header-btn text-right">
+                                        <a data-gtm="app_button_popup" class="btn-link popup-btn" rel="button" href="#!" data-popup="popup-app">
+                                            СКАЧАТЬ ПРИЛОЖЕНИЕ
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- sidebar body-->
+                                <div class="s-hero__content-form-body">
+                                    <div class="s-hero__content-form-wrp" id="registrationContainerWrp">
+                                        <div class="s-hero__qr">
+                                            <div class="s-hero__qr-txt">Скачай приложение <br>по QR-коду</div>
+                                            <div class="s-hero__qr-img">
+                                                <!--<div class="popup__image" id="qrForm"></div>-->
+                                                <div class="popup__image" id="qrFormStatic">
+                                                    <img class="img-fluid" width="256" src="./img/qr.png" alt="qr">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- sidebar footer-->
+                                <div class="s-hero__content-form-footer s-hero__footer show-for-tablet">
+                                    <div class="s-hero__footer-copy text-right">
+                                        <a data-gtm="rules_link_full" class="rules-link show-for-tablet popup-btn" data-popup="popup-rules" href="#!">
+                                            Условия акции
+                                        </a>
+                                        <div class="copy">
+                                            © 2003-2022 Букмекерская компания БЕТСИТИ.
+                                            <span class="copy__adult">18+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer-->
+                <footer class="s-hero__footer hide-for-tablet">
+                    <div class="container">
+                        <div class="row s-hero__footer-copy align-bottom">
+                            <div class="column small-12">
+                                <a data-gtm="rules_link_full" class="rules-link popup-btn" data-popup="popup-rules" href="#!">Условия акции</a>
+                                <div class="copy">
+                                    © 2003-2022 Букмекерская компания БЕТСИТИ. 18+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal-wrap popup-rules">
+        <div class="modal modal--offset-l">
+            <div class="close" role="button">
+                <img src="./img/icon/close.svg">
+            </div>
+
+            <div class="modal_header">
+                <h2>Правила и условия участия в акции Акция на Хэллоуин «300x7»</h2>
+            </div>
+            <div class="modal_content">
+                <h3>1. Условия участия</h3>
+                <ul>
+                    <li>1.1 Для участия необходимо:</li>
+                    <li>1.1.1. Пройти регистрацию и идентификацию на сайте или в мобильном приложении БЕТСИТИ в период проведения акции.</li>
+                    <li>1.1.2. Ввести промокод «RING» на сайте или в мобильном приложении БЕТСИТИ в период проведения акции до заключения первого пари.</li>
+                    <li>1.2. Активировать промокод можно двумя способами:</li>
+                    <li>1.2.1. Автоматическая активация: <br>Кнопка «установить приложение» - Регистрация.</li>
+                    <li>1.2.2. Ручная активация: <br>Пополнение счета – Промокод.</li>
+                    <li>1.3. Участие в акции для нового клиента начинается с момента активации промокода.</li>
+                </ul>
+                <h3>2. Сроки и место проведения</h3>
+                <ul>
+                    <li>2.1. Акция проводится с 27.10.2022 (00:00:00МСК) по 02.11.2022 (23:59:00МСК) в мобильном приложении «Бетсити».</li>
+                    <li>2.2. Акция может быть завершена досрочно по одностороннему решению Организатора, путем размещения соответствующего уведомления на Сайте и/или в мобильном приложении.</li>
+                </ul>
+                <h3>3. Механика</h3>
+                <ul>
+                    <li>3.1. После выполнения условий на бонусный̆ счёт участника каждый день в течение 7 дней зачисляется фрибет номиналом 300 рублей. </li>
+                    <li>3.4. Один игрок может получить не более 7 фрибетов по 300₽ в рамках акции.</li>
+                    <li>3.5. Для участия в акции фрибеты должны быть использованы полным номиналом, то есть 300₽.</li>
+                    <li>3.6. Воспользоваться фрибетом можно на общих условиях использования бонусных средств, описанных в пп 5.8–5.10 настоящих правил.</li>
+                    <li>3.7. Срок действие 1 фрибета – 1 сутки с момента зачисления. По истечении срока неиспользованный̆ остаток начисленного фрибета сгорает.</li>
+                    <li>3.8. Максимальный̆ коэффициент на использование фрибета – 3,00.</li>
+                    <li>3.9. Начисление фрибета на бонусный счет будет производиться только после авторизации в мобильном приложении.</li>
+                    <li>3.10. Заключение пари с использованием фрибета по Акции будет доступно только в мобильном приложении.</li>
+                    <li>3.11. Получение фрибета по данной акции исключает получение других приветственных фрибетов для новых клиентов, если не указано иное в правилах отдельных акций.</li>
+                </ul>
+                <h3>4. Дополнительные положения</h3>
+                <ul>
+                    <li>4.1. В случае выявления факта мошенничества, злоупотребления бонусным предложением, организатор вправе прекратить участие таких клиентов в рекламной кампании. В этих случаях остаток на бонусном счете аннулируется.</li>
+                    <li>4.2. Один бонусный счет доступен для одного пользователя (на одну семью, один адрес, один компьютер, одно мобильное устройство, общий̆ IP-адрес, на любые одинаковые данные аккаунта, как адрес email, банковский счёт, информация о кредитной карте, аккаунт платёжной системы). Любое нарушение правил рекламной кампании ведёт к аннулированию участия, а также к принятию дополнительных мер, направленных на предотвращение подобных действий.</li>
+                    <li>4.3. Организатор вправе изменить условия и сроки проведения Акции без предварительного уведомления.</li>
+                    <li>4.4. При выявлении расхождений условий Акции и рекламных материалов, распространяемых в рамках данной акции, применяются условия Акции.</li>
+                </ul>
+                <h3>5. Термины и определения</h3>
+                <ul>
+                    <li>5.1. Организатор – Общество с ограниченной̆ ответственностью «Фортуна», ОГРН 1026103270280 ИНН 6164205110, лицензия на осуществление деятельности по организации и проведению азартных игр в букмекерских конторах или тотализаторах (услуга по заключению с участниками азартных игр основанных на риске соглашений о выигрыше) от 30 июня 2009 года).</li>
+                    <li>5.2. Сайт Организатора – интернет-сайт <a href="https://betcity.ru/ru/">https://betcity.ru/ru/</a> или <a href="https://m.betcity.ru/ru/">https://m.betcity.ru/ru/.</a></li>
+                    <li>5.3. Общие правила приёма интерактивных ставок, выплаты выигрышей и заключения пари <a href="https://betcity.ru/ru/rules#1">https://betcity.ru/ru/rules#1.</a></li>
+                    <li>5.4. Участник – физическое лицо, достигшее возраста 18 лет, принимающее условие данной акции посредством регистрации на сайте Организатора и выполнившее условия Акции.</li>
+                    <li>5.5. Депозит – пополнение баланса, путем совершения интерактивной ставки, согласно Общих правил.</li>
+                    <li>5.6. Пари – основанное на риске соглашение о выигрыше, заключённое между клиентом и букмекерской конторой, согласно установленным Общим правилам.</li>
+                    <li>5.7. Бонусный счет – счет, предназначенный для зачисления бонусных средств за выполнение условий различных маркетинговых мероприятий, программ лояльности, акций. Один бонус на бонусном счету равен одному рублю. Бонусный счет не предусматривает снятие бонусов и доступен только для совершения пари.</li>
+                    <li>5.8. Пари за бонусы – пари, совершаемые клиентом с бонусного счета. Выигрыш по пари за бонусы начисляется на основной̆ счет в виде чистого выигрыша, который рассчитывается, как разница между выигрышем и суммой ставки за бонусы.</li>
+                    <li>5.9. Фрибет – бонусные средства, зачисляемые участнику акции на бонусный счет, по факту выполнения условий. Выигрыш по ставкам за бонусные средства переводится на основной̆ счет в виде чистого выигрыша – за минусом суммы ставки за бонусные средства.</li>
+                    <li>5.10. При накоплении на бонусном счете фрибетов с различными сроками действия в первую очередь при постановке пари за бонусные средства списываются бонусы с ближайшим сроком сгорания.</li>
+                    <li>5.11. Мобильное приложение — программное обеспечение, предназначенное для работы на смартфонах, планшетах и других мобильных устройствах, разработанное для конкретной платформы (iOS, Android, Windows Phone и т. д.)
+                        <a href="https://betcity.ru/ru/apps">https://betcity.ru/ru/apps</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap popup-app">
+        <div class="popup popup--wide">
+            <div class="close" role="button">
+                <img src="./img/icon/close.svg">
+            </div>
+            <div class="popup__list popup__list--help">
+                <div class="popup__item">
+                    <div class="popup__text">
+                        Скачай приложение<br> по QR-коду
+                    </div>
+                    <!--<div id="qr" class="popup__image"></div>-->
+                    <div class="popup__image" id="qrStatic">
+                        <img class="img-fluid" width="256" src="./img/qr.png" alt="qr">
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <div class="popup__text">
+                        Пройди регистрацию <br>
+                        и идентификацию <br>
+                        в приложении <br>
+                        с промокодом <br>
+                        <strong>RING</strong>
+                    </div>
+                    <div class="popup__image text-center">
+                        <img style="width:5.8em" width="93" src="./img/help/1.svg" alt="icn">
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <div class="popup__text">
+                        Забирай 300&thinsp;₽ каждый день без пополнения счёта
+                    </div>
+                    <div class="popup__image text-center">
+                        <img style="width:12.25em" width="196" src="./img/help/2.svg" alt="icn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- scripts-->
+    <!-- public -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- -->
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>-->
+    <script type="text/javascript" src="./js/three.min.js"></script>
+    <script type="text/javascript" src="./js/glitch2.js?v=1.0.4"></script>
+    <script type="text/javascript" src="./js/app.js?v=1.0.4"></script>
+    <script type="text/javascript" src="./js/script.js?v=1.0.4"></script>
+    <!--\\ scripts-->
+
+</body>
+
+</html>
