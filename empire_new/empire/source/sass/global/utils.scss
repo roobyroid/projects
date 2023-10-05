@@ -1,0 +1,47 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: radial-gradient(100rem 100rem at 49.06% 0.46%, #292b2f 0%, #131415 44%, #0d0e0f 74%, #000000 100%);
+
+  @include md {
+    background-image: radial-gradient(236px 236px at 45.87% 3.93%, #292b2f 0%, #131415 29%, #0d0e0f 61%, #000000 100%);
+    font-size: 18px;
+  }
+  // используйте для страниц с min-height: 100vh для визуального скрытия скроллбара
+  &--no-scrollbar {
+    height: 100vh;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.scroll-lock {
+  position: fixed;
+  overflow-y: auto;
+}

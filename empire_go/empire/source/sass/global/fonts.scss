@@ -1,0 +1,53 @@
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Belgro";
+
+  font-display: swap;
+  src:
+    url("../fonts/Belgro/Belgro.woff2") format("woff2"),
+    url("../fonts/Belgro/Belgro.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Druk";
+
+  font-display: swap;
+  src:
+    url("../fonts/Druk/DrukTextWide-Medium-Desktop.woff2") format("woff2"),
+    url("../fonts/Druk/DrukTextWide-Medium-Desktop.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src:
+    url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src:
+    url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src:
+    url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+}

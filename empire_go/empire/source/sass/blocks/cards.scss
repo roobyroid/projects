@@ -1,0 +1,181 @@
+.cards {
+  padding: 0 0 18rem;
+
+  @include md {
+    padding: 0 0 70px;
+  }
+
+  @include xs {
+    padding: 0 0 44px;
+  }
+
+  &__wrap {
+    max-width: 108rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @include md {
+      max-width: 750px;
+    }
+  }
+
+  &__item {
+    position: sticky;
+    top: 3rem;
+    border-radius: 4.4rem;
+    background-color: $colorWhite;
+    padding: 8rem;
+    overflow: hidden;
+    color: $colorBlack;
+
+    @include md {
+      padding: 40px;
+      border-radius: 20px;
+    }
+
+    @include xs {
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    &--black {
+      border: 1px solid $colorGold;
+      background: $colorBlack;
+      color: $colorWhite;
+
+      .cards__item-bg {
+        right: -25%;
+        bottom: -45%;
+        max-width: 78.8rem;
+        max-height: 78.8rem;
+
+        @include md {
+          right: -20%;
+          max-width: 500px;
+          max-height: 500px;
+        }
+
+        @include sm {
+          right: -25%;
+          bottom: -35%;
+          max-width: 400px;
+          max-height: 400px;
+        }
+
+        @include xs {
+          max-width: 245px;
+          max-height: 245px;
+          right: -100px;
+          bottom: -85px;
+        }
+      }
+
+      .cards__item-list {
+        color: $colorWhite;
+
+        svg {
+          fill: $colorWhite;
+        }
+      }
+    }
+  }
+
+  &__item-inner {
+    max-width: 44.6rem;
+    font-size: 2.4rem;
+
+    @include md {
+      max-width: 300px;
+      font-size: 16px;
+    }
+
+    @include xs {
+      font-size: 12px;
+      max-width: 210px;
+    }
+  }
+
+  &__item-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 80%;
+    max-width: 80%;
+
+    @include xs {
+      right: -50px;
+      max-height: 75%;
+      max-width: 65%;
+    }
+  }
+
+  &__item-name {
+    text-transform: uppercase;
+    font-family: $font-family-belgro;
+    font-size: 3.6rem;
+    font-weight: 900;
+    border-bottom: 1px solid #707070;
+    padding: 0 0 4rem;
+    margin: 0 0 4rem;
+
+    @include md {
+      font-size: 20px;
+      padding: 0 0 20px;
+      margin: 0 0 20px;
+    }
+
+    @include xs {
+      padding: 0 0 10px;
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__item-list {
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0 0 5rem;
+
+    @include md {
+      margin: 0 0 30px;
+    }
+
+    @include xs {
+      margin: 0 0 20px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin: 0 0 3rem;
+
+        @include md {
+          margin: 0 0 20px;
+        }
+
+        @include xs {
+          margin: 0 0 15px;
+        }
+      }
+    }
+
+    svg {
+      max-width: 3.2rem;
+      max-height: 3.2rem;
+      flex-shrink: 0;
+      fill: $colorBlack;
+      margin: 0 2rem 0 0;
+
+      @include md {
+        max-width: 20px;
+        max-height: 20px;
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+
+  &__item-text {
+    font-weight: 600;
+  }
+}

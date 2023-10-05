@@ -1,0 +1,70 @@
+.soc-sm {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3rem;
+  border: 1px solid $colorGold;
+  padding: .5rem .5rem .5rem 2.7rem;
+
+  &>p {
+    margin: 0 2.9rem 0 0;
+    line-height: 1.11;
+  }
+
+  &__wrap {
+    display: flex;
+    font-size: 1.8rem;
+  }
+
+  &__item {
+    width: 5.1rem;
+    height: 5.1rem;
+    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    transition: background .3s, border .3s;
+
+    &:hover {
+      background: $colorGold;
+      border-color: transparent;
+
+      svg {
+        fill: $colorBlack;
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 1rem 0 0;
+    }
+
+    &:first-child {
+      svg {
+        width: 3rem;
+        height: 3rem;
+        margin: 0 .1rem 0 0;
+      }
+    }
+
+    &:nth-child(2) {
+      svg {
+        width: 2.6rem;
+        height: 1.8rem;
+      }
+    }
+
+    &:last-child {
+      svg {
+        width: 1.8rem;
+        height: 2.7rem;
+      }
+    }
+
+    svg {
+      fill: #fff;
+      transition: fill .3s;
+    }
+  }
+}

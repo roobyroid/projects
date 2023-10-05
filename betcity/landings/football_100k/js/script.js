@@ -266,10 +266,6 @@ $(".form__inputs input").click(function (e) {
 }), function (e) {
     e(window).on("load", function () {
         // e(".modal_content").mCustomScrollbar({axis: "y", scrollButtons: {enable: !1}, mouseWheel: {enable: !0}})
-        var isIframe = e(".modal_content").find('iframe');
-        if (!isIframe.length){
-            e(".modal_content").mCustomScrollbar({axis: "y", scrollButtons: {enable: !1}, mouseWheel: {enable: !0}})
-        }
     })
 }(jQuery);
 

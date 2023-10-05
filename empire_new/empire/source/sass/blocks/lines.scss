@@ -1,0 +1,36 @@
+.lines {
+  padding: 0 0 13rem;
+  overflow-x: hidden;
+
+  @include md {
+    padding: 0 0 80px;
+  }
+
+  @include xs {
+    padding: 0 0 60px;
+  }
+
+  &__item {
+    white-space: nowrap;
+    font-weight: 900;
+    font-family: $font-family-belgro;
+    font-size: 6.4rem;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 7px 0 5px;
+
+    @include md {
+      font-size: 32px;
+    }
+
+    @include xs {
+      font-size: 28px;
+    }
+
+    &:last-child {
+      color: rgba(0, 0, 0, 0.9);
+      background: $colorWhite;
+      margin: 0 0 0 -150rem;
+    }
+  }
+}

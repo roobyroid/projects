@@ -1,0 +1,142 @@
+.soc {
+  padding: 0 0 14rem;
+
+  @include md {
+    padding: 0 0 70px;
+  }
+
+  @include xs {
+    padding: 0 0 50px;
+  }
+
+  &__title {
+    margin: 0 0 4rem;
+
+    @include xs {
+      margin: 0 0 25px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 6.7rem;
+      z-index: -1;
+      width: 100%;
+      height: 1px;
+      background: #707070;
+
+      @include md {
+        bottom: 35px;
+      }
+
+      @include xs {
+        bottom: 24px;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 11rem 0 0;
+
+    @include md {
+      margin: 0;
+    }
+
+    @include xs {
+
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    width: 13.4rem;
+    height: 13.4rem;
+    border: 0.1rem solid #707070;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $colorBlack;
+    padding: 1rem;
+    margin: 0 0 0 20rem;
+    transition: background .3s, border .3s;
+
+    @include md {
+      width: 70px;
+      height: 70px;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin: 0 40px 0 0;
+      }
+    }
+
+    @include xs {
+      width: 48px;
+      height: 48px;
+
+      &:not(:last-child) {
+        margin: 0 20px 0 0;
+      }
+    }
+
+    &:hover {
+      background: $colorGold;
+      border-color: transparent;
+
+      svg {
+        fill: $colorBlack;
+      }
+    }
+
+    &:first-child {
+      svg {
+        width: 7.3rem;
+        height: 7.3rem;
+
+        @include md {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      svg {
+        width: 7.1rem;
+        height: 4.7rem;
+
+        @include md {
+          width: 40px;
+          height: 25px;
+        }
+      }
+    }
+
+    &:last-child {
+      svg {
+        width: 4.7rem;
+        height: 7rem;
+
+        @include md {
+          width: 30px;
+          height: 50px;
+        }
+      }
+    }
+
+    svg {
+      fill: #707070;
+      transition: fill .3s;
+    }
+  }
+}

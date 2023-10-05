@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  padding: 49rem 0 13rem;
+
+  @include md {
+    padding: 170px 0 85px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    max-height: 100%;
+    height: 120rem;
+    background: url('../img/page/hero-layer.png') no-repeat center/cover;
+
+    @include md {
+      height: 900px;
+    }
+
+    @include sm {
+      background-image: url('../img/page/hero-layer-mob.png');
+      height: 100%;
+    }
+
+    @include xs {
+      height: 70%;
+    }
+
+    @media (max-width: 420px) {
+      height: 60%;
+    }
+
+    @media (max-width: 400px) {
+      height: 55%;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 4rem;
+
+    @include md {
+      margin: 0 0 25px;
+    }
+
+    @include xs {
+      font-size: 17px;
+    }
+
+    h1 {
+      margin: 0 0 3rem;
+
+      @include md {
+        font-size: 22px;
+        margin: 0 0 15px;
+      }
+
+      @include sm {
+        font-size: 18px;
+      }
+
+      @include xs {
+        font-size: 14px;
+        margin: 0 0 7px;
+      }
+    }
+  }
+
+  &__title-img {
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-family: $font-family-belgro;
+    font-size: 2.8rem;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: .1rem;
+    margin: 0 0 9rem;
+
+    @include md {
+      font-size: 18px;
+      letter-spacing: 0.78px;
+      margin: 0 0 30px;
+    }
+
+    @include sm {
+      font-size: 16px;
+    }
+
+    @include xs {
+      font-size: 13px;
+    }
+
+    span {
+      color: rgba(255, 255, 255, 0.9);
+
+      @include md {
+        display: block;
+      }
+
+      &:not(:last-of-type) {
+        &::after {
+          content: '|';
+          margin: 0 1rem;
+
+          @include md {
+            content: none;
+          }
+        }
+      }
+    }
+
+    p {
+      @include md {
+        color: $colorGold;
+        margin: 4px 0 0;
+      }
+    }
+  }
+
+  &__text {}
+
+  &__btn {}
+}

@@ -64,7 +64,6 @@
     <script src="https://fcdn.betcity.ru/autobet/autobet.js"></script>
     <script>
         window.addEventListener('load', () => {
-            console.log('autobet..', autobet);
             autobet.promise.then(data => {
                 runautobet(data);
             })
@@ -75,10 +74,6 @@
             const data = {...ev, ...autobet.fields};
             var liveLbl = document.querySelector('.b-match__status-live');
             if (liveLbl) liveLbl.classList.add('hide');
-
-
-            console.log('elements..', elements);
-            console.log('data..', data);
 
             // hide match if not found ID
             if (data && !data.ID) {
@@ -522,7 +517,7 @@
                 <h2>Правила акции</h2>
             </div>
             <div class="modal_content">
-                <iframe height="300" src="rules_100k.html" frameborder="0"></iframe>
+                <iframe height="300" src="https://lp.betcity-promo.ru/rules/rules_100k.html" frameborder="0"></iframe>
             </div>
         </div>
     </div>

@@ -1,0 +1,131 @@
+body {
+
+  &.lang-ru {
+
+    .title,
+    .faq__question {
+      font-weight: 500;
+      font-family: $font-family-druk;
+    }
+
+    @media (min-width: 992px) {
+      .hero__title .title {
+        font-size: 5.4rem;
+      }
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.scroll-lock--menu {
+
+  .header__wrap {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.title {
+  font-weight: 900;
+  font-family: $font-family-belgro;
+  font-size: 6.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include md {
+    font-size: 32px;
+  }
+
+  @include sm {
+    font-size: 26px;
+  }
+
+  @include xs {
+    font-size: 20px;
+  }
+}
+
+.btn {
+  min-width: 54rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 10rem;
+  color: $colorBlack;
+  font-size: 3.4rem;
+  font-weight: 700;
+  padding: 0 8.3rem;
+  border-radius: 6rem;
+  background: url('../img/page/btn-bg.png') no-repeat center/cover;
+  text-transform: uppercase;
+  transition: opacity .3s;
+
+  @include md {
+    min-width: auto;
+    min-height: 62px;
+    font-size: 28px;
+    padding: 0 60px;
+  }
+
+  @include xs {
+    width: 100%;
+    font-size: 21px;
+    padding: 0 25px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  right: 7rem;
+  bottom: 11.5rem;
+  font-size: 1.4rem;
+  color: $colorGold;
+  text-align: center;
+
+  @include md {
+    display: none;
+  }
+
+  &__btn {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: $colorWhite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 0 2rem;
+
+    &:hover {
+      svg {
+        fill: $colorGold;
+      }
+    }
+
+    svg {
+      width: 1.7rem;
+      height: 2.8rem;
+      fill: $colorBlack;
+      transition: fill .3s;
+    }
+  }
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
