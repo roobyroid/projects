@@ -7,6 +7,14 @@ const lang = () => {
       en: 'Message our<br> manager',
       ru: 'Связаться с<br> менеджером',
     },
+    menuItem1: {
+      en: 'Affiliate Program',
+      ru: 'Партнёрская программа',
+    },
+    menuItem4: {
+      en: 'Communication with the manager',
+      ru: 'Связаться с менеджером',
+    },
     signUpHeader: {
       en: 'Sign Up',
       ru: 'Регистрация',
@@ -45,7 +53,7 @@ const lang = () => {
     },
     benefitsTitle: {
       en: 'What are the benefits of Empire Partners?',
-      ru: 'ПОЧЕМУ СТОИТ РАБОТАТЬ С EMPIRE PARTNERS?',
+      ru: 'Почему стоит работать Empire Partners?',
     },
     benefitsCard1: {
       en: 'High rates',
@@ -85,7 +93,7 @@ const lang = () => {
     },
     paymentsTitle: {
       en: 'Quick payments to&nbsp;webmasters',
-      ru: 'БЫСТРЫЕ ВЫПЛАТЫ ВЕБ-МАСТЕРАМ ПО&nbsp;ЗАПРОСУ',
+      ru: 'Быстрые выплаты веб-мастерам по запросу',
     },
     paymentsItem1: {
       en: 'Bank Cards',
@@ -178,6 +186,10 @@ const lang = () => {
     answer8: {
       en: 'At the moment we pay partners twice a month.',
       ru: 'На данный момент мы платим партнерам два раза в месяц',
+    },
+    btnPartner: {
+      en: 'Become a partner',
+      ru: 'Стань партнёром',
     },
     modalTitle: {
       en: 'CHOOSE GEO',

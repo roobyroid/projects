@@ -6329,7 +6329,7 @@ body.lang-ru .faq__question {
 }
 
 .header__soc {
-  width: 43rem;
+  width: 43.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6362,6 +6362,9 @@ body.lang-ru .faq__question {
   overflow: hidden;
   width: 22.7rem;
   height: 6.2rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-transition: width .5s;
   transition: width .5s;
   -webkit-box-align: start;

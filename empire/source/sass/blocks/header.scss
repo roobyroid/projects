@@ -127,7 +127,7 @@
   }
 
   &__soc {
-    width: 43rem;
+    width: 43.5rem;
     display: flex;
     font-size: 1.8rem;
     align-items: center;
@@ -161,6 +161,7 @@
     overflow: hidden;
     width: 22.7rem;
     height: 6.2rem;
+    justify-content: space-between;
     transition: width .5s;
     align-items: flex-start;
     transition: width .3s;

@@ -121,25 +121,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // scroll lines
   try {
-    gsap.to('.js_text-line-left', {
-      xPercent: -50,
-      ease: 'none',
-      scrollTrigger: {
-        start: 'top bottom',
-        trigger: '.lines',
-        scrub: 1,
-      },
+    const leftLines = document.querySelectorAll('.js_text-line-left');
+    leftLines.forEach((leftLine) => {
+      gsap.to(leftLine, {
+        xPercent: -50,
+        ease: 'none',
+        scrollTrigger: {
+          start: 'top bottom',
+          trigger: leftLine.closest('.lines'),
+          scrub: 1,
+        },
+      });
     });
-
-    gsap.to('.js_text-line-right', {
-      xPercent: 30,
-      ease: 'none',
-      scrollTrigger: {
-        // markers: {startColor: 'blue', endColor: 'red'},
-        start: 'top bottom',
-        trigger: '.lines',
-        scrub: 1,
-      },
+    const rightLines = document.querySelectorAll('.js_text-line-right');
+    rightLines.forEach((rightLine) => {
+      gsap.to(rightLine, {
+        xPercent: 30,
+        ease: 'none',
+        scrollTrigger: {
+          start: 'top bottom',
+          trigger: rightLine.closest('.lines'),
+          scrub: 1,
+        },
+      });
     });
   } catch (e) {}
 });
