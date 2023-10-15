@@ -1,0 +1,323 @@
+.form {
+  &__directions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 0 6rem;
+
+    @include laptop {
+      display: block;
+      margin: 0 0 30px;
+    }
+  }
+
+  &__directions-item {
+    position: relative;
+    flex: 0 1 calc(50% - 2rem / 2);
+    font-size: 1.8rem;
+    user-select: none;
+
+    @include laptop {
+      font-size: 16px;
+
+      &:not(:last-child) {
+        .form__directions-item-inner {
+          margin: 0 0 12px;
+        }
+      }
+    }
+
+    @include phone {
+      font-size: 14px;
+
+      &:not(:last-child) {
+        .form__directions-item-inner {
+          margin: 0 0 8px;
+        }
+      }
+    }
+
+    &:focus-visible {
+      .form__directions-item-inner {
+        border: 1px solid #E80024;
+        outline: 1px solid #ffffff;
+        outline-offset: 0;
+      }
+    }
+
+    h3 {
+      font-size: 3rem;
+      font-family: $f-family--foncor;
+      text-transform: uppercase;
+
+      @include laptop {
+        width: 100%;
+        max-width: 135px;
+        font-size: 20px;
+      }
+
+      @include tablet {
+        max-width: none;
+      }
+    }
+
+    input:checked+.form__directions-item-inner {
+      color: $c-white;
+      background: $c-red;
+    }
+  }
+
+  &__directions-item-inner {
+    width: 100%;
+    height: 100%;
+    padding: 3.2rem;
+    color: $c-red;
+    background: $c-white;
+    border-radius: 3rem;
+    transition: background .3s, color .3s;
+
+    @include laptop {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      padding: 20px 24px;
+      border-radius: 16px;
+    }
+
+    @include tablet {
+      display: block;
+    }
+
+    @include phone {
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    &:hover {
+      color: $c-white;
+      background: $c-red;
+    }
+  }
+
+  &__inner {
+    margin: 0 0 4rem;
+
+    .form__label-info {
+      width: 100%;
+      max-width: 18.5rem;
+
+      @include laptop {
+        max-width: 165px;
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    gap: 2.4rem;
+    align-items: flex-end;
+    margin: 0 0 2.6rem;
+
+    @include laptop {
+      gap: 12px;
+      margin: 0 0 16px;
+    }
+
+    @include tablet {
+      display: block;
+      margin: 0 0 25px;
+    }
+  }
+
+  &__label-info {
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: $c-black;
+    font-weight: 500;
+    font-size: 2rem;
+
+    @include laptop {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      display: block;
+      margin: 0 0 5px;
+      font-size: 16px;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
+  }
+
+  &__label-input {
+    flex-grow: 1;
+    width: 100%;
+    height: 3rem;
+    padding: 0 0 .4rem;
+    color: #8A8A8A;
+    font-size: 2rem;
+    background: transparent;
+    border-bottom: 1px solid $c-red;
+
+    @include laptop {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      height: auto;
+      font-size: 16px;
+    }
+
+    @include phone-big {
+      font-size: 14px;
+    }
+
+    @include phone {
+      font-size: 11px;
+    }
+
+    &::placeholder {
+      color: #8A8A8A;
+    }
+  }
+
+  &__text-error {
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width: 100%;
+    color: $c-red;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &__labels {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+
+    @include laptop {
+      gap: 27px;
+    }
+
+    @include phone-big {
+      display: block;
+    }
+
+    .form__label {
+      flex: 0 1 70%;
+      margin: 0;
+
+      @include laptop {
+        flex: 0 1 50%;
+      }
+
+      &:first-child {
+        flex: 0 1 30%;
+
+        @include laptop {
+          flex: 0 1 50%;
+        }
+
+        @include phone-big {
+          margin: 0 0 25px;
+        }
+      }
+    }
+
+    .form__label-info {
+      width: auto;
+      max-width: none;
+    }
+  }
+
+  &__textarea {
+    position: relative;
+    display: block;
+    margin: 0 0 4rem;
+
+    @include laptop {
+      margin: 0 0 30px;
+    }
+
+    @include tablet {
+      margin: 0 0 20px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 25.8rem;
+      padding: 1.4rem 1.8rem;
+      color: #8A8A8A;
+      font-size: 2rem;
+      background: transparent;
+      border: 1px solid $c-red;
+      border-radius: 1rem;
+
+      @include laptop {
+        padding: 12px 15px;
+        font-size: 18px;
+      }
+
+      @include tablet {
+        height: 212px;
+        font-size: 16px;
+      }
+
+      @include phone-big {
+        font-size: 14px;
+      }
+
+      @include phone {
+        font-size: 11px;
+      }
+
+      &::placeholder {
+        color: #8A8A8A;
+      }
+    }
+  }
+
+  &__checkboxes {
+    margin: 7rem 0 0;
+
+    @include laptop {
+      margin: 20px 0 0;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    display: block;
+
+    &:not(:last-child) {
+      margin: 0 0 1.2rem;
+
+      @include laptop {
+        margin: 0 0 16px;
+      }
+    }
+
+    .form__text-error {
+      padding: 0 0 0 5rem;
+      text-align: left;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    margin: 8rem auto 0;
+
+    @include laptop {
+      min-width: 252px;
+      margin: 40px auto 0;
+    }
+
+    @include phone {
+      min-width: 100%;
+    }
+  }
+}

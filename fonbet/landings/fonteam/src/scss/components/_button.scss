@@ -1,0 +1,31 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 7.8rem;
+  padding: 0 5.8rem .3rem;
+  color: $c-white;
+  font-weight: 700;
+  font-size: 3.7rem;
+  text-align: center;
+  background: $c-red;
+  border-radius: 6rem;
+  filter: drop-shadow(10px 10px 24px rgb(0 0 0 / 40%));
+  transition: background .3s, color .3s;
+
+  @include laptop {
+    min-height: 56px;
+    padding: 0 40px;
+    font-size: 24px;
+  }
+
+  @include phone {
+    padding: 0 35px;
+    font-size: 18px;
+  }
+
+
+  &:hover {
+    background: darken($color: $c-red, $amount: 5%);
+  }
+}

@@ -1,0 +1,117 @@
+<div class="modal hystmodal" id="form" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<h2 class="modal__title title">Предлагай идеи<br> в&nbsp;разных направлениях:</h2>
+			<form class="modal__form form js_form">
+				<div class="form__directions">
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="places" checked>
+						<div class="form__directions-item-inner">
+							<h3>Места силы</h3>
+							<p>Например, отреставрируем коробку,<br> зальем каток, обустроим место для спорта.</p>
+						</div>
+					</label>
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="sportsman">
+						<div class="form__directions-item-inner">
+							<h3>спортсмены</h3>
+							<p>Например, организуем поездку<br> на&nbsp;турнир или купим снаряжение.</p>
+						</div>
+					</label>
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="teams">
+						<div class="form__directions-item-inner">
+							<h3>команды</h3>
+							<p>Например, поможем с&nbsp;дизайном формы<br> или/и инвентарем для тренировок.</p>
+						</div>
+					</label>
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="ideas">
+						<div class="form__directions-item-inner">
+							<h3>своя идея</h3>
+							<p>Присылай новые идеи вне рамок!<br> Мы&nbsp;всегда открыты необычным проектам.</p>
+						</div>
+					</label>
+				</div>
+
+				<div class="form__inner">
+					<label class="form__label">
+						<span class="form__label-info">Фамилия имя</span>
+						<input class="form__label-input" type="text" name="name" data-required="text"
+							data-error="Пожалуйста, заполните это поле">
+					</label>
+					<label class="form__label">
+						<span class="form__label-info">Место жительства</span>
+						<input class="form__label-input" type="text" name="place" data-required="text"
+							data-error="Пожалуйста, заполните это поле">
+					</label>
+					<label class="form__label">
+						<span class="form__label-info">Вид спорта</span>
+						<input class="form__label-input" type="text" name="sport" data-required="text"
+							data-error="Пожалуйста, заполните это поле">
+					</label>
+					<div class="form__labels">
+						<label class="form__label">
+							<span class="form__label-info">Email</span>
+							<input class="form__label-input" type="email" name="email" data-required="email"
+								data-error="Введите корректный email адрес">
+						</label>
+						<label class="form__label">
+							<span class="form__label-info">Телефон</span>
+							<input class="form__label-input js_input-tel" type="tel" name="phone" data-required="tel"
+								data-error="Введите корректный номер телефона">
+						</label>
+					</div>
+				</div>
+
+				<label class="form__textarea">
+					<textarea name="idea" placeholder="Описание моей идеи в трех предложениях." data-required="textarea"
+						data-error="Длина текста должна быть не менее 50 символов"></textarea>
+				</label>
+
+				<label class="form__label">
+					<span class="form__label-info">Ссылка на материалы</span>
+					<input class="form__label-input" type="text" name="link" placeholder="Проверь, что доступ к ссылке открыт">
+				</label>
+
+				<div class="form__checkboxes">
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="approval" data-required="checkbox"
+							data-error="Пожалуйста, дайте согласие на обработку персональных данных">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Согласие на&nbsp;обработку персональных данных</p>
+						</div>
+					</label>
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="proofAge" data-required="checkbox"
+							data-error="Пожалуйста, подтвердите свой возраст">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Подтверждение возраста (18+)</p>
+						</div>
+					</label>
+				</div>
+
+				<button class="form__btn btn" type="submit">Загрузить</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="thanks modal hystmodal" id="thanks" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="thanks__border">
+				<img src="img/page/modal-border.png" alt="">
+			</div>
+			<h2 class="thanks__title title">Спасибо, заявка принята!</h2>
+			<div class="thanks__info">
+				<p class="thanks__text">Анонс победителей состоится<br> в&nbsp;конце декабря 2023.</p>
+				<p class="thanks__sign">На&nbsp;связи,<br> Fonteam</p>
+			</div>
+		</div>
+	</div>
+</div>

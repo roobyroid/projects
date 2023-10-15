@@ -1,0 +1,205 @@
+.about {
+  position: relative;
+  padding: 7rem 0 2rem;
+  color: $c-white;
+  background: $c-red;
+
+  @include laptop {
+    padding: 80px 0 20px;
+  }
+
+  @include tablet {
+    padding: 35px 0 10px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    width: 13rem;
+    max-height: calc(100% - 50px);
+
+    @include laptop {
+      top: 12px;
+      width: 76px;
+    }
+
+    @include tablet {
+      top: 50%;
+      left: 15px;
+      width: 90px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 0 8rem;
+
+    @include laptop {
+      padding: 0 0 0 50px
+    }
+
+    @include tablet {
+      display: block;
+      padding: 0 0 0 90px;
+    }
+  }
+
+  &__info {
+    flex: 0 0 74rem;
+    padding: 10rem 4rem 0;
+
+    @include laptop {
+      flex: 0 0 480px;
+      padding: 20px 40px 0;
+    }
+
+    @include tablet {
+      margin: 0 0 20px;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 3rem;
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    @include laptop {
+      margin: 0 0 40px;
+      font-size: 18px;
+    }
+
+    @include tablet {
+      margin: 0 0 25px;
+    }
+
+    @include phone {
+      font-size: 16px;
+    }
+  }
+
+  &__descr {
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+
+    @include laptop {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin: 0 0 4rem;
+
+        @include laptop {
+          margin: 0 0 20px;
+
+          @include tablet {
+            margin: 0 0 12px;
+          }
+        }
+      }
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: 3.7rem;
+      height: 2.5rem;
+      content: '';
+
+      @include laptop {
+        width: 20px;
+        height: 13px;
+      }
+
+      @include tablet {
+        content: none;
+      }
+    }
+
+    &::before {
+      top: .5rem;
+      right: calc(100% + .8rem);
+      background: url('../img/about/quote-start.png') no-repeat center/contain;
+
+      @include laptop {
+        right: calc(100% + 5px);
+      }
+    }
+
+    &::after {
+      bottom: 0;
+      left: calc(100% + .8rem);
+      background: url('../img/about/quote-end.png') no-repeat center/contain;
+
+      @include laptop {
+        bottom: 2px;
+        left: 100%;
+      }
+    }
+  }
+
+  &__img {
+    flex: 0 1 98rem;
+    margin: 0 -2rem 0 8rem;
+
+    @include laptop {
+      flex: 0 0 400px;
+      margin: 0 auto;
+    }
+
+    @include tablet {
+      max-width: 450px;
+    }
+  }
+
+  &__fonteam {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 74rem;
+    margin: -17rem 0 0 15rem;
+
+    @include laptop {
+      max-width: 220px;
+      margin: -40px auto 0;
+    }
+
+    @include tablet {
+      margin: -40px auto 0;
+    }
+
+    @include phone {
+      justify-content: center;
+      max-width: calc(100% - 120px);
+      margin: -40px 0 -20px 90px;
+    }
+
+    img {
+      max-width: 45rem;
+
+      @include laptop {
+        max-width: 100%;
+        margin: 0 10px 0 0;
+      }
+
+      @include tablet {
+        margin: 0;
+        transform: rotate(15deg);
+      }
+    }
+  }
+}

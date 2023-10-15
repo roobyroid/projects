@@ -1,0 +1,276 @@
+.join {
+  position: relative;
+  z-index: 1;
+  min-height: 86rem;
+  padding: 19rem 0 15rem;
+
+  @include laptop {
+    min-height: auto;
+    padding: 80px 0 140px;
+  }
+
+  @include tablet {
+    padding: 50px 0 70px;
+  }
+
+  @include phone {
+    padding: 40px 0 70px;
+  }
+
+  &__border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: calc(100% - 2rem);
+    height: 100%;
+
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1921px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 60rem 1fr;
+    align-items: start;
+    padding: 0 13rem;
+
+    @include laptop {
+      grid-template-columns: 350px 1fr;
+      padding: 0 0 0 70px;
+    }
+
+    @include tablet {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 7rem;
+    letter-spacing: -.5rem;
+    text-transform: uppercase;
+
+    @include laptop {
+      font-size: 40px;
+      letter-spacing: -3px;
+    }
+
+    @include tablet {
+      margin: 0 0 30px;
+      font-size: 36px;
+    }
+
+    @include phone {
+      font-size: 32px;
+      letter-spacing: -2.56px;
+    }
+  }
+
+  &__steps {
+    position: relative;
+    grid-row: span 2 / auto;
+    padding: 0 0 0 16rem;
+    counter-reset: steps;
+
+    @include laptop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 0 50px;
+    }
+
+    @include tablet {
+      align-items: flex-start;
+      padding: 0;
+    }
+  }
+
+  &__steps-item {
+    position: relative;
+    width: 100%;
+    max-width: 56rem;
+    padding: 0 0 0 14rem;
+
+    @include laptop {
+      max-width: 400px;
+      padding: 0 0 0 90px;
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: inline-flex;
+      justify-content: center;
+      width: 4.5rem;
+      color: transparent;
+      font-weight: 900;
+      font-size: 12.2rem;
+      font-style: italic;
+      text-transform: uppercase;
+      transform: translateY(-50%);
+      content: counter(steps);
+      counter-increment: steps;
+      -webkit-text-stroke: .3rem $c-red;
+
+      @include laptop {
+        font-size: 80px;
+        -webkit-text-stroke: 2px $c-red;
+      }
+
+      @include tablet {
+        font-size: 60px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 6rem;
+
+      @include laptop {
+        margin: 0 0 50px;
+      }
+
+      @include tablet {
+        margin: 0 0 40px;
+      }
+
+      &::after {
+        position: absolute;
+        top: calc(100% + 1.2rem);
+        left: 2.5rem;
+        width: 2px;
+        height: 4.5rem;
+        background: $c-red;
+        content: '';
+
+        @include laptop {
+          top: calc(100% + 16px);
+          left: 25px;
+          height: 27px;
+        }
+
+        @include tablet {
+          top: calc(100% + 8px);
+          left: 22px;
+        }
+      }
+    }
+  }
+
+  &__steps-item-name {
+    margin: 0 0 1.2rem;
+    font-weight: 900;
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    @include laptop {
+      margin: 0 0 3px;
+      font-size: 28px;
+    }
+
+    @include tablet {
+      font-size: 22px;
+    }
+
+    @include phone {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    display: flex;
+    justify-self: start;
+    min-height: 10.5rem;
+    margin: 12rem auto 0;
+    padding: 0 9rem;
+    color: $c-red;
+    font-size: 5rem;
+    background: transparent;
+    filter: drop-shadow(1.4rem 1rem 2.4rem rgb(0 0 0 / 40%));
+
+    @include laptop {
+      min-height: 58px;
+      margin: 70px 0 0 auto;
+      padding: 0 77px;
+      font-size: 32px;
+    }
+
+    @include tablet {
+      width: 100%;
+      max-width: 244px;
+      margin: 50px 0 0 80px;
+      padding: 0 88px;
+      font-size: 24px;
+    }
+
+    @include phone {
+      font-size: 18px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 62%;
+      left: -16rem;
+      z-index: -1;
+      display: block;
+      width: 39rem;
+      height: 21rem;
+      background: url('../img/join/stroke.png') no-repeat center/contain;
+      transform: translateY(-50%);
+      content: '';
+      pointer-events: none;
+
+      @include laptop {
+        left: -86px;
+        width: 210px;
+        height: 125px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: $c-white;
+      border-radius: inherit;
+      transition: inherit;
+      content: '';
+    }
+
+    &:hover {
+      color: $c-white;
+
+      &::after {
+        background: $c-red;
+      }
+    }
+  }
+
+}

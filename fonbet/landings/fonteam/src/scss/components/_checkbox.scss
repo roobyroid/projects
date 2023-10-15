@@ -1,0 +1,59 @@
+.checkbox {
+  input {
+    &:checked+.checkbox__wrap .checkbox__el {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    color: $c-black;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color .3s;
+
+    @include laptop {
+      font-size: 14px;
+    }
+
+    @include phone {
+      font-size: 12px;
+    }
+  }
+
+  &__el {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: 0 1.2rem 0 0;
+    border: 1px solid $c-red;
+    border-radius: 50%;
+    transition: border .3s;
+
+    @include laptop {
+      width: 16px;
+      height: 16px;
+    }
+
+    &::after {
+      width: 1.8rem;
+      height: 1.8rem;
+      background: $c-red;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity .3s, background .3s;
+      content: '';
+
+      @include laptop {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

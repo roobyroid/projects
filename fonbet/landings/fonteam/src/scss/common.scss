@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+
+  @media (max-width: 1919px) and (min-width: 1200px) {
+    font-size: calc((.54vw));
+  }
+}
+
+body {
+  position: relative;
+  color: $c-text--global;
+  font-weight: $f-weight--global;
+  font-size: $f-size--global;
+  font-family: $f-family--global;
+  line-height: $l-height--global;
+  background-color: $c-body-bg;
+
+  @include laptop {
+    font-size: 18px;
+  }
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include phone {
+    font-size: 14px;
+  }
+
+  &._lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+
+  main {
+    flex: 1 1 auto;
+  }
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.title {
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: -.3rem;
+  text-transform: uppercase;
+
+  @include laptop {
+    font-size: 32px;
+    letter-spacing: -2.56px;
+  }
+
+  @include tablet {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+
+  @include phone {
+    font-size: 20px;
+  }
+}
+
+.info {
+  position: relative;
+  z-index: 1;
+  color: $c-white;
+  background: #262626;
+
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url('../img/page/bg-el.png') no-repeat center/cover;
+    content: '';
+  }
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

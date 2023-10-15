@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 176rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  @include laptop {
+    max-width: none;
+    padding: 0 40px;
+  }
+
+  @include phone {
+    padding: 0 20px;
+  }
+}

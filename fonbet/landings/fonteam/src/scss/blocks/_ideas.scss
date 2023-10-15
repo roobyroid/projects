@@ -1,0 +1,223 @@
+.ideas {
+  padding: 9rem 0 10rem;
+
+  @include laptop {
+    padding: 0 0 80px;
+  }
+
+  @include tablet {
+    padding: 0 0 60px;
+  }
+
+  @include phone {
+    padding: 0 0 40px;
+  }
+
+  .container {
+    max-width: 150rem;
+  }
+
+  &__head {
+    margin: 0 0 6rem;
+
+    @include laptop {
+      margin: 0 0 35px;
+    }
+
+    @include tablet {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 1rem;
+
+    @include phone {
+      margin: 0 0 12px;
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    @include phone-big {
+      padding: 0 50px;
+    }
+
+    .swiper {
+      @include phone-big {
+        padding-top: 30px;
+      }
+    }
+
+    .swiper-wrapper {
+      flex-wrap: wrap;
+      gap: 12rem 6rem;
+      justify-content: space-between;
+
+      @include laptop {
+        gap: 40px;
+      }
+
+      @include tablet {
+        gap: 20px;
+      }
+
+      @include phone-big {
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: flex-start;
+      }
+    }
+
+    .swiper-slide {
+      flex: 0 1 calc(50% - 12rem / 2);
+      height: auto;
+
+      @include laptop {
+        flex: 0 1 calc(50% - 40px / 2);
+      }
+
+      @include tablet {
+        flex: 0 1 calc(50% - 20px / 2);
+      }
+
+      &:first-child {
+        margin-top: 6rem;
+
+        @include laptop {
+          margin-top: 30px;
+        }
+
+        @include phone-big {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        margin-left: -5rem;
+
+        @include laptop {
+          margin-left: -30px;
+        }
+
+        @include phone-big {
+          margin-left: 0;
+        }
+      }
+
+      &:last-child {
+        margin-top: -6rem;
+
+        @include laptop {
+          margin-top: -30px;
+        }
+
+        @include phone-big {
+          margin-top: 0;
+        }
+      }
+
+      @include phone-big {
+        flex: 1 0 auto;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item-name {
+    position: absolute;
+    top: -.5em;
+    left: 0;
+    width: 100%;
+    padding: 0 10rem;
+    color: $c-red;
+    font-weight: 700;
+    font-size: 7rem;
+    font-style: italic;
+    letter-spacing: -.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include laptop {
+      padding: 0 70px;
+      font-size: 40px;
+      letter-spacing: -3.2px;
+    }
+
+    @include tablet {
+      padding: 0 40px;
+      font-size: 36px;
+    }
+
+    @include phone-big {
+      top: -.6em;
+    }
+
+    @include phone {
+      padding: 0 20px;
+      font-size: 32px;
+      letter-spacing: -2.56px;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--bottom-right {
+      top: auto;
+      bottom: 0;
+      text-align: right;
+
+      @include phone-big {
+        top: -.6em;
+        bottom: auto;
+      }
+    }
+
+    &--bottom {
+      top: auto;
+      bottom: -.5em;
+
+      @include phone-big {
+        top: -.6em;
+        bottom: auto;
+        text-align: right;
+      }
+    }
+  }
+
+  .slider-nav {
+    display: none;
+
+    @include phone-big {
+      display: block;
+
+      &__item {
+        position: absolute;
+        top: calc(50% + 30px);
+        right: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+
+        svg {
+          fill: $c-white;
+        }
+
+        &--prev {
+          right: auto;
+          left: 0;
+        }
+
+        &:hover {
+          svg {
+            fill: $c-red;
+          }
+        }
+      }
+    }
+  }
+}

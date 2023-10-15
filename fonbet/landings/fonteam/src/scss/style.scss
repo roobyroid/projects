@@ -1,0 +1,36 @@
+/* Import lib styles  */
+@import '../../node_modules/swiper/swiper';
+@import "./lib/hystmodal.min";
+
+// @import '../../node_modules/swiper/modules/navigation/navigation.scss';
+// @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
+// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+// @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
+
+/* prettier-ignore */
+@import "utils/media-queries";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/layouts";
+@import "fonts";
+@import "normalize";
+@import "utils/custom-reset";
+
+/* component styles: buttons, headers, links and other small elements */
+@import 'components/button';
+@import 'components/slider-nav';
+@import 'components/checkbox';
+
+/* common styles, i.e. body, text, etc. */
+@import 'common';
+
+/* block styles: header, footer, any meaningful sections */
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/join';
+@import 'blocks/ideas';
+@import 'blocks/players';
+@import 'blocks/modal';
+@import 'blocks/form';
+@import 'blocks/thanks';

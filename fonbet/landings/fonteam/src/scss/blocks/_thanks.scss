@@ -1,0 +1,115 @@
+.thanks {
+  color: $c-black;
+
+  .modal__window {
+    position: relative;
+    max-width: 67.4rem;
+    min-height: 36rem;
+    padding: 6rem;
+
+    @include laptop {
+      max-width: 622px;
+      min-height: 340px;
+      padding: 60px 80px;
+    }
+
+    @include phone-big {
+      min-height: auto;
+    }
+
+    @include phone {
+      max-width: 400px;
+      padding: 40px 20px;
+    }
+  }
+
+  .hystmodal__close {
+    top: 2rem;
+    right: 2rem;
+
+    @include phone {
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  &__border {
+    position: absolute;
+    top: 1.5rem;
+    left: .5rem;
+    z-index: -1;
+    width: calc(100% - 2rem);
+    height: calc(100% - 1.5rem);
+
+    img {
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0 0 3rem;
+
+    @include phone {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__info {
+    @include phone {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    margin: 0 0 6rem;
+    font-weight: 400;
+    font-size: 3.2rem;
+    letter-spacing: -.2rem;
+
+    @include laptop {
+      margin: 0 0 50px;
+      font-size: 24px;
+    }
+
+    @include phone {
+      display: flex;
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  &__sign {
+    position: relative;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: -.1rem;
+
+    @include laptop {
+      font-size: 18px;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -1.7rem;
+      left: -3rem;
+      width: 14rem;
+      height: 7.4rem;
+      background: url('../img/page/modal-stroke.png') no-repeat center/contain;
+      content: '';
+
+      @include phone {
+        top: -15px;
+        left: -20px;
+        width: 100px;
+        height: 60px;
+      }
+    }
+  }
+}
