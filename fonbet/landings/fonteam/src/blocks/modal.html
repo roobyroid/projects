@@ -13,7 +13,7 @@
 						</div>
 					</label>
 					<label class="form__directions-item">
-						<input class="visually-hidden" type="radio" name="subject" value="sportsman">
+						<input class="visually-hidden" type="radio" name="subject" value="athletes">
 						<div class="form__directions-item-inner">
 							<h3>спортсмены</h3>
 							<p>Например, организуем поездку<br> на&nbsp;турнир или купим снаряжение.</p>
@@ -27,7 +27,7 @@
 						</div>
 					</label>
 					<label class="form__directions-item">
-						<input class="visually-hidden" type="radio" name="subject" value="ideas">
+						<input class="visually-hidden" type="radio" name="subject" value="idea">
 						<div class="form__directions-item-inner">
 							<h3>своя идея</h3>
 							<p>Присылай новые идеи вне рамок!<br> Мы&nbsp;всегда открыты необычным проектам.</p>
@@ -42,7 +42,7 @@
 							data-error="Пожалуйста, заполните это поле">
 					</label>
 					<label class="form__label">
-						<span class="form__label-info">Место жительства</span>
+						<span class="form__label-info">Место реализации проекта</span>
 						<input class="form__label-input" type="text" name="place" data-required="text"
 							data-error="Пожалуйста, заполните это поле">
 					</label>
@@ -72,24 +72,41 @@
 
 				<label class="form__label">
 					<span class="form__label-info">Ссылка на материалы</span>
-					<input class="form__label-input" type="text" name="link" placeholder="Проверь, что доступ к ссылке открыт">
+					<input class="form__label-input" type="url" name="link" placeholder="Проверь, что доступ к ссылке открыт">
 				</label>
 
 				<div class="form__checkboxes">
-					<label class="form__checkbox checkbox">
-						<input class="visually-hidden" type="checkbox" name="approval" data-required="checkbox"
-							data-error="Пожалуйста, дайте согласие на обработку персональных данных">
-						<div class="checkbox__wrap">
-							<span class="checkbox__el"></span>
-							<p>Согласие на&nbsp;обработку персональных данных</p>
-						</div>
-					</label>
 					<label class="form__checkbox checkbox">
 						<input class="visually-hidden" type="checkbox" name="proofAge" data-required="checkbox"
 							data-error="Пожалуйста, подтвердите свой возраст">
 						<div class="checkbox__wrap">
 							<span class="checkbox__el"></span>
-							<p>Подтверждение возраста (18+)</p>
+							<p>Мне есть 18 лет</p>
+						</div>
+					</label>
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="approval" data-required="checkbox"
+							   data-error="Пожалуйста, дайте согласие на обработку персональных данных">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Я даю свою согласие <a class="form__link" href="#" data-hystmodal="#formApproval">на обработку персональных данных</a></p>
+						</div>
+					</label>
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="approvalSubscribe" data-required="checkbox"
+							   data-error="Пожалуйста, подтвердите своё согласие">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Я даю своё согласие <a class="form__link" href="#" data-hystmodal="#formUnsubscribe">на получение рекламно-информационных рассылок</a> от ООО «Фонбет ТВ»,
+								<br>(ИНН 7703529560) и ООО «ФОНКОР» (ИНН: 7726752148).</p>
+						</div>
+					</label>
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="approvalRules" data-required="checkbox"
+							   data-error="Пожалуйста, подтвердите своё согласие">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Я согласен <a class="form__link" target="_blank" href="https://www.fon.bet/pages/fonteam">с правилами акции</a></p>
 						</div>
 					</label>
 				</div>
@@ -112,6 +129,43 @@
 				<p class="thanks__text">Анонс победителей состоится<br> в&nbsp;конце декабря 2023.</p>
 				<p class="thanks__sign">На&nbsp;связи,<br> Fonteam</p>
 			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal--message modal hystmodal" id="formApproval" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<h2 class="thanks__title title">Согласие на обработку сведений</h2>
+			<p class="modal__txt">
+				Заполняя Анкету для участия в Мероприятии, Участник подтверждает, что он согласен с тем, что в целях регистрации Участника,
+				обеспечения его участия в Мероприятии, обработки его результатов, подведения итогов Мероприятия, обратной связи с Участниками
+				по вопросам участия в Мероприятии, направления информации Участнику, в том числе рекламной, Организатор Мероприятия
+				(ООО «Фонбет ТВ», ИНН 7703529560), Оператор Мероприятия (ООО «Серф», ИНН: 7725800310), Информационный партнер Мероприятия
+				(ООО «ФОНКОР», ИНН: 7726752148)  могут посредством совершения действий, а именно: сбора, записи, систематизации, накопления,
+				хранения, уточнения (обновления, изменения), извлечения, использования, передачи (предоставления, доступа), обезличивания,
+				блокирования, удаления, уничтожения персональных данных; обрабатывать персональные данные Участника, включая указанные
+				Участником при регистрации, а именно: ФИО, номер телефона и адрес электронной почты, а также иные персональные данные,
+				направляемые Участником Организатору Мероприятия, Оператору Мероприятия и Информационному партнеру Мероприятия
+				в рамках Мероприятия. Данное согласие действует в течение периода проведения Конкурса, а также в течение 3 лет после окончания
+				указанного периода, если оно не будет отозвано ранее путем направления письменного заявления Организатору Мероприятия,
+				Оператору Мероприятия и Информационному партнеру Мероприятия.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="modal--message modal hystmodal" id="formUnsubscribe" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<h2 class="thanks__title title">Как отписаться от рассылки</h2>
+			<p class="modal__txt">
+				Отписаться от рассылки можно посредством направления письменного запроса направившему ее лицу или посредством
+				<br>
+				функциональных возможностей почтового сервиса, который я использую.
+			</p>
 		</div>
 	</div>
 </div>

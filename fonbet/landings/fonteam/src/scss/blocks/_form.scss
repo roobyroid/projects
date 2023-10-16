@@ -307,6 +307,13 @@
     }
   }
 
+  &__link{
+    &:hover, &:focus{
+      text-decoration: none;
+    }
+    text-decoration: underline;
+  }
+
   &__btn {
     display: flex;
     margin: 8rem auto 0;

@@ -15,6 +15,10 @@
     cursor: pointer;
     transition: color .3s;
 
+    p{
+      line-height: 1.25;
+    }
+
     @include laptop {
       font-size: 14px;
     }

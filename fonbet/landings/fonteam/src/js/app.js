@@ -17,6 +17,14 @@ import { initModal } from './lib/hystmodal.min.js';
 import Swiper, { Navigation, EffectCoverflow } from 'swiper';
 Swiper.use([Navigation, EffectCoverflow]);
 // > - - - - - - - - [app development] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+var showDebug = false;
+
+if (!showDebug) {
+  console.log = function() {};
+  console.debug = function() {};
+  console.table = function() {};
+}
+
 function app() {
   scrollToSection();
   initModal();
@@ -110,6 +118,7 @@ function app() {
   const formModal = new HystModal({
     linkAttributeName: 'data-hystmodal',
   });
+  formModal.init();
 
   //form
   const ideaForm = document.querySelector('.js_form');
@@ -119,7 +128,51 @@ function app() {
     if (hasErrors(ideaForm)) return;
 
     const data = serializeForm(event.target);
-    console.log(Array.from(data.entries()));
+
+    // Convert the FormData to a plain JavaScript object
+    const formDataObject = {};
+    for (const [key, value] of data.entries()) {
+      formDataObject[key] = value;
+    }
+
+    // Define the URL where you want to send the POST request
+    const url = 'https://xcomfeed.com/fonbet/fonteam/send';
+
+    // Create the request headers
+    const headers = {
+      'Content-Type': 'application/json', // Set the content type to JSON
+    };
+
+    // Create the request body
+    const requestBody = JSON.stringify(formDataObject);
+
+    // Send the POST request
+    fetch(url, {
+      method: 'POST',
+      headers,
+      body: requestBody,
+    })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json(); // You can parse the response JSON if needed
+        })
+        .then((data) => {
+          // Handle the response data here if needed
+          console.log('Response:', data);
+
+          try {
+            formModal.open(document.getElementById('thanks'));
+          } catch (e){
+            console.error('Error:', error);
+          }
+
+        })
+        .catch((error) => {
+          // Handle errors here
+          console.error('Error:', error);
+        });
   }
 
   function serializeForm(formNode) {

@@ -1,13 +1,12 @@
 html {
-  scroll-behavior: smooth;
   font-size: 10px;
-
   @media (max-width: 1919px) and (min-width: 1200px) {
     font-size: calc((.54vw));
   }
 }
 
 body {
+  scroll-behavior: smooth;
   position: relative;
   color: $c-text--global;
   font-weight: $f-weight--global;

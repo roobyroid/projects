@@ -114,7 +114,7 @@ const formValidation = {
     );
   },
   nameTest(formRequiredItem) {
-    return /^([А-Яа-яЪъЁёЫыэЭ\s]+|[a-zA-Z\s]+)$/.test(formRequiredItem.value);
+    return /^(?:[0-9А-Яа-яЪъЁёЫыэЭa-zA-Z\s.,;:!?'()-]+)$/.test(formRequiredItem.value);
   },
 };
 export const hasErrors = formValidation.hasErrors;
