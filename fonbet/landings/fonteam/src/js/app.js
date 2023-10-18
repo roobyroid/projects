@@ -17,18 +17,17 @@ import { initModal } from './lib/hystmodal.min.js';
 import Swiper, { Navigation, EffectCoverflow } from 'swiper';
 Swiper.use([Navigation, EffectCoverflow]);
 // > - - - - - - - - [app development] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-var showDebug = false;
+// var showDebug = false;
 
-if (!showDebug) {
-  console.log = function() {};
-  console.debug = function() {};
-  console.table = function() {};
-}
+// if (!showDebug) {
+//   console.log = function() {};
+//   console.debug = function() {};
+//   console.table = function() {};
+// }
 
 function app() {
   scrollToSection();
   initModal();
-
   // slider ideas
   const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
     let swiper;

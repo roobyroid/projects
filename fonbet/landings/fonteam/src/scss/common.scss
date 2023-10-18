@@ -1,5 +1,7 @@
 html {
   font-size: 10px;
+  text-rendering: optimizeLegibility !important;
+  -moz-osx-font-smoothing: grayscale !important;
   @media (max-width: 1919px) and (min-width: 1200px) {
     font-size: calc((.54vw));
   }
