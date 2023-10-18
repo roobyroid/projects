@@ -66,14 +66,35 @@ function app() {
   });
 
   //slider players
+  let sliderPlayers;
+  const sliderPlayersNav = {
+    nextEl: '.js_players-slider .js_btn-slide-next',
+    prevEl: '.js_players-slider .js_btn-slide-prev',
+  };
   const sliderPlayersSettings = {
     loop: true,
-    spaceBetween: 0,
     observer: true,
     observeParents: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    navigation: sliderPlayersNav,
+    breakpoints: {
+      768: {
+        spaceBetween: 40,
+      },
+      990: {
+        spaceBetween: 60,
+      },
+    },
+  };
+  const sliderPlayersMobileSettings = {
+    loop: true,
+    observer: true,
+    observeParents: true,
+    centeredSlides: true,
     effect: 'coverflow',
     slidesPerView: 'auto',
-    centeredSlides: true,
+    spaceBetween: 0,
     coverflowEffect: {
       rotate: 0,
       stretch: 50,
@@ -81,25 +102,29 @@ function app() {
       modifier: 2,
       scale: 0.9,
     },
-    navigation: {
-      nextEl: '.js_players-slider .js_btn-slide-next',
-      prevEl: '.js_players-slider .js_btn-slide-prev',
-    },
-    breakpoints: {
-      768: {
-        spaceBetween: 40,
-        effect: '',
-        slidesPerView: 3,
-      },
-      990: {
-        spaceBetween: 60,
-        effect: '',
-        slidesPerView: 3,
-      },
-    },
+    navigation: sliderPlayersNav,
   };
-  let sliderPlayers = new Swiper('.js_players-slider .swiper', sliderPlayersSettings);
+  // responsive effect players slider
+  function playersSlider() {
+    const checker = function () {
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        if (sliderPlayers !== undefined) sliderPlayers.destroy(true, true);
+        return (sliderPlayers = new Swiper(
+          '.js_players-slider .swiper',
+          sliderPlayersMobileSettings,
+        ));
+      } else {
+        if (sliderPlayers !== undefined) sliderPlayers.destroy(true, true);
+        return (sliderPlayers = new Swiper('.js_players-slider .swiper', sliderPlayersSettings));
+      }
+    };
+    window.matchMedia('(max-width: 767px)').addEventListener('change', checker);
+    checker();
+  }
 
+  playersSlider();
+
+  // show more players
   const playersAllBtn = document.querySelector('.js_players-all');
   const playersWrapper = document.querySelector('.js_players-slider');
   playersAllBtn.addEventListener('click', () => {
@@ -109,15 +134,25 @@ function app() {
       sliderPlayers.destroy(true, true);
     } else {
       playersAllBtn.textContent = 'Все игроки';
-      sliderPlayers = new Swiper('.js_players-slider .swiper', sliderPlayersSettings);
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        sliderPlayers = new Swiper('.js_players-slider .swiper', sliderPlayersMobileSettings);
+      } else {
+        sliderPlayers = new Swiper('.js_players-slider .swiper', sliderPlayersSettings);
+      }
     }
   });
 
   // init modal
   const formModal = new HystModal({
-    linkAttributeName: 'data-hystmodal',
+    linkAttributeName: 'data-hystmodalForm',
+    backscroll: false,
   });
   formModal.init();
+
+  const thanksModal = new HystModal({
+    linkAttributeName: 'data-hystmodal',
+  });
+  thanksModal.init();
 
   //form
   const ideaForm = document.querySelector('.js_form');
@@ -151,27 +186,26 @@ function app() {
       headers,
       body: requestBody,
     })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json(); // You can parse the response JSON if needed
-        })
-        .then((data) => {
-          // Handle the response data here if needed
-          console.log('Response:', data);
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json(); // You can parse the response JSON if needed
+      })
+      .then((data) => {
+        // Handle the response data here if needed
+        console.log('Response:', data);
 
-          try {
-            formModal.open(document.getElementById('thanks'));
-          } catch (e){
-            console.error('Error:', error);
-          }
-
-        })
-        .catch((error) => {
-          // Handle errors here
+        try {
+          thanksModal.open(document.getElementById('thanks'));
+        } catch (e) {
           console.error('Error:', error);
-        });
+        }
+      })
+      .catch((error) => {
+        // Handle errors here
+        console.error('Error:', error);
+      });
   }
 
   function serializeForm(formNode) {

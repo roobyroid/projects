@@ -94,9 +94,16 @@ input:focus {
 a:focus-visible,
 input:focus-visible,
 button:focus-visible {
-  // border: 1px solid #E80024;
-  // outline: 1px solid #ffffff;
-  // outline-offset: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+:focus-within,
+a:focus-within,
+input:focus-within,
+button:focus-within {
+  outline: none;
+  box-shadow: none;
 }
 
 nav,
