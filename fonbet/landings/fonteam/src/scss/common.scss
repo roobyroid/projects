@@ -2,6 +2,7 @@ html {
   font-size: 10px;
   text-rendering: optimizeLegibility !important;
   -moz-osx-font-smoothing: grayscale !important;
+
   @media (max-width: 1919px) and (min-width: 1200px) {
     font-size: calc((.54vw));
   }
@@ -75,8 +76,12 @@ body {
   }
 
   @include tablet {
-    font-size: 24px;
+    font-size: 29px;
     letter-spacing: -1px;
+  }
+
+  @include phone-big {
+    font-size: 24px;
   }
 
   @include phone {

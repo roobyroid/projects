@@ -10,6 +10,10 @@
   }
 
   @include tablet {
+    padding: 60px 0 80px;
+  }
+
+  @include phone-big {
     padding: 50px 0 70px;
   }
 
@@ -35,7 +39,7 @@
       transform: translateX(-50%);
     }
 
-    @include tablet {
+    @include phone-big {
       display: none;
     }
   }
@@ -53,6 +57,10 @@
     }
 
     @include tablet {
+      padding: 0 0 0 030px;
+    }
+
+    @include phone-big {
       display: block;
       padding: 0;
     }
@@ -70,8 +78,11 @@
     }
 
     @include tablet {
+      font-size: 35px;
+    }
+
+    @include phone-big {
       margin: 0 0 30px;
-      font-size: 36px;
     }
 
     @include phone {
@@ -112,10 +123,7 @@
     }
 
     @include tablet {
-      font-size: 16px;
-    }
-
-    @include phone {
+      padding: 0 0 0 70px;
       font-size: 14px;
     }
 
@@ -142,6 +150,10 @@
       }
 
       @include tablet {
+        font-size: 74px;
+      }
+
+      @include phone-big {
         font-size: 60px;
       }
     }
@@ -154,6 +166,10 @@
       }
 
       @include tablet {
+        margin: 0 0 45px;
+      }
+
+      @include phone-big {
         margin: 0 0 40px;
       }
 
@@ -192,7 +208,7 @@
     }
 
     @include tablet {
-      font-size: 22px;
+      font-size: 24px;
     }
 
     @include phone {
@@ -221,13 +237,16 @@
 
     @include tablet {
       width: 100%;
-      max-width: 244px;
-      margin: 50px 0 0 80px;
-      padding: 0 88px;
-      font-size: 24px;
+      max-width: 170px;
+      min-height: 50px;
+      margin: 70px 0 0 25px;
+      padding: 0 44px;
+      font-size: 21px;
     }
 
-    @include phone {
+    @include phone-big {
+      min-width: 244px;
+      margin: 55px 0 0 65px;
       font-size: 18px;
     }
 
@@ -245,6 +264,18 @@
       pointer-events: none;
 
       @include laptop {
+        left: -86px;
+        width: 210px;
+        height: 125px;
+      }
+
+      @include tablet {
+        left: -60px;
+        width: 180px;
+        height: 100px;
+      }
+
+      @include phone-big {
         left: -86px;
         width: 210px;
         height: 125px;

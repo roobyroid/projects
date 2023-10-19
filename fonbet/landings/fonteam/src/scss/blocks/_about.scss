@@ -9,6 +9,10 @@
   }
 
   @include tablet {
+    padding: 45px 0 20px;
+  }
+
+  @include phone-big {
     padding: 35px 0 10px;
   }
 
@@ -25,6 +29,11 @@
     }
 
     @include tablet {
+      top: 23px;
+      width: 43px;
+    }
+
+    @include phone-big {
       top: 50%;
       left: 15px;
       width: 90px;
@@ -42,6 +51,10 @@
     }
 
     @include tablet {
+      padding: 0 0 0 30px;
+    }
+
+    @include phone-big {
       display: block;
       padding: 0 0 0 90px;
     }
@@ -57,6 +70,11 @@
     }
 
     @include tablet {
+      flex: 0 0 353px;
+      padding: 0 20px;
+    }
+
+    @include phone-big {
       margin: 0 0 20px;
       padding: 0;
     }
@@ -74,10 +92,12 @@
     }
 
     @include tablet {
-      margin: 0 0 25px;
+      margin: 0 0 40px;
+      font-size: 14px;
     }
 
     @include phone {
+      margin: 0 0 25px;
       font-size: 16px;
     }
   }
@@ -92,10 +112,6 @@
     }
 
     @include tablet {
-      font-size: 16px;
-    }
-
-    @include phone {
       font-size: 14px;
     }
 
@@ -126,6 +142,11 @@
       }
 
       @include tablet {
+        width: 10px;
+        height: 7px;
+      }
+
+      @include phone-big {
         content: none;
       }
     }
@@ -162,6 +183,11 @@
     }
 
     @include tablet {
+      flex: 0 0 250px;
+      align-self: flex-end;
+    }
+
+    @include phone-big {
       max-width: 450px;
     }
   }
@@ -179,7 +205,8 @@
     }
 
     @include tablet {
-      margin: -40px auto 0;
+      max-width: 140px;
+      margin: 0 0 0 280px;
     }
 
     @include phone {
@@ -196,7 +223,7 @@
         margin: 0 10px 0 0;
       }
 
-      @include tablet {
+      @include phone-big {
         margin: 0;
         transform: rotate(15deg);
       }

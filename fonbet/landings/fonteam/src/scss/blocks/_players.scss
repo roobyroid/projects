@@ -48,6 +48,10 @@
       }
 
       @include tablet {
+        max-width: 296px;
+      }
+
+      @include phone-big {
         max-width: 230px;
       }
 
@@ -63,12 +67,13 @@
 
     @include tablet {
       margin: 0 0 10px;
-      font-size: 60px;
+      font-size: 70px;
       letter-spacing: -6px;
     }
 
     @include phone-big {
       margin: 0;
+      font-size: 60px;
     }
 
     @include phone {
