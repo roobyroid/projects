@@ -10,7 +10,7 @@
   text-align: center;
   background: $c-red;
   border-radius: 6rem;
-  filter: drop-shadow(10px 10px 24px rgb(0 0 0 / 40%));
+  box-shadow: 10px 10px 24px rgb(0 0 0 / 40%);
   transition: background .3s, color .3s;
 
   @include laptop {

@@ -66,10 +66,10 @@ button {
   cursor: pointer;
 }
 
-// input,
-// textarea {
-//   outline: none;
-// }
+input,
+textarea {
+  outline: none;
+}
 
 // chrome search X removal
 input[type="search"]::-webkit-search-decoration,

@@ -37,13 +37,6 @@
       }
     }
 
-    &:focus-visible {
-      .form__directions-item-inner {
-        border: 1px solid #E80024;
-        outline: 1px solid #ffffff;
-        outline-offset: 0;
-      }
-    }
 
     h3 {
       font-size: 3rem;
@@ -162,6 +155,7 @@
     background: transparent;
     border: none;
     border-bottom: 1px solid $c-red;
+    border-radius: 0;
 
     @include laptop {
       font-size: 18px;

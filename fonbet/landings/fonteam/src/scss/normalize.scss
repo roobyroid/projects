@@ -185,7 +185,6 @@ button,
 input {
   /* 1 */
   overflow: visible;
-  outline: none;
 }
 
 /**
@@ -208,26 +207,6 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  appearance: none;
-}
-
-// ios button \ inputs reset
-select,
-textarea,
-input:matches([type="email"],
-  [type="number"],
-  [type="password"],
-  [type="search"],
-  [type="tel"],
-  [type="text"],
-  [type="url"]) {
-  appearance: none;
 }
 
 /**
