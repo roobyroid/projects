@@ -149,6 +149,26 @@ function app() {
   });
   formModal.init();
 
+  const formInfoModal = new HystModal({
+    linkAttributeName: 'data-hystmodalFormInfo',
+    closeOnOverlay: false,
+    closeOnButton: false,
+    beforeOpen: function () {
+      document.querySelector('#form').style.pointerEvents = 'none';
+    },
+    afterClose: function () {
+      document.querySelector('#form').style.pointerEvents = 'all';
+    },
+  });
+  formInfoModal.init();
+
+  const closeFormInfoBtns = document.querySelectorAll('.js_close-form-info');
+  closeFormInfoBtns.forEach((closeFormInfoBtn) => {
+    closeFormInfoBtn.addEventListener('click', () => {
+      formInfoModal.close();
+    });
+  });
+
   const thanksModal = new HystModal({
     linkAttributeName: 'data-hystmodal',
   });
@@ -213,6 +233,16 @@ function app() {
   }
 
   ideaForm.addEventListener('submit', handleFormSubmit);
+
+  // btn up
+  const btnUp = document.querySelector('.js_btn-up');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 400) {
+      btnUp.classList.add('active');
+    } else {
+      btnUp.classList.remove('active');
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', app);

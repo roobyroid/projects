@@ -1,5 +1,6 @@
 .modal {
   $self: &;
+
   padding: 20px 15px;
 
   &__wrap {}
@@ -65,14 +66,14 @@
     }
   }
 
-  &__txt{
+  &__txt {
 
-    @include tablet-alt(){
+    @include tablet-alt {
       font-size: 1.6rem;
       line-height: 1.5;
     }
 
-    p{
+    p {
       font-size: 100%;
     }
   }
@@ -81,10 +82,18 @@
 
 
   ///
-  &--message{
-    @include tablet(){
+  &--message {
+    z-index: 100;
+    pointer-events: none;
 
-      #{$self}__window{
+    .modal__window {
+      box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 70%);
+      pointer-events: all;
+    }
+
+    @include tablet {
+
+      #{$self}__window {
         padding-top: 50px;
       }
 

@@ -7,7 +7,7 @@
 	<div class="wrapper">
 		{% include "header.html" %}
 		<main>
-			<section class="hero">
+			<section class="hero" id="hero">
 				<div class="hero__border">
 					<picture>
 						<source srcset="img/hero/border-mob.png" type="image/png" media="(max-width: 778px)">
@@ -191,6 +191,11 @@
 			</section>
 		</main>
 		{% include "footer.html" %}
+		<a class="btn-up js_scroll-link js_btn-up" href="#hero">
+			<svg>
+				<use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+			</svg>
+		</a>
 	</div>
 	{% include "modal.html" %}
 	<script src="./js/app.min.js"></script>

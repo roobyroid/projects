@@ -190,7 +190,7 @@
     left: 0;
     width: 100%;
     color: $c-red;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 
@@ -311,6 +311,7 @@
     &:hover, &:focus{
       text-decoration: none;
     }
+
     text-decoration: underline;
   }
 
