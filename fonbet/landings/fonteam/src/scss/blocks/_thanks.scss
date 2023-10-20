@@ -6,6 +6,7 @@
     max-width: 67.4rem;
     min-height: 36rem;
     padding: 6rem;
+    box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 70%);
 
     @include laptop {
       max-width: 622px;

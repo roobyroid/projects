@@ -160,6 +160,7 @@
     color: #8A8A8A;
     font-size: 2rem;
     background: transparent;
+    border: none;
     border-bottom: 1px solid $c-red;
 
     @include laptop {
@@ -192,6 +193,10 @@
     color: $c-red;
     font-size: 1.4rem;
     text-align: center;
+
+    @include phone {
+      font-size: 12px;
+    }
   }
 
   &__labels {
@@ -302,13 +307,27 @@
     }
 
     .form__text-error {
-      padding: 0 0 0 5rem;
+      top: calc(100% - .5rem);
+      bottom: auto;
+      padding: 0 0 0 4rem;
       text-align: left;
+
+      @include laptop {
+        top: 100%;
+        padding: 0 0 0 30px;
+      }
+
+      @include phone {
+        padding: 0;
+      }
     }
   }
 
-  &__link{
-    &:hover, &:focus{
+  &__link {
+    color: inherit;
+
+    &:hover,
+    &:focus {
       text-decoration: none;
     }
 
