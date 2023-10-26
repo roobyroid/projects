@@ -1,0 +1,122 @@
+.header {
+  position: relative;
+  height: 100px;
+  width: 1253px;
+  min-width: 1253px;
+  margin: 0 auto;
+
+  &--second-frame {
+    .header__right {
+      margin: 16px 0 0 0;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+    width: 246px;
+    margin-top: 14px;
+
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__bonus {
+    width: 360px;
+    width: 484px;
+    position: absolute;
+    top: 28px;
+    left: 28%;
+  }
+
+  &__bonus-first-el {
+    width: 370px;
+    position: absolute;
+    top: -108%;
+    left: -23%;
+
+    canvas {
+      mix-blend-mode: lighten;
+      width: 100%;
+    }
+  }
+
+  &__bonus-first-text {
+    width: 300px;
+    margin: -16px 0 0 260px;
+  }
+
+  &__bonus-second {
+    position: absolute;
+    left: -75px;
+    top: -22px;
+  }
+
+  &__right {
+    width: 287px;
+    margin: 16px 40px 0 0;
+    transition: all .3s;
+  }
+
+  &__an-btn.an-btn {
+    border-radius: 9px;
+    height: 51px;
+    font-size: 23px;
+  }
+
+  &__reklama {
+    display: flex;
+    position: absolute;
+    bottom: 22px;
+  }
+
+  &__reklama-18 {
+    width: 25px;
+    margin: 0 7px 0 0;
+  }
+
+  &__reklama-text {
+    width: 130px;
+    height: auto;
+    margin: 3px 0 0;
+  }
+
+  &__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 6px;
+    overflow: hidden;
+  }
+
+  &__textline {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    will-change: transform;
+    backface-visibility: hidden;
+    font-weight: 100;
+    color: #B0C3F7;
+    font-family: sans-serif;
+    transform: translateZ(1px) translateX(0);
+    white-space: nowrap;
+    z-index: 3;
+    animation: moveTextRow 30s linear infinite;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}

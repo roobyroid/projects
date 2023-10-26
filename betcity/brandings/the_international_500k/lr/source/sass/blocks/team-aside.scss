@@ -1,0 +1,126 @@
+.team-aside {
+  color: #fff;
+  text-align: center;
+
+  &__head {
+    color: #06DCFF;
+    font-size: 14px;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+
+    @media (max-width: 1582px) {
+      font-size: 11px;
+      margin: 0 0 20px;
+    }
+
+    @media (max-width: 1262px) {
+      font-size: 9px;
+      margin: 0 0 15px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 5px;
+  }
+
+  &__time {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__time-item {
+    flex-shrink: 0;
+
+    &:first-child {
+      &::after {
+        content: '/';
+        flex-shrink: 0;
+        margin: 0 2px;
+      }
+    }
+  }
+
+  &__img {
+    width: 106px;
+    margin: 0 auto 18px;
+
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12px;
+    margin: 0 0 4px;
+  }
+
+  &__nums {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 120px;
+
+
+  }
+
+  &__nums-item {
+    flex: 0 1 33.33%;
+
+
+    &:first-child {
+      .team-aside__nums-item-val {
+        border-radius: 3px 0 0 3px;
+      }
+    }
+
+    &:last-child {
+      .team-aside__nums-item-val {
+        border-radius: 0 3px 3px 0;
+      }
+    }
+
+    &:not(:last-child) {
+      .team-aside__nums-item-val {
+        border-right: 2px solid #06DCFF;
+      }
+    }
+  }
+
+  &__nums-item-top {
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  &__nums-item-val {
+    width: 100%;
+    color: #051854;
+    font-size: 16px;
+    background: #fff;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    box-sizing: border-box;
+
+    &.active {
+      background: #06DCFF;
+    }
+
+  }
+
+  &__nums-single {
+    display: none;
+    width: 87px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    color: #051854;
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 3px;
+    background: #fff;
+  }
+}
