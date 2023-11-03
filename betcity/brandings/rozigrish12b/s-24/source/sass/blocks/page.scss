@@ -1,0 +1,56 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #fff;
+  font-family: 'StyreneALC';
+}
+
+.body-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  min-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.header,
+.aside {
+  opacity: 0;
+}
+
+.loaded {
+
+  .header,
+  .aside {
+    transition: opacity .6s ease;
+    opacity: 1;
+  }
+}
+
+
+.fluid-center-block {
+  width: 1475px;
+  min-width: 1475px;
+  display: block;
+
+  @media (max-width: 1902px) {
+    width: 1274px;
+    min-width: 1274px;
+  }
+
+  @media (max-width: 1582px) {
+    width: 1090px;
+    min-width: 1090px;
+  }
+
+  @media (max-width: 1262px) {
+    min-width: 886px;
+    width: 886px;
+  }
+}

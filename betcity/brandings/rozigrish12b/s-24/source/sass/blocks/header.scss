@@ -1,0 +1,264 @@
+.header {
+  position: relative;
+  height: 192px;
+  width: 1448px;
+  min-width: 1448px;
+  margin: 0 auto;
+
+  @media (max-width: 1902px) {
+    width: 1253px;
+    min-width: 1253px;
+  }
+
+  @media (max-width: 1582px) {
+    width: 1058px;
+    min-width: 1058px;
+  }
+
+  @media (max-width: 1262px) {
+    width: 870px;
+    min-width: 870px;
+  }
+
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+    width: 386px;
+    margin-top: 10px;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1902px) {
+      width: 314px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 1582px) {
+      width: 284px;
+      margin-top: 27px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 252px;
+      margin-top: 31px;
+    }
+  }
+
+  &__ball {
+    position: absolute;
+    top: -46px;
+    left: 310px;
+    width: 483px;
+
+    @media (max-width: 1902px) {
+      top: -38px;
+      left: 241px;
+      width: 424px;
+    }
+
+    @media (max-width: 1582px) {
+      left: 264px;
+    }
+
+    @media (max-width: 1262px) {
+      left: 198px;
+      top: -28px;
+    }
+
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__bonus {}
+
+
+  &__bonus-first {
+    width: 365px;
+    position: absolute;
+    top: 13px;
+    right: 395px;
+
+    @media (max-width: 1902px) {
+      width: 283px;
+      top: 24px;
+      right: 366px;
+    }
+
+    @media (max-width: 1582px) {
+      width: 262px;
+      top: 13px;
+      right: 108px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 247px;
+      right: 38px;
+    }
+
+
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__bonus-second {
+    position: absolute;
+    top: 10px;
+    right: 382px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1902px) {
+      right: 364px;
+      top: 19px;
+    }
+
+    @media (max-width: 1582px) {
+      top: 4px;
+      right: 110px;
+    }
+
+    @media (max-width: 1262px) {
+      right: 35px;
+    }
+  }
+
+  &__phone {
+    width: 151px;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1902px) {
+      width: 119px;
+    }
+
+    @media (max-width: 1582px) {
+      width: 102px;
+    }
+
+    @media (max-width: 1262px) {}
+  }
+
+  &__text-phone {
+    width: 228px;
+    margin: 0 0 0 10px;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1902px) {
+      width: 185px;
+    }
+
+    @media (max-width: 1582px) {
+      width: 160px;
+      margin: -8px 0 0 8px;
+    }
+
+    @media (max-width: 1262px) {}
+  }
+
+  &__right {
+    width: 298px;
+    margin: 66px 30px 0 0;
+    transition: all .3s;
+
+    @media (max-width: 1902px) {
+      width: 227px;
+      margin: 65px 96px 0 0;
+    }
+
+    @media (max-width: 1582px) {
+      margin: 112px 104px 0 0;
+      width: 260px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 244px;
+      margin: 110px 37px 0 0;
+    }
+  }
+
+  &__an-btn.an-btn {
+    border-radius: 10px;
+    height: 48px;
+    font-size: 18px;
+
+    @media (max-width: 1902px) {
+      height: 37px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1582px) {
+      height: 41px;
+      font-size: 15px;
+      border-radius: 7px;
+    }
+  }
+
+  &__reklama {
+    display: flex;
+    position: absolute;
+    top: 9px;
+  }
+
+  &__reklama-18 {
+    width: 36px;
+    margin: 0 0 0 -12px;
+
+    @media (max-width: 1902px) {
+      width: 34px;
+    }
+  }
+
+  &__reklama-text {
+    width: 174px;
+    height: auto;
+    margin: 6px 0 0;
+  }
+
+  &__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+    overflow: hidden;
+  }
+
+  &__textline {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    will-change: transform;
+    backface-visibility: hidden;
+    font-weight: 100;
+    font-family: sans-serif;
+    transform: translateZ(1px) translateX(0);
+    white-space: nowrap;
+    z-index: 3;
+    animation: moveTextRow 30s linear infinite;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}

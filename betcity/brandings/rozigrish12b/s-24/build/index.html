@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,
+maximum-scale=1, user-scalable=no, viewport-fit=contain" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <style>
+    @font-face {
+      font-family: 'StyreneALC';
+      src: url('StyreneALC-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'StyreneALC';
+      src: url('StyreneALC-Black.woff') format('woff');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'StyreneALC';
+      src: url('StyreneALC-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Nekst';
+      src: url('Nekst-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="body-wrap" href="%banner.reference_user1%" target="%banner.target%">
+    <div class="bg"></div>
+    <div class="header js_header">
+      <div class="header__wrap">
+        <div class="header__logo">
+          <canvas class="js_canvas" data-name="logo" width="700" height="220"></canvas>
+        </div>
+        <div class="header__ball">
+          <canvas class="js_canvas" data-name="ball" width="762" height="381"></canvas>
+        </div>
+        <div class="header__bonus">
+          <div class="header__bonus-first">
+            <canvas class="js_canvas" data-name="text-top" width="730" height="280"></canvas>
+          </div>
+          <div class="header__bonus-second">
+            <div class="header__phone">
+              <canvas class="js_canvas" data-name="phone" width="230" height="230"></canvas>
+            </div>
+            <div class="header__text-phone">
+              <canvas class="js_canvas" data-name="text-phone" width="415" height="215"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <div class="header__an-btn an-btn">
+            УЧАСТВОВАТЬ
+          </div>
+        </div>
+      </div>
+
+      <div class="header__reklama">
+        <div class="header__reklama-text">
+          <img src="img/fonts/betcity.ru.svg" />
+        </div>
+        <div class="header__reklama-18"><img src="img/fonts/18p.svg" /></div>
+      </div>
+
+      <div class="header__bottom">
+        <p class="header__textline" data-autobet="DISCLAIMER">
+          *Бонус зачисляется в виде фрибета** и равен сумме первой ставки, но не более 3 000 рублей. **Фрибет –
+          предоставляемый компанией бонус, которым клиент компании может воспользоваться для заключения пари с ООО
+          «Фортуна». Сроки проведения акции: с 25.07.2023 (00:00:00 МСК) по 31.12.2023 (23:59:59 МСК). Полные правила
+          акции, информацию об организаторе основанных на риске игр, пари, о правилах их проведения, о призовом фонде
+          таких игр, пари, о количестве призов или выигрышей, о сроках, месте и порядке получения призов или выигрышей
+          можно узнать на сайте www.betcity.ru. Розыгрыш происходит в момент совершения события.
+        </p>
+      </div>
+    </div>
+    <div class="aside">
+      <div class="aside__wrap">
+        <div class="aside__item aside__item--left">
+          <div class="aside__logo">
+            <canvas class="js_canvas" data-name="logo" width="700" height="220"></canvas>
+          </div>
+
+          <div class="aside__content">
+            <div class="aside__content-first">
+              <div class="aside__ball">
+                <canvas class="js_canvas" data-name="ball-side" width="381" height="191"></canvas>
+              </div>
+              <div class="aside__text">
+                <canvas class="js_canvas" data-name="text-side" width="234" height="150"></canvas>
+              </div>
+            </div>
+            <div class="aside__content-second">
+              <div class="aside__phone">
+                <canvas class="js_canvas" data-name="phone2" width="230" height="230"></canvas>
+              </div>
+              <div class="aside__text-phone">
+                <canvas class="js_canvas" data-name="text-phone2" width="415" height="215"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__an-btn an-btn">
+            УЧАСТВОВАТЬ
+          </div>
+        </div>
+
+        <div class="fluid-center-block"></div>
+
+        <div class="aside__item aside__item--right">
+          <div class="aside__logo">
+            <canvas class="js_canvas" data-name="logo" width="700" height="220"></canvas>
+          </div>
+          <div class="aside__content">
+            <div class="aside__content-first">
+              <div class="aside__ball">
+                <canvas class="js_canvas" data-name="ball-side" width="381" height="191"></canvas>
+              </div>
+              <div class="aside__text">
+                <canvas class="js_canvas" data-name="text-side" width="234" height="150"></canvas>
+              </div>
+            </div>
+            <div class="aside__content-second">
+              <div class="aside__phone">
+                <canvas class="js_canvas" data-name="phone3" width="230" height="230"></canvas>
+              </div>
+              <div class="aside__text-phone">
+                <canvas class="js_canvas" data-name="text-phone3" width="415" height="215"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="aside__an-btn an-btn">
+            УЧАСТВОВАТЬ
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="js/LOGO.js"></script>
+  <script src="js/Ball_UP.js"></script>
+  <script src="js/ball_side.js"></script>
+  <script src="js/TXT_1_UP.js"></script>
+  <script src="js/TXT_1_SIDE.js"></script>
+  <script src="js/Phone.js"></script>
+  <script src="js/TXT_2.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

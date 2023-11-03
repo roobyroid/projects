@@ -1,0 +1,166 @@
+.aside {
+  padding: 69px 0 0;
+
+  @media (max-width: 1582px) {
+    padding: 54px 0 0;
+  }
+
+  @media (max-width: 1262px) {
+    padding: 60px 0 0;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 133px;
+    margin: 0 10px;
+
+    @media (max-width: 1582px) {
+      width: 107px;
+      margin: 0 4px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 86px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 30px;
+    width: 106px;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1582px) {
+      width: 90px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 70px;
+      margin: 0 auto 16px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    min-height: 150px;
+
+    @media (max-width: 1582px) {
+      min-height: 122px;
+    }
+
+    @media (max-width: 1262px) {
+      min-height: 110px;
+    }
+  }
+
+
+  &__content-first {}
+
+  &__ball {
+    margin: -40px -57px -25px;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1262px) {
+      margin: -28px -57px -28px;
+    }
+  }
+
+  &__text {
+    width: 122px;
+    margin: 0 auto;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1582px) {
+      width: 104px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 87px;
+    }
+
+
+  }
+
+  &__content-second {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 1902px) {}
+
+    @media (max-width: 1582px) {}
+
+    @media (max-width: 1262px) {}
+  }
+
+  &__phone {
+    margin: 15px 0px -34px;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1902px) {}
+
+    @media (max-width: 1582px) {
+      margin: 15px 0 -24px;
+    }
+
+    @media (max-width: 1262px) {
+      margin: 15px 0 -21px;
+    }
+  }
+
+  &__text-phone {
+    width: 125px;
+    margin: 0 auto;
+
+    canvas {
+      width: 100%;
+    }
+
+    @media (max-width: 1902px) {}
+
+    @media (max-width: 1582px) {
+      width: 107px;
+    }
+
+    @media (max-width: 1262px) {
+      width: 83px;
+    }
+  }
+
+  &__an-btn {
+    width: 117px;
+    font-size: 11px;
+    margin: 1px auto 0;
+
+    @media (max-width: 1902px) {}
+
+    @media (max-width: 1582px) {
+      width: 100%;
+      font-size: 9px;
+      margin: 1px auto 0;
+    }
+
+    @media (max-width: 1262px) {
+      width: 85px;
+      padding: 5px;
+      margin: -1px auto 0;
+    }
+  }
+}
