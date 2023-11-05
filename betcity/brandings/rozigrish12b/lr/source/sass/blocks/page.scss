@@ -1,0 +1,41 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #fff;
+  font-family: 'StyreneALC';
+}
+
+.body-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  min-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.header,
+.aside {
+  opacity: 0;
+}
+
+.loaded {
+
+  .header,
+  .aside {
+    transition: opacity .6s ease;
+    opacity: 1;
+  }
+}
+
+
+.fluid-center-block {
+  width: 1300px;
+  min-width: 1300px;
+  display: block;
+}

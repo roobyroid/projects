@@ -52,18 +52,30 @@ function initChangeScreens() {
             opacity: 1,
             duration: 0.3,
             onStart() {
-              stagePhone.addChild(new libPhone.Phone());
-              stagePhone.getChildAt(0).gotoAndPlay(0);
-              stagePhone2.addChild(new libPhone.Phone());
-              stagePhone2.getChildAt(0).gotoAndPlay(0);
-              stagePhone3.addChild(new libPhone.Phone());
-              stagePhone3.getChildAt(0).gotoAndPlay(0);
-              stageTextPhone.addChild(new libTextPhone.TXT_2());
-              stageTextPhone.getChildAt(0).gotoAndPlay(0);
-              stageTextPhone2.addChild(new libTextPhone.TXT_2());
-              stageTextPhone2.getChildAt(0).gotoAndPlay(0);
-              stageTextPhone3.addChild(new libTextPhone.TXT_2());
-              stageTextPhone3.getChildAt(0).gotoAndPlay(0);
+              if (typeof stagePhone !== 'undefined') {
+                stagePhone.addChild(new libPhone.Phone());
+                stagePhone.getChildAt(0).gotoAndPlay(0);
+              }
+              if (typeof stagePhone2 !== 'undefined') {
+                stagePhone2.addChild(new libPhone.Phone());
+                stagePhone2.getChildAt(0).gotoAndPlay(0);
+              }
+              if (typeof stagePhone3 !== 'undefined') {
+                stagePhone3.addChild(new libPhone.Phone());
+                stagePhone3.getChildAt(0).gotoAndPlay(0);
+              }
+              if (typeof stageTextPhone !== 'undefined') {
+                stageTextPhone.addChild(new libTextPhone.TXT_2());
+                stageTextPhone.getChildAt(0).gotoAndPlay(0);
+              }
+              if (typeof stageTextPhone2 !== 'undefined') {
+                stageTextPhone2.addChild(new libTextPhone.TXT_2());
+                stageTextPhone2.getChildAt(0).gotoAndPlay(0);
+              }
+              if (typeof stageTextPhone3 !== 'undefined') {
+                stageTextPhone3.addChild(new libTextPhone.TXT_2());
+                stageTextPhone3.getChildAt(0).gotoAndPlay(0);
+              }
             },
             onComplete() {},
           },
@@ -76,12 +88,24 @@ function initChangeScreens() {
             delay: fistFrameAnimationDuration,
             duration: 0.3,
             onStart() {
-              stagePhone.removeChildAt(0);
-              stagePhone2.removeChildAt(0);
-              stagePhone3.removeChildAt(0);
-              stageTextPhone.removeChildAt(0);
-              stageTextPhone2.removeChildAt(0);
-              stageTextPhone3.removeChildAt(0);
+              if (typeof stagePhone !== 'undefined') {
+                stagePhone.removeChildAt(0);
+              }
+              if (typeof stagePhone2 !== 'undefined') {
+                stagePhone2.removeChildAt(0);
+              }
+              if (typeof stagePhone3 !== 'undefined') {
+                stagePhone3.removeChildAt(0);
+              }
+              if (typeof stageTextPhone !== 'undefined') {
+                stageTextPhone.removeChildAt(0);
+              }
+              if (typeof stageTextPhone2 !== 'undefined') {
+                stageTextPhone2.removeChildAt(0);
+              }
+              if (typeof stageTextPhone3 !== 'undefined') {
+                stageTextPhone3.removeChildAt(0);
+              }
             },
           },
           '>'
@@ -111,6 +135,7 @@ function initChangeScreens() {
     window.addEventListener('resize', calc);
   }
 }
+
 let stagePhone;
 let stagePhone2;
 let stagePhone3;
