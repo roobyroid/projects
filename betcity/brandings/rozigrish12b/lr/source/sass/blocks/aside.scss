@@ -28,51 +28,14 @@
   }
 
 
-  &__content-first {}
-
-  &__ball {
-    margin: -47px -71px -33px;
+  &__content-first {
+    margin: -41px -62px 0px;
 
     canvas {
       width: 100%;
     }
   }
 
-  &__text {
-    width: 122px;
-    margin: 0 auto;
-
-    canvas {
-      width: 100%;
-    }
-
-
-
-  }
-
-  &__content-second {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &__phone {
-    margin: 15px 0px -34px;
-
-    canvas {
-      width: 100%;
-    }
-
-  }
-
-  &__text-phone {
-    width: 125px;
-    margin: 0 auto;
-
-    canvas {
-      width: 100%;
-    }
-  }
 
   &__an-btn {
     width: 117px;

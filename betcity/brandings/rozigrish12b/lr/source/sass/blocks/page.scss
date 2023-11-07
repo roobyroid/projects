@@ -19,20 +19,6 @@ body {
   text-decoration: none;
 }
 
-.header,
-.aside {
-  opacity: 0;
-}
-
-.loaded {
-
-  .header,
-  .aside {
-    transition: opacity .6s ease;
-    opacity: 1;
-  }
-}
-
 
 .fluid-center-block {
   width: 1300px;

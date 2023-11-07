@@ -43,37 +43,11 @@
     top: -17px;
     right: 392px;
 
-
     canvas {
       width: 100%;
     }
   }
 
-  &__bonus-second {
-    position: absolute;
-    right: 414px;
-    top: -5px;
-    display: flex;
-    align-items: center;
-
-  }
-
-  &__phone {
-    width: 94px;
-
-    canvas {
-      width: 100%;
-    }
-  }
-
-  &__text-phone {
-    width: 181px;
-    margin: -10px 0 0 2px;
-
-    canvas {
-      width: 100%;
-    }
-  }
 
   &__right {
     width: 249px;

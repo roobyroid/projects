@@ -135,18 +135,6 @@ body {
   text-decoration: none;
 }
 
-.header,
-.aside {
-  opacity: 0;
-}
-
-.loaded .header,
-.loaded .aside {
-  -webkit-transition: opacity .6s ease;
-  transition: opacity .6s ease;
-  opacity: 1;
-}
-
 .fluid-center-block {
   width: 1300px;
   min-width: 1300px;
@@ -287,35 +275,6 @@ body {
   width: 100%;
 }
 
-.header__bonus-second {
-  position: absolute;
-  right: 414px;
-  top: -5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.header__phone {
-  width: 94px;
-}
-
-.header__phone canvas {
-  width: 100%;
-}
-
-.header__text-phone {
-  width: 181px;
-  margin: -10px 0 0 2px;
-}
-
-.header__text-phone canvas {
-  width: 100%;
-}
-
 .header__right {
   width: 249px;
   margin: 25px 28px 0 0;
@@ -431,43 +390,11 @@ body {
   min-height: 150px;
 }
 
-.aside__ball {
-  margin: -47px -71px -33px;
+.aside__content-first {
+  margin: -41px -62px 0px;
 }
 
-.aside__ball canvas {
-  width: 100%;
-}
-
-.aside__text {
-  width: 122px;
-  margin: 0 auto;
-}
-
-.aside__text canvas {
-  width: 100%;
-}
-
-.aside__content-second {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.aside__phone {
-  margin: 15px 0px -34px;
-}
-
-.aside__phone canvas {
-  width: 100%;
-}
-
-.aside__text-phone {
-  width: 125px;
-  margin: 0 auto;
-}
-
-.aside__text-phone canvas {
+.aside__content-first canvas {
   width: 100%;
 }
 
