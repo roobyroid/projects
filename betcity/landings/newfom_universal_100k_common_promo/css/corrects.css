@@ -99,6 +99,10 @@ input:not([type='checkbox']) {
 	background: transparent;
 	transition: border 0.3s;
 }
+input:not([type='checkbox'])::placeholder {
+	color: #828282;
+	opacity: 1;
+}
 input:not([type='checkbox']):focus {
 	border-color: #4098c6;
 }
@@ -128,8 +132,18 @@ input:not([type='checkbox']).item-error {
 	top: 0.7em;
 }
 
+.form__row .tip {
+	color: #828282;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
 .item-error::after {
 	content: none;
+}
+
+.s-hero__content-form-body .btn {
+	width: 100%;
 }
 
 @media print, screen and (max-width: 47.9988em) {
