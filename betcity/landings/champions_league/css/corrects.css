@@ -1,0 +1,123 @@
+@font-face {
+	font-family: 'TTFirsNeue';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/TTFirsNeue-Bold.woff2') format('woff2'),
+		url('../fonts/TTFirsNeue-Bold.woff') format('woff');
+}
+.title__freebet span._top {
+	display: inline-block;
+	font-size: 20%;
+	margin-top: 4%;
+	vertical-align: top;
+}
+
+.modal .close {
+	top: 0.8em;
+}
+
+@media print, screen and (min-width: 48em) {
+	.b-match__info-team {
+		max-width: 10em;
+	}
+}
+
+.modal_content {
+	padding: 2em 1em 0 2em;
+	height: 100%;
+}
+.modal_content .mCSB_container {
+	height: 100%;
+}
+
+.popup-rules .modal_content iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	color: currentColor;
+}
+
+#qr canvas {
+	width: 100%;
+	border-radius: 10px;
+	padding: 4px;
+	background-color: white;
+}
+
+.title__freebet.font2 {
+	text-wrap: nowrap;
+}
+
+@media screen and (min-width: 48em) and (orientation: landscape) and (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 19 / 10) {
+	.theme-form-aside .s-hero__content-info._column-content {
+		margin-top: 15rem;
+	}
+}
+
+@media print, screen and (min-width: 48em) {
+	.s-hero__content-form._column-aside:before {
+		background: #12132a;
+	}
+}
+@media print, screen and (max-width: 47.99875em) {
+	.s-hero__content-form {
+		background: #12132a;
+	}
+	._mobile-reg .s-hero__footer {
+		background: #12132a;
+	}
+}
+@media print, screen and (max-width: 47.99875em) {
+	.l-wrapper,
+	.s-hero,
+	body {
+		background: #12132a;
+	}
+}
+
+@media print, screen and (max-width: 47.99875em) {
+	.s-hero__bg-main.bg-img {
+		max-height: 80%;
+	}
+}
+
+/* TITLE */
+.title {
+	display: block;
+	font-family: 'TTFirsNeue', sans-serif;
+}
+.title .title__freebet {
+	color: #fff;
+}
+.title .title__freebet span {
+	font-family: 'TTFirsNeue', sans-serif;
+	color: #fff;
+}
+.title__txt {
+	font-size: 6.5em;
+}
+@media print, screen and (min-width: 48em) {
+	.title {
+		margin-top: 7em;
+	}
+	.title__txt {
+		max-width: 9em;
+	}
+}
+.title__info {
+	font-family: 'TTFirsNeue', sans-serif;
+	padding: 0;
+	margin-top: -0.8em;
+	line-height: 1.4;
+}
+
+/* MATCH */
+@media print, screen and (min-width: 48em) {
+	.b-match {
+		border-radius: 19px;
+		background: rgba(10, 18, 68, 0.85);
+		backdrop-filter: blur(67.5px);
+		padding: 4em 2em;
+	}
+}
