@@ -24,17 +24,11 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 function app() {
   initModal();
 
-  // init modal
-  const rulesModal = new HystModal({
-    linkAttributeName: 'data-hystmodalRules',
-  });
-  rulesModal.init();
-
   // scroll full page
   const media = window.matchMedia('(min-width: 992px)');
+  // let observer = ScrollTrigger.normalizeScroll(true);
   if (media.matches) {
     let panels = gsap.utils.toArray('.hero'),
-      observer = ScrollTrigger.normalizeScroll(true),
       scrollTween;
 
     // on touch devices, ignore touchstart events if there's an in-progress tween so that touch-scrolling doesn't interrupt and make it wonky
@@ -52,10 +46,10 @@ function app() {
     function goToSection(i) {
       scrollTween = gsap.to(window, {
         scrollTo: { y: i * innerHeight, autoKill: false },
-        onStart: () => {
-          observer.disable(); // for touch devices, as soon as we start forcing scroll it should stop any current touch-scrolling, so we just disable() and enable() the normalizeScroll observer
-          observer.enable();
-        },
+        // onStart: () => {
+        //   observer.disable(); // for touch devices, as soon as we start forcing scroll it should stop any current touch-scrolling, so we just disable() and enable() the normalizeScroll observer
+        //   observer.enable();
+        // },
         duration: 0.2,
         onComplete: () => (scrollTween = null),
         overwrite: true,
@@ -85,6 +79,12 @@ function app() {
       scrollTo: '.js_hero-second',
     });
   });
+
+  // init modal
+  const rulesModal = new HystModal({
+    linkAttributeName: 'data-hystmodalRules',
+  });
+  rulesModal.init();
 }
 
 document.addEventListener('DOMContentLoaded', app);
