@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include "head.html" %}
+
+<body>
+	<div class="wrapper">
+		{% include "header.html" %}
+		<main>
+			<div class="content">
+				<section class="hero">
+					<picture>
+						<source srcset="img/page/bg-mob.jpg" type="image/jpeg" media="(max-width: 767.98px)">
+						<img class="hero__bg" src="img/page/bg.jpg" alt="">
+					</picture>
+					<div class="hero__football">
+						<img src="img/first/ball.png" alt="">
+					</div>
+					<div class="hero__gift">
+						<img src="img/first/gift.png" alt="">
+					</div>
+					<div class="hero__cone">
+						<picture>
+							<source srcset="img/first/cone-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+							<img src="img/first/cone.png" alt="">
+						</picture>
+					</div>
+					<div class="hero__puck">
+						<img src="img/first/puck.png" alt="">
+					</div>
+					<div class="hero__puck2">
+						<img src="img/first/puck-2.png" alt="">
+					</div>
+					<div class="hero__twist">
+						<img src="img/first/twist.png" alt="">
+					</div>
+					<div class="hero__twist2">
+						<img src="img/first/twist-2.png" alt="">
+					</div>
+
+					<div class="container">
+						<div class="hero__wrap">
+							<h1 class="hero__title"><span>Кешбэк</span><br> в&nbsp;Черную пятницу</h1>
+							<p class="hero__subtitle">Дарим фрибет до&nbsp;<b>20&nbsp;000&nbsp;₽</b>!</p>
+							<ul class="hero__list">
+								<li>Сделай от&nbsp;10&nbsp;ставок <span>с&nbsp;23&nbsp;по&nbsp;26&nbsp;ноября</span></li>
+								<li>Получи фрибет = минимальной ставке до&nbsp;<b>20&nbsp;000&nbsp;₽</b></li>
+							</ul>
+
+							<p class="hero__info">Учитываются ставки от&nbsp;500&nbsp;₽ с&nbsp;кэфом от&nbsp;1.80. Бонус начислим
+								28&nbsp;ноября.</p>
+							<a class="hero__btn btn" href="https://betcity.ru/ru/line">УЧАСТВОВАТЬ</a>
+
+							<button class="hero__mouse js_btn-to-second" type="button">
+								<img src="img/page/mouse.svg" alt="">
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="hero hero--second js_hero-second">
+					<picture>
+						<source srcset="img/page/bg-mob.jpg" type="image/jpeg" media="(max-width: 767.98px)">
+						<img class="hero__bg" src="img/page/bg.jpg" alt="">
+					</picture>
+					<div class="hero__basketball">
+						<img src="img/second/ball.png" alt="">
+					</div>
+					<div class="hero__cone">
+						<img src="img/first/cone.png" alt="">
+					</div>
+					<div class="hero__puck">
+						<img src="img/second/puck.png" alt="">
+					</div>
+					<div class="hero__puck2">
+						<picture>
+							<source srcset="img/second/puck-2-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+							<img src="img/second/puck-2.png" alt="">
+						</picture>
+					</div>
+					<div class="hero__puck3">
+						<img src="img/second/puck-3.png" alt="">
+					</div>
+					<div class="hero__twist">
+						<img src="img/first/twist.png" alt="">
+					</div>
+					<div class="hero__twist2">
+						<img src="img/first/twist-2.png" alt="">
+					</div>
+
+					<div class="container">
+						<div class="hero__wrap">
+							<h1 class="hero__title js_second-title"><span>Кешбэк</span><br> в&nbsp;Черную пятницу</h1>
+							<p class="hero__subtitle">Получай еще больше бонусов!</p>
+							<ul class="hero__list">
+								<li>Пополни счет <span>с&nbsp;23&nbsp;ноября по&nbsp;5&nbsp;декабря</span></li>
+								<li>Выводи не&nbsp;более&nbsp;<span>50%</span> от&nbsp;депозита
+									<span>до&nbsp;5&nbsp;декабря</span>
+								</li>
+								<li>Забери&nbsp;<span>10%</span> от&nbsp;минимального пополнения, но&nbsp;не&nbsp;более
+									<b>10&nbsp;000&nbsp;₽</b>
+								</li>
+							</ul>
+
+							<p class="hero__info">Бонус начислим 7&nbsp;декабря.</p>
+							<a class="hero__btn btn" href="https://betcity.ru/ru/line">УЧАСТВОВАТЬ</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		{% include "footer.html" %}
+	</div>
+	{% include "modal.html" %}
+	<script src="./js/app.min.js"></script>
+</body>
+
+</html>

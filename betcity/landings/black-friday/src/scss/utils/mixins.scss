@@ -1,0 +1,7 @@
+@mixin text-gradient {
+   background: linear-gradient(270deg, #21EAF6 -0.01%, #40FF98 99.99%);
+   background-clip: text;
+   /* stylelint-disable-next-line property-no-vendor-prefix */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  top: 7rem;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+
+  @include tablet {
+    top: 50px;
+  }
+
+  @include phone {
+    top: 24px;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    width: 21.3rem;
+
+    @include tablet {
+      width: 160px;
+    }
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    color: $c-white;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: opacity .3s;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include phone {
+      font-size: 16px;
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
