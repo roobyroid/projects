@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include "head.html" %}
+
+<body>
+	<div class="wrapper">
+		{% include "header.html" %}
+		<main>
+			<div class="content">
+				<section class="hero">
+					<picture>
+						<source srcset="img/hero/bg-tablet.jpg" type="image/jpeg" media="(max-width: 991.98px)">
+						<source srcset="img/hero/bg-mob.jpg" type="image/jpeg" media="(max-width: 574.98px)">
+						<img class="hero__bg" src="img/hero/bg.jpg" alt="">
+					</picture>
+
+					<div class="container">
+						<div class="hero__wrap">
+							<h1 class="hero__title"><span>На высоких</span><br> <span>оборотах</span></h1>
+							<p class="hero__subtitle">ЗАБИРАЙ ДО&nbsp;<b>30&nbsp;000&nbsp;₽</b> КАЖДУЮ НЕДЕЛЮ<br>
+								И КЕШБЭК ДО&nbsp;<b>10%</b> ЗА&nbsp;МЕСЯЦ</p>
+							<ul class="hero__list">
+								<li>Делай ставки с&nbsp;кэфом от&nbsp;1.20</li>
+								<li>Выполняй оборот</li>
+								<li>Забирай фрибеты* и&nbsp;кэшбек</li>
+							</ul>
+							<a class="hero__btn btn" href="https://betcity.ru/?login=1" target="_blank">УЧАСТВОВАТЬ</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="spoiler js_accordion">
+					<img class="spoiler__bg" src="img/page/first-bg.jpg" alt="">
+					<div class="container">
+
+						<button class="spoiler__head js_accordion-head" type="button" aria-expanded="false" data-spoiler>
+							<h2>ЕЖЕНЕДЕЛЬНЫЙ БОНУС</h2>
+							<p>Гарантированный фрибет за&nbsp;оборот каждую неделю!&nbsp;<sup>**</sup></p>
+						</button>
+						<div class="spoiler__content js_accordion-content" aria-hidden="true">
+							<div class="spoiler__table">
+								<div class="spoiler__table-row">
+									<div class="spoiler__table-td"><b>Оборот&nbsp;</b>от</div>
+									<div class="spoiler__table-td"><b>Фрибет</b></div>
+								</div>
+								<div class="spoiler__table-row">
+									<div class="spoiler__table-td"><span>от&nbsp;500&nbsp;000&nbsp;₽</span></div>
+									<div class="spoiler__table-td"><span>30&nbsp;000</span></div>
+								</div>
+								<div class="spoiler__table-row">
+									<div class="spoiler__table-td"><span>от&nbsp;300&nbsp;000&nbsp;₽</span></div>
+									<div class="spoiler__table-td"><span>15&nbsp;000</span></div>
+								</div>
+								<div class="spoiler__table-row">
+									<div class="spoiler__table-td"><span>от&nbsp;200&nbsp;000&nbsp;₽</span></div>
+									<div class="spoiler__table-td"><span>7&nbsp;000</span></div>
+								</div>
+								<div class="spoiler__table-row">
+									<div class="spoiler__table-td"><span>от&nbsp;100&nbsp;000&nbsp;₽</span></div>
+									<div class="spoiler__table-td"><span>5&nbsp;000</span></div>
+								</div>
+								<div class="spoiler__table-row">
+									<div class="spoiler__table-td"><span>от&nbsp;50&nbsp;000&nbsp;₽</span></div>
+									<div class="spoiler__table-td"><span>2&nbsp;000</span></div>
+								</div>
+							</div>
+							<p class="spoiler__info"><sup>**</sup> Фрибеты будут начисляться каждый вторник во&nbsp;время действия
+								акции</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="spoiler spoiler--second js_accordion">
+					<img class="spoiler__bg" src="img/page/second-bg.jpg" alt="">
+					<div class="container">
+
+						<button class="spoiler__head js_accordion-head" type="button" aria-expanded="false" data-spoiler>
+							<h2>ДВА КЕШБЭКА</h2>
+							<p>По&nbsp;итогам месяца начислим основной и дополнительный кешбэк!&nbsp;<sup>***</sup></p>
+						</button>
+						<div class="spoiler__content js_accordion-content" aria-hidden="true">
+							<div class="spoiler__wrap">
+								<div class="spoiler__col">
+									<h3 class="spoiler__col-name">ОСНОВНОЙ КЕШБЭК<br> ЗА&nbsp;30&nbsp;ДНЕЙ</h3>
+									<div class="spoiler__table">
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td"><b>Оборот&nbsp;</b>от</div>
+											<div class="spoiler__table-td"><b>Фрибет</b></div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">500&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">5%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">300&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">4%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">200&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">3%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">150&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">2%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">100&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">1%</div>
+										</div>
+									</div>
+								</div>
+								<div class="spoiler__col">
+									<h3 class="spoiler__col-name">ДОПОЛНИТЕЛЬНЫЙ КЕШБЭК ЗА&nbsp;ДЕНЬ</h3>
+									<div class="spoiler__table">
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td"><b>Оборот&nbsp;</b>от</div>
+											<div class="spoiler__table-td"><b>Фрибет</b></div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">500&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">5%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">300&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">3%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">200&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">1,5%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">150&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">1%</div>
+										</div>
+										<div class="spoiler__table-row">
+											<div class="spoiler__table-td">100&nbsp;000&nbsp;₽</div>
+											<div class="spoiler__table-td">0,5%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<p class="spoiler__info"><sup>***</sup> Кешбэк по&nbsp;итогам акции будет начислен
+								до&nbsp;29&nbsp;декабря</p>
+
+							<div class="spoiler__btn-wrap">
+								<a class="btn" href="https://betcity.ru/ru/live" target="_blank">Повысить обороты!</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		{% include "footer.html" %}
+	</div>
+	{% include "modal.html" %}
+	<script src="./js/app.min.js"></script>
+	<script type="text/javascript" src="https://fcdn.betcity.ru/libs/qr-generator-1.0.0.min.js"></script>
+	<script type="text/javascript" src="https://fcdn.betcity.ru/libs/adjust-link-generator-1.0.0.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			// ADJUST LINKS
+			const defaultAndStaticParams = {
+				adj_adgroup: 'Highspeed',
+				adj_campaign: '2212',
+				adj_creative: 'crm_land',
+				adj_label: 'https://betcity.ru/ru/reg',
+				adj_t: '12uw73kb_1258v1lq'
+			};
+
+			const link = window['createAdjustLink'].call(this, 'https://betcity.go.link', defaultAndStaticParams);
+
+			const element = document.getElementById('downloadApp');
+			if (element && element.hasAttribute('href')) {
+				element.setAttribute('href', link);
+			};
+
+
+			// QR
+			const options = {
+				color: "#0092F3",
+				dotsType: 'extra-rounded',
+				cornersSquareType: 'extra-rounded',
+				withImage: true,
+				imageURL: 'img/page/icoqr.png',
+			};
+
+			window['addQR'].call(this, link, ['qr'], options);
+		});
+	</script>
+</body>
+
+</html>

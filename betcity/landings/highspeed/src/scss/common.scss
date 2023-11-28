@@ -1,0 +1,91 @@
+html {
+  font-size: 10px;
+  text-rendering: optimizeLegibility !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  scroll-behavior: smooth;
+
+  @media (max-width: 1919px) and (min-width: 992px) {
+    font-size: calc((.54vw));
+  }
+}
+
+body {
+  position: relative;
+  color: $c-text--global;
+  font-weight: $f-weight--global;
+  font-size: $f-size--global;
+  font-family: $f-family--global;
+  line-height: $l-height--global;
+  background-color: $c-body-bg;
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include phone {
+    font-size: 14px;
+  }
+
+  &._lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 15px;
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 2px;
+    height: 100%;
+    background: rgb(0 0 0 / 40%);
+    border-radius: 16px;
+    content: '';
+    pointer-events: none;
+  }
+}
+
+.simplebar-scrollbar.simplebar-visible {
+  width: 4px;
+  border-radius: 16px;
+  cursor: pointer;
+
+  &::before {
+    left: 0;
+    width: 4px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    opacity: .75;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: .85;
+    }
+  }
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

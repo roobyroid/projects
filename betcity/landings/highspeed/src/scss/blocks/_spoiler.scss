@@ -1,0 +1,384 @@
+.spoiler {
+  position: relative;
+  z-index: 1;
+  padding: 7.5rem 0 13rem;
+  overflow: hidden;
+  background: #4830DC;
+  border-radius: 5rem 5rem 0 0;
+
+  @include tablet {
+    padding: 50px 0 80px;
+    border-radius: 32px 32px 0 0;
+  }
+
+  @include phone {
+    padding: 23px 0 44px;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(0deg, #110629 0%, rgb(17 6 41 / 0%) 100%);
+    content: '';
+
+    @include tablet {
+      height: 170px;
+      max-height: 80%;
+    }
+
+    @include phone {
+      height: 92px;
+    }
+  }
+
+  &--second {
+    margin: -4rem 0 0;
+    padding: 7.5rem 0;
+    background: #6A038F;
+
+    @include tablet {
+      margin: -26px 0 0;
+      padding: 50px 0;
+    }
+
+    @include phone {
+      margin: -18px 0 0;
+      padding: 23px 0;
+    }
+  }
+
+  &:not(.spoiler--second) {
+    .spoiler__table-td {
+      span {
+        display: inline-block;
+        min-width: 24.2rem;
+        text-align: right;
+
+        @include tablet {
+          min-width: 166px;
+        }
+
+        @include phone {
+          min-width: 97px;
+        }
+      }
+
+      &:last-child {
+        span {
+          min-width: 12.9rem;
+
+          @include tablet {
+            min-width: 90px;
+          }
+
+          @include phone {
+            min-width: 52px;
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      .spoiler__info {
+        width: 100%;
+        max-width: 590px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &.open {
+    .spoiler__head {
+      &::after {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .spoiler__bg {
+      opacity: 1;
+    }
+
+    .spoiler__content {
+      box-sizing: content-box;
+      padding: 11rem 0 0;
+      opacity: 1;
+
+      @include tablet {
+        padding: 50px 0 0;
+      }
+
+      @include phone {
+        padding: 25px 0 0;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &__head {
+    position: relative;
+    width: 100%;
+    padding: 0 37.5rem 0 0;
+    color: $c-white;
+    font-size: 5rem;
+    text-align: left;
+    transition: opacity .3s;
+
+    @include tablet {
+      padding: 0 200px 0 0;
+      font-size: 24px;
+    }
+
+    @include phone-big {
+      padding: 0 58px 0 0;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-weight: 900;
+      font-size: 7.4rem;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 32px;
+      }
+
+      @include phone {
+        font-size: 22px;
+      }
+
+      &+p {
+        margin: 2rem 0 0;
+
+        @include tablet {
+          margin: 16px 0 0;
+        }
+      }
+    }
+
+    sup {
+      font-size: 3rem;
+
+      @include tablet {
+        display: inline-block;
+        font-size: 12px;
+        transform: translateY(-3px);
+      }
+
+      @include phone {
+        font-size: 10px;
+        transform: translateY(0);
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 6rem;
+      right: 3rem;
+      width: 0;
+      height: 0;
+      border-color: #ffffff transparent transparent;
+      border-style: solid;
+      border-width: 2.8rem 2.8rem 0;
+      transition: transform .3s;
+      content: '';
+
+      @include tablet {
+        top: 20px;
+        right: 10px;
+        border-width: 10px 10px 0;
+      }
+
+      @include phone {
+        top: 14px;
+        border-width: 7px 7px 0;
+      }
+    }
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    will-change: max-height;
+  }
+
+  &__table {
+    width: 100%;
+    max-width: 100.6rem;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #250962 0%, #3A128E 13.02%, #822F84 38.35%, #C84B70 69.86%, #BC4760 100%);
+    border-radius: 1.6rem;
+
+    @include tablet {
+      max-width: 590px;
+    }
+  }
+
+  &__table-row {
+    display: flex;
+
+    &:first-child {
+      .spoiler__table-td {
+        padding: 1.5rem .8rem;
+      }
+    }
+
+    &:last-child {
+      .spoiler__table-td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__table-td {
+    flex: 0 1 50%;
+    padding: 0.4rem 0.8rem 1rem;
+    color: #F4F4F4;
+    text-align: center;
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+
+    &:first-child {
+      border-right: 1px solid rgb(255 255 255 / 30%);
+    }
+
+    b {
+      font-weight: 900;
+    }
+  }
+
+  &__info {
+    margin: 4rem 0 0;
+    color: #C3B8E0;
+    font-size: 3.2rem;
+
+    @include tablet {
+      margin: 20px 0 0;
+      font-size: 14px;
+    }
+
+    @include phone {
+      margin: 13px 0 0;
+      font-size: 10px;
+    }
+
+    sup {
+      display: inline-block;
+      margin: 0 .4rem 0 0;
+      font-size: 2rem;
+
+      @include tablet {
+        font-size: 12px;
+      }
+
+      @include phone {
+        font-size: 9px;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 6.4rem;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    @include phone {
+      gap: 32px;
+    }
+  }
+
+  &__col {
+    flex: 0 1 70rem;
+
+    &:last-child {
+      .spoiler__col-name {
+        background: linear-gradient(90deg, #59FF9C 5.82%, #1DADC8 103.43%);
+        background-clip: text;
+        /* stylelint-disable-next-line property-no-vendor-prefix */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .spoiler__table {
+        background: linear-gradient(180deg, #190C6D 0%, #24148A 16.84%, #1B569B 43.77%, #0A94B2 72.97%, #50B578 100%);
+      }
+    }
+
+    .spoiler__table {
+      max-width: none;
+      margin: 0;
+      background: linear-gradient(180deg, #190C6D 0%, #24148A 16.72%, #5C36C9 43.77%, #534FF8 72.97%, #1295B1 100%);
+    }
+
+    @include tablet {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__col-name {
+    margin: 0 0 3.2rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0CFFFF 5.82%, #1794EC 103.43%);
+    background-clip: text;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include tablet {
+      margin: 0 0 32px;
+      font-size: 24px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @include phone {
+      margin: 0 0 16px;
+      font-size: 14px;
+    }
+  }
+
+  &__btn-wrap {
+    margin: 6.4rem 0 0;
+    text-align: center;
+
+    @include tablet {
+      margin: 50px 0 0;
+    }
+
+    @include phone {
+      margin: 39px 0 0;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50rem;
+  min-height: 9.6rem;
+  padding: 0 2rem;
+  color: $c-white;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ED4226;
+  border-radius: 10px;
+  transition: background .3s, color .3s;
+
+  @include tablet {
+    min-width: 387px;
+    min-height: 56px;
+    font-size: 22px;
+    border-radius: 5px;
+  }
+
+  @include phone {
+    min-width: 100%;
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+
+  &:hover {
+    background: darken($color: #ED4226, $amount: 5%);
+  }
+}

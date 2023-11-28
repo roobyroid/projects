@@ -1,0 +1,51 @@
+.footer {
+  padding: 8.7rem 0;
+  color: rgba($color: $c-white, $alpha: 80%);
+  font-size: 1.8rem;
+
+  @include tablet {
+    padding: 27px 0 40px;
+    font-size: 11px;
+  }
+
+  @include phone {
+    padding: 16px 0 32px;
+  }
+
+  &__age {
+    margin: 0 0 .5rem;
+    font-size: 2.7rem;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 89rem;
+    line-height: 1.12;
+
+    p {
+      &:not(:last-child) {
+        margin: 0 0 1.2rem;
+
+        @include tablet {
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    color: rgba($color: $c-white, $alpha: 80%);
+    text-decoration: underline;
+    text-decoration-color: rgba($color: $c-white, $alpha: 80%);
+    transition: text-decoration-color .3s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+
+  }
+}
