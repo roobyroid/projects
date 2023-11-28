@@ -11,7 +11,7 @@
 // import Ellipsis from 'ellipsis.js';
 // import { CountUp } from '../../node_modules/countup.js/dist/countUp.js';
 // import noUiSlider from 'nouislider';
-import { hasErrors } from './modules/forms.js';
+// import { hasErrors } from './modules/forms.js';
 import scrollToSection from './modules/scrollToSection.js';
 import { initModal } from './lib/hystmodal.min.js';
 import Swiper, { Navigation, EffectCoverflow } from 'swiper';
@@ -149,90 +149,90 @@ function app() {
   });
   formModal.init();
 
-  const formInfoModal = new HystModal({
-    linkAttributeName: 'data-hystmodalFormInfo',
-    closeOnOverlay: false,
-    closeOnButton: false,
-    beforeOpen: function () {
-      document.querySelector('#form').style.pointerEvents = 'none';
-    },
-    afterClose: function () {
-      document.querySelector('#form').style.pointerEvents = 'all';
-    },
-  });
-  formInfoModal.init();
+  // const formInfoModal = new HystModal({
+  //   linkAttributeName: 'data-hystmodalFormInfo',
+  //   closeOnOverlay: false,
+  //   closeOnButton: false,
+  //   beforeOpen: function () {
+  //     document.querySelector('#form').style.pointerEvents = 'none';
+  //   },
+  //   afterClose: function () {
+  //     document.querySelector('#form').style.pointerEvents = 'all';
+  //   },
+  // });
+  // formInfoModal.init();
 
-  const closeFormInfoBtns = document.querySelectorAll('.js_close-form-info');
-  closeFormInfoBtns.forEach((closeFormInfoBtn) => {
-    closeFormInfoBtn.addEventListener('click', () => {
-      formInfoModal.close();
-    });
-  });
+  // const closeFormInfoBtns = document.querySelectorAll('.js_close-form-info');
+  // closeFormInfoBtns.forEach((closeFormInfoBtn) => {
+  //   closeFormInfoBtn.addEventListener('click', () => {
+  //     formInfoModal.close();
+  //   });
+  // });
 
-  const thanksModal = new HystModal({
-    linkAttributeName: 'data-hystmodal',
-  });
-  thanksModal.init();
+  // const thanksModal = new HystModal({
+  //   linkAttributeName: 'data-hystmodal',
+  // });
+  // thanksModal.init();
 
   //form
-  const ideaForm = document.querySelector('.js_form');
+  // const ideaForm = document.querySelector('.js_form');
 
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    if (hasErrors(ideaForm)) return;
+  // function handleFormSubmit(event) {
+  //   event.preventDefault();
+  //   if (hasErrors(ideaForm)) return;
 
-    const data = serializeForm(event.target);
+  //   const data = serializeForm(event.target);
 
-    // Convert the FormData to a plain JavaScript object
-    const formDataObject = {};
-    for (const [key, value] of data.entries()) {
-      formDataObject[key] = value;
-    }
+  //   // Convert the FormData to a plain JavaScript object
+  //   const formDataObject = {};
+  //   for (const [key, value] of data.entries()) {
+  //     formDataObject[key] = value;
+  //   }
 
-    // Define the URL where you want to send the POST request
-    const url = 'https://xcomfeed.com/fonbet/fonteam/send';
+  //   // Define the URL where you want to send the POST request
+  //   const url = 'https://xcomfeed.com/fonbet/fonteam/send';
 
-    // Create the request headers
-    const headers = {
-      'Content-Type': 'application/json', // Set the content type to JSON
-    };
+  //   // Create the request headers
+  //   const headers = {
+  //     'Content-Type': 'application/json', // Set the content type to JSON
+  //   };
 
-    // Create the request body
-    const requestBody = JSON.stringify(formDataObject);
+  //   // Create the request body
+  //   const requestBody = JSON.stringify(formDataObject);
 
-    // Send the POST request
-    fetch(url, {
-      method: 'POST',
-      headers,
-      body: requestBody,
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json(); // You can parse the response JSON if needed
-      })
-      .then((data) => {
-        // Handle the response data here if needed
-        console.log('Response:', data);
+  //   // Send the POST request
+  //   fetch(url, {
+  //     method: 'POST',
+  //     headers,
+  //     body: requestBody,
+  //   })
+  //     .then((response) => {
+  //       if (!response.ok) {
+  //         throw new Error('Network response was not ok');
+  //       }
+  //       return response.json(); // You can parse the response JSON if needed
+  //     })
+  //     .then((data) => {
+  //       // Handle the response data here if needed
+  //       console.log('Response:', data);
 
-        try {
-          thanksModal.open(document.getElementById('thanks'));
-        } catch (e) {
-          console.error('Error:', error);
-        }
-      })
-      .catch((error) => {
-        // Handle errors here
-        console.error('Error:', error);
-      });
-  }
+  //       try {
+  //         thanksModal.open(document.getElementById('thanks'));
+  //       } catch (e) {
+  //         console.error('Error:', error);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       // Handle errors here
+  //       console.error('Error:', error);
+  //     });
+  // }
 
-  function serializeForm(formNode) {
-    return new FormData(formNode);
-  }
+  // function serializeForm(formNode) {
+  //   return new FormData(formNode);
+  // }
 
-  ideaForm.addEventListener('submit', handleFormSubmit);
+  // ideaForm.addEventListener('submit', handleFormSubmit);
 
   // btn up
   const btnUp = document.querySelector('.js_btn-up');

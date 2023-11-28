@@ -1,0 +1,99 @@
+.final {
+  .modal__window {
+    font-size: 2rem;
+    background: #D9D9D9 url('../img/page/modal-bg.svg') no-repeat center/cover;
+
+    // @include laptop {
+    //   max-width: 622px;
+    //   min-height: 340px;
+    //   padding: 60px 80px;
+    // }
+
+    // @include phone-big {
+    //   min-height: auto;
+    // }
+
+    @include phone {
+      max-width: 345px;
+      padding: 40px 15px 35px;
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 4rem;
+
+    @include laptop {
+      margin: 0 0 24px;
+    }
+
+    @include phone {
+      margin: 0 20px 20px 0;
+    }
+  }
+
+  &__subtitle {
+    width: 100%;
+    max-width: 53rem;
+
+    @include laptop {
+      max-width: 520px;
+    }
+
+    br {
+      display: none;
+
+      @include phone {
+        display: block;
+      }
+    }
+  }
+
+  &__thanks {
+    margin: -3rem 0 0 -4rem;
+    color: $c-red;
+    font-weight: 400;
+    font-size: 29rem;
+    font-family: $f-family--foncor ;
+    letter-spacing: -2.3rem;
+    text-transform: uppercase;
+    transform: rotate(-10deg);
+
+    @include laptop {
+      margin: -20px 0 15px -20px;
+      font-size: 196px;
+      letter-spacing: -15px;
+    }
+
+    @include tablet {
+      font-size: 186px;
+    }
+
+    @include phone-big {
+      margin: 10px 0 40px -10px;
+      font-size: 140px;
+    }
+
+    @include phone {
+      margin: 20px 0 30px;
+      font-size: 83px;
+      letter-spacing: -6px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 38rem;
+    margin: 0 0 0 auto;
+
+    @include laptop {
+      max-width: 350px;
+      margin: 0 -20px 0 auto;
+    }
+
+    @include phone-big {
+      max-width: none;
+      margin: 0;
+    }
+  }
+}
