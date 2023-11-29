@@ -162,6 +162,28 @@
         margin-top: 2rem;
       }
     }
+
+    table {
+      width: 100%;
+      border: 1px solid $c-white;
+      border-collapse: collapse;
+
+      @include phone {
+        font-size: 12px;
+      }
+
+      th {
+        padding: 3px;
+        text-align: center;
+        border: 1px solid $c-white;
+      }
+
+      td {
+        padding: 3px;
+        text-align: center;
+        border: 1px solid $c-white;
+      }
+    }
   }
 
   &__content-inner {
