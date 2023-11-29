@@ -272,6 +272,11 @@ input:not([type='checkbox']).item-error {
 	width: auto;
 	height: auto;
 	background: transparent;
+	display: none;
+}
+
+.form__code-wrapper.open {
+	display: block;
 }
 
 .form__code {
