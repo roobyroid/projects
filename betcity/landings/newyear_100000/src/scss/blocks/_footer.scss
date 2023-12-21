@@ -1,0 +1,47 @@
+.footer {
+  flex-shrink: 0;
+  margin: auto 0 0;
+  padding: 0 0 3rem;
+  color: rgba($color: $c-white, $alpha: 80%);
+  font-size: 1.6rem;
+
+  @include tablet {
+    font-size: 11px;
+  }
+
+  @include phone {
+    padding: 0 0 15px;
+  }
+
+
+  &__wrap {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    @include tablet {
+      p {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 0 .2rem;
+    color: rgba($color: $c-white, $alpha: 80%);
+    font-size: 2rem;
+    text-decoration: underline;
+    transition: text-decoration-color .3s;
+    text-decoration-color: rgba($color: $c-white, $alpha: 80%);
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.header {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+
+  @include tablet {
+    top: 35px;
+  }
+
+  @include phone {
+    top: 15px;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    width: 40rem;
+
+    @include tablet {
+      width: 212px;
+    }
+
+    @include phone {
+      width: 126px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    flex-shrink: 1;
+    color: $c-white;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgba($color: $c-white, $alpha: 80%);
+    transition: text-decoration-color .3s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+
+    @include tablet {
+      display: none;
+      font-size: 12px;
+    }
+
+    @include phone {
+      font-size: 10px;
+    }
+
+    &--mob {
+      display: none;
+
+      @include tablet {
+        display: inline-block;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,41 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6.8rem;
+  padding: 0 2rem;
+  color: $c-white;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: #E52D4E;
+  border-radius: 10px;
+  transition: background .3s, color .3s, border .3s;
+
+  @include tablet {
+    min-height: 50px;
+    font-size: 24px;
+    border-radius: 5px;
+  }
+
+  @include phone {
+    min-width: 100%;
+    min-height: 47px;
+    font-size: 21px;
+  }
+
+  &--transparent {
+    color: $c-white;
+    background: transparent;
+    border: 3px solid $c-white;
+
+    &:hover {
+      border-color: darken($color: #E52D4E, $amount: 5%);
+    }
+  }
+
+  &:hover {
+    background: darken($color: #E52D4E, $amount: 5%);
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include "head.html" %}
+
+<body>
+	<section class="hero">
+		<picture>
+			<source srcset="img/page/bg-mob.jpg" type="image/jpeg" media="(max-width: 767.98px)">
+			<img class="hero__bg" src="img/page/bg.jpg" alt="">
+		</picture>
+		{% include "header.html" %}
+		<main class="hero__content">
+			<div class="container">
+				<div class="hero__wrap">
+					<div class="hero__text">
+						<picture>
+							<source srcset="img/page/text-mob.svg" type="image/jpeg" media="(max-width: 565.98px)">
+							<img src="img/page/text.svg" alt="">
+						</picture>
+					</div>
+					<h1 class="hero__title"><span>100&nbsp;000&nbsp;&#8381;</span><br> Новым игрокам</h1>
+					<ul class="hero__list">
+						<li>Зарегистрируйся</li>
+						<li>Пополни счет</li>
+						<li>
+							<p>Делай ставки и&nbsp;получай фрибет<sup>**</sup>&nbsp;50% от&nbsp;депозита</p>
+						</li>
+					</ul>
+					<div class="hero__actions">
+						<a class="hero__btn btn" href="https://betcity.ru/ru/reg" target="_blank">получить бонус</a>
+						<a class="hero__btn btn btn--transparent" href="https://betcity.ru/?login=1" target="_blank">УЖЕ
+							КЛИЕНТ</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		{% include "footer.html" %}
+	</section>
+	{% include "modal.html" %}
+	<script src="./js/app.min.js"></script>
+	<script type="text/javascript" src="https://fcdn.betcity.ru/libs/qr-generator-1.0.0.min.js"></script>
+	<script type="text/javascript" src="https://fcdn.betcity.ru/libs/adjust-link-generator-1.0.0.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			// ADJUST LINKS
+			const defaultAndStaticParams = {
+				adj_adgroup: 'newyear_100000',
+				adj_campaign: '2212',
+				adj_creative: 'digital_land',
+				adj_label: 'https://betcity.ru/ru/reg',
+				adj_t: '12uw73kb_1258v1lq'
+			};
+
+			const link = window['createAdjustLink'].call(this, 'https://betcity.go.link', defaultAndStaticParams);
+
+			const element = document.getElementById('downloadApp');
+			if (element && element.hasAttribute('href')) {
+				element.setAttribute('href', link);
+			};
+
+
+			// QR
+			const options = {
+				color: "#0092F3",
+				dotsType: 'extra-rounded',
+				cornersSquareType: 'extra-rounded',
+				withImage: true,
+				imageURL: 'img/page/icoqr.png',
+			};
+
+			window['addQR'].call(this, link, ['qr'], options);
+		});
+	</script>
+</body>
+
+</html>
