@@ -62,7 +62,7 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <link href="./css/style.min.css?_v=20231128151101" rel="stylesheet" />
+    <link href="./css/style.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -162,7 +162,7 @@
                                     <p>реализацию своего проекта от&nbsp;Fonteam в&nbsp;2024&nbsp;году!</p>
                                 </div>
                             </div>
-                            <a class="join__btn btn btn--white" href="#" data-hystmodalForm="#final">Вперёд!</a>
+                            <a class="join__btn btn btn--white" href="#" data-hystmodalForm="#results">Вперёд!</a>
                         </div>
                     </div>
                 </section>
@@ -578,25 +578,82 @@
 	</div>
 </div> -->
 
+    <!-- <div class="final modal hystmodal" id="final" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<h2 class="final__title title">Спасибо! Изучаем&nbsp;ваши&nbsp;идеи</h2>
+			<p class="final__subtitle">Мы&nbsp;получили все заявки, и&nbsp;рады,<br> что вокруг столько единомышленников.<br>
+				Это
+				по-настоящему важно.<br>
+				В&nbsp;декабре мы&nbsp;объявим 3&nbsp;проекта,<br> которые изменят отечественный спорт в&nbsp;2024&nbsp;году.
+			</p>
+			<p class="final__thanks">Спасибо!</p>
+			<p class="final__info">Благодарим всех, кто откликнулся.<br> Следите за&nbsp;обновлениями
+				в&nbsp;социальных&nbsp;сетях&nbsp;FONBET.</p>
+		</div>
+	</div>
+</div> -->
 
-
-    <div class="final modal hystmodal" id="final" aria-hidden="true">
+    <div class="results modal hystmodal" id="results" aria-hidden="true">
         <div class="modal__wrap hystmodal__wrap">
             <div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Close</button>
-                <h2 class="final__title title">Спасибо! Изучаем&nbsp;ваши&nbsp;идеи</h2>
-                <p class="final__subtitle">Мы&nbsp;получили все заявки, и&nbsp;рады,<br> что вокруг столько единомышленников.<br>
-                    Это
-                    по-настоящему важно.<br>
-                    В&nbsp;декабре мы&nbsp;объявим 3&nbsp;проекта,<br> которые изменят отечественный спорт в&nbsp;2024&nbsp;году.
-                </p>
-                <p class="final__thanks">Спасибо!</p>
-                <p class="final__info">Благодарим всех, кто откликнулся.<br> Следите за&nbsp;обновлениями
-                    в&nbsp;социальных&nbsp;сетях&nbsp;FONBET.</p>
+                <div class="results__fonteam">
+                    <img src="img/results/fonteam.png" alt="">
+                </div>
+                <h2 class="results__title">итоги конкурса</h2>
+                <div class="results__info">
+                    <p class="results__info-text">Так выглядит тройка победителей, вместе с&nbsp;ними Fonteam будет менять спорт
+                        в&nbsp;2024&nbsp;году.</p>
+
+                    <div class="results__info-wrap">
+                        <p>Мы&nbsp;получили и&nbsp;прочитали более 1700 заявок со&nbsp;всей страны. Как проходило голосование
+                            за&nbsp;лучшие проекты, смотрите в&nbsp;новогоднем выпуске шоу &laquo;Это футбол, брат&raquo;.</p>
+                        <a class="results__info-btn btn" href="#">Смотреть</a>
+                    </div>
+                </div>
+
+                <div class="results__winners">
+                    <h3 class="results__winners-title">победители</h3>
+
+                    <div class="results__winners-wrap">
+                        <div class="results__winners-item">
+                            <div class="results__winners-item-head">
+                                <p class="results__winners-name">Ксения<br> Ковыршина</p>
+                                <p>Череповец, 18&nbsp;лет</p>
+                            </div>
+                            <p>&laquo;Помочь нашей команде выйти на&nbsp;новый уровень. Я&nbsp;играю за&nbsp;&bdquo;Атланту&ldquo;,
+                                женскую футбольную команду из&nbsp;Череповца. Тут почти нет команд, способных составить нам конкуренцию.
+                                Мы&nbsp;хотим расти, но&nbsp;есть ограничения&nbsp;&mdash; например, на&nbsp;все соревнования нам
+                                приходится ездить за&nbsp;свой счет, а&nbsp;также у&nbsp;нас нет даже скромного спорт-зала&raquo;.</p>
+                        </div>
+                        <div class="results__winners-item">
+                            <div class="results__winners-item-head">
+                                <p class="results__winners-name">Василий<br> Николаенко</p>
+                                <p>Байкальск, 30&nbsp;лет</p>
+                            </div>
+                            <p>&laquo;Построить или отреставрировать стадион в&nbsp;Байкальске. Наш город имеет все шансы стать первым
+                                эко-городом в&nbsp;России. Проведение больших футбольных матчей обеспечит к&nbsp;Байкальску туристический
+                                интерес, а&nbsp;это положительно повлияет и&nbsp;на&nbsp;инфраструктуру, и&nbsp;на&nbsp;экономику
+                                города&raquo;.</p>
+                        </div>
+                        <div class="results__winners-item">
+                            <div class="results__winners-item-head">
+                                <p class="results__winners-name">Павел<br> Рундзя</p>
+                                <p>Москва, 28&nbsp;лет</p>
+                            </div>
+                            <p>&laquo;Открыть передвижной музей российского хоккея в&nbsp;Москве, чтобы у&nbsp;начинающих спортсменов
+                                и&nbsp;болельщиков была возможность узнать историю КХЛ, увидеть артефакты и&nbsp;спортивный архив.
+                                В&nbsp;музее можно сделать интерактивные зоны, а&nbsp;также устраивать выездные выставки
+                                в&nbsp;регионах&raquo;.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="./js/app.min.js?_v=20231128151101"></script>
+    <script src="./js/app.min.js"></script>
 </body>
 
 </html>

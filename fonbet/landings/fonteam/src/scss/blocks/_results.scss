@@ -1,0 +1,362 @@
+.results {
+  .modal__window {
+    max-width: 174rem;
+    padding: 17rem 11rem 10rem;
+    background: #EFEFEF url('../img/results/bg.png') no-repeat center/cover;
+
+    @include laptop {
+      max-width: 784px;
+      padding: 80px 50px 60px;
+      background-image: url('../img/results/bg-tablet.png');
+    }
+
+    @include phone-big {
+      padding: 80px 20px 60px;
+    }
+
+    @include phone {
+      max-width: none;
+      padding: 50px 20px;
+      background-image: url('../img/results/bg-mob.png');
+    }
+
+    &::before {
+      position: absolute;
+      top: 2.5rem;
+      left: 6.2rem;
+      z-index: -1;
+      width: 100%;
+      max-width: 152rem;
+      height: 7rem;
+      background: url('../img/results/line-1.png') no-repeat center/contain;
+      content: '';
+
+      @include laptop {
+        top: 15px;
+        left: 30px;
+        max-width: 680px;
+        height: 28px;
+      }
+
+      @include phone-big {
+        max-width: 85%;
+      }
+
+      @include phone {
+        top: 7px;
+        left: 15px;
+      }
+    }
+  }
+
+  .hystmodal__close {
+    top: 5rem;
+    right: 7rem;
+    width: 4.8rem;
+    height: 4.2rem;
+
+    @include laptop {
+      top: 25px;
+      right: 30px;
+      width: 23px;
+      height: 20px;
+    }
+
+    @include phone {
+      top: 15px;
+      right: 15px;
+      width: 28px;
+      height: 24px;
+    }
+  }
+
+  &__fonteam {
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+    z-index: -1;
+    max-width: 44.5rem;
+
+    @include laptop {
+      top: 42px;
+      left: 19px;
+      max-width: 201px;
+    }
+
+    @include phone-big {
+      top: 35px;
+      left: 10px;
+      max-width: 150px;
+    }
+
+    @include phone {
+      top: 25px;
+      left: 5px;
+      max-width: 100px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 6rem;
+    font-weight: 900;
+    font-size: 11.6rem;
+    line-height: 1.2;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+
+    @include laptop {
+      margin: 0 0 30px;
+      font-size: 62px;
+      letter-spacing: -1.86px;
+    }
+
+    @include phone-big {
+      font-size: 45px;
+      line-height: .8;
+      letter-spacing: -1.35px;
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    gap: 19rem;
+    padding: 0 0 12rem;
+
+    @include laptop {
+      flex-wrap: wrap;
+      gap: 17px;
+      padding: 0 0 80px;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -2rem;
+      left: -8rem;
+      z-index: -1;
+      width: calc(100% + 10rem);
+      max-width: 165.3rem;
+      height: 17.6rem;
+      background: url('../img/results/line-2.png') no-repeat center/contain;
+      content: '';
+
+      @include laptop {
+        bottom: -41px;
+        left: -42px;
+        width: 107%;
+        background-image: url('../img/results/line-2-tablet.png');
+      }
+
+      @include phone-big {
+        left: -10px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__info-text {
+    flex: 0 1 50%;
+    font-weight: 900;
+    font-size: 4.2rem;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include laptop {
+      flex: 1 1 100%;
+      padding: 0 205px 0 0;
+      font-size: 24px;
+    }
+
+    @include phone-big {
+      padding: 0;
+      font-size: 20px;
+    }
+
+    @include phone {
+      padding: 0 30px 0 0;
+      font-size: 18px;
+    }
+  }
+
+  &__info-wrap {
+    flex: 0 1 50%;
+    font-size: 2rem;
+    line-height: 1.2;
+
+    @include laptop {
+      flex: 1 1 100%;
+      font-size: 15px;
+      line-height: 1.05;
+    }
+
+    @include phone-big {
+      font-size: 14px;
+    }
+
+
+
+    p {
+      max-width: 44rem;
+
+      @include laptop {
+        max-width: 370px;
+      }
+
+      @include phone-big {
+        max-width: none;
+      }
+
+      @include phone {
+        max-width: 280px;
+      }
+    }
+  }
+
+  &__info-btn {
+    min-width: 35.6rem;
+    min-height: 7.7rem;
+    margin: 7rem 0 0;
+
+    @include laptop {
+      min-width: 192px;
+      min-height: 42px;
+      margin: 42px 0 0;
+      font-size: 20px;
+    }
+
+    @include phone {
+      min-width: 100%;
+      min-height: 45px;
+      font-size: 18px;
+    }
+  }
+
+  &__winners {}
+
+  &__winners-title {
+    margin: 0 0 5rem;
+    font-weight: 900;
+    font-size: 8.5rem;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+
+    @include laptop {
+      margin: 0 0 30px;
+      font-size: 40px;
+      letter-spacing: -1.2px;
+    }
+
+    @include phone-big {
+      font-size: 38px;
+    }
+
+    @include phone {
+      font-size: 35px;
+    }
+
+  }
+
+  &__winners-wrap {
+    display: flex;
+    gap: 9rem;
+
+    @include laptop {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+
+  &__winners-item {
+    max-width: 43rem;
+    padding: 3.3rem 2.5rem 3.3rem 3.5rem;
+    color: #090808;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    background: $c-white;
+    border-radius: 3rem;
+
+    @include laptop {
+      flex: 0 1 calc(50% - 20px / 2);
+      padding: 29px 20px 30px 28px;
+      line-height: 1.09;
+      border-radius: 25px;
+    }
+
+    @include phone-big {
+      padding: 29px 15px 20px;
+    }
+  }
+
+  &__winners-item-head {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 4rem;
+
+    @include laptop {
+      margin: 0 0 35px;
+    }
+
+    @include phone-big {
+      margin: 0 0 30px;
+    }
+
+    &::after {
+      position: absolute;
+      top: -2rem;
+      left: -3rem;
+      z-index: -1;
+      width: calc(100% + 6rem);
+      max-width: 41.8rem;
+      height: 14rem;
+      background: url('../img/results/border.png') no-repeat center/contain;
+      content: '';
+
+      @include laptop {
+        width: calc(100% + 50px);
+        height: 120px;
+        background-image: url('../img/results/border-tablet.png');
+      }
+
+      @include phone-big {
+        top: -30px;
+        left: -20px;
+        width: calc(100% + 30px);
+        height: 130px;
+      }
+    }
+  }
+
+  &__winners-name {
+    color: #E80024;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.05;
+    text-transform: uppercase;
+
+    @include laptop {
+      font-size: 25px;
+    }
+
+    @include phone-big {
+      font-size: 24px;
+    }
+
+    &+p {
+      margin: .5rem 0 0;
+      font-size: 2rem;
+      line-height: 1.2;
+      opacity: .6;
+
+      @include laptop {
+        margin: 10px 0 0;
+        font-size: 15px;
+      }
+
+      @include phone-big {
+        margin: 2px 0 0;
+        font-size: 14px;
+      }
+    }
+  }
+}

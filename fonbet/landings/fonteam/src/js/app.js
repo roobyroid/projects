@@ -145,9 +145,10 @@ function app() {
   // init modal
   const formModal = new HystModal({
     linkAttributeName: 'data-hystmodalForm',
-    backscroll: false,
+    // backscroll: false,
   });
   formModal.init();
+  formModal.open('#results');
 
   // const formInfoModal = new HystModal({
   //   linkAttributeName: 'data-hystmodalFormInfo',
