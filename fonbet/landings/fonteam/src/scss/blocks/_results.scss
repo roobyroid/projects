@@ -18,6 +18,7 @@
       max-width: none;
       padding: 50px 20px;
       background-image: url('../img/results/bg-mob.png');
+      border-radius: 33px;
     }
 
     &::before {
@@ -43,8 +44,9 @@
       }
 
       @include phone {
-        top: 7px;
+        top: 10px;
         left: 15px;
+        max-width: 75%;
       }
     }
   }
@@ -115,6 +117,10 @@
       line-height: .8;
       letter-spacing: -1.35px;
     }
+
+    @include phone {
+      margin: 0 0 38px;
+    }
   }
 
   &__info {
@@ -150,6 +156,12 @@
       @include phone-big {
         left: -10px;
         width: 100%;
+      }
+
+      @include phone {
+        bottom: -50px;
+        left: -10px;
+        width: 105%;
       }
     }
   }
@@ -191,6 +203,7 @@
 
     @include phone-big {
       font-size: 14px;
+      line-height: 1.15;
     }
 
 
@@ -227,6 +240,7 @@
     @include phone {
       min-width: 100%;
       min-height: 45px;
+      margin: 102px 0 0;
       font-size: 18px;
     }
   }
@@ -251,7 +265,9 @@
     }
 
     @include phone {
+      margin: 0 0 24px;
       font-size: 35px;
+      letter-spacing: 0;
     }
 
   }
@@ -264,6 +280,10 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
+    }
+
+    @include phone {
+      gap: 25px;
     }
   }
 
@@ -286,6 +306,14 @@
     @include phone-big {
       padding: 29px 15px 20px;
     }
+
+    @include phone {
+      flex: 1 1 100%;
+      max-width: 330px;
+      margin: 0 auto;
+      padding: 25px 15px 30px 25px;
+      font-size: 14px;
+    }
   }
 
   &__winners-item-head {
@@ -299,6 +327,10 @@
 
     @include phone-big {
       margin: 0 0 30px;
+    }
+
+    @include phone {
+      margin: 0 0 36px;
     }
 
     &::after {
@@ -323,6 +355,13 @@
         left: -20px;
         width: calc(100% + 30px);
         height: 130px;
+      }
+
+      @include phone {
+        top: -28px;
+        left: -26px;
+        width: calc(100% + 39px);
+        height: 135px;
       }
     }
   }
@@ -356,6 +395,10 @@
       @include phone-big {
         margin: 2px 0 0;
         font-size: 14px;
+      }
+
+      @include phone {
+        margin: 10px 0 0;
       }
     }
   }
