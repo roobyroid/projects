@@ -1,0 +1,107 @@
+.header {
+  position: relative;
+  height: 200px;
+  width: 1080px;
+  min-width: 1080px;
+  margin: 0 auto;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 246px;
+    margin: 67px 0 0 43px;
+  }
+
+  &__bonus {
+    width: 290px;
+    position: absolute;
+    top: 40px;
+    left: 33.5%;
+    text-align: center;
+
+    .banner-text__top {
+      font-size: 57px;
+    }
+
+    .banner-text__bottom {
+      font-weight: 900;
+      font-size: 24px;
+      margin: 6px 14px 0 0;
+    }
+  }
+
+  &__gr {
+    width: 478px;
+    position: absolute;
+    top: -80px;
+    right: 1%;
+
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    margin: 92px 88px 0 0;
+  }
+
+  &__an-btn.an-btn {
+    width: 252px;
+    flex-shrink: 0;
+    height: 40px;
+    font-size: 19px;
+  }
+
+  &__reklama {
+    display: flex;
+    position: absolute;
+    bottom: 22px;
+  }
+
+  &__reklama-18 {
+    width: 25px;
+    margin: 0 8px 0 0;
+  }
+
+  &__reklama-text {
+    width: 130px;
+    height: auto;
+    margin: 2px 0 0;
+  }
+
+  &__bottom {
+    width: 99%;
+    position: absolute;
+    bottom: 14px;
+    left: 13px;
+    overflow: hidden;
+  }
+
+  &__textline {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    will-change: transform;
+    backface-visibility: hidden;
+    font-weight: 100;
+    font-family: sans-serif;
+    transform: translateZ(1px) translateX(0);
+    white-space: nowrap;
+    z-index: 3;
+    animation: moveTextRow 30s linear infinite;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}

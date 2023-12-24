@@ -1,0 +1,25 @@
+.aside {
+  padding: 56px 0 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 133px;
+    margin: 0 4px;
+  }
+
+  &__logo {
+    margin: 0 auto 30px;
+    width: 119px;
+  }
+
+  &__an-btn {
+    width: 120px;
+    margin: 26px auto 0;
+    padding: 8px 5px;
+  }
+
+}
