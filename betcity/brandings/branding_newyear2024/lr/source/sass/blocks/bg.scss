@@ -1,0 +1,203 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__star {
+    position: absolute;
+
+    canvas {
+      width: 100%;
+    }
+
+    &--1 {
+      width: 204px;
+      transform: rotate(-6deg);
+      top: -9%;
+      left: 7%;
+    }
+
+    &--2 {
+      width: 215px;
+      flex-shrink: 0;
+      top: -6%;
+      right: 5%;
+    }
+
+    &--3 {
+      width: 38px;
+      transform: rotate(-15deg);
+      top: 27%;
+      left: 6%;
+    }
+
+    &--4 {
+      width: 66px;
+      transform: rotate(15deg);
+      top: 42%;
+      left: 14%;
+    }
+
+    &--5 {
+      width: 50px;
+      transform: rotate(-30deg);
+      top: 42%;
+      right: 11%;
+    }
+
+    &--6 {
+      width: 270px;
+      top: 48%;
+      left: 7%;
+    }
+
+    &--7 {
+      width: 289px;
+      top: 48%;
+      right: 6%;
+    }
+
+    &--8 {
+      width: 60px;
+      top: 86%;
+      left: 11%;
+    }
+
+    &--9 {
+      width: 36px;
+      top: 91%;
+      right: 12%;
+      transform: rotate(-30deg);
+    }
+  }
+
+  &__ball {
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url('../img/ball.png') no-repeat center/cover;
+
+    &.animate {
+      animation: gravity 3s ease-in-out alternate infinite;
+    }
+
+    &--white {
+      background-image: url('../img/ball-white.png');
+    }
+
+    &--1 {
+      top: 11%;
+      left: 13%;
+      width: 21px;
+      height: 21px;
+    }
+
+    &--2 {
+      top: 15%;
+      left: 15%;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+
+    }
+
+    &--3 {
+      top: 1%;
+      right: 16%;
+      width: 6px;
+      height: 6px;
+    }
+
+    &--4 {
+      top: 6%;
+      right: 15%;
+      width: 13px;
+      height: 13px;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+    }
+
+    &--5 {
+      top: 45%;
+      left: 12%;
+    }
+
+    &--6 {
+      top: 43%;
+      right: 9%;
+      width: 13px;
+      height: 13px;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+    }
+
+    &--7 {
+      top: 80%;
+      left: 12%;
+    }
+
+    &--8 {
+      top: 82%;
+      left: 14%;
+      width: 13px;
+      height: 13px;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+    }
+
+    &--9 {
+      top: 80%;
+      right: 12%;
+      width: 21px;
+      height: 21px;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+    }
+
+    &--10 {
+      top: 84%;
+      right: 11%;
+    }
+  }
+}
+
+
+@keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(.3em);
+  }
+}
+
+@keyframes gravityReverse {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-.3em);
+  }
+}
