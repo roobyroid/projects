@@ -33,6 +33,7 @@ function app() {
   document.querySelectorAll('.js_canvas').forEach((canvas) => {
     init(canvas);
   });
+  document.querySelectorAll('.js_anim-el').forEach((item) => item.classList.add('animate'));
 
   function init(canvas) {
     let comp;
@@ -109,7 +110,6 @@ function app() {
       createjs.Ticker.addEventListener('tick', stage);
     };
     AdobeAn.compositionLoaded(lib.properties.id);
-
     fnStartAnimation();
   }
 }

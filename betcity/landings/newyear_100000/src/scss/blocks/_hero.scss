@@ -235,40 +235,50 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+
+    @include phone-big {
+      padding: 20px 0 0;
+    }
+
+    @include phone {
+      padding: 20px 0 0;
+    }
   }
 
   &__wrap {}
 
   &__gr {
-    display: flex;
-    justify-content: center;
-    margin: -4rem 0 0;
-  }
+    width: 100%;
+    max-width: 104rem;
+    margin: 0 auto;
 
-  &__gr-inner {
-    width: 87rem;
-    overflow: hidden;
+    @include tablet {
+      max-width: 600px;
+    }
 
     canvas {
-      width: calc(100% + 54rem);
-      margin: 0 0 0 -34rem;
+      width: 100%;
+
+      @include phone {
+        width: calc(100% + 68px);
+        margin: 0 -15px;
+      }
     }
   }
 
   &__title {
-    margin: -19rem 0 1rem;
+    margin: 0 0 1rem;
     font-weight: 900;
     font-size: 5.6rem;
     text-align: center;
     text-transform: uppercase;
 
     @include tablet {
-      margin: -120px 0 15px;
+      margin: 0 0 15px;
       font-size: 28px;
     }
 
     @include phone {
-      margin-top: -60px;
       font-size: 23px;
     }
 
