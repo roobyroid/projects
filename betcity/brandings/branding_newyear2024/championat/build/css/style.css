@@ -777,3 +777,79 @@ body {
   margin: 26px auto 0;
   padding: 8px 5px;
 }
+
+@media (max-width: 1450px) {
+  .bg__star--1 {
+    left: 2%;
+  }
+
+  .bg__star--2 {
+    right: 1%;
+  }
+
+  .bg__star--3 {
+    left: 3%;
+  }
+
+  .bg__star--4 {
+    left: 8%;
+    top: 60%;
+  }
+
+  .bg__star--5 {
+    top: 60%;
+    right: 9%;
+  }
+
+  .bg__star--6 {
+    top: 67%;
+    left: 3%;
+  }
+
+  .bg__star--7 {
+    right: 3%;
+    top: 67%;
+  }
+
+  .bg__star--8 {
+    left: 24%;
+  }
+
+  .bg__star--9 {
+    left: 33%;
+  }
+
+  .bg__star--10 {
+    left: 59%;
+  }
+
+  .bg__ball--1 {
+    left: 8%;
+  }
+
+  .bg__ball--2 {
+    left: 10%;
+  }
+
+  .bg__ball--6 {
+    top: 19%;
+  }
+
+  .bg__ball--7 {
+    left: 2%;
+  }
+
+  .bg__ball--8 {
+    left: 5%;
+  }
+
+  .bg__ball--9 {
+    top: 60%;
+    right: 5%;
+  }
+
+  .bg__ball--10 {
+    top: 63%;
+    right: 4%;
+  }
+}
