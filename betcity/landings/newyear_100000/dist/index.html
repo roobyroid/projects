@@ -43,7 +43,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link href="./css/style.min.css?_v=20231221121114" rel="stylesheet" />
+    <link href="./css/style.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -52,6 +52,32 @@
             <source srcset="img/page/bg-mob.jpg" type="image/jpeg" media="(max-width: 767.98px)">
             <img class="hero__bg" src="img/page/bg.jpg" alt="">
         </picture>
+        <div class="hero__star hero__star--1">
+            <canvas class="js_canvas" data-name="star" width="506" height="506"></canvas>
+        </div>
+        <div class="hero__star hero__star--2">
+            <canvas class="js_canvas" data-name="star" width="506" height="506"></canvas>
+        </div>
+        <div class="hero__star hero__star--3">
+            <canvas class="js_canvas" data-name="star" width="506" height="506"></canvas>
+        </div>
+        <div class="hero__star hero__star--4">
+            <canvas class="js_canvas" data-name="star" width="506" height="506"></canvas>
+        </div>
+        <div class="hero__star hero__star--5">
+            <canvas class="js_canvas" data-name="star" width="506" height="506"></canvas>
+        </div>
+        <div class="hero__star hero__star--6">
+            <canvas class="js_canvas" data-name="star" width="506" height="506"></canvas>
+        </div>
+        <span class="hero__ball hero__ball--1 js_anim-el"></span>
+        <span class="hero__ball hero__ball--white hero__ball--2 js_anim-el"></span>
+        <span class="hero__ball hero__ball--3 js_anim-el"></span>
+        <span class="hero__ball hero__ball--4 js_anim-el"></span>
+        <span class="hero__ball hero__ball--white hero__ball--5 js_anim-el"></span>
+        <span class="hero__ball hero__ball--6 js_anim-el"></span>
+        <span class="hero__ball hero__ball--white hero__ball--7 js_anim-el"></span>
+        <span class="hero__ball hero__ball--white hero__ball--8 js_anim-el"></span>
         <header class="header">
             <div class="container">
                 <div class="header__wrap">
@@ -66,11 +92,14 @@
         <main class="hero__content">
             <div class="container">
                 <div class="hero__wrap">
-                    <div class="hero__text">
-                        <picture>
-                            <source srcset="img/page/text-mob.svg" type="image/jpeg" media="(max-width: 565.98px)">
-                            <img src="img/page/text.svg" alt="">
-                        </picture>
+                    <!-- <div class="hero__text">
+						<picture>
+							<source srcset="img/page/text-mob.svg" type="image/jpeg" media="(max-width: 565.98px)">
+							<img src="img/page/text.svg" alt="">
+						</picture>
+					</div> -->
+                    <div class="hero__gr">
+                        <canvas class="js_canvas" data-name="gr" width="1000" height="350"></canvas>
                     </div>
                     <h1 class="hero__title"><span>100&nbsp;000&nbsp;&#8381;</span><br> Новым игрокам</h1>
                     <ul class="hero__list">
@@ -244,9 +273,12 @@
             </div>
         </div>
     </div>
-    <script src="./js/app.min.js?_v=20231221121114"></script>
-    <script type="text/javascript" src="https://fcdn.betcity.ru/libs/qr-generator-1.0.0.min.js?_v=20231221121114"></script>
-    <script type="text/javascript" src="https://fcdn.betcity.ru/libs/adjust-link-generator-1.0.0.min.js?_v=20231221121114"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="./js/gr.js"></script>
+    <script src="./js/star.js"></script>
+    <script src="./js/app.min.js"></script>
+    <script type="text/javascript" src="https://fcdn.betcity.ru/libs/qr-generator-1.0.0.min.js"></script>
+    <script type="text/javascript" src="https://fcdn.betcity.ru/libs/adjust-link-generator-1.0.0.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // ADJUST LINKS

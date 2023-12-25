@@ -23,6 +23,7 @@ export const path = {
     svg: `${srcFolder}/img/svg-to-sprite/*.svg`,
     fonts: `${srcFolder}/fonts/**/*.woff2`,
     files: `${srcFolder}/files/**/*.*`,
+    jsFolder: `${srcFolder}/js/*.js`,
   },
   build: {
     html: `${buildFolder}/`,

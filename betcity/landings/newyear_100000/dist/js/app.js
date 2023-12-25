@@ -40,6 +40,7 @@ function app() {
     let loader;
     switch (canvas.dataset.name) {
       case 'gr':
+        console.log(1);
         loader = new createjs.LoadQueue(false);
         comp = AdobeAn.getComposition('97D162834277B14D8069DB7A27C0BC3C');
         lib = comp.getLibrary();
@@ -52,6 +53,7 @@ function app() {
         });
         return null;
       case 'star':
+        console.log(2);
         loader = new createjs.LoadQueue(false);
         comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DAF');
         lib = comp.getLibrary();

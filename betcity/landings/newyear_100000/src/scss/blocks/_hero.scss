@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 2rem;
   min-height: 100vh;
+  overflow: hidden;
 
   @include tablet {
     gap: 40px;
@@ -24,6 +25,211 @@
     object-fit: cover;
   }
 
+  &__star {
+    position: absolute;
+    z-index: -1;
+
+    canvas {
+      width: 100%;
+    }
+
+    &--1 {
+      top: 6%;
+      left: -6%;
+      width: 21rem;
+      transform: rotate(83deg);
+
+      @include tablet {
+        top: 6%;
+        right: 32%;
+        left: auto;
+        width: 33px;
+        transform: rotate(-29deg);
+      }
+    }
+
+    &--2 {
+      top: -9%;
+      right: 28%;
+      width: 22rem;
+
+      @include tablet {
+        top: 20%;
+        right: auto;
+        left: -9%;
+        width: 77px;
+      }
+    }
+
+    &--3 {
+      top: 19%;
+      right: -2%;
+      width: 18rem;
+
+      @include tablet {
+        top: 40%;
+        right: -14%;
+        width: 135px;
+      }
+    }
+
+    &--4 {
+      top: 33%;
+      left: 11%;
+      width: 23rem;
+      transform: rotate(47deg);
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--5 {
+      top: 74%;
+      left: 3%;
+      width: 10rem;
+      transform: rotate(47deg);
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--6 {
+      right: -8%;
+      bottom: 0;
+      width: 37rem;
+      transform: rotate(-1deg);
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__ball {
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.3rem;
+    background: url('../img/page/ball.png') no-repeat center/cover;
+
+    @include tablet {
+      width: 7px;
+      height: 7px;
+    }
+
+    &.animate {
+      animation: gravity 3s ease-in-out alternate infinite;
+    }
+
+    &--white {
+      background-image: url('../img/page/ball-white.png');
+    }
+
+    &--1 {
+      top: 37%;
+      left: 4%;
+
+      @include tablet {
+        top: 9%;
+        left: 30%;
+      }
+    }
+
+    &--2 {
+      top: 20%;
+      left: 21%;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+
+      @include tablet {
+        top: 23%;
+        left: 45%;
+      }
+    }
+
+    &--3 {
+      top: 10%;
+      left: 53%;
+
+      @include tablet {
+        top: 29%;
+        right: 5%;
+        left: auto;
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    &--4 {
+      top: 43%;
+      right: 18%;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--5 {
+      bottom: 7%;
+      left: -1%;
+      width: 4.1rem;
+      height: 4.1rem;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--6 {
+      bottom: 11%;
+      left: 15%;
+      width: 3.6rem;
+      height: 3.7rem;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--7 {
+      bottom: 9%;
+      left: 55%;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--8 {
+      top: 52%;
+      right: 6%;
+      width: 5rem;
+      height: 5rem;
+
+      &.animate {
+        animation-name: gravityReverse;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -33,38 +239,18 @@
 
   &__wrap {}
 
-  &__text {
-    width: 100%;
-    max-width: 103rem;
-    margin: -6rem auto 0;
+  &__gr {
+    width: 50rem;
+    margin: 0 auto;
 
-    @include tablet {
-      max-width: 700px;
-      margin-top: -30px;
-    }
-
-    @include phone {
-      display: flex;
-      justify-content: center;
-      width: auto;
-      max-width: none;
-      margin: -80px -16px 0;
-      margin-top: -80px;
-      overflow-x: hidden;
-    }
-
-    img {
-      margin: 0 auto;
-
-      @include phone {
-        max-width: calc(100% + 90px);
-        margin: 0 0 0 -50px;
-      }
+    canvas {
+      width: 100%;
     }
   }
 
+
   &__title {
-    margin: -19rem 0 1rem;
+    margin: 2rem 0 1rem;
     font-weight: 900;
     font-size: 5.6rem;
     text-align: center;
@@ -177,4 +363,24 @@
     }
   }
 
+}
+
+@keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(.3em);
+  }
+}
+
+@keyframes gravityReverse {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-.3em);
+  }
 }
