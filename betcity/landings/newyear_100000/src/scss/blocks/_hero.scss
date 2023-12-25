@@ -113,7 +113,7 @@
     display: inline-block;
     width: 2.2rem;
     height: 2.3rem;
-    background: url('../img/page/ball.png') no-repeat center/cover;
+    background: url('../img/page/ball.png') no-repeat center/contain;
 
     @include tablet {
       width: 7px;
@@ -240,17 +240,23 @@
   &__wrap {}
 
   &__gr {
-    width: 50rem;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: -4rem 0 0;
+  }
+
+  &__gr-inner {
+    width: 87rem;
+    overflow: hidden;
 
     canvas {
-      width: 100%;
+      width: calc(100% + 54rem);
+      margin: 0 0 0 -34rem;
     }
   }
 
-
   &__title {
-    margin: 2rem 0 1rem;
+    margin: -19rem 0 1rem;
     font-weight: 900;
     font-size: 5.6rem;
     text-align: center;
