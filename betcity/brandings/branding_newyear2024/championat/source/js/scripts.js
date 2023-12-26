@@ -36,6 +36,114 @@ function init(canvas) {
         handleComplete(evt, comp, canvas);
       });
       return null;
+    case 'star2':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA2');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star3':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA3');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star4':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA4');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star5':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA5');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star6':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA6');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star7':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA7');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star8':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA8');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star9':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799DA9');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
+    case 'star10':
+      loader = new createjs.LoadQueue(false);
+      comp = AdobeAn.getComposition('9CF9F763DF48B74799E8DB9793799D10');
+      lib = comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener('fileload', function (evt) {
+        handleFileLoad(evt, comp);
+      });
+      loader.addEventListener('complete', function (evt) {
+        handleComplete(evt, comp, canvas);
+      });
+      return null;
   }
 
   handleComplete({}, comp, canvas);
@@ -70,6 +178,33 @@ function handleComplete(evt, comp, canvas) {
       exportRoot = new lib.gr();
       break;
     case 'star':
+      exportRoot = new lib.star();
+      break;
+    case 'star2':
+      exportRoot = new lib.star();
+      break;
+    case 'star3':
+      exportRoot = new lib.star();
+      break;
+    case 'star4':
+      exportRoot = new lib.star();
+      break;
+    case 'star5':
+      exportRoot = new lib.star();
+      break;
+    case 'star6':
+      exportRoot = new lib.star();
+      break;
+    case 'star7':
+      exportRoot = new lib.star();
+      break;
+    case 'star8':
+      exportRoot = new lib.star();
+      break;
+    case 'star9':
+      exportRoot = new lib.star();
+      break;
+    case 'star10':
       exportRoot = new lib.star();
       break;
   }
