@@ -396,8 +396,6 @@ body {
   display: inline-block;
   position: absolute;
   width: 12px;
-  height: 12px;
-  background: url("../img/ball.png") no-repeat center/cover;
 }
 
 .bg__ball.animate {
@@ -405,15 +403,10 @@ body {
   animation: gravity 3s ease-in-out alternate infinite;
 }
 
-.bg__ball--white {
-  background-image: url("../img/ball-white.png");
-}
-
 .bg__ball--1 {
   top: 18%;
   left: 12%;
   width: 21px;
-  height: 21px;
 }
 
 .bg__ball--2 {
@@ -435,7 +428,6 @@ body {
   top: 17%;
   left: 25%;
   width: 13px;
-  height: 13px;
 }
 
 .bg__ball--4.animate {
@@ -452,7 +444,6 @@ body {
   top: 17%;
   right: 36%;
   width: 13px;
-  height: 13px;
 }
 
 .bg__ball--6.animate {
@@ -469,7 +460,6 @@ body {
   top: 64%;
   left: 11%;
   width: 13px;
-  height: 13px;
 }
 
 .bg__ball--8.animate {
@@ -481,7 +471,6 @@ body {
   top: 58%;
   right: 11%;
   width: 21px;
-  height: 21px;
 }
 
 .bg__ball--9.animate {
