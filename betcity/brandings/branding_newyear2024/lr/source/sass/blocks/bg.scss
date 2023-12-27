@@ -85,22 +85,15 @@
     display: inline-block;
     position: absolute;
     width: 12px;
-    height: 12px;
-    background: url('../img/ball.png') no-repeat center/cover;
 
     &.animate {
       animation: gravity 3s ease-in-out alternate infinite;
-    }
-
-    &--white {
-      background-image: url('../img/ball-white.png');
     }
 
     &--1 {
       top: 11%;
       left: 13%;
       width: 21px;
-      height: 21px;
     }
 
     &--2 {
@@ -117,14 +110,12 @@
       top: 1%;
       right: 16%;
       width: 6px;
-      height: 6px;
     }
 
     &--4 {
       top: 6%;
       right: 15%;
       width: 13px;
-      height: 13px;
 
       &.animate {
         animation-name: gravityReverse;
@@ -140,7 +131,6 @@
       top: 43%;
       right: 9%;
       width: 13px;
-      height: 13px;
 
       &.animate {
         animation-name: gravityReverse;
@@ -156,7 +146,6 @@
       top: 82%;
       left: 14%;
       width: 13px;
-      height: 13px;
 
       &.animate {
         animation-name: gravityReverse;
@@ -167,7 +156,6 @@
       top: 80%;
       right: 12%;
       width: 21px;
-      height: 21px;
 
       &.animate {
         animation-name: gravityReverse;
