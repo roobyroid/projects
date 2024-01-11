@@ -402,8 +402,6 @@ body {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#051854), to(#0092F3));
-  background: linear-gradient(180deg, #051854 0%, #0092F3 100%);
 }
 
 .bg canvas {
@@ -613,7 +611,7 @@ body {
 .header__bonus-second {
   position: absolute;
   top: -8px;
-  left: -33%;
+  left: -34%;
 }
 
 .header__right {
