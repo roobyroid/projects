@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'StyreneALC';
+  src: url('../StyreneALC-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'StyreneALC';
+  src: url('../StyreneALC-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'StyreneALC';
+  src: url('../StyreneALC-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nekst';
+  src: url('../Nekst-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -101,9 +133,7 @@ body {
   }
 }
 
-.show-second-frame {
-
-}
+.show-second-frame {}
 
 .fluid-center-block {
   width: 1300px;
