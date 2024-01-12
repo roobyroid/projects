@@ -3,8 +3,8 @@
   text-align: center;
 
   &__title {
-    color: #06DCFF;
-    font-size: 13px;
+    color: #AFFC41;
+    font-size: 12px;
     font-weight: 900;
     margin: 0 0 16px;
   }
@@ -36,9 +36,10 @@
 
   &__name {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 900;
-    margin: 0 0 7px;
+    margin: 0 0 12px;
+    color: #AFFC41;
   }
 
   &__nums {
@@ -90,7 +91,7 @@
     box-sizing: border-box;
 
     &.active {
-      background: #06DCFF;
+      background: #AFFC41;
     }
   }
 

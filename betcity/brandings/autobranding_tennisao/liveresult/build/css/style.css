@@ -610,8 +610,8 @@ body {
 
 .header__bonus-second {
   position: absolute;
-  top: -8px;
-  left: -34%;
+  top: -10px;
+  left: -36%;
 }
 
 .header__right {
@@ -803,6 +803,7 @@ body {
 .event__content {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  max-width: 230px;
   margin: 0 20px 0 26px;
 }
 
@@ -814,7 +815,7 @@ body {
 .event__title {
   text-transform: uppercase;
   font-weight: 900;
-  color: #06DCFF;
+  color: #AFFC41;
   font-size: 12px;
   margin: 0 0 3px;
 }
@@ -915,8 +916,8 @@ body {
 }
 
 .team-aside__title {
-  color: #06DCFF;
-  font-size: 13px;
+  color: #AFFC41;
+  font-size: 12px;
   font-weight: 900;
   margin: 0 0 16px;
 }
@@ -952,9 +953,10 @@ body {
 
 .team-aside__name {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 900;
-  margin: 0 0 7px;
+  margin: 0 0 12px;
+  color: #AFFC41;
 }
 
 .team-aside__nums {
@@ -1012,7 +1014,7 @@ body {
 }
 
 .team-aside__nums-item-val.active {
-  background: #06DCFF;
+  background: #AFFC41;
 }
 
 .team-aside__nums-single {

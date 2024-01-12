@@ -20,6 +20,7 @@
 
   &__content {
     flex-shrink: 0;
+    max-width: 230px;
     margin: 0 20px 0 26px;
   }
 
@@ -31,7 +32,7 @@
   &__title {
     text-transform: uppercase;
     font-weight: 900;
-    color: #06DCFF;
+    color: #AFFC41;
     font-size: 12px;
     margin: 0 0 3px;
   }
