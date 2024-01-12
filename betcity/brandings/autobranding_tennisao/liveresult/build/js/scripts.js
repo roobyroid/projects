@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 let animations = {};
 let eventAnimationDuration;
-let fistFrameAnimationDuration = 5;
+let fistFrameAnimationDuration = 4;
 function runautobet(event) {
   const ev = event; // for prod
   const elements = document.querySelectorAll(`[data-autobet]`);
@@ -44,15 +44,15 @@ function runautobet(event) {
     });
   }
 
-  function hasPromocode(){
-		if(!data.PROMOCODE){
-			document.body.classList.add('has-no-promocode');
-			return
-		}
+  function hasPromocode() {
+    if (!data.PROMOCODE) {
+      document.body.classList.add('has-no-promocode');
+      return;
+    }
 
-		document.body.classList.add('has-promocode');
-		changeAsideHeight('.aside__frame--first');
-	}
+    document.body.classList.add('has-promocode');
+    changeAsideHeight('.aside__frame--first');
+  }
 
   function hasEvent() {
     if (!data.EVENT) {
@@ -239,7 +239,6 @@ const topBannerAnimation = () => {
     },
     '-=50%'
   );
-
   eventAnimationDuration = tl._dur - 0.3;
 };
 

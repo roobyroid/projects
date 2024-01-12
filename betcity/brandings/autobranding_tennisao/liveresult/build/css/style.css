@@ -731,6 +731,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 .aside__rktk {
@@ -957,6 +958,7 @@ body {
   font-weight: 900;
   margin: 0 0 12px;
   color: #AFFC41;
+  min-height: 32px;
 }
 
 .team-aside__nums {
