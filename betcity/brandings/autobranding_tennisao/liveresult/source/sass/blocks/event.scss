@@ -1,7 +1,6 @@
 .event {
   display: flex;
   align-items: center;
-  gap: 10px;
   color: #fff;
   min-width: 607px;
   max-width: 630px;
@@ -21,7 +20,7 @@
   &__content {
     flex-shrink: 0;
     max-width: 230px;
-    margin: 0 20px 0 26px;
+    margin: 0 4px;
   }
 
   &__head {
@@ -84,6 +83,13 @@
     font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
+    color: #AFFC41;
+    margin: 0 0 0 16px;
+
+    &:first-of-type {
+      text-align: right;
+      margin: 0 16px 0 0;
+    }
   }
 
   &__nums {
