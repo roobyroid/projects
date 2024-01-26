@@ -1,0 +1,344 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(-90deg, #FF7CAE 23.51%, #FDD030 93.06%, #FDD030 100.01%);
+
+  @include tablet {
+    padding: 25px 25px 50px;
+  }
+
+  @include phone {
+    padding: 18px 15px 50px;
+  }
+
+  &__head {
+    position: relative;
+    margin: 0 0 3rem;
+    text-align: center;
+
+    @include phone {
+      margin: 0 0 15px;
+    }
+
+    p {
+      position: absolute;
+      top: 2.7rem;
+      left: 1px;
+      width: 100%;
+      color: #051854;
+      color: rgb(5 24 84 / 10%);
+      font-size: 11rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      &:last-child {
+        top: 5.4rem;
+        color: rgb(5 24 84 / 5%);
+
+        @include tablet {
+          top: 15px;
+        }
+      }
+
+      @include tablet {
+        top: 8px;
+        font-size: 48px;
+      }
+
+      @include phone {
+        font-size: 33px;
+      }
+    }
+  }
+
+  &__head-text {
+    color: #051854;
+    font-weight: 400;
+    font-size: 11rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include phone {
+      font-size: 33px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 3rem;
+    font-weight: 900;
+    font-size: 4.8rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 28px;
+    }
+
+    @include phone {
+      margin: 0 -5px 15px;
+      font-size: 19px;
+    }
+  }
+
+  &__date {
+    color: #051854;
+    font-size: 4rem;
+    text-align: center;
+
+    @include tablet {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 106rem;
+    margin: 0 auto;
+
+    @include tablet {
+      gap: 40px;
+      max-width: 650px;
+    }
+
+    @include phone {
+      width: auto;
+      min-height: 175px;
+      margin: 0 -15px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 5rem;
+      left: 50%;
+      width: 8.8rem;
+      height: 8.8rem;
+      background: url('../img/page/ball.svg') no-repeat center/cover;
+      transform: translateX(-50%);
+      content: '';
+
+      @include tablet {
+        top: 70px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    flex: 0 1 50%;
+    max-width: 40rem;
+
+    &:first-child {
+      .content__item-logo {
+        @include tablet {
+          margin: -20px 0 0;
+        }
+      }
+    }
+
+    &:last-child {
+
+      @include tablet {
+        .content__item-num {
+          max-width: 90px;
+        }
+      }
+
+      @include tablet-alt {
+        .content__item-num {
+          right: -1rem;
+          left: auto;
+          max-width: 13rem;
+        }
+
+        .content__item-logo {
+          right: -1rem;
+          left: auto;
+        }
+
+        .content__item-main {
+          margin: 0 0 0 -7rem;
+        }
+      }
+
+
+    }
+  }
+
+  &__item-num {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    max-width: 10rem;
+
+    @media (max-width: 1919px) {
+      left: -1rem;
+    }
+
+    @include tablet {
+      top: 50%;
+      bottom: auto;
+      left: 50%;
+      max-width: 70px;
+      margin: -15px 0 0;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: fadeIn2 9s ease-in-out infinite;
+    }
+  }
+
+  &__item-logo {
+    position: absolute;
+    bottom: 4rem;
+    left: -7rem;
+    max-width: 16rem;
+
+    @media (max-width: 1919px) {
+      left: -1rem;
+    }
+
+    @include tablet {
+      top: 50%;
+      bottom: auto;
+      left: 50%;
+      max-width: 120px;
+      margin: -5px 0 0;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: fadeIn1 9s ease-in-out infinite;
+    }
+
+    @include phone {
+      max-width: 90px;
+    }
+  }
+
+  &__item-main {
+    max-width: 95%;
+    margin: 0 0 0 auto;
+
+    @include tablet {
+      max-width: 80%;
+      margin: 0 auto;
+      opacity: 0;
+      animation: fadeIn3 9s ease-in-out infinite;
+    }
+  }
+
+  &__ratio {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+
+    @include tablet {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      margin: -40px 0 30px;
+      transform: none;
+    }
+
+    @include phone {
+      margin: -20px 0 22px;
+    }
+  }
+
+  &__actions {
+    display: none;
+
+    @include tablet {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+
+      .btn {
+        &:not(:last-child) {
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+
+  3% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  33%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  63% {
+    opacity: 1;
+  }
+
+  66%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+
+  63% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 1;
+  }
+
+  97% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

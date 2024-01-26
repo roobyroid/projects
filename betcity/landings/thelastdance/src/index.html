@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include "head.html" %}
+
+<body>
+	<div class="wrapper">
+		<div class="side">
+			<a class="side__logo" href="https://betcity.ru/?utm_content=header_logo">
+				<img src="img/page/logo.svg" alt="">
+			</a>
+			<div class="side__text"><span>100&nbsp;000&nbsp;&#8381;</span> <span>Новым игрокам</span></div>
+			<ol class="side__list">
+				<li>Зарегистрируйся</li>
+				<li>Пополни счет</li>
+				<li>Делай ставки<br> и&nbsp;получай фрибет<br> 50% от&nbsp;депозита</li>
+			</ol>
+
+			<div class="side__actions">
+				<a class="btn" href="https://betcity.ru/ru/reg" target="_blank">получить бонус</a>
+				<a class="btn btn--transparent" href="https://betcity.ru/?login=1" target="_blank">УЖЕ КЛИЕНТ</a>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="content__head">
+				<h1 class="content__head-text">The Last Dance</h1>
+				<p>The Last Dance</p>
+				<p>The Last Dance</p>
+			</div>
+			<p class="content__text">Ставь на&nbsp;Роналду и&nbsp;Месси<br> с бонусом до&nbsp;100&nbsp;000&nbsp;₽!</p>
+			<p class="content__date">01.02&nbsp;/ 21:00</p>
+			<div class="content__wrap">
+
+				<div class="content__inner">
+					<div class="content__item">
+						<img class="content__item-num" src="img/page/r_num.svg" alt="">
+						<img class="content__item-logo" src="img/page/r_logo.svg" alt="">
+						<img class="content__item-main" src="img/page/r.svg" alt="">
+					</div>
+					<div class="content__item">
+						<img class="content__item-num" src="img/page/m_num.svg" alt="">
+						<img class="content__item-logo" src="img/page/m_logo.svg" alt="">
+						<img class="content__item-main" src="img/page/m.svg" alt="">
+					</div>
+				</div>
+				<div class="content__ratio ratio">
+					<span class="ratio__item">2.60</span>
+					<span class="ratio__item">3.90</span>
+					<span class="ratio__item">2.45</span>
+				</div>
+			</div>
+			<div class="content__actions">
+				<a class="btn" href="https://betcity.ru/ru/reg" target="_blank">получить бонус</a>
+				<a class="btn btn--transparent" href="https://betcity.ru/?login=1" target="_blank">УЖЕ КЛИЕНТ</a>
+			</div>
+		</div>
+		{% include "footer.html" %}
+	</div>
+	{% include "modal.html" %}
+	<script src="./js/app.min.js"></script>
+	<script type="text/javascript" src="https://fcdn.betcity.ru/libs/utm-save-param-1.0.0.min.js"></script>
+	<script>
+			document.addEventListener("DOMContentLoaded", () => {
+					window['addUtmParams'].call();
+					window['sendUtmIcmParams'].call();
+			});
+	</script>
+	<script type="text/javascript" src="https://fcdn.betcity.ru/libs/qr-generator-1.0.0.min.js"></script>
+	<script type="text/javascript" src="https://fcdn.betcity.ru/libs/adjust-link-generator-1.0.0.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			// ADJUST LINKS
+			const defaultAndStaticParams = {
+				adj_adgroup: 'thelastdance',
+				adj_campaign: '2212',
+				adj_creative: 'land',
+				adj_label: 'https://betcity.ru/ru/reg',
+				adj_t: '12uw73kb_1258v1lq'
+			};
+
+			const link = window['createAdjustLink'].call(this, 'https://betcity.go.link', defaultAndStaticParams);
+
+			const element = document.getElementById('downloadApp');
+			if (element && element.hasAttribute('href')) {
+				element.setAttribute('href', link);
+			};
+
+
+			// QR
+			const options = {
+				color: "#0092F3",
+				dotsType: 'extra-rounded',
+				cornersSquareType: 'extra-rounded',
+				withImage: true,
+				imageURL: 'img/page/icoqr.png',
+			};
+
+			window['addQR'].call(this, link, ['qr'], options);
+		});
+	</script>
+</body>
+
+</html>

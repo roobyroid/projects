@@ -1,0 +1,156 @@
+.side {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 69.4rem;
+  padding: 5rem 7.5rem 6rem 11rem;
+
+  @media (max-width: 1919px) {
+    padding: 3rem 3rem 3rem 5rem;
+  }
+
+  @include tablet {
+    width: auto;
+    padding: 40px 25px;
+  }
+
+  @include phone {
+    padding: 20px 16px;
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+    max-width: 35.5rem;
+    margin: 0 0 3rem;
+
+    @include tablet {
+      max-width: 252px;
+      margin: 0 0 20px;
+    }
+
+    @include phone {
+      max-width: 152px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__text {
+    line-height: 1;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      &:first-child {
+        display: block;
+        margin: 0 0 1.5rem;
+        color: #06DCFF;
+        font-weight: 900;
+        font-size: 11rem;
+        font-family: $f-family--nekst;
+        white-space: nowrap;
+
+        &::after {
+          display: inline-block;
+          margin: 1rem 0 0 -0.5rem;
+          color: #06DCFF;
+          font-size: 2.5rem;
+          vertical-align: top;
+          content: '*';
+
+          @include tablet {
+            font-size: 16px;
+          }
+
+          @include phone {
+            margin: 5px 0 0;
+            font-size: 10px;
+          }
+
+        }
+
+        @include tablet {
+          flex-shrink: 0;
+          margin: 0;
+          font-size: 90px;
+        }
+
+        @include phone-big {
+          font-size: 76px;
+        }
+
+        @include phone {
+          font-size: 48px;
+        }
+      }
+
+      &:last-child {
+        font-weight: 900;
+        font-size: 4.6rem;
+        text-transform: uppercase;
+
+        @include tablet {
+          width: 100%;
+          max-width: 225px;
+          margin: 15px 0 0 7px;
+          font-size: 36px;
+        }
+
+        @include phone-big {
+          margin: 15px 0 0 6px;
+          font-size: 28px;
+        }
+
+        @include phone {
+          max-width: 105px;
+          margin: 9px 0 0 6px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &__list {
+    margin: 1rem 0 0;
+    counter-reset: list;
+
+    @include tablet {
+      display: none;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        min-width: 7.5rem;
+        margin: 0 0.8rem 0 0;
+        color: #06DCFF;
+        font-size: 9.5rem;
+        font-family: $f-family--nekst;
+        content: counter(list);
+        counter-increment: list;
+      }
+    }
+  }
+
+  &__actions {
+    width: 100%;
+    max-width: 42.7rem;
+    margin: 3rem 0 0;
+
+    @include tablet {
+      display: none;
+    }
+
+    .btn {
+      &:not(:last-child) {
+        margin: 0 0 2.5rem;
+      }
+    }
+  }
+}

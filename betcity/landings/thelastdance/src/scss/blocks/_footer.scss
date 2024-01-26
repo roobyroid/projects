@@ -1,0 +1,53 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 14rem 1.5rem 11rem;
+  color: rgba($color: $c-white, $alpha: 80%);
+  font-size: 1.6rem;
+
+  @media (max-width: 1919px) {
+    padding: 0 5rem 1.5rem;
+  }
+
+  @include tablet {
+    padding: 10px 25px;
+    font-size: 12px;
+    letter-spacing: -0.24px;
+  }
+
+  @include phone {
+    padding: 10px 14px 5px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  &__col {
+    &:first-child {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    color: rgba($color: $c-white, $alpha: 80%);
+    font-size: 2rem;
+    text-decoration: underline;
+    transition: text-decoration-color .3s;
+    text-decoration-color: rgba($color: $c-white, $alpha: 80%);
+
+    @include tablet {
+      font-size: 15px;
+      letter-spacing: -0.29px;
+    }
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+
+  }
+}

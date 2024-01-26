@@ -1,0 +1,22 @@
+// 100 Thin (Hairline) | 200 Extra Light (Ultra Light) | 300 Light | 400Normal (Regular) | 500 Medium |
+// 600 Semi Bold (Demi Bold) | 700 Bold | 800 Extra Bold (Ultra Bold) | 900 Black (Heavy) | 950 Extra Black (Ultra Black)
+
+
+// Modern format (woff + ttf)
+@mixin font($family, $filePath, $weight: normal, $style: normal) {
+
+  @font-face {
+    font-weight: $weight;
+    font-family: $family;
+    font-style: $style;
+    src: url("#{$filePath}.woff2") format("woff2");
+    font-display: swap;
+  }
+
+}
+
+
+// example
+@include font('StyreneALC', '../fonts/StyreneALC/StyreneALC-Regular');
+@include font('StyreneALC', '../fonts/StyreneALC/StyreneALC-Black', 900);
+@include font('Nekst', '../fonts/Nekst/Nekst-Bold', 700);
