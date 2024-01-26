@@ -397,12 +397,12 @@ body {
 }
 
 .header__reklama {
-	width: 131px;
+	width: 160px;
 	display: flex;
 	align-items: flex-start;
 }
 .header__reklama img:first-child {
-	margin-right: 4px;
+	margin: -3px 4px 0 0;
 	width: 26px;
 }
 
