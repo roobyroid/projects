@@ -376,7 +376,7 @@ body {
 }
 
 .aside .an-btn {
-	margin: -17px -4px 0;
+	margin: 17px 0 0;
 }
 
 .aside-wrap .fluid-center-block {
@@ -891,8 +891,8 @@ a .header__p {
 }
 
 .aside-animation {
-	height: 289px;
-	transform: scale(0.85);
+	height: 205px;
+	transform: scale(0.7);
 	margin: 0 14px 0 0px;
 }
 
@@ -1369,4 +1369,32 @@ a .header__p {
 .aside__logo {
 	width: 96px;
 	margin: 0 auto;
+}
+
+.header__animation {
+	position: absolute;
+	top: -32px;
+	right: 542px;
+	transform: scale(0.95);
+}
+
+@media screen and (max-width: 1626px) {
+	.header,
+	.fluid-center-block {
+		width: 1183px;
+		min-width: 1183px;
+	}
+
+	.header__logo {
+		margin: 42px 0 0 19px;
+	}
+	.header__bonus {
+		transform: translateX(-64%);
+	}
+	.header__animation {
+		right: 449px;
+	}
+	.header__elements__right {
+		right: 34px;
+	}
 }
