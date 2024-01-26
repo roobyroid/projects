@@ -1,0 +1,17 @@
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, #FF7CAE 23.51%, #FDD030 93.06%, #FDD030 100.01%);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 261px;
+    background: #051854;
+    content: '';
+  }
+}

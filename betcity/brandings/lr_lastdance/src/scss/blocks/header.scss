@@ -1,0 +1,107 @@
+.header {
+  position: relative;
+  width: 1300px;
+  min-width: 1300px;
+  height: 100px;
+  margin: 0 auto;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+    width: 246px;
+    margin: 22px 0 0 14px
+  }
+
+  &__bonus {
+    position: absolute;
+    top: 0;
+    left: 286px;
+    width: 589px;
+  }
+
+  &__bonus-first-text {
+    position: absolute;
+    top: -3px;
+    left: 16px;
+    text-align: center;
+  }
+
+  &__bonus-second-text {
+    position: absolute;
+    top: 4px;
+    left: 37px;
+  }
+
+  &__event {
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+
+  &__right {
+    width: 287px;
+    margin: 16px 18px 0 0;
+    transition: all .3s;
+  }
+
+  &__an-btn.an-btn {
+    height: 50px;
+    font-size: 23px;
+    border-radius: 8px;
+  }
+
+  &__reklama {
+    position: absolute;
+    bottom: 23px;
+    display: flex;
+  }
+
+  &__reklama-18 {
+    width: 26px;
+    margin: 0 5px 0 17px;
+  }
+
+  &__reklama-text {
+    width: 130px;
+    height: auto;
+    margin: 2px 0 0;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 5px;
+    left: 12px;
+    width: 99%;
+    overflow: hidden;
+  }
+
+  &__textline {
+    z-index: 3;
+    color: #ffffff;
+    font-weight: 400;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    font-family: sans-serif;
+    white-space: nowrap;
+    transform: translateZ(1px) translateX(0);
+    backface-visibility: hidden;
+    animation: moveTextRow 30s linear infinite;
+    will-change: transform;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}

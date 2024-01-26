@@ -1,0 +1,74 @@
+.event {
+  color: #ffffff;
+
+  &__side-logo {
+    position: absolute;
+
+    &--left {
+      top: 0;
+      left: -70px;
+      width: 53px;
+    }
+
+    &--right {
+      top: 10px;
+      right: -75px;
+      width: 60px;
+    }
+  }
+
+  &__side-num {
+    position: absolute;
+
+    &--left {
+      top: 8px;
+      left: -61px;
+      width: 43px;
+    }
+
+    &--right {
+      top: 10px;
+      right: -75px;
+      width: 54px;
+    }
+  }
+
+  &__content {
+    flex-shrink: 0;
+    width: 180px;
+    text-align: center;
+  }
+
+  &__date {
+    margin: 0 0 3px;
+    font-size: 17px;
+  }
+
+  &__ball {
+    width: 17px;
+    height: 17px;
+    margin: 0 auto 9px;
+  }
+
+  &__nums {
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+  }
+
+  &__nums-item {
+    display: inline-flex;
+    flex: 0 1 33.33%;
+    align-items: center;
+    justify-content: center;
+    height: 14px;
+    padding: 2px;
+    overflow: hidden;
+    color: #051854;
+    font-weight: 900;
+    font-size: 11px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 3px;
+  }
+}

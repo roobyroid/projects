@@ -1,0 +1,38 @@
+.aside {
+  padding: 69px 0 0;
+
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 133px;
+    margin: 0 6px;
+
+  }
+
+  &__logo {
+    width: 115px;
+    margin: 0 auto 20px;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+
+  &__content-first {
+    margin: 0 0 29px;
+  }
+
+  &__content-second {}
+
+  &__an-btn {
+    width: 100%;
+    margin: 27px auto 0;
+    font-size: 16px;
+
+  }
+}
