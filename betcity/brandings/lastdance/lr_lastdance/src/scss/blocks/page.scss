@@ -76,14 +76,6 @@ body {
 
     .banner-text__bottom {
       font-size: 11px;
-
-      @include laptop {
-        font-size: 7px;
-      }
-
-      @include tablet {
-        font-size: 7px;
-      }
     }
   }
 }
