@@ -6,12 +6,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	animateWowCoin().play();
 
+	setTimeout(() => {
+		animateWowCoin().reset();
+	}, 5000);
+
 	setInterval(() => {
 		setTimeout(() => {
 			animateWowCoin().reset();
-		}, 10000);
+		}, 6000);
 		animateWowCoin().play();
-	}, 15000);
+	}, 8000);
 });
 
 function getOS() {
