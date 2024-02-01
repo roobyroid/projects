@@ -138,9 +138,11 @@ body {
 	font-size: 19px;
 	color: #fff;
 	background: rgba(0, 146, 243, 1);
+	width: 100%;
 }
 
 .body-wrap {
+	width: 100%;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -1378,6 +1380,24 @@ a .header__p {
 	transform: scale(0.95);
 }
 
+.body-wrap.mq .header,
+.body-wrap.mq .fluid-center-block {
+	width: 1183px;
+	min-width: 1183px;
+}
+
+.body-wrap.mq .header__logo {
+	margin: 42px 0 0 19px;
+}
+.body-wrap.mq .header__bonus {
+	transform: translateX(-64%);
+}
+.body-wrap.mq .header__animation {
+	right: 449px;
+}
+.body-wrap.mq .header__elements__right {
+	right: 34px;
+}
 /* @media screen and (max-width: 1626px) {
 	.header,
 	.fluid-center-block {
