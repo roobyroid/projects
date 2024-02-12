@@ -1,0 +1,101 @@
+.header {
+  position: relative;
+  height: 100px;
+  width: 1253px;
+  min-width: 1253px;
+  margin: 0 auto;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 246px;
+    margin-top: 22px;
+  }
+
+  &__bonus {
+    width: 360px;
+    width: 484px;
+    position: absolute;
+    top: 11px;
+    transform: translateX(-31%);
+    left: 50%;
+  }
+
+  &__bonus-first {
+    display: flex;
+  }
+
+  &__bonus-first-text {
+    margin: -13px 0 0;
+  }
+
+  &__bonus-second {
+    position: absolute;
+    top: -6px;
+    left: -36%;
+  }
+
+  &__right {
+    width: 287px;
+    margin: 18px 12px 0 0;
+  }
+
+  &__an-btn.an-btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 22px;
+  }
+
+  &__reklama {
+    display: flex;
+    position: absolute;
+    bottom: 22px;
+  }
+
+  &__reklama-18 {
+    width: 25px;
+    margin: 0 8px 0 0;
+  }
+
+  &__reklama-text {
+    width: 130px;
+    height: auto;
+    margin: 2px 0 0;
+  }
+
+  &__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 7px;
+    overflow: hidden;
+  }
+
+  &__textline {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    will-change: transform;
+    backface-visibility: hidden;
+    font-weight: 100;
+    font-family: sans-serif;
+    transform: translateZ(1px) translateX(0);
+    white-space: nowrap;
+    z-index: 3;
+    animation: moveTextRow 30s linear infinite;
+  }
+}
+
+@keyframes moveTextRow {
+  0% {
+    transform: translateZ(1px) translateX(0)
+  }
+
+  to {
+    transform: translateZ(1px) translateX(calc(-100% - 67.4em))
+  }
+}
