@@ -197,7 +197,7 @@ body {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	position: relative;
-	padding: 12px;
+	padding: 9px;
 }
 
 .noan-btn {
@@ -375,7 +375,7 @@ body {
 }
 
 .aside .an-btn {
-	margin: -17px -4px 0;
+	margin: -17px -1px 0 4px;
 }
 
 .aside-wrap .fluid-center-block {
@@ -603,7 +603,7 @@ a .header__p {
 }
 
 .aside {
-	margin: 0 17px;
+	margin: 0 9px;
 	width: 120px;
 	padding-top: 60px;
 }
@@ -1371,10 +1371,10 @@ a .header__p {
 }
 
 .aside-img {
-	margin: -35px -45px -35px -192px;
+	margin: -13px -34px -20px -130px;
 }
 
 .aside__right .aside-img {
 	transform: scale(-1, 1);
-	margin: -35px -192px -35px -45px;
+	margin: -13px -130px -20px -34px;
 }
