@@ -21,6 +21,10 @@
     position: relative;
   }
 
+  &__content-first {
+    height: 330px;
+  }
+
   &__content-second {
     position: absolute;
     top: -20px;
@@ -55,12 +59,12 @@
   &__an-btn {
     width: 97%;
     font-size: 16px;
-    margin: 69px auto 0;
+    margin: 2px auto 0;
   }
 }
 
 .show-second-frame {
   .aside__an-btn {
-    margin: 25px auto 0
+    // margin: 25px auto 0
   }
 }

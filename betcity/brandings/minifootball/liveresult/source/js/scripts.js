@@ -23,7 +23,7 @@ function runautobet(event) {
   init();
   hasPromocode();
   hasEvent();
-  changeAsideHeight('.aside__content-first');
+  // changeAsideHeight('.aside__content-first');
 
   document.body.classList.add('loaded');
 
@@ -48,7 +48,7 @@ function runautobet(event) {
     }
 
     document.body.classList.add('has-promocode');
-    changeAsideHeight('.aside__frame--first');
+    // changeAsideHeight('.aside__frame--first');
   }
 
   function hasEvent() {
@@ -80,7 +80,7 @@ function runautobet(event) {
           delay: fistFrameAnimationDuration,
           duration: 0.3,
           onStart: function () {
-            changeAsideHeight('.aside__content-first');
+            // changeAsideHeight('.aside__content-first');
           },
           onComplete: function () {
             animations.event.restart();
@@ -94,7 +94,7 @@ function runautobet(event) {
           opacity: 1,
           duration: 0.3,
           onStart: function () {
-            changeAsideHeight('.aside__content-second');
+            // changeAsideHeight('.aside__content-second');
             document.body.classList.add('show-second-frame');
           },
           onComplete: function () {},
@@ -109,7 +109,7 @@ function runautobet(event) {
           duration: 0.3,
           onStart: function () {
             document.body.classList.remove('show-second-frame');
-            changeAsideHeight('.aside__content-first');
+            // changeAsideHeight('.aside__content-first');
           },
         },
         '>'
@@ -117,27 +117,27 @@ function runautobet(event) {
     }
   }
 
-  function changeAsideHeight(selector) {
-    const calc = () => {
-      const el = document.querySelector(selector);
-      const aside = document.querySelectorAll('.aside__content');
-      function getAbsoluteHeight(el) {
-        el = typeof el === 'string' ? document.querySelector(el) : el;
+  // function changeAsideHeight(selector) {
+  //   const calc = () => {
+  //     const el = document.querySelector(selector);
+  //     const aside = document.querySelectorAll('.aside__content');
+  //     function getAbsoluteHeight(el) {
+  //       el = typeof el === 'string' ? document.querySelector(el) : el;
 
-        const styles = window.getComputedStyle(el);
-        const margin =
-          parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom']);
-        return el.offsetHeight + margin;
-      }
+  //       const styles = window.getComputedStyle(el);
+  //       const margin =
+  //         parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom']);
+  //       return el.offsetHeight + margin;
+  //     }
 
-      const h = getAbsoluteHeight(el);
-      gsap.set(aside, {
-        height: h,
-      });
-    };
-    calc();
-    window.addEventListener('resize', calc);
-  }
+  //     const h = getAbsoluteHeight(el);
+  //     gsap.set(aside, {
+  //       height: h,
+  //     });
+  //   };
+  //   calc();
+  //   window.addEventListener('resize', calc);
+  // }
 }
 
 const topBannerAnimation = () => {
