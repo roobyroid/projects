@@ -1,0 +1,66 @@
+.aside {
+  padding: 57px 0 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 114px;
+    margin: 0 5px;
+  }
+
+  &__logo {
+    margin: 0 auto 34px;
+    width: 93px;
+
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__content-second {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+  }
+
+  &__img {
+    margin: 35px 0 0 4px;
+  }
+
+  // &__promocode {
+  //   width: 91%;
+  //   line-height: 1.1;
+  //   font-size: 10px;
+  //   font-weight: 900;
+  //   color: #fff;
+  //   text-align: center;
+  //   border: 1px solid #fff;
+  //   border-radius: 5px;
+  //   margin: 30px auto 0;
+  //   text-transform: uppercase;
+  //   padding: 2px;
+  //   box-sizing: border-box;
+
+  //   span {
+  //     color: #06DCFF;
+  //     font-size: 24px;
+  //   }
+  // }
+
+  &__an-btn {
+    width: 94%;
+    font-size: 13px;
+    margin: 54px auto 0;
+  }
+}
+
+.show-second-frame {
+  .aside__an-btn {
+    margin: 0 auto
+  }
+}
