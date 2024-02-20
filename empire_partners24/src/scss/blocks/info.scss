@@ -1,0 +1,73 @@
+.info {
+  padding: 9rem 0;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 27px 0 15px;
+  }
+
+  &__title {
+    margin: 0 0 2rem;
+
+    @include tablet {
+      margin: 0 0 10px;
+    }
+
+    @include phone {
+      margin: 0 0 4px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 4rem;
+
+    @include tablet {
+      margin: 0 0 22px;
+    }
+
+    @include phone {
+      margin: 0 0 16px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 153rem;
+    margin: 6rem auto 0;
+
+    @include tablet {
+      max-width: 600px;
+      margin: 30px auto 0;
+    }
+
+    @include phone {
+      max-width: 400px;
+      margin: 10px auto 0;
+    }
+  }
+
+  &__item {
+
+
+    @include phone {
+      margin: 0 -3px;
+    }
+
+    &:nth-child(odd) {
+      margin-top: 23rem;
+
+      @include tablet {
+        margin-top: 100px;
+      }
+
+      @include phone {
+        margin-top: 67px;
+      }
+    }
+  }
+}

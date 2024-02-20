@@ -1,0 +1,149 @@
+.board {
+  padding: 9rem 0;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 15px 0 25px;
+  }
+
+  &__title {
+    margin: 0 0 5rem;
+
+    @include tablet {
+      margin: 0 0 25px;
+    }
+
+    @include phone {
+      margin: 0 0 19px;
+    }
+  }
+
+  &__wrap {
+    height: 83.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @include tablet {
+      height: 300px;
+    }
+
+    @include phone {
+      height: 236px;
+    }
+
+    .simplebar-wrapper {
+      position: relative;
+      width: calc(100% - 4rem);
+      background: rgb(0 0 0 / 50%);
+      border: .2rem solid #707070;
+      border-radius: 2rem;
+      backdrop-filter: blur(10rem);
+
+      @include tablet {
+        width: calc(100% - 20px);
+        border-width: 1px;
+        border-radius: 12px;
+      }
+
+      @include phone {
+        width: calc(100% - 8px);
+      }
+    }
+  }
+
+
+  &__row {
+    display: flex;
+
+    &:last-child {
+      .board__cell {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__cell {
+    flex-shrink: 0;
+    width: 26%;
+    padding: 2.5rem 2.5rem 2.5rem 5rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-family: $f-family--montserrat;
+    text-transform: uppercase;
+    border: .2rem solid #707070;
+    border-top: none;
+    border-left: none;
+
+    @include tablet {
+      padding: 10px;
+      font-size: 16px;
+      border-width: 1px;
+    }
+
+    @include phone {
+      padding: 4px 6px;
+      font-size: 14px;
+    }
+
+    &:first-child {
+      flex: 1 1 auto;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &--head {
+      padding: 3rem;
+      color: $c-gold;
+      font-size: 3.6rem;
+      text-align: center;
+
+      @include tablet {
+        padding: 2px 20px;
+        font-size: 18px;
+      }
+
+      @include phone {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__name {
+    position: relative;
+    padding-left: 12.5rem;
+
+    @include tablet {
+      padding-left: 60px;
+    }
+
+    @include phone-big {
+      padding-left: 10px;
+    }
+
+    @include phone {
+      padding-left: 6px;
+    }
+  }
+
+  &__cup {
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    max-width: 6.7rem;
+    transform: translateY(-50%);
+
+    @include tablet {
+      left: 20px;
+      max-width: 30px;
+    }
+
+    @include phone-big {
+      display: none;
+    }
+  }
+}

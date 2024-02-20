@@ -1,0 +1,141 @@
+.header {
+  padding: 4rem 0;
+
+  @include tablet {
+    padding: 40px 0 20px;
+  }
+
+  &__wrap {
+    position: relative;
+    padding: 0 17rem;
+
+    @include tablet {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 38.7rem;
+    margin: 0 auto;
+
+    @include tablet {
+      max-width: 220px;
+      margin: 0;
+    }
+
+    @include phone {
+      max-width: 163px;
+    }
+  }
+
+  &__lang {
+    position: absolute;
+    top: 50%;
+    right: 6rem;
+    min-width: 8.6rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    font-family: $f-family--montserrat;
+    letter-spacing: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @include tablet {
+      position: static;
+      top: auto;
+      right: auto;
+      min-width: 65px;
+      margin: 0 0 0 15px;
+      font-size: 18px;
+      transform: translateY(0);
+    }
+
+    @include phone {
+      min-width: 56px;
+      font-size: 15px;
+    }
+
+    &.open {
+      .header__lang-head svg {
+        transform: rotate(-180deg);
+      }
+
+      ul {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      padding: .5rem;
+      border-top: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s, visibility 0.3s;
+      pointer-events: none;
+
+      li {
+        &:not(:last-of-type) {
+          margin: 0 0 1rem;
+        }
+
+        button {
+          color: $c-white;
+          font-weight: inherit;
+          font-size: inherit;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          transition: color .3s;
+
+          &:hover {
+            color: $c-gold;
+          }
+        }
+      }
+    }
+  }
+
+  &__lang-head {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color .3s;
+
+    &:hover {
+      color: $c-gold;
+
+      svg {
+        stroke: $c-gold;
+      }
+    }
+
+    svg {
+      flex-shrink: 0;
+      width: 2.5rem;
+      height: 1.3rem;
+      stroke-width: 2;
+      margin: 0 0 .5rem 1rem;
+      transition: stroke .3s, transform 0.3s;
+      fill: transparent;
+      stroke: $c-white;
+
+      @include tablet {
+        width: 15px;
+        height: 8px;
+        margin: 0 0 0 7px;
+      }
+    }
+  }
+}

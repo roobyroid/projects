@@ -1,0 +1,264 @@
+.contacts {
+  padding: 9rem 0;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 25px 0;
+  }
+
+  &__title {
+    margin: 0 0 5rem;
+
+    @include tablet {
+      margin: 0 0 25px;
+    }
+
+    @include phone {
+      margin: 0 0 11px;
+    }
+  }
+
+  &__mail-wrap {
+    margin: 0 0 4rem;
+    text-align: center;
+
+    @include tablet {
+      margin: 0 0 25px;
+    }
+
+    @include phone {
+      margin: 0 0 12px;
+    }
+  }
+
+  &__mail {
+    display: inline-flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    color: $c-white;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    transition: color .3s;
+
+    @include tablet {
+      gap: 20px;
+      font-size: 24px;
+    }
+
+    @include phone {
+      gap: 12px;
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: $c-gold;
+
+      .contacts__mail-icon svg {
+        fill: $c-gold;
+      }
+    }
+  }
+
+  &__mail-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 13.6rem;
+    height: 13.3rem;
+    background: $c-black;
+    border: 1px solid #707070;
+    border-radius: 50%;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include phone {
+      width: 48px;
+      height: 48px;
+    }
+
+    svg {
+      flex-shrink: 0;
+      width: 7rem;
+      height: 4.6rem;
+      transition: fill .3s;
+      fill: #707070;
+
+      @include tablet {
+        width: 40px;
+        height: 32px;
+      }
+
+      @include phone {
+        width: 25px;
+        height: 17px;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 6rem;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @include phone {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    flex: 0 1 calc(50% - 6rem / 2);
+    padding: 8rem;
+    background: rgb(0 0 0 / 50%);
+    border: .2rem solid #707070;
+    border-radius: 2rem;
+    backdrop-filter: blur(10rem);
+
+    @include tablet {
+      flex: 1 1 100%;
+      padding: 30px;
+      border-width: 1px;
+    }
+
+    @include phone {
+      gap: 20px;
+      padding: 12px 20px 20px;
+    }
+  }
+
+  &__item-marks {
+    position: relative;
+    display: flex;
+    gap: 4rem;
+    margin: 0 0 4rem;
+    padding: 0 0 4rem;
+
+    @include tablet {
+      gap: 12px;
+      margin: 0 0 18px;
+      padding: 0 0 18px;
+    }
+
+    @include phone {
+      gap: 8px;
+      margin: 0 0 12px;
+      padding: 0 0 12px;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40rem;
+      height: 1px;
+      background: #707070;
+      content: '';
+
+      @include tablet {
+        width: 250px;
+      }
+
+      @include phone {
+        width: 160px;
+      }
+    }
+  }
+
+  &__mark {
+    position: relative;
+    width: 9.4rem;
+    height: 13rem;
+    background: url("../img/page/mark.png") no-repeat center/contain;
+
+    @include tablet {
+      width: 67px;
+      height: 84px;
+    }
+
+    @include phone {
+      width: 47px;
+      height: 64px;
+    }
+
+    span {
+      position: absolute;
+      top: 3.5rem;
+      width: 100%;
+      padding: 0 5px;
+      font-size: 2.4rem;
+      text-align: center;
+
+      @include tablet {
+        top: 22px;
+        font-size: 18px;
+      }
+
+      @include phone {
+        top: 17px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__item-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+
+    @include tablet {
+      gap: 12px;
+    }
+
+    @include phone {
+      gap: 6px;
+    }
+
+    a {
+      display: inline-flex;
+      gap: 2rem;
+      align-items: center;
+      color: $c-white;
+      transition: color .3s;
+
+      @include tablet {
+        gap: 12px;
+      }
+
+      @include phone {
+        gap: 8px;
+      }
+
+      &:hover {
+        color: $c-gold;
+      }
+
+      svg {
+        flex-shrink: 0;
+        width: 4.8rem;
+        height: 4rem;
+        fill: currentColor;
+
+        @include tablet {
+          width: 25px;
+          height: 21px;
+        }
+
+        @include phone {
+          width: 20px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}

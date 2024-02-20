@@ -1,0 +1,32 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 9.8rem;
+  padding: 0 2rem;
+  color: $c-gold;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: $f-family--montserrat;
+  text-align: center;
+  text-transform: uppercase;
+  background: $c-black;
+  border: .4rem solid $c-gold;
+  border-radius: 6rem;
+  transition: color .3s, border .3s;
+
+  @include tablet {
+    min-height: 64px;
+    font-size: 20px;
+    border-width: 2px;
+  }
+
+  @include phone {
+    font-size: 20px;
+  }
+
+  &:hover {
+    color: $c-white;
+    border-color: $c-white;
+  }
+}

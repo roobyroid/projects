@@ -1,0 +1,191 @@
+.hero {
+  position: relative;
+  padding: 6rem 0 9rem;
+
+  @include tablet {
+    padding: 30px 0 28px;
+  }
+
+  @include phone {
+    padding: 10px 0 28px;
+  }
+
+  &__title {
+    margin: 0 0 7rem;
+    text-align: center;
+
+    @include tablet {
+      margin: 0 0 40px;
+    }
+
+    @include phone {
+      margin: 0 0 17px;
+    }
+  }
+
+  &__title-img {
+    width: 100%;
+    max-width: 158rem;
+    margin: 3rem auto 0;
+
+    @include tablet {
+      max-width: 800px;
+      margin: 15px auto 0;
+    }
+
+    @include phone {
+      margin: 7px 0 0;
+    }
+  }
+
+  &__reward {
+    width: 100%;
+    max-width: 106rem;
+    margin: 4rem auto 0;
+
+    @include tablet {
+      max-width: 700px;
+      margin: 15px auto 0;
+    }
+  }
+
+  &__timeline {
+    position: relative;
+    width: 100%;
+    max-width: 119rem;
+    margin: 0 auto 10rem;
+    padding: 6.5rem 9.5rem 0;
+
+    @include tablet {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 40px 45px 0;
+    }
+
+    @include phone {
+      padding: 20px 30px 0;
+    }
+  }
+
+  &__timeline-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3.6rem;
+    transform: translateX(20%);
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include phone {
+      font-size: 10px;
+    }
+
+    &--end {
+      right: 0;
+      left: auto;
+      transform: translateX(-30%);
+    }
+  }
+
+
+  &__timeline-row {
+    position: relative;
+    height: 4rem;
+    background: $c-white;
+
+    @include tablet {
+      height: 25px;
+    }
+
+    @include phone {
+      height: 16px;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 0.4rem;
+      height: 1.3rem;
+      background: $c-gold;
+      content: '';
+
+      @include phone {
+        width: 2px;
+        height: 4px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 100%;
+      width: 0.4rem;
+      height: 1.3rem;
+      background: $c-white;
+      content: '';
+
+      @include phone {
+        width: 2px;
+        height: 4px;
+      }
+    }
+  }
+
+  &__timeline-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: $c-gold;
+
+
+  }
+
+  &__timeline-percent {
+    position: absolute;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    color: #0D0E0F;
+    background: linear-gradient(90deg, $c-gold 10%, $c-white 100%);
+    transform: translateX(-50%);
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include phone {
+      font-size: 12px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 4rem;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    @include phone-big {
+      gap: 16px;
+    }
+
+    .btn {
+      flex: 0 1 calc(25% - 4rem * 3 / 4);
+
+      @include tablet {
+        flex: 0 1 calc(50% - 24px / 2);
+      }
+
+      @include phone-big {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}
