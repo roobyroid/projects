@@ -86,16 +86,16 @@ function app() {
           break;
       }
 
-      const checkValid = Object.values(item).every((val) => val);
-      if (!checkValid) return;
+      // const checkValid = Object.values(item).every((val) => val);
+      // if (!checkValid) return;
 
       boardRow.innerHTML = `
         <div class="board__cell board__name">
         ${i < 3 ? `<img class="board__cup" src="img/page/cup-${boardCup}.png" alt="">` : ''}
-        ${item.Partner}
+        ${item['Web-Master'] ? item['Web-Master'] : '&nbsp;'}
         </div>
-        <div class="board__cell">${item['Web-Master']}</div>
-        <div class="board__cell">${item.Points}</div>
+        <div class="board__cell">${item.Partner ? item.Partner : '&nbsp;'}</div>
+        <div class="board__cell">${item.Points ? item.Points : '&nbsp;'}</div>
       `;
       board.appendChild(boardRow);
     });

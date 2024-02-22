@@ -27,11 +27,11 @@
     overflow-y: auto;
 
     @include tablet {
-      height: 300px;
+      max-height: 300px;
     }
 
     @include phone {
-      height: 236px;
+      max-height: 236px;
     }
 
     .simplebar-wrapper {
@@ -69,10 +69,13 @@
     flex-shrink: 0;
     width: 26%;
     padding: 2.5rem 2.5rem 2.5rem 5rem;
+    overflow: hidden;
     font-weight: 700;
     font-size: 3.2rem;
     font-family: $f-family--montserrat;
+    white-space: nowrap;
     text-transform: uppercase;
+    text-overflow: ellipsis;
     border: .2rem solid #707070;
     border-bottom: none;
     border-left: none;
