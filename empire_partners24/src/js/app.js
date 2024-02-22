@@ -15,6 +15,7 @@
 // import { initModal } from './lib/hystmodal.min.js';
 // import Swiper, { Navigation } from 'swiper';
 // Swiper.use([Navigation]);
+import Papa from 'papaparse';
 import 'simplebar';
 import ResizeObserver from 'resize-observer-polyfill';
 import accordion from './modules/accordion.js';
@@ -30,6 +31,75 @@ function app() {
   // const myModal = new HystModal({
   //   linkAttributeName: 'data-hystmodal',
   // });
+
+  async function getData() {
+    try {
+      const response = await fetch('https://api2-affijet02.anysndbx.com/tournament/', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-partner-code': 1,
+          'x-api-key': '06f1a1e7aa505b72218ec063169c82fb',
+        },
+      });
+      const data = await response.json();
+      parseData(data.file_link);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  getData();
+
+  function parseData(link) {
+    Papa.parse(link, {
+      download: true,
+      header: true,
+      complete: function (results) {
+        createBoardRows(results.data);
+      },
+    });
+  }
+
+  function createBoardRows(data) {
+    if (!data.length) return;
+
+    const board = document.querySelector('.js_board-rows');
+
+    const dataSort = data.sort((a, b) => b.Points - a.Points);
+
+    dataSort.forEach((item, i) => {
+      const boardRow = document.createElement('div');
+      boardRow.classList.add('board__row');
+
+      let boardCup = '';
+      switch (i) {
+        case 0:
+          boardCup = 'gold';
+          break;
+        case 1:
+          boardCup = 'silver';
+          break;
+        case 2:
+          boardCup = 'bronze';
+          break;
+        default:
+          break;
+      }
+
+      const checkValid = Object.values(item).every((val) => val);
+      if (!checkValid) return;
+
+      boardRow.innerHTML = `
+        <div class="board__cell board__name">
+        ${i < 3 ? `<img class="board__cup" src="img/page/cup-${boardCup}.png" alt="">` : ''}
+        ${item.Partner}
+        </div>
+        <div class="board__cell">${item['Web-Master']}</div>
+        <div class="board__cell">${item.Points}</div>
+      `;
+      board.appendChild(boardRow);
+    });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', app);

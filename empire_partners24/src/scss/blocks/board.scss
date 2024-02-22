@@ -22,7 +22,7 @@
   }
 
   &__wrap {
-    height: 83.5rem;
+    max-height: 84.5rem;
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -74,7 +74,7 @@
     font-family: $f-family--montserrat;
     text-transform: uppercase;
     border: .2rem solid #707070;
-    border-top: none;
+    border-bottom: none;
     border-left: none;
 
     @include tablet {
@@ -101,6 +101,7 @@
       color: $c-gold;
       font-size: 3.6rem;
       text-align: center;
+      border-top: none;
 
       @include tablet {
         padding: 2px 20px;

@@ -65,14 +65,24 @@ body {
 .coins {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  max-width: 192rem;
+  transform: translateX(-50%);
 
-  @include tablet-alt {
-    max-width: 192rem;
+  @media (min-width: 1921px) {
+    left: 0;
+    width: 100%;
+    max-width: none;
+    transform: translateX(0);
   }
+
+  @include tablet-alt {}
 
   @include tablet {
     top: 50px;
+    left: 0;
+    width: 100%;
+    transform: translateX(0);
   }
 
   @include phone {
