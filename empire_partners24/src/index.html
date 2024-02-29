@@ -90,8 +90,8 @@
 
           <div class="board__wrap" data-simplebar data-simplebar-auto-hide="false">
             <div class="board__row">
-              <div class="board__cell board__cell--head" data-lang="boardHeadName">WEB NAME</div>
-              <div class="board__cell board__cell--head">ID</div>
+              <div class="board__cell board__cell--head" data-lang="boardPartnerId">Partner id</div>
+              <div class="board__cell board__cell--head" data-lang="boardWebmasterId">webmaster id</div>
               <div class="board__cell board__cell--head" data-lang="boardHeadPTS">PTS</div>
             </div>
             <div class="js_board-rows">
@@ -116,43 +116,6 @@
                   <img class="board__cup" src="img/page/cup-bronze.png" alt="">
                   NAME
                 </div>
-                <div class="board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-              </div>
-              <div class="board__row">
-                <div class="board__name board__cell">
-                  NAME
-                </div>
-                <div class="board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-              </div>
-              <div class="board__row">
-                <div class="board__name board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-              </div>
-              <div class="board__row">
-                <div class="board__name board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-              </div>
-              <div class="board__row">
-                <div class="board__name board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-              </div>
-              <div class="board__row">
-                <div class="board__name board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-              </div>
-              <div class="board__row">
-                <div class="board__name board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-                <div class="board__cell">&nbsp;</div>
-              </div>
-              <div class="board__row">
-                <div class="board__name board__cell">&nbsp;</div>
                 <div class="board__cell">&nbsp;</div>
                 <div class="board__cell">&nbsp;</div>
               </div> -->
@@ -213,13 +176,24 @@
 
           <p class="terms__info color-gold text-center" data-lang="termsInfo">1&nbsp;DEP = 10&nbsp;PTS</p>
 
-          <div class="terms__detailed js_accordion">
-            <button class="terms__detailed-head js_accordion-control" type="button" aria-expanded="false">
-              <span data-lang="detailed">Detailed conditions</span>
-              <span class="terms__detailed-el"></span>
-            </button>
-            <div class="terms__detailed-content js_accordion-content" aria-hidden="true">
-              <p data-lang="detailedText">conditions</p>
+          <div class="terms__accordions">
+            <div class="terms__accordions-item js_accordion">
+              <button class="terms__accordions-item-head js_accordion-control" type="button" aria-expanded="false">
+                <span class="terms__accordions-item-head-text" data-lang="rules">Rules for scoring</span>
+                <span class="terms__accordions-item-el"></span>
+              </button>
+              <div class="terms__accordions-item-content js_accordion-content" aria-hidden="true">
+                <p data-lang="rulesText">Rules</p>
+              </div>
+            </div>
+            <div class="terms__accordions-item js_accordion">
+              <button class="terms__accordions-item-head js_accordion-control" type="button" aria-expanded="false">
+                <span class="terms__accordions-item-head-text" data-lang="detailed">Detailed conditions</span>
+                <span class="terms__accordions-item-el"></span>
+              </button>
+              <div class="terms__accordions-item-content js_accordion-content" aria-hidden="true">
+                <p data-lang="detailedText">conditions</p>
+              </div>
             </div>
           </div>
         </div>
@@ -230,13 +204,13 @@
           <h2 class="contacts__title title color-gold text-center" data-lang="contacts">Contacts</h2>
 
           <div class="contacts__mail-wrap">
-            <a class="contacts__mail" href="mailto:info@info.ru">
+            <a class="contacts__mail" href="mailto:support@partnersempire.com">
               <div class="contacts__mail-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#icon-envelope"></use>
                 </svg>
               </div>
-              info@info.ru
+              support@partnersempire.com
             </a>
           </div>
 

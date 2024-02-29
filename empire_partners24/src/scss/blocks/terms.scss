@@ -130,7 +130,9 @@
     }
   }
 
-  &__detailed {
+  &__accordions {}
+
+  &__accordions-item {
     background: rgb(0 0 0 / 50%);
     border: .2rem solid #707070;
     border-radius: 2rem;
@@ -145,11 +147,11 @@
     }
 
     &.open {
-      .terms__detailed-el {
+      .terms__accordions-item-el {
         transform: rotate(-45deg);
       }
 
-      .terms__detailed-content {
+      .terms__accordions-item-content {
         box-sizing: content-box;
         padding-bottom: 2rem;
         opacity: 1;
@@ -163,13 +165,23 @@
         }
       }
     }
+
+    &:not(:last-child) {
+      margin: 0 0 3rem;
+
+      @include tablet {
+        margin: 0 0 15px;
+      }
+    }
   }
 
-  &__detailed-head {
+
+  &__accordions-item-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    min-height: 10rem;
     padding: 3rem 3rem 3rem 4rem;
     color: $c-white;
     font-weight: 900;
@@ -179,29 +191,33 @@
     cursor: pointer;
     transition: color .3s;
 
-    &:hover {
-      color: $c-gold;
+    @include tablet-alt {
+      &:hover {
+        color: $c-gold;
 
-      .terms__detailed-el {
-        &::before,
-        &::after {
-          background: $c-gold;
+        .terms__accordions-item-el {
+          &::before,
+          &::after {
+            background: $c-gold;
+          }
         }
       }
     }
 
     @include tablet {
+      min-height: 60px;
       padding: 20px;
       font-size: 24px;
     }
 
     @include phone {
+      min-height: 40px;
       padding: 12px 10px;
       font-size: 16px;
     }
   }
 
-  &__detailed-el {
+  &__accordions-item-el {
     position: relative;
     flex-shrink: 0;
     width: 3.5rem;
@@ -254,7 +270,15 @@
     }
   }
 
-  &__detailed-content {
+  &__accordions-item-head-text {
+    margin-bottom: -7px;
+
+    @include phone {
+      margin-bottom: -5px;
+    }
+  }
+
+  &__accordions-item-content {
     max-height: 0;
     padding-right: 3rem;
     padding-left: 3rem;

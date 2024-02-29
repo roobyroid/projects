@@ -92,9 +92,9 @@ function app() {
       boardRow.innerHTML = `
         <div class="board__cell board__name">
         ${i < 3 ? `<img class="board__cup" src="img/page/cup-${boardCup}.png" alt="">` : ''}
-        ${item['Web-Master'] ? item['Web-Master'] : '&nbsp;'}
+        ${item.Partner ? item.Partner : '&nbsp;'}
         </div>
-        <div class="board__cell">${item.Partner ? item.Partner : '&nbsp;'}</div>
+        <div class="board__cell">${item['Web-Master'] ? item['Web-Master'] : '&nbsp;'}</div>
         <div class="board__cell">${item.Points ? item.Points : '&nbsp;'}</div>
       `;
       board.appendChild(boardRow);

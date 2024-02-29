@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Place the meta description text here.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Главная</title>
+
+    <link rel="icon" href="./files/favicon.ico">
+
+    <link href="./css/style.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <picture>
+            <source srcset="img/page/lines-mob.png" type="image/png" media="(max-width: 574.98px)">
+            <img class="bg" src="img/page/lines.png" alt="">
+        </picture>
+        <picture>
+            <source srcset="img/page/grad-mob.png" type="image/png" media="(max-width: 574.98px)">
+            <img class="bg" src="img/page/grad.png" alt="">
+        </picture>
+        <picture>
+            <source srcset="img/page/coins-mob.png" type="image/png" media="(max-width: 574.98px)">
+            <img class="coins" src="img/page/coins.png" alt="">
+        </picture>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__logo">
+                        <img src="img/page/logo.svg" alt="">
+                    </div>
+
+                    <div class="header__lang js_lang">
+                        <div class="header__lang-head js_lang-head">
+                            <span class="js_lang-val">ENG</span>
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-check-down"></use>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li><button data-btn="en" type="button">ENG</button></li>
+                            <li><button data-btn="ru" type="button">RUS</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+
+                <div class="container">
+                    <div class="hero__title">
+                        <h1 class="title" data-lang="overheadHeroTitle">Affiliate Tournament&nbsp;from</h1>
+                        <picture>
+                            <source srcset="img/page/title.svg" type="image/png" media="(min-width: 768px)">
+                            <source srcset="img/page/title-mob.svg" type="image/png" media="(max-width: 767.98px)">
+                            <img class="hero__title-img" src="img/page/title.svg" alt="Empire Partners">
+                        </picture>
+
+                        <div class="hero__reward">
+                            <img src="img/page/reward.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="hero__timeline">
+                        <span class="hero__timeline-date">15.03</span>
+                        <span class="hero__timeline-date hero__timeline-date--end">31.10</span>
+                        <div class="hero__timeline-row">
+                            <div class="hero__timeline-line" style="width: 10%;">
+                            </div>
+                            <span class="hero__timeline-percent" style="left: 10%;">10%</span>
+                        </div>
+                    </div>
+
+                    <div class="hero__actions">
+                        <a class="btn" href="#" data-lang="info">infoRMATION</a>
+                        <a class="btn" href="#" data-lang="leaderboard">leaderboard</a>
+                        <a class="btn" href="#" data-lang="contacts">contacts</a>
+                        <a class="btn" href="#" data-lang="terms">Terms and Conditions</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="container">
+                    <h2 class="info__title title text-center color-gold" data-lang="info">INFORMATION</h2>
+                    <p class="info__subtitle subtitle text-center">15.03.2024&nbsp;&mdash; 31.10.2024</p>
+                    <p class="text-center subtitle" data-lang="infoText">Available geos:</p>
+
+                    <div class="info__wrap">
+                        <div class="info__item mark">
+                            <span class="mark__text">CA</span>
+                        </div>
+                        <div class="info__item mark">
+                            <span class="mark__text">TR</span>
+                        </div>
+                        <div class="info__item mark">
+                            <span class="mark__text">UZ</span>
+                        </div>
+                        <div class="info__item mark">
+                            <span class="mark__text">KZ</span>
+                        </div>
+                        <div class="info__item mark">
+                            <span class="mark__text">IN</span>
+                        </div>
+                        <div class="info__item mark">
+                            <span class="mark__text">BA</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="board">
+                <div class="container">
+                    <h2 class="board__title title text-center color-gold" data-lang="leaderboard">leaderboard</h2>
+
+                    <div class="board__wrap" data-simplebar data-simplebar-auto-hide="false">
+                        <div class="board__row">
+                            <div class="board__cell board__cell--head" data-lang="boardPartnerId">Partner id</div>
+                            <div class="board__cell board__cell--head" data-lang="boardWebmasterId">webmaster id</div>
+                            <div class="board__cell board__cell--head" data-lang="boardHeadPTS">PTS</div>
+                        </div>
+                        <div class="js_board-rows">
+                            <!-- <div class="board__row">
+                <div class="board__name board__cell">
+                  <img class="board__cup" src="img/page/cup-gold.png" alt="">
+                  NAME
+                </div>
+                <div class="board__cell">1234</div>
+                <div class="board__cell">1000</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  <img class="board__cup" src="img/page/cup-silver.png" alt="">
+                  NAME
+                </div>
+                <div class="board__cell">&nbsp;</div>
+                <div class="board__cell">&nbsp;</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  <img class="board__cup" src="img/page/cup-bronze.png" alt="">
+                  NAME
+                </div>
+                <div class="board__cell">&nbsp;</div>
+                <div class="board__cell">&nbsp;</div>
+              </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terms">
+                <div class="container">
+                    <div class="terms__head text-center">
+                        <h2 class="terms__title title color-gold" data-lang="terms">Terms and Conditions</h2>
+                        <p class="subtitle"><span class="color-gold">!</span>&nbsp;
+                            <span data-lang="termsSubtitle">Valid only for offers<br>
+                                with the&nbsp;RS payment&nbsp;model</span>&nbsp;
+                            <span class="color-gold">!</span>
+                        </p>
+                    </div>
+
+                    <div class="terms__wrap">
+                        <div class="terms__item">
+                            <div class="terms__item-mark mark">
+                                <span class="mark__text">CA</span>
+                            </div>
+                            <span><span data-lang="from">From</span> 35% RS</span>
+                        </div>
+                        <div class="terms__item">
+                            <div class="terms__item-mark mark">
+                                <span class="mark__text">TR</span>
+                            </div>
+                            <span><span data-lang="from">From</span> 30% RS</span>
+                        </div>
+                        <div class="terms__item">
+                            <div class="terms__item-mark mark">
+                                <span class="mark__text">KZ</span>
+                            </div>
+                            <span><span data-lang="from">From</span> 30% RS</span>
+                        </div>
+                        <div class="terms__item">
+                            <div class="terms__item-mark mark">
+                                <span class="mark__text">UZ</span>
+                            </div>
+                            <span><span data-lang="from">From</span> 25% RS</span>
+                        </div>
+                        <div class="terms__item">
+                            <div class="terms__item-mark mark">
+                                <span class="mark__text">IN</span>
+                            </div>
+                            <span><span data-lang="from">From</span> 55% RS</span>
+                        </div>
+                        <div class="terms__item">
+                            <div class="terms__item-mark mark">
+                                <span class="mark__text">BA</span>
+                            </div>
+                            <span><span data-lang="from">From</span> 55% RS</span>
+                        </div>
+                    </div>
+
+                    <p class="terms__info color-gold text-center" data-lang="termsInfo">1&nbsp;DEP = 10&nbsp;PTS</p>
+
+                    <div class="terms__accordions">
+                        <div class="terms__accordions-item js_accordion">
+                            <button class="terms__accordions-item-head js_accordion-control" type="button" aria-expanded="false">
+                                <span class="terms__accordions-item-head-text" data-lang="rules">Rules for scoring</span>
+                                <span class="terms__accordions-item-el"></span>
+                            </button>
+                            <div class="terms__accordions-item-content js_accordion-content" aria-hidden="true">
+                                <p data-lang="rulesText">Rules</p>
+                            </div>
+                        </div>
+                        <div class="terms__accordions-item js_accordion">
+                            <button class="terms__accordions-item-head js_accordion-control" type="button" aria-expanded="false">
+                                <span class="terms__accordions-item-head-text" data-lang="detailed">Detailed conditions</span>
+                                <span class="terms__accordions-item-el"></span>
+                            </button>
+                            <div class="terms__accordions-item-content js_accordion-content" aria-hidden="true">
+                                <p data-lang="detailedText">conditions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="container">
+                    <h2 class="contacts__title title color-gold text-center" data-lang="contacts">Contacts</h2>
+
+                    <div class="contacts__mail-wrap">
+                        <a class="contacts__mail" href="mailto:support@partnersempire.com">
+                            <div class="contacts__mail-icon">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                                </svg>
+                            </div>
+                            support@partnersempire.com
+                        </a>
+                    </div>
+
+                    <div class="contacts__wrap">
+                        <div class="contacts__item">
+                            <div class="contacts__item-marks">
+                                <div class="contacts__mark">
+                                    <span>UZ</span>
+                                </div>
+                                <div class="contacts__mark">
+                                    <span>KZ</span>
+                                </div>
+                                <div class="contacts__mark">
+                                    <span>TR</span>
+                                </div>
+                                <div class="contacts__mark">
+                                    <span>CA</span>
+                                </div>
+                            </div>
+
+                            <div class="contacts__item-links">
+                                <a href="tg://resolve?domain=anya_affi" target="_blank">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                    @anya_affi
+                                </a>
+                                <a href="tg://resolve?domain=elena_affilate" target="_blank">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                    @elena_affilate
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contacts__item">
+                            <div class="contacts__item-marks">
+                                <div class="contacts__mark">
+                                    <span>IN</span>
+                                </div>
+                                <div class="contacts__mark">
+                                    <span>BA</span>
+                                </div>
+                            </div>
+
+                            <div class="contacts__item-links">
+                                <a href="tg://resolve?domain=igorarapov" target="_blank">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                    @igorarapov
+                                </a>
+                                <a href="tg://resolve?domain=karamyshensky" target="_blank">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                    @karamyshensky
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__logo">
+                    <img src="img/page/logo.svg" alt="">
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>
