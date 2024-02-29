@@ -134,6 +134,16 @@ The amount of&nbsp;points in&nbsp;the tournament is&nbsp;calculated using the fo
       currentLang = langBtn.dataset.btn;
       localStorage.setItem('language', langBtn.dataset.btn);
       langParent.classList.remove('open');
+
+      document.querySelectorAll('.js_accordion').forEach((accordion) => {
+        if (accordion.classList.contains('open')) {
+          accordion.classList.remove('open');
+          accordion.querySelector('.js_accordion-control').setAttribute('aria-expanded', false);
+          accordion.querySelector('.js_accordion-content').setAttribute('aria-hidden', true);
+          accordion.querySelector('.js_accordion-content').style.maxHeight = null;
+        }
+      });
+
       changeLang();
     });
   });
