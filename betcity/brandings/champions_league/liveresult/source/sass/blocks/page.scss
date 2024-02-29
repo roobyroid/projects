@@ -1,0 +1,302 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #fff;
+  font-family: 'StyreneALC';
+}
+
+.body-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  min-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.header,
+.aside {
+  opacity: 0;
+}
+
+.loaded {
+
+  .header,
+  .aside {
+    transition: opacity .6s ease;
+    opacity: 1;
+  }
+}
+
+.header__bonus-second,
+.aside__content-second {
+  display: none;
+}
+
+.has-event {
+
+  .header__bonus-second,
+  .aside__content-second {
+    display: block;
+  }
+}
+
+.has-no-promocode {
+  .promocode {
+    display: none;
+  }
+}
+
+.has-promocode {
+  .header__bonus-first {
+    .promocode {
+      margin: -8px 0 0 59px;
+    }
+  }
+
+  .header__bonus-first-text {
+    margin: -5px 0 0 -94px;
+
+  }
+
+  .banner-text__top {
+    display: none;
+
+    &--promocode {
+      display: block;
+    }
+  }
+
+  .banner-text__bottom {
+    font-size: 20px;
+  }
+
+  .banner-text--aside {
+    .banner-text__bottom {
+      font-size: 12px;
+    }
+  }
+}
+
+.two-teams {
+  .event__nums {
+    justify-content: space-between;
+  }
+
+  .event__nums-item {
+    flex: 0 1 50%;
+    max-width: 65px;
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .team-aside__nums {
+    display: none;
+  }
+
+  .team-aside__nums-single {
+    display: inline-flex;
+  }
+}
+
+.show-second-frame {
+  .bg::before {
+    opacity: 0.46;
+  }
+}
+
+.fluid-center-block {
+  width: 1300px;
+  min-width: 1300px;
+  display: block;
+}
+
+.body-wrap__bg {
+  top: 0;
+  right: 0;
+  width: 100%
+}
+
+.text-anim {
+  display: block;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity .3s, transform .3s;
+
+  &.animate {
+    animation: move-text .8s ease-in-out forwards;
+  }
+
+  &--2 {
+
+    &.animate {
+      animation: move-text .8s ease-in-out .3s forwards;
+    }
+  }
+
+  &--3 {
+
+    &.animate {
+      animation: move-text .8s ease-in-out .5s forwards;
+    }
+  }
+}
+
+.banner-text {
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+
+  &__top {
+    color: #06DCFF;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Nekst';
+    white-space: nowrap;
+
+    span {
+      display: inline-block;
+      transform: translateY(-.11em);
+    }
+
+    &::after {
+      content: '*';
+      font-size: 19px;
+      vertical-align: top;
+      margin: 0 0 0 -6px;
+    }
+
+    &--promocode {
+      display: none;
+      font-size: 52px;
+
+      small {
+        font-family: 'StyreneALC';
+        font-size: 26px;
+      }
+    }
+  }
+
+  &__bottom {
+    font-size: 24px;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+
+  &--aside {
+    text-align: center;
+
+    .banner-text__top {
+      font-size: 24px;
+
+      &::after {
+        font-size: 10px;
+      }
+
+      &--promocode {
+        font-size: 30px;
+
+        span {
+          transform: translateY(-.07em);
+        }
+
+        small {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .banner-text__bottom {
+      font-size: 10px;
+    }
+  }
+}
+
+.promocode {
+
+  text-align: center;
+
+  &__head {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  &__val {
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1;
+    color: #06DCFF;
+  }
+
+  &--aside {
+    display: none;
+    margin: 17px 0 -14px;
+
+    .promocode__head {
+      font-size: 13px;
+    }
+
+    .promocode__val {
+      font-size: 32px;
+    }
+  }
+}
+
+
+@keyframes move-text {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes moveBall {
+  0% {
+    transform: translateX(400px) scale(0.3) rotate(0);
+  }
+
+  25% {
+    transform: translateX(-7%) scale(1) rotate(-370deg);
+  }
+
+  31% {
+    transform: translateX(0) scale(1) rotate(-360deg);
+  }
+
+  68% {
+    transform: translateX(0) scale(1) rotate(-360deg);
+  }
+
+  75% {
+    transform: translateX(7%) scale(1) rotate(-350deg);
+  }
+
+  100% {
+    transform: translateX(-400px) scale(0) rotate(-720deg);
+  }
+}
