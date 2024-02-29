@@ -370,26 +370,52 @@ body {
 
 @keyframes moveBall {
   0% {
-    transform: translateX(400px) scale(0.3) rotate(0);
+    transform: translateX(400px) rotate(0);
   }
 
   25% {
-    transform: translateX(-7%) scale(1) rotate(-370deg);
+    transform: translateX(-7%) rotate(-370deg);
   }
 
   31% {
-    transform: translateX(0) scale(1) rotate(-360deg);
+    transform: translateX(0) rotate(-360deg);
   }
 
-  68% {
-    transform: translateX(0) scale(1) rotate(-360deg);
+  69% {
+    transform: translateX(0) rotate(-360deg);
   }
 
   75% {
-    transform: translateX(7%) scale(1) rotate(-350deg);
+    transform: translateX(-7%) rotate(-370deg);
   }
 
   100% {
-    transform: translateX(-400px) scale(0) rotate(-720deg);
+    transform: translateX(400px) rotate(0);
+  }
+}
+
+@keyframes moveBallReverse {
+  0% {
+    transform: translateX(-400px) rotate(0);
+  }
+
+  25% {
+    transform: translateX(7%) rotate(370deg);
+  }
+
+  31% {
+    transform: translateX(0) rotate(360deg);
+  }
+
+  69% {
+    transform: translateX(0) rotate(360deg);
+  }
+
+  75% {
+    transform: translateX(7%) rotate(370deg);
+  }
+
+  100% {
+    transform: translateX(-400px) rotate(0);
   }
 }

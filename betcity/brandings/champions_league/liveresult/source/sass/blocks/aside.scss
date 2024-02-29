@@ -47,6 +47,20 @@
       }
     }
 
+    &--right {
+      &.animate {
+        img {
+          animation: moveBallReverse 5s ease forwards;
+        }
+      }
+
+      &.animate-infinite {
+        img {
+          animation: moveBallReverse 5s ease infinite;
+        }
+      }
+    }
+
   }
 
   // &__promocode {
