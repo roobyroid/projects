@@ -34,31 +34,29 @@ function app() {
 
   async function getData() {
     try {
-      const response = await fetch('https://api2-affijet02.anysndbx.com/tournament/', {
+      const response = await fetch('https://xcomfeed.com/partners_empire_webbamsters_rating.json', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          'x-partner-code': 1,
-          'x-api-key': '06f1a1e7aa505b72218ec063169c82fb',
         },
       });
       const data = await response.json();
-      parseData(data.file_link);
+      createBoardRows(data);
     } catch (error) {
       console.error(error);
     }
   }
   getData();
 
-  function parseData(link) {
-    Papa.parse(link, {
-      download: true,
-      header: true,
-      complete: function (results) {
-        createBoardRows(results.data);
-      },
-    });
-  }
+  // function parseData(link) {
+  //   Papa.parse(link, {
+  //     download: true,
+  //     header: true,
+  //     complete: function (results) {
+  //       createBoardRows(results.data);
+  //     },
+  //   });
+  // }
 
   function createBoardRows(data) {
     if (!data.length) return;
@@ -86,9 +84,6 @@ function app() {
           break;
       }
 
-      // const checkValid = Object.values(item).every((val) => val);
-      // if (!checkValid) return;
-
       boardRow.innerHTML = `
         <div class="board__cell board__name">
         ${i < 3 ? `<img class="board__cup" src="img/page/cup-${boardCup}.png" alt="">` : ''}
@@ -100,6 +95,25 @@ function app() {
       board.appendChild(boardRow);
     });
   }
+
+  // scroll to section
+  try {
+    const scrollLinks = document.querySelectorAll('.js_scroll-link');
+    scrollLinks.forEach((el) => {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href').substring(1);
+        const scrollTarget = document.getElementById(href);
+
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+
+        window.scrollBy({
+          top: elementPosition,
+          behavior: 'smooth',
+        });
+      });
+    });
+  } catch (e) {}
 }
 
 document.addEventListener('DOMContentLoaded', app);
