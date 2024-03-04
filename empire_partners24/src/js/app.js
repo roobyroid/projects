@@ -48,16 +48,6 @@ function app() {
   }
   getData();
 
-  // function parseData(link) {
-  //   Papa.parse(link, {
-  //     download: true,
-  //     header: true,
-  //     complete: function (results) {
-  //       createBoardRows(results.data);
-  //     },
-  //   });
-  // }
-
   function createBoardRows(data) {
     if (!data.length) return;
 
