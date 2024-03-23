@@ -1,0 +1,318 @@
+.terms {
+  padding: 10rem 0 8rem;
+
+  @include tablet {
+    padding: 120px 0 150px;
+  }
+
+  @include phone-big {
+    padding: 20px 0 190px;
+  }
+
+  &__wrap {
+    display: flex;
+    margin: 0 0 14rem;
+
+    @include tablet {
+      margin: 0 0 80px;
+    }
+
+    @include phone-big {
+      display: block;
+      margin: 0 0 93px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 12.4rem 0 auto;
+
+    @include tablet {
+      margin: 0 50px 0 auto;
+    }
+
+    @include phone-big {
+      margin: 0 0 287px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin: 0 0 1.7rem;
+
+    @include tablet {
+      margin: 0 0 9px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__subtitle {
+    width: 100%;
+    max-width: 49.5rem;
+    margin: 0 0 0 auto;
+    color: #6E6E6E;
+    font-weight: 700;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include phone-big {
+      margin: 0;
+    }
+
+    @include phone {
+      font-size: 16px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.9rem 2rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 65.3rem;
+    margin: 14rem 0 0 auto;
+
+    @include tablet {
+      gap: 35px 20px;
+      margin: 50px 0 0 auto;
+    }
+
+    @include phone-big {
+      margin: 0 auto;
+    }
+
+    @include phone {}
+  }
+
+  &__item {
+    display: flex;
+    flex: 0 1 calc(50% - 2rem / 2);
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include phone {
+      font-size: 13px;
+    }
+  }
+
+  &__item-mark {
+    flex-shrink: 0;
+    margin: 0 0 2.4rem;
+
+    @include phone-big {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__item-val {
+    font-weight: 900;
+    font-size: 5.8rem;
+
+    @include tablet {
+      font-size: 32px;
+    }
+
+    @include phone {
+      font-size: 27px;
+    }
+  }
+
+  &__info {
+    margin: 0 0 5.5rem;
+    color: $c-red;
+    font-weight: 700;
+    font-size: 26rem;
+    font-family: $f-family--druk;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin: 0 0 25px;
+      font-size: 120px;
+    }
+
+    @include phone {
+      font-size: 82px;
+    }
+  }
+
+  &__accordions {}
+
+  &__accordions-item {
+    color: #000000;
+    background: $c-white;
+    border-radius: 5rem;
+    transition: border .3s;
+
+    &.open {
+      @include phone {
+        border-radius: 3rem;
+      }
+
+      .terms__accordions-item-el {
+        transform: rotate(-45deg);
+      }
+
+      .terms__accordions-item-content {
+        box-sizing: content-box;
+        padding-bottom: 2rem;
+        opacity: 1;
+
+        @include tablet {
+          padding-bottom: 15px;
+        }
+
+        @include phone {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 3rem;
+
+      @include tablet {
+        margin: 0 0 15px;
+      }
+    }
+  }
+
+
+  &__accordions-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 10rem;
+    padding: 3rem 4rem 3rem 5.5rem;
+    color: #000000;
+    font-weight: 500;
+    font-size: 3.8rem;
+    text-align: left;
+    background: transparent;
+    cursor: pointer;
+    transition: color .3s;
+
+    @include tablet-alt {
+      &:hover {
+        color: rgba($color: #000000, $alpha: 70%);
+
+        .terms__accordions-item-el {
+          &::before,
+          &::after {
+            background: rgba($color: #000000, $alpha: 70%);
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      min-height: 60px;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    @include phone {
+      min-height: 37px;
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+  }
+
+  &__accordions-item-el {
+    position: relative;
+    flex-shrink: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 0 0 2rem;
+    transition: transform .3s;
+
+    @include tablet {
+      width: 25px;
+      height: 25px;
+    }
+
+    @include phone {
+      width: 14px;
+      height: 14px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #000000;
+      border-radius: 4px;
+      transform: translateY(-50%);
+      transition: background .3s;
+      content: '';
+
+      @include phone {
+        height: 2px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background-color: #000000;
+      border-radius: 4px;
+      transform: translateX(-50%);
+      transition: background .3s;
+      content: '';
+
+      @include phone {
+        width: 2px;
+      }
+    }
+  }
+
+  &__accordions-item-head-text {
+    margin-bottom: -7px;
+
+    @include phone {
+      margin-bottom: -5px;
+    }
+  }
+
+  &__accordions-item-content {
+    max-height: 0;
+    padding-right: 5.5rem;
+    padding-left: 5.5rem;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    will-change: max-height;
+
+    @include tablet {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    @include phone {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}

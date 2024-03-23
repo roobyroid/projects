@@ -1,0 +1,179 @@
+.header {
+  padding: 7.5rem 0 5rem;
+
+  @include tablet {
+    padding: 50px 0 9px;
+  }
+
+  &__wrap {
+    position: relative;
+    padding: 0 17rem;
+
+    @include tablet {
+      padding: 0 105px;
+    }
+
+    @include phone-big {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+
+    @include tablet {
+      max-width: 300px;
+    }
+
+    @include phone-big {
+      margin: 0;
+    }
+
+    @include phone {
+      max-width: 224px;
+    }
+  }
+
+  &__lang {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    min-width: 15.3rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @include tablet {
+      min-width: 84px;
+    }
+
+    @include phone-big {
+      position: relative;
+      top: auto;
+      right: auto;
+      z-index: 1;
+      margin: 0 0 0 15px;
+      font-size: 18px;
+      transform: translateY(0);
+    }
+
+    @include phone {
+      min-width: 84px;
+      font-size: 14px;
+    }
+
+    &.open {
+      .header__lang-head {
+        border-radius: 15px 15px 0 0;
+
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+
+      ul {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      padding: .5rem .5rem 1rem 4rem;
+      background: #000000;
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s, visibility 0.3s;
+      pointer-events: none;
+
+      @include tablet {
+        padding-left: 18px;
+      }
+
+      li {
+        button {
+          margin: 0 0 10px;
+          color: $c-white;
+          font-weight: inherit;
+          font-size: inherit;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          transition: color .3s;
+
+          &:hover {
+            color: rgba($color: #FFFFFF, $alpha: 70%);
+          }
+        }
+
+        &:last-child {
+          button {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__lang-head {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 6rem;
+    padding: 1rem 2rem 1rem 4rem;
+    background: #000000;
+    border-radius: 3rem;
+    transition: color .3s, border-radius .3s;
+
+    @include tablet {
+      min-height: 42px;
+      padding: 5px 14px 5px 18px;
+      font-size: 18px;
+    }
+
+    @include phone {
+      min-height: 37px;
+      padding: 5px 14px 5px 18px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: rgba($color: #FFFFFF, $alpha: 70%);
+
+
+    }
+
+    svg {
+      flex-shrink: 0;
+      width: 2.5rem;
+      height: 1.3rem;
+      margin: 0 0 0 1rem;
+      transition: stroke .3s, transform 0.3s;
+      fill: transparent;
+      stroke: currentColor;
+      stroke-width: 2;
+
+      @include tablet {
+        width: 15px;
+        height: 8px;
+        margin: 0 0 0 7px;
+      }
+    }
+  }
+}

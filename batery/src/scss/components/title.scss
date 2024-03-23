@@ -1,0 +1,20 @@
+.title {
+  font-weight: 900;
+  font-size: 7rem;
+  font-family: $f-family--druk;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include phone-big {
+    font-size: 26px;
+  }
+
+  @include phone {
+    font-size: 24px;
+  }
+}

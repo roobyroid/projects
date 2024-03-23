@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6.8rem;
+  padding: 0 2rem;
+  color: $c-white;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: $c-red;
+  border-radius: 3.4rem;
+  transition: background .3s;
+
+  @include tablet {
+    min-height: 64px;
+    font-size: 20px;
+  }
+
+  @include phone {
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  &:hover {
+    background: #6E6E6E;
+  }
+}

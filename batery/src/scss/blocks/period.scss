@@ -1,0 +1,42 @@
+.period {
+  padding: 40rem 0 8rem;
+
+  @include tablet {
+    padding: 120px 0 30px;
+  }
+
+  &__title {
+    margin: 0 0 1rem;
+
+    @include tablet-alt {
+      font-size: 7.4rem;
+    }
+
+    @include tablet {
+      margin: 0 0 10px;
+    }
+
+    @include phone {
+      margin: 0 0 4px;
+      font-size: 23px;
+
+      span {
+        font-size: 44px;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 5.2rem;
+
+    @include tablet {
+      font-size: 34px;
+    }
+
+    @include phone {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}

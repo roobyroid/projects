@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 163rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  @include phone {
+    padding: 0 20px;
+  }
+}

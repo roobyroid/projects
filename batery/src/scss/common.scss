@@ -1,0 +1,217 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+
+  @media (max-width: 1919px) and (min-width: 992px) {
+    font-size: calc((.54vw));
+  }
+}
+
+body {
+  position: relative;
+  color: $c-text--global;
+  font-weight: $f-weight--global;
+  font-size: $f-size--global;
+  font-family: $f-family--global;
+  line-height: $l-height--global;
+  letter-spacing: 0.02em;
+  background-color: $c-body-bg;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include phone {
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+  }
+
+  &._lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  // &.lang-ru {
+  //   font-weight: 500;
+  //   font-family: $f-family--druk;
+  // }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+
+  main {
+    flex: 1 1 auto;
+  }
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 192rem;
+  max-width: none;
+  max-height: 100%;
+  object-fit: cover;
+
+  @media (min-width: 1921px) {
+    left: 0;
+    width: 100%;
+    transform: none;
+  }
+
+  @include tablet {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include phone-big {
+    left: 50%;
+    width: 768px;
+    transform: translateX(-50%);
+  }
+
+}
+
+.coins {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  max-width: 192rem;
+  transform: translateX(-50%);
+
+  @media (min-width: 1921px) {
+    left: 0;
+    width: 100%;
+    max-width: none;
+    transform: translateX(0);
+  }
+
+  @include tablet-alt {}
+
+  @include tablet {
+    top: 50px;
+    left: 0;
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  @include phone {
+    top: -10px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mark {
+  position: relative;
+  width: 12.7rem;
+  height: 14.9rem;
+  background: url('../img/page/mark.png') no-repeat center/contain;
+
+  @include tablet {
+    width: 90px;
+    height: 90px;
+  }
+
+  @include phone {
+    width: 62px;
+    height: 73px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 3.7rem;
+    left: 0;
+    width: 100%;
+    padding: 0 1.3rem;
+    font-weight: 900;
+    font-size: 4.2rem;
+    font-family: $f-family--druk;
+
+    @include tablet {
+      top: 25px;
+      padding: 0 3px;
+      font-size: 24px;
+    }
+
+    @include phone {
+      top: 20px;
+      font-size: 19px;
+    }
+  }
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 1.5rem;
+  background: rgba($color: #383838, $alpha: 50%);
+  border-radius: 2rem;
+  backdrop-filter: blur(10rem);
+
+  @include tablet {
+    width: 12px;
+    border-width: 1px;
+    border-radius: 10px;
+  }
+
+  @include phone {
+    width: 6px;
+    border-radius: 3px;
+  }
+}
+
+.simplebar-scrollbar.simplebar-visible {
+  cursor: pointer;
+
+  &::before {
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: #2E2F31;
+    border-radius: 1.7rem;
+
+    @include tablet {
+      border: none;
+      border-radius: 10px;
+    }
+
+    @include phone {
+      border-radius: 3px;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

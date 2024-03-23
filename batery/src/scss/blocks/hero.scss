@@ -1,0 +1,168 @@
+.hero {
+  position: relative;
+  padding: 6rem 0 46rem;
+
+  @include tablet {
+    padding: 30px 0 120px;
+  }
+
+  @include phone-big {
+    padding: 10px 0 152px;
+  }
+
+  &__title {
+    margin: 0 0 2rem;
+    font-weight: 700;
+    font-size: 7.8rem;
+    font-family: $f-family--druk;
+    letter-spacing: .3rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin: 0 0 15px;
+      font-size: 45px;
+    }
+
+    @include phone {
+      margin: 0 0 10px;
+      font-size: 31px;
+    }
+  }
+
+  &__reward {
+    width: 100%;
+    max-width: 156rem;
+    margin: 0 auto 5.6rem;
+
+    @include tablet {
+      max-width: 700px;
+      margin: 0 auto 28px;
+    }
+  }
+
+  &__timeline {
+    position: relative;
+    width: 100%;
+    max-width: 101.7rem;
+    margin: 0 auto 7.3rem;
+
+    @include tablet {
+      max-width: 800px;
+      margin: 0 auto 168px;
+    }
+  }
+
+  &__timeline-dates {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 0 1.7rem;
+
+    @include tablet {
+      margin: 0 0 10px;
+    }
+
+    @include phone {
+      margin: 0 0 4px;
+    }
+  }
+
+  &__timeline-date {
+    font-weight: 900;
+    font-size: 3.6rem;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+
+  &__timeline-row {
+    position: relative;
+    padding: 1px 0 0;
+    overflow: hidden;
+    background: $c-white;
+    border-radius: 0 1.9rem 1.9rem;
+
+    @include tablet {
+      padding: 0;
+    }
+
+    @include phone {
+      height: 16px;
+    }
+  }
+
+  &__timeline-line {
+    position: relative;
+    height: 3.6rem;
+    background: $c-red;
+
+    @include tablet {
+      height: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-color: transparent transparent transparent $c-red;
+      border-style: solid;
+      border-width: 1.8rem 0 1.8rem 1.6rem;
+      content: '';
+
+      @include tablet {
+        border-width: 10px 0 10px 8px;
+      }
+    }
+  }
+
+  &__timeline-percent {
+    position: absolute;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    color: #0D0E0F;
+    font-weight: 800;
+    transform: translateX(-102%);
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include phone {
+      transform: translateX(-95%);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 5rem;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    @include phone-big {
+      gap: 16px;
+    }
+
+    .btn {
+      flex: 0 1 calc(25% - 5rem * 3 / 4);
+
+      @include tablet {
+        flex: 0 1 calc(50% - 24px / 2);
+      }
+
+      @include phone-big {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,308 @@
+{% set title = "Главная" %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "head.html" %}
+
+<body>
+  <div class="wrapper">
+    <picture>
+      <source srcset="img/page/bg-mob.png" type="image/png" media="(max-width: 768.98px)">
+      <img class="bg" src="img/page/bg.jpg" alt="">
+    </picture>
+    {% include "header.html" %}
+    <main>
+      <section class="hero">
+
+        <div class="container">
+          <div class="hero__info">
+            <h1 class="hero__title" data-lang="overheadHeroTitle">Affiliate Tournament&nbsp;from</h1>
+
+            <div class="hero__reward">
+              <img src="img/page/reward.png" alt="">
+            </div>
+          </div>
+
+          <div class="hero__timeline">
+            <div class="hero__timeline-dates">
+              <span class="hero__timeline-date">15.03</span>
+              <span class="hero__timeline-date hero__timeline-date--end">31.10</span>
+            </div>
+            <div class="hero__timeline-row">
+              <div class="hero__timeline-line" style="width: 33%;">
+              </div>
+              <span class="hero__timeline-percent" style="left: 33%;">10%</span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn js_scroll-link" href="#period" data-lang="info">infoRMATION</a>
+            <a class="btn js_scroll-link" href="#liderboard" data-lang="leaderboard">leaderboard</a>
+            <a class="btn js_scroll-link" href="#contacts" data-lang="contacts">contacts</a>
+            <a class="btn js_scroll-link" href="#terms" data-lang="termsBtn">Terms and Conditions</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="period" id="period">
+        <div class="container">
+          <h2 class="period__title title text-right" data-lang="period"><span>period</span> of&nbsp;tournament</h2>
+          <p class="period__subtitle subtitle text-right">01.02.2024&nbsp;&mdash; 31.10.2024</p>
+        </div>
+      </section>
+
+      <section class="board" id="liderboard">
+        <div class="container">
+          <h2 class="board__title title text-right" data-lang="leaderboard">leaderboard</h2>
+
+          <div class="board__wrap" data-simplebar data-simplebar-auto-hide="false">
+            <div class="board__row">
+              <div class="board__cell board__cell--head" data-lang="boardWebmasterName">WEB NAME</div>
+              <div class="board__cell board__cell--head">id</div>
+              <div class="board__cell board__cell--head" data-lang="boardHeadPTS">PTS</div>
+            </div>
+            <div class="js_board-rows">
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  <img class="board__cup" src="img/page/cup-gold.png" alt="">
+                  Leaderboard_Petrov
+                </div>
+                <div class="board__cell">122 456 34</div>
+                <div class="board__cell">122 456 34</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  <img class="board__cup" src="img/page/cup-silver.png" alt="">
+                  Leaderboard
+                </div>
+                <div class="board__cell">456 477 89</div>
+                <div class="board__cell">456 477 89</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  <img class="board__cup" src="img/page/cup-bronze.png" alt="">
+                  Leaderboard_Petrov
+                </div>
+                <div class="board__cell">122 456 34</div>
+                <div class="board__cell">122 456 34</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard
+                </div>
+                <div class="board__cell">456 477 89</div>
+                <div class="board__cell">456 477 89</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard_Petrov
+                </div>
+                <div class="board__cell">122 456 34</div>
+                <div class="board__cell">122 456 34</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard
+                </div>
+                <div class="board__cell">456 477 89</div>
+                <div class="board__cell">456 477 89</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard_Petrov
+                </div>
+                <div class="board__cell">122 456 34</div>
+                <div class="board__cell">122 456 34</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard
+                </div>
+                <div class="board__cell">456 477 89</div>
+                <div class="board__cell">456 477 89</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard_Petrov
+                </div>
+                <div class="board__cell">122 456 34</div>
+                <div class="board__cell">122 456 34</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard
+                </div>
+                <div class="board__cell">456 477 89</div>
+                <div class="board__cell">456 477 89</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard_Petrov
+                </div>
+                <div class="board__cell">122 456 34</div>
+                <div class="board__cell">122 456 34</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard
+                </div>
+                <div class="board__cell">456 477 89</div>
+                <div class="board__cell">456 477 89</div>
+              </div>
+              <div class="board__row">
+                <div class="board__name board__cell">
+                  Leaderboard_Petrov
+                </div>
+                <div class="board__cell">122 456 34</div>
+                <div class="board__cell">122 456 34</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms" id="terms">
+        <div class="container">
+          <div class="terms__wrap">
+            <div class="terms__text text-right">
+              <h2 class="terms__title title" data-lang="terms">Terms and Conditions</h2>
+              <p class="terms__subtitle">
+                !&nbsp;<span data-lang="termsSubtitle">Valid only for offers<br>
+                  with the&nbsp;RS payment&nbsp;model</span>&nbsp;!
+              </p>
+            </div>
+
+            <div class="terms__inner">
+              <div class="terms__item">
+                <div class="terms__item-mark mark">
+                  <span class="mark__text">CA</span>
+                </div>
+                <span data-lang="from">From</span>
+                <p class="terms__item-val">35% RS</p>
+              </div>
+              <div class="terms__item">
+                <div class="terms__item-mark mark">
+                  <span class="mark__text">TR</span>
+                </div>
+                <span data-lang="from">From</span>
+                <p class="terms__item-val">30% RS</p>
+              </div>
+              <div class="terms__item">
+                <div class="terms__item-mark mark">
+                  <span class="mark__text">KZ</span>
+                </div>
+                <span data-lang="from">From</span>
+                <p class="terms__item-val">30% RS</p>
+              </div>
+              <div class="terms__item">
+                <div class="terms__item-mark mark">
+                  <span class="mark__text">UZ</span>
+                </div>
+                <span data-lang="from">From</span>
+                <p class="terms__item-val">25% RS</p>
+              </div>
+              <div class="terms__item">
+                <div class="terms__item-mark mark">
+                  <span class="mark__text">IN</span>
+                </div>
+                <span data-lang="from">From</span>
+                <p class="terms__item-val">55% RS</p>
+              </div>
+              <div class="terms__item">
+                <div class="terms__item-mark mark">
+                  <span class="mark__text">BD</span>
+                </div>
+                <span data-lang="from">From</span>
+                <p class="terms__item-val">55% RS</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="terms__info" data-lang="termsInfo">1&nbsp;DEP = 10&nbsp;PTS</p>
+
+          <div class="terms__accordions">
+            <!-- <div class="terms__accordions-item js_accordion">
+              <button class="terms__accordions-item-head js_accordion-control" type="button" aria-expanded="false">
+                <span class="terms__accordions-item-head-text" data-lang="rules">Rules for scoring</span>
+                <span class="terms__accordions-item-el"></span>
+              </button>
+              <div class="terms__accordions-item-content js_accordion-content" aria-hidden="true">
+                <p data-lang="rulesText">Rules</p>
+              </div>
+            </div> -->
+            <div class="terms__accordions-item js_accordion">
+              <button class="terms__accordions-item-head js_accordion-control" type="button" aria-expanded="false">
+                <span class="terms__accordions-item-head-text" data-lang="detailed">Detailed conditions</span>
+                <span class="terms__accordions-item-el"></span>
+              </button>
+              <div class="terms__accordions-item-content js_accordion-content" aria-hidden="true">
+                <p data-lang="detailedText">conditions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__wrap">
+
+            <h2 class="contacts__title title" data-lang="contacts">Contacts</h2>
+
+            <a class="contacts__mail" href="mailto:image.png">
+              <svg class="contacts__mail-icon">
+                <use xlink:href="img/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@info.ru
+            </a>
+
+            <div class="contacts__inner">
+              <div class="contacts__item">
+                <p class="contacts__item-text">IN&nbsp;/ BD</p>
+                <div class="contacts__item-links">
+                  <a href="tg://resolve?domain=igorarapov" target="_blank">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg>
+                    @igorarapov
+                  </a>
+                  <a href="tg://resolve?domain=karamyshensky" target="_blank">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg>
+                    @karamyshensky
+                  </a>
+                </div>
+              </div>
+
+              <div class="contacts__item">
+                <p class="contacts__item-text">UZ&nbsp;/ TR&nbsp;/<br> КZ&nbsp;/ CA</p>
+
+                <div class="contacts__item-links">
+                  <a href="tg://resolve?domain=anya_affi" target="_blank">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg>
+                    @anya_affi
+                  </a>
+                  <a href="tg://resolve?domain=elena_affilate" target="_blank">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg>
+                    @elena_affilate
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    {% include "footer.html" %}
+
+  </div>
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>
