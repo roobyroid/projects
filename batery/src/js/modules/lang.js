@@ -51,16 +51,6 @@ const lang = () => {
       en: '1&nbsp;DEP = 10&nbsp;PTS',
       ru: '1&nbsp;депозит=10 баллов',
     },
-    rules: {
-      en: 'Rules for scoring',
-      ru: 'Правила начисления баллов',
-    },
-    rulesText: {
-      en: `1&nbsp;deposit of&nbsp;a&nbsp;player who registered during the tournament period is&nbsp;equal to&nbsp;10&nbsp;points.<br>
-The amount of&nbsp;points in&nbsp;the tournament is&nbsp;calculated using the formula: 100 deposits * 10&nbsp;points = 1000&nbsp;points.`,
-      ru: `1&nbsp;депозит игрока, сделавшего регистрацию в&nbsp;период срока проведения турнира, приравнивается к&nbsp;10&nbsp;баллам.<br>
-      Сумма баллов в&nbsp;турнире рассчитывается по&nbsp;формуле: 100 депозитов*10 баллов=1000&nbsp;баллов.`,
-    },
     detailed: {
       en: 'Detailed conditions',
       ru: 'Условия',
