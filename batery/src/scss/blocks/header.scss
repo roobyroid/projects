@@ -1,5 +1,5 @@
 .header {
-  padding: 7.5rem 0 5rem;
+  padding: 5rem 0 6rem;
 
   @include tablet {
     padding: 50px 0 9px;
@@ -24,7 +24,7 @@
 
   &__logo {
     width: 100%;
-    max-width: 50rem;
+    max-width: 51rem;
     margin: 0 auto;
 
     @include tablet {
@@ -32,11 +32,11 @@
     }
 
     @include phone-big {
-      margin: 0;
+      margin: -10px 0 0;
     }
 
     @include phone {
-      max-width: 224px;
+      max-width: 200px;
     }
   }
 
