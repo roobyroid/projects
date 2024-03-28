@@ -5,7 +5,7 @@ const lang = () => {
   const textHomePage = {
     overheadHeroTitle: {
       en: 'Affiliate Tournament&nbsp;from',
-      ru: 'Арбитражный турнир от',
+      ru: 'Арбитражный турнир',
     },
     info: {
       en: 'information',
