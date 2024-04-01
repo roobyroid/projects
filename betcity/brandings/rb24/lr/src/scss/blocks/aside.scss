@@ -41,6 +41,17 @@
       &:first-child {
         font-size: 13px;
       }
+
+      &:last-child {
+        &::after {
+          display: inline-block;
+          margin: 0 0 0 3px;
+          font-size: 8px;
+          vertical-align: super;
+          transform: translateY(-2px);
+          content: '**';
+        }
+      }
     }
   }
 

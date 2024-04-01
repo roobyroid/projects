@@ -32,7 +32,7 @@ b {
       p {
         transform: translateY(-100px);
         opacity: 1;
-        animation: fadeInOut1 5s ease-in-out forwards;
+        animation: fadeInOut1 4.8s ease-in-out forwards;
 
         &:last-child {
           animation-delay: .05s;
@@ -46,7 +46,7 @@ b {
       p {
         transform: translateY(100px);
         opacity: 1;
-        animation: fadeInOut2 5s ease-in-out forwards;
+        animation: fadeInOut2 4.8s ease-in-out forwards;
 
         &:last-child {
           animation-delay: .05s;
@@ -57,7 +57,7 @@ b {
     .header__prize {
       transform: translateY(100px);
       opacity: 1;
-      animation: fadeInOut2 5s ease-in-out forwards;
+      animation: fadeInOut2 4.8s ease-in-out forwards;
     }
 
     .header__bonus {
