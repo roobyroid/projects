@@ -31,7 +31,6 @@ b {
     .text-animate--first {
       p {
         transform: translateY(-100px);
-        opacity: 1;
         animation: fadeInOut1 4.8s ease-in-out forwards;
 
         &:last-child {
@@ -45,7 +44,6 @@ b {
     .text-animate--second {
       p {
         transform: translateY(100px);
-        opacity: 1;
         animation: fadeInOut2 4.8s ease-in-out forwards;
 
         &:last-child {
