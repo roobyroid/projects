@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include "head.html" %}
+
+<body>
+
+	<a class="body-wrap" href="%banner.reference_user1%" target="%banner.target%">
+		<div class="bg">
+			<div class="bg__lines">
+				<canvas class="js_canvas" data-name="lines" width="2200" height="740"></canvas>
+			</div>
+		</div>
+		<div class="header js_header">
+			<div class="header__wrap">
+				<div class="header__logo logo-animate">
+					{% include "logo.html" %}
+				</div>
+				<div class="header__prize">
+					<div class="header__prize-fig">
+						<img src="img/prize.svg" alt="">
+					</div>
+					<img class="header__prize-text" src="img/prize-text.svg" alt="">
+				</div>
+				<div class="header__bonus">
+					<div class="header__bonus-cup">
+						<canvas class="js_canvas" data-name="cup" width="122" height="530"></canvas>
+					</div>
+					<div class="header__bonus-text">
+						<div class="header__bonus-text-first text-animate text-animate--first">
+							<p>только у&nbsp;нас</p>
+							<p><b class="blue">лучшие</b><br> кэфы</p>
+						</div>
+						<div class="header__bonus-text-second text-animate text-animate--second">
+							<p>и&nbsp;Приветственный бонус</p>
+							<p><span>до</span> <img src="img/sum.svg" alt=""></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__right">
+					<div class="header__an-btn an-btn">
+						получить бонус
+					</div>
+					<p class="header__right-text">**по&nbsp;версии премии РБ&nbsp;2024</p>
+				</div>
+			</div>
+
+			<div class="header__reklama">
+				<div class="header__reklama-18"><img src="img/fonts/18p.svg" /></div>
+				<div class="header__reklama-text">
+					<img src="img/fonts/betcity.ru.svg" />
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<p class="header__textline">
+					*До&nbsp;100&nbsp;000 рублей в&nbsp;виде фрибетов**.** Фрибет&nbsp;&mdash; предоставляемый компанией бонус,
+					которым клиент компании может воспользоваться для заключения пари с&nbsp;ООО &laquo;Фортуна&raquo;. Сроки
+					проведения акции: с&nbsp;14.11.2022 (00:00:00&nbsp;МСК) по&nbsp;31.12.2024 (23:59:59&nbsp;МСК). Для участия
+					в&nbsp;акции участнику необходимо зарегистрироваться и&nbsp;сделать ставку от&nbsp;500 рублей на&nbsp;любое
+					событие с&nbsp;кф.&nbsp;от&nbsp;1.8&nbsp;на сайте www.betcity.ru или в&nbsp;мобильном приложении Бетсити.
+					Полные правила акции, информацию об&nbsp;организаторе, призовом фонде, количестве призов или выигрышей,
+					сроках, месте и&nbsp;порядке получения призов или выигрышей можно узнать на&nbsp;сайте www.betcity.ru.
+				</p>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="aside__wrap">
+				<div class="aside__item aside__item--left">
+					<div class="aside__logo logo-animate">
+						{% include "logo.html" %}
+					</div>
+
+					<div class="aside__content">
+						<div class="aside__content-text">
+							<div class="aside__content-text-first text-animate text-animate--first">
+								<p>только у&nbsp;нас</p>
+								<p><b class="blue">лучшие</b></p>
+								<p>кэфы</p>
+							</div>
+							<div class="aside__content-text-second text-animate text-animate--second">
+								<p>и&nbsp;Приветственный бонус до</p>
+								<p><img src="img/sum.svg" alt=""></p>
+							</div>
+						</div>
+
+						<div class="aside__cup">
+							<canvas class="js_canvas" data-name="cup2" width="122" height="530"></canvas>
+						</div>
+					</div>
+
+					<div class="aside__an-btn an-btn">
+						получить бонус
+					</div>
+				</div>
+
+				<div class="fluid-center-block"></div>
+
+				<div class="aside__item aside__item--right">
+					<div class="aside__logo logo-animate">
+						{% include "logo.html" %}
+					</div>
+					<div class="aside__content">
+						<div class="aside__content-text">
+							<div class="aside__content-text-first text-animate text-animate--first">
+								<p>только у&nbsp;нас</p>
+								<p><b class="blue">лучшие</b></p>
+								<p>кэфы</p>
+							</div>
+							<div class="aside__content-text-second text-animate text-animate--second">
+								<p>и&nbsp;Приветственный бонус до</p>
+								<p><img src="img/sum.svg" alt=""></p>
+							</div>
+						</div>
+
+						<div class="aside__cup">
+							<canvas class="js_canvas" data-name="cup3" width="122" height="530"></canvas>
+						</div>
+					</div>
+					<div class="aside__an-btn an-btn">
+						получить бонус
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+
+	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+	<script src="js/Lines.js"></script>
+	<script src="js/kubok.js"></script>
+	<script src="js/kubok2.js"></script>
+	<script src="js/kubok3.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+.aside {
+  padding: 53px 0 0;
+
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 124px;
+    margin: 0 6px;
+
+  }
+
+  &__logo {
+    width: 104px;
+    margin: 0 auto 28px;
+
+    svg {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__content-text {
+    min-height: 60px;
+    margin: 0 0 0 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__content-text-first {
+    font-weight: 400;
+    font-size: 17px;
+
+    p {
+      &:first-child {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__content-text-second {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    font-weight: 900;
+    font-size: 8px;
+  }
+
+  &__cup {
+    width: 29px;
+    margin: 23px auto 0;
+
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__an-btn {
+    width: 95%;
+    margin: 3px auto 0;
+    font-size: 14px;
+
+  }
+}
