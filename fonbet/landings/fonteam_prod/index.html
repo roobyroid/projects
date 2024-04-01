@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="gtm_name" content="fonteam">
+
+    <title>Fonteam: играем по-настоящему</title>
+    <meta name="description" content="Fonteam - звездная команда амбассадоров FONBET, запускает свою первую инициативу – масштабный конкурс проектов поддержки локального спорта. В нем могут принять участие болельщики, спортсмены, тренеры и все желающие старше 18 лет. Предложи социальный проект и получить шанс стать частью Fonteam.">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#fff">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/favicon.ico">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/favicon-32x32.png">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/android-chrome-192x192.png">
+    <link rel="manifest" href="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/manifest.json">
+
+    <meta name="apple-mobile-web-app-title" content="Фонбет">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/apple-touch-icon.png">
+
+    <meta name="application-name" content="Фонбет">
+    <meta name="msapplication-navbutton-color" content="#db2532">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/mstile-150x150.png">
+    <meta name="msapplication-config" content="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/browserconfig.xml">
+
+    <link rel="mask-icon" type="image/png" href="https://origin.bk6bba-resources.com/webStaticRed/promo/lands/images/favicons-en/safari-pinned-tab.svg" color="#db2532">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(40810904, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            trackHash: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/40810904" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <link rel="preload" href="img/results/bg.png.jpg" as="image">
+    <link rel="preload" href="img/results/fonteam.png" as="image">
+    <link rel="preload" href="img/results/line-1.png" as="image">
+    <link rel="preload" href="img/results/line-2.png" as="image">
+
+    <link href="./css/style.min.css?_v=20231228164316" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- <div class="modal hystmodal" id="form" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<h2 class="modal__title title">Предлагай идеи<br> в&nbsp;разных направлениях:</h2>
+			<form class="modal__form form js_form">
+				<div class="form__directions">
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="places" checked>
+						<div class="form__directions-item-inner">
+							<h3>Места силы</h3>
+							<p>Например, отреставрируем коробку,<br> зальем каток, обустроим место для спорта.</p>
+						</div>
+					</label>
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="athletes">
+						<div class="form__directions-item-inner">
+							<h3>спортсмены</h3>
+							<p>Например, организуем поездку<br> на&nbsp;турнир или купим снаряжение.</p>
+						</div>
+					</label>
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="teams">
+						<div class="form__directions-item-inner">
+							<h3>команды</h3>
+							<p>Например, поможем с&nbsp;дизайном формы<br> или/и инвентарем для тренировок.</p>
+						</div>
+					</label>
+					<label class="form__directions-item">
+						<input class="visually-hidden" type="radio" name="subject" value="idea">
+						<div class="form__directions-item-inner">
+							<h3>своя идея</h3>
+							<p>Присылай новые идеи вне рамок!<br> Мы&nbsp;всегда открыты необычным проектам.</p>
+						</div>
+					</label>
+				</div>
+
+				<div class="form__inner">
+					<label class="form__label">
+						<span class="form__label-info">Фамилия имя</span>
+						<input class="form__label-input" type="text" name="name" data-required="text"
+							data-error="Пожалуйста, заполните это поле">
+					</label>
+					<label class="form__label">
+						<span class="form__label-info">Место реализации проекта</span>
+						<input class="form__label-input" type="text" name="place" data-required="text"
+							data-error="Пожалуйста, заполните это поле">
+					</label>
+					<label class="form__label">
+						<span class="form__label-info">Вид спорта</span>
+						<input class="form__label-input" type="text" name="sport" data-required="text"
+							data-error="Пожалуйста, заполните это поле">
+					</label>
+					<div class="form__labels">
+						<label class="form__label">
+							<span class="form__label-info">Телефон</span>
+							<input class="form__label-input js_input-tel" type="tel" name="phone" data-required="tel"
+								data-error="Введите корректный номер телефона">
+						</label>
+						<label class="form__label">
+							<span class="form__label-info">Email</span>
+							<input class="form__label-input" type="email" name="email" data-required="email"
+								data-error="Введите корректный email адрес">
+						</label>
+					</div>
+				</div>
+
+				<label class="form__textarea">
+					<textarea name="idea" placeholder="Опиши свою идею" data-required="textarea"
+						data-error="Длина текста должна быть не менее 50 символов"></textarea>
+				</label>
+
+				<label class="form__label">
+					<span class="form__label-info">Ссылка на материалы</span>
+					<input class="form__label-input" type="url" name="link" placeholder="Проверь, что доступ к ссылке открыт">
+				</label>
+
+				<div class="form__checkboxes">
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="proofAge" data-required="checkbox"
+							data-error="Пожалуйста, подтвердите свой возраст">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Мне есть 18 лет</p>
+						</div>
+					</label>
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="approval" data-required="checkbox"
+							data-error="Пожалуйста, подтвердите своё согласие">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Я даю свою согласие <a class="form__link" href="#" data-hystmodalFormInfo="#formApproval">на обработку
+									персональных данных</a></p>
+						</div>
+					</label>
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="approvalSubscribe" data-required="checkbox"
+							data-error="Пожалуйста, подтвердите своё согласие">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Я даю своё согласие <a class="form__link" href="#" data-hystmodalFormInfo="#formUnsubscribe">на
+									получение
+									рекламно-информационных рассылок</a> от ООО «Фонбет ТВ»,
+								<br>(ИНН 7703529560) и ООО «ФОНКОР» (ИНН: 7726752148).
+							</p>
+						</div>
+					</label>
+					<label class="form__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="approvalRules" data-required="checkbox"
+							data-error="Пожалуйста, подтвердите своё согласие">
+						<div class="checkbox__wrap">
+							<span class="checkbox__el"></span>
+							<p>Я согласен <a class="form__link" target="_blank" href="https://fon.bet/pages/fonteam">с правилами
+									акции</a></p>
+						</div>
+					</label>
+				</div>
+
+				<button class="form__btn btn" type="submit">Загрузить</button>
+			</form>
+		</div>
+	</div>
+</div> -->
+
+    <!-- <div class="thanks modal hystmodal" id="thanks" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="thanks__border">
+				<img src="img/page/modal-border.png" alt="">
+			</div>
+			<h2 class="thanks__title title">Спасибо, заявка принята!</h2>
+			<div class="thanks__info">
+				<p class="thanks__text">Анонс победителей состоится<br> в&nbsp;конце декабря 2023.</p>
+				<p class="thanks__sign">На&nbsp;связи,<br> Fonteam</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal--message modal hystmodal" id="formApproval" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button class="hystmodal__close js_close-form-info">Close</button>
+			<h2 class="thanks__title title">Согласие на обработку сведений</h2>
+			<p class="modal__txt">
+			<p>Заполняя Анкету для участия в&nbsp;Мероприятии, Участник подтверждает, что он&nbsp;согласен с&nbsp;тем, что
+				Организатор Мероприятия
+				(ООО &laquo;ФОНКОР&raquo;, ИНН 7726752148) осуществляет сбор и&nbsp;обработку персональных данных Участников
+				в&nbsp;целях:</p>
+			<p>1) организации и&nbsp;проведения Мероприятия, обеспечения возможности регистрации Участников
+				и&nbsp;их&nbsp;участия в&nbsp;Мероприятии посредством заполнения специальной формы, расположенной
+				на&nbsp;Интернет-ресурсе по&nbsp;адресу <a target="_blank"
+					href="https://fon.bet/promo/fonteam">https://fon.bet/promo/fonteam</a>;</p>
+			<p>2) передачи персональных данных Участников Оператору Мероприятия (ООО &laquo;Серф&raquo;, ИНН: 7725800310)
+				в&nbsp;целях осуществления коммуникации с&nbsp;Участниками по&nbsp;вопросам их&nbsp;участия в&nbsp;Мероприятии
+				и&nbsp;по&nbsp;вопросам, связанным с&nbsp;подведением итогов Мероприятия
+				(в&nbsp;том числе использование данных для отправки писем и&nbsp;сообщений по&nbsp;сетям электросвязи
+				в&nbsp;рамках Мероприятия и&nbsp;в&nbsp;целях обработки результатов Участников и&nbsp;подведения итогов
+				Мероприятия);</p>
+			<p>3) использования данных для отправки писем и&nbsp;сообщений от&nbsp;Организатора, или уполномоченного
+				им&nbsp;лица по&nbsp;сетям электросвязи
+				в&nbsp;рамках Мероприятия (обратной связи с&nbsp;Участниками по&nbsp;вопросам участия в&nbsp;Мероприятии);</p>
+			<p>4) использования данных для отправки по&nbsp;каналам электросвязи (электронная почта) рекламных
+				и&nbsp;информационных сообщений
+				от&nbsp;Организатора Мероприятия;</p>
+			<p>5) публикации итогов проведения Мероприятия на&nbsp;ресурсах Организатора.</p>
+			<p>Организатор Мероприятия , Оператор Мероприятия могут обрабатывать персональные данные Участника (включая
+				указанные Участником при регистрации, а&nbsp;именно: ФИО, номер телефона и&nbsp;адрес электронной почты,
+				а&nbsp;также иные персональные данные, направляемые Участником Организатору Мероприятия, Оператору Мероприятия
+				в&nbsp;рамках Мероприятия) посредством совершения действий, а&nbsp;именно: сбора, записи, систематизации,
+				накопления, хранения, уточнения (обновления, изменения), извлечения, использования, передачи (предоставления,
+				доступа), обезличивания, блокирования, удаления, уничтожения персональных данных.
+				Данное согласие действует в&nbsp;течение периода проведения Мероприятия, а&nbsp;также в&nbsp;течение 3&nbsp;лет
+				после окончания указанного периода, если оно не&nbsp;будет отозвано ранее путем направления письменного
+				заявления Организатору Мероприятия,
+				Оператору Мероприятия.</p>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="modal--message modal hystmodal" id="formUnsubscribe" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button class="hystmodal__close js_close-form-info">Close</button>
+			<h2 class="thanks__title title">Как отписаться от рассылки</h2>
+			<p class="modal__txt">
+				Отписаться от&nbsp;рассылки можно посредством направления письменного запроса направившему ее&nbsp;лицу или
+				посредством функциональных возможностей почтового сервиса, который я&nbsp;использую.
+			</p>
+		</div>
+	</div>
+</div> -->
+
+    <!-- <div class="final modal hystmodal" id="final" aria-hidden="true">
+	<div class="modal__wrap hystmodal__wrap">
+		<div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<h2 class="final__title title">Спасибо! Изучаем&nbsp;ваши&nbsp;идеи</h2>
+			<p class="final__subtitle">Мы&nbsp;получили все заявки, и&nbsp;рады,<br> что вокруг столько единомышленников.<br>
+				Это
+				по-настоящему важно.<br>
+				В&nbsp;декабре мы&nbsp;объявим 3&nbsp;проекта,<br> которые изменят отечественный спорт в&nbsp;2024&nbsp;году.
+			</p>
+			<p class="final__thanks">Спасибо!</p>
+			<p class="final__info">Благодарим всех, кто откликнулся.<br> Следите за&nbsp;обновлениями
+				в&nbsp;социальных&nbsp;сетях&nbsp;FONBET.</p>
+		</div>
+	</div>
+</div> -->
+
+    <div class="results modal hystmodal" id="results" aria-hidden="true">
+        <div class="modal__wrap hystmodal__wrap">
+            <div class="modal__window hystmodal__window" role="dialog" aria-modal="true">
+                <picture>
+                    <source srcset="img/results/bg-mob.png" type="image/png" media="(max-width: 575px)">
+                    <source srcset="img/results/bg-tablet.png" type="image/png" media="(max-width: 1199px)">
+                    <img class="results__bg" src="img/results/bg.png" alt="">
+                </picture>
+                <div class="results__line-top">
+                    <img src="img/results/line-1.png" alt="">
+                </div>
+                <button data-hystclose class="hystmodal__close">Close</button>
+                <div class="results__fonteam">
+                    <img src="img/results/fonteam.png" alt="">
+                </div>
+                <h2 class="results__title">итоги конкурса</h2>
+                <div class="results__info">
+                    <p class="results__info-text">Так выглядит тройка победителей, вместе с&nbsp;ними Fonteam будет менять спорт
+                        в&nbsp;2024&nbsp;году.</p>
+
+                    <div class="results__info-wrap">
+                        <p>Мы&nbsp;получили и&nbsp;прочитали более 1700 заявок со&nbsp;всей страны. Как проходило голосование
+                            за&nbsp;лучшие проекты, смотрите в&nbsp;новогоднем выпуске шоу &laquo;Это футбол, брат&raquo;.</p>
+                        <a class="results__info-btn btn" href="https://www.youtube.com/watch?v=WTNvSFrfM6Q" target="_blank">Смотреть</a>
+                    </div>
+
+                    <div class="results__line-bottom">
+                        <picture>
+                            <source srcset="img/results/line-2-tablet.png" type="image/png" media="(max-width: 1199px)">
+                            <img src="img/results/line-2.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="results__winners">
+                    <h3 class="results__winners-title">победители</h3>
+
+                    <div class="results__winners-wrap">
+                        <div class="results__winners-item">
+                            <div class="results__winners-item-head">
+                                <p class="results__winners-name">Ксения<br> Ковыршина</p>
+                                <p>Череповец, 18&nbsp;лет</p>
+                            </div>
+                            <p>&laquo;Помочь нашей команде выйти на&nbsp;новый уровень. Я&nbsp;играю за&nbsp;&bdquo;Атланту&ldquo;,
+                                женскую футбольную команду из&nbsp;Череповца. Тут почти нет команд, способных составить нам конкуренцию.
+                                Мы&nbsp;хотим расти, но&nbsp;есть ограничения&nbsp;&mdash; например, на&nbsp;все соревнования нам
+                                приходится ездить за&nbsp;свой счет, а&nbsp;также у&nbsp;нас нет даже скромного спорт-зала&raquo;.</p>
+                        </div>
+                        <div class="results__winners-item">
+                            <div class="results__winners-item-head">
+                                <p class="results__winners-name">Василий<br> Николаенко</p>
+                                <p>Байкальск, 30&nbsp;лет</p>
+                            </div>
+                            <p>&laquo;Построить или отреставрировать стадион в&nbsp;Байкальске. Наш город имеет все шансы стать первым
+                                эко-городом в&nbsp;России. Проведение больших футбольных матчей обеспечит к&nbsp;Байкальску туристический
+                                интерес, а&nbsp;это положительно повлияет и&nbsp;на&nbsp;инфраструктуру, и&nbsp;на&nbsp;экономику
+                                города&raquo;.</p>
+                        </div>
+                        <div class="results__winners-item">
+                            <div class="results__winners-item-head">
+                                <p class="results__winners-name">Павел<br> Рундзя</p>
+                                <p>Москва, 28&nbsp;лет</p>
+                            </div>
+                            <p>&laquo;Открыть передвижной музей российского хоккея в&nbsp;Москве, чтобы у&nbsp;начинающих спортсменов
+                                и&nbsp;болельщиков была возможность узнать историю КХЛ, увидеть артефакты и&nbsp;спортивный архив.
+                                В&nbsp;музее можно сделать интерактивные зоны, а&nbsp;также устраивать выездные выставки
+                                в&nbsp;регионах&raquo;.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a class="js_scroll-link" href="#about">о&nbsp;команде</a></li>
+                        <li><a class="js_scroll-link" href="#join">анкета</a></li>
+                        <li><a class="js_scroll-link" href="#players">игроки</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero" id="hero">
+                <div class="hero__border">
+                    <picture>
+                        <source srcset="img/hero/border-mob.png" type="image/png" media="(max-width: 778px)">
+                        <img src="img/hero/border.png" alt="">
+                    </picture>
+                </div>
+                <div class="hero__emblem">
+                    <img loading="lazy" src="img/hero/emblem.svg" alt="">
+                </div>
+                <div class="hero__est">
+                    <div class="hero__est-item"><span>est</span> <span>1994</span></div>
+                    <div class="hero__est-item"><span>est</span> <span>1994</span></div>
+                    <div class="hero__est-item"><span>est</span> <span>1994</span></div>
+                </div>
+                <div class="container">
+                    <h1 class="hero__title">ИГРАЕМ <span><span>по-</span>НАСТОЯЩЕМУ</span></h1>
+                    <div class="hero__wrap">
+                        <div class="hero__info">
+                            <p class="hero__descr">Команда амбассадоров Fonbet вместе с&nbsp;болельщиками меняет спортивную среду
+                                благодаря<br> по-настоящему важным проектам.</p>
+                            <a class="hero__btn btn js_scroll-link" href="#join">Присоединяйся!</a>
+                        </div>
+                        <div class="hero__img">
+                            <img loading="lazy" src="img/hero/photo.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about__text">
+                    <img loading="lazy" src="img/about/about.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="about__wrap">
+                        <div class="about__info">
+                            <h2 class="about__title">Fonteam&nbsp;&mdash; это команда героев современного спорта: от&nbsp;молодых
+                                звезд
+                                до&nbsp;легенд, от&nbsp;блогеров до&nbsp;журналистов.</h2>
+                            <div class="about__descr">
+                                <p>Мы&nbsp;собрались, чтобы бросить себе вызов в&nbsp;игре, где важны не&nbsp;пьедесталы, медали
+                                    и&nbsp;турнирные таблицы, а&nbsp;по-настоящему важные поступки за&nbsp;ними.</p>
+                                <p>У&nbsp;нас есть много идей
+                                    и&nbsp;проектов, которые сделают спорт лучше. У&nbsp;тебя тоже?<br> Тогда присоединяйся
+                                    к&nbsp;команде,
+                                    чтобы
+                                    создавать крутые решения вместе с&nbsp;FONBET</p>
+                            </div>
+                        </div>
+
+                        <div class="about__img">
+                            <img src="img/about/photo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="about__fonteam">
+                        <img loading="lazy" src="img/about/fonteam.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <img loading="lazy" class="info__bg" src="img/page/bg-el.png" alt="">
+                <section class="join" id="join">
+                    <div class="join__border">
+                        <img loading="lazy" src="img/join/border.png" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="join__wrap">
+                            <h2 class="join__title">присоединяйся к&nbsp;игре!</h2>
+                            <div class="join__steps">
+                                <div class="join__steps-item">
+                                    <h3 class="join__steps-item-name">предлагай</h3>
+                                    <p>идеи спортивных проектов<br> c&nbsp;16.10.23 по&nbsp;30.11.23 включительно</p>
+                                </div>
+                                <div class="join__steps-item">
+                                    <h3 class="join__steps-item-name">следи</h3>
+                                    <p>за&nbsp;анонсом выбранных Fonteam проектов&nbsp;в декабре 2023</p>
+                                </div>
+                                <div class="join__steps-item">
+                                    <h3 class="join__steps-item-name">выиграй</h3>
+                                    <p>реализацию своего проекта от&nbsp;Fonteam в&nbsp;2024&nbsp;году!</p>
+                                </div>
+                            </div>
+                            <a class="join__btn btn btn--white" href="#" data-hystmodalForm="#results">Вперёд!</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ideas">
+                    <div class="container">
+                        <div class="ideas__head">
+                            <h2 class="ideas__title title">отправляй идеи в&nbsp;разных направлениях</h2>
+                            <p>Присылай новые идеи вне рамок!<br> Мы&nbsp;всегда открыты необычным проектам.</p>
+                        </div>
+
+                        <div class="ideas__content js_ideas-slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="ideas__item">
+                                            <p class="ideas__item-name ideas__item-name--left">Места силы</p>
+                                            <img src="img/ideas/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ideas__item">
+                                            <p class="ideas__item-name ideas__item-name--bottom-right">команды</p>
+                                            <img src="img/ideas/2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ideas__item">
+                                            <p class="ideas__item-name">спортсмены</p>
+                                            <img src="img/ideas/3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="ideas__item">
+                                            <p class="ideas__item-name ideas__item-name--bottom">своя идея</p>
+                                            <img src="img/ideas/4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-nav">
+                                <button class="slider-nav__item slider-nav__item--prev js_btn-slide-prev" type="button" aria-label="Предыдущий">
+                                    <svg width="48" height="46" viewBox="0 0 48 46" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.4984 17.4472C12.9384 17.2372 13.4584 17.2372 13.7884 16.7772C14.3784 15.9472 15.1084 16.0072 15.9384 16.5872C16.1984 16.1672 16.3684 15.6972 16.6984 15.3872C16.9984 15.1072 17.4584 14.9972 17.8384 14.7872C18.9284 14.2072 20.0184 13.6272 21.2284 13.2972C21.6384 13.1872 22.0084 12.9272 22.3784 12.7072C23.1584 12.2672 24.0417 12.1139 25.0284 12.2472C25.1984 11.1372 26.0184 10.7672 26.9984 10.6572C27.6184 10.5872 28.2584 10.6372 28.5584 9.91719C28.5984 9.81719 28.7584 9.67719 28.8284 9.69719C30.0484 9.97719 30.7984 8.85719 31.8784 8.67719C32.5284 8.56719 33.3684 8.48719 33.5784 7.51719C33.6284 7.28719 34.1484 7.06719 34.4784 6.99719C35.1984 6.84719 35.9484 6.79719 36.7684 6.68719C36.9584 6.43719 37.1984 6.16719 37.3984 5.85719C37.8184 5.19719 38.3784 4.72719 39.1684 4.63719C40.2384 4.51719 40.9384 3.47719 42.0584 3.51719C42.1084 3.51719 42.1884 3.45719 42.1984 3.40719C42.3984 2.36719 43.4084 2.27719 44.0984 1.81719C44.8084 1.34719 45.5984 0.977188 46.2584 0.617188C47.0584 0.877187 47.3284 1.43719 47.6984 2.07719C47.5284 2.52719 47.4084 3.07719 47.1384 3.54719C46.5884 4.51719 46.1984 5.54719 45.7884 6.56719C45.5884 7.05719 45.1684 7.46719 44.8284 7.90719C44.3784 8.49719 43.8084 9.01719 43.4684 9.65719C42.6884 11.1472 41.7084 12.4672 40.4384 13.5772C40.2584 13.7372 40.0984 13.9472 39.9884 14.1572C39.4084 15.2572 38.4284 15.9272 37.3684 16.4272C35.7484 17.2072 34.1384 17.9772 32.6484 18.9972C32.3984 19.1672 32.1084 19.3272 31.8184 19.4072C30.1984 19.8872 28.8084 20.8172 27.3784 21.6772C27.0084 21.8972 26.6184 22.0872 26.2384 22.2972C24.5584 23.1872 22.8884 24.0772 21.2184 24.9672C21.2784 25.4872 21.6884 25.5372 22.0284 25.6372C25.1084 26.5572 28.1884 27.4572 31.2584 28.3772C32.4984 28.7472 33.7484 29.1172 34.9684 29.5672C36.8284 30.2572 38.2484 31.5072 39.3584 33.1272C39.6484 33.5572 39.8084 33.9972 39.6684 34.6272C39.4684 34.7472 39.2184 34.9272 38.9584 35.0572C38.3984 35.3272 37.8684 35.5772 37.5184 36.1572C37.3084 36.5072 36.8684 36.7172 36.5484 37.0072C36.1784 37.3372 35.7784 37.6372 35.4784 38.0272C34.5784 39.1972 33.5884 40.3372 32.8684 41.6172C31.9784 43.1872 30.5084 44.0972 29.3084 45.3872C28.1784 44.8172 27.1384 44.2772 26.0984 43.7672C25.5484 43.4972 24.9984 43.1372 24.4084 43.0272C23.3484 42.8372 22.8084 42.1772 22.4684 41.2572C23.2484 41.4172 24.0284 41.6072 24.8084 41.7372C24.9984 41.7672 25.2184 41.6472 25.5284 41.5672C25.0884 40.7172 24.4984 40.3672 23.7284 40.2272C22.9184 40.0772 22.6784 40.2972 22.5484 41.3372C21.4984 40.9872 20.7884 40.2872 20.3884 39.2572C20.0084 38.2772 19.4484 37.4172 18.7284 36.6472C18.4084 36.2972 18.2284 35.8172 17.9884 35.3972C17.7284 34.9272 17.4284 34.7372 17.1584 34.9172C16.8184 35.1372 16.8984 35.4372 17.0584 35.7172C17.5184 36.5072 17.2184 37.0972 16.5884 37.6172C16.2084 37.2772 16.2384 36.5672 15.4784 36.3972C15.4784 37.2972 16.0084 37.4872 16.6384 37.5772C16.5784 37.7472 16.5184 37.9172 16.4384 38.1372C15.5784 37.9272 14.7484 37.7372 13.9184 37.5172C13.3284 37.3572 13.1184 37.0772 13.0884 36.4472C13.0784 36.1472 13.1584 35.8272 13.1084 35.5372C13.0884 35.4072 12.8684 35.2972 12.7484 35.1872C11.8484 35.9739 10.8484 36.4772 9.74841 36.6972V38.1172L9.7984 38.0572C9.5184 38.1872 9.23841 38.3172 8.86841 38.4872C8.08841 37.9572 7.1884 37.6872 6.1584 37.8572C5.6884 37.9372 5.1684 37.8272 4.6884 37.7172C3.4884 37.4272 2.29841 37.1172 1.11841 36.7672C0.198409 36.4972 -0.0515918 36.0872 0.00840815 35.1272C0.0184082 34.9472 0.03841 34.7572 0.08841 34.5772C0.40841 33.3272 0.718411 32.0672 1.05841 30.8272C1.20841 30.2972 1.3284 29.7272 1.5984 29.2572C2.4584 27.8072 2.76841 26.1672 3.31841 24.6072C3.76841 23.3272 4.22841 22.0472 4.71841 20.7872C4.81841 20.5172 5.0484 20.2172 5.2984 20.0972C6.1284 19.6972 6.95841 19.2372 7.83841 19.0572C8.88841 18.8472 9.8484 18.5072 10.7984 18.0472C11.3484 17.7772 11.9484 17.6172 12.5184 17.4072C12.5384 17.5672 12.5684 17.7272 12.6084 18.0072C12.6284 17.8372 12.6584 17.7872 12.6384 17.7572C12.5984 17.6572 12.5384 17.5572 12.4884 17.4472H12.4984ZM23.5984 30.5872C23.3584 29.9272 23.1084 29.5272 22.3584 29.4172C22.5184 30.1372 22.7984 30.4872 23.5984 30.5872ZM19.8084 35.5172C19.7284 35.7072 19.6284 35.8472 19.6584 35.8972C19.7584 36.0272 19.8984 36.1372 20.0384 36.2172C20.0684 36.2372 20.1984 36.0972 20.2784 36.0372C20.1284 35.8772 19.9884 35.7072 19.8084 35.5172ZM22.0684 36.8772C21.9884 36.8372 21.8984 36.7972 21.8084 36.7672C21.8084 36.7672 21.7684 36.8572 21.7384 36.8972C21.8184 36.9372 21.9084 36.9772 21.9884 37.0072C21.9884 37.0072 22.0284 36.9172 22.0584 36.8672L22.0684 36.8772ZM15.2884 34.8472C15.2884 34.8472 15.1984 34.8872 15.1484 34.9172C15.1884 34.9972 15.2284 35.0772 15.2784 35.1472C15.2784 35.1472 15.3584 35.1072 15.4084 35.0872C15.3684 35.0072 15.3184 34.9372 15.2784 34.8572L15.2884 34.8472ZM21.7684 39.4072C21.7684 39.4072 21.8584 39.3672 21.9084 39.3472C21.8684 39.2672 21.8284 39.1872 21.7884 39.1072C21.7884 39.1072 21.6984 39.1472 21.6584 39.1572C21.6984 39.2372 21.7384 39.3172 21.7784 39.3972L21.7684 39.4072ZM28.5684 31.8972C28.4484 31.8772 28.3684 31.8672 28.2884 31.8472C28.3184 31.8872 28.3384 31.9572 28.3784 31.9572C28.4284 31.9572 28.4884 31.9272 28.5684 31.8972ZM14.3484 33.0472L14.3284 33.1572L14.4284 33.1272L14.3484 33.0472Z" />
+                                    </svg>
+
+                                </button>
+
+                                <button class="slider-nav__item js_btn-slide-next" type="button" aria-label="Следующий">
+                                    <svg width="48" height="40" viewBox="0 0 48 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0492 7.41719C16.5592 8.15719 17.3692 7.91719 18.0792 8.09719C18.3792 7.81719 18.6492 7.56719 18.9192 7.30719C19.6392 6.61719 20.4092 6.29719 21.4392 6.70719C22.1192 6.97719 22.8892 6.99719 23.6192 7.10719C23.8592 7.14719 24.1392 7.16719 24.3492 7.07719C24.5392 6.99719 24.7792 6.76719 24.7792 6.59719C24.7792 6.42719 24.5492 6.14719 24.3692 6.09719C24.0892 6.02719 23.7592 6.12719 23.4492 6.11719C23.2092 6.11719 22.9292 6.11719 22.7292 5.99719C22.5592 5.89719 22.4192 5.64719 22.3792 5.44719C22.3592 5.35719 22.5992 5.11719 22.7292 5.09719C23.1492 5.05719 23.5892 5.09719 24.0192 5.09719C24.9192 5.09719 25.8292 5.32719 26.9292 5.00719C26.1492 4.30719 25.0792 4.73719 24.5092 4.01719C26.2392 3.38719 27.9792 3.31719 29.8092 3.73719C29.7892 3.89719 29.7692 4.12719 29.7392 4.44719C30.4592 4.67719 31.1792 4.61719 31.8592 4.30719C32.4492 4.03719 33.0092 4.00719 33.6492 4.08719C34.4992 4.19719 35.3792 4.15719 36.2392 4.17719C36.8192 4.19719 37.3092 4.13719 37.6392 3.50719C37.7592 3.26719 38.2692 3.13719 38.5992 3.12719C39.6492 3.09719 40.7092 3.08719 41.7492 3.19719C43.2392 3.33719 44.6892 2.80719 46.1892 3.06719C46.4392 3.10719 46.7392 2.86719 47.0992 2.72719C47.2492 3.04719 47.3992 3.38719 47.5692 3.70719C47.8392 4.24719 47.7992 4.75719 47.5692 5.31719C46.9192 6.91719 46.3092 8.54719 45.6692 10.1472C45.5592 10.4272 45.3792 10.6872 45.2292 10.9572C44.9792 11.3872 44.6192 11.7772 44.4992 12.2372C44.0592 13.8572 43.0292 15.2072 42.4392 16.7572C41.9392 18.0672 41.0992 19.0272 39.8292 19.7572C38.2292 20.6672 36.5692 21.4772 35.0192 22.5172C33.1392 23.7872 30.9892 24.6672 28.9792 25.7472C25.2792 27.7472 21.6092 29.7772 17.9092 31.7872C16.6592 32.4672 15.3892 33.1072 14.1392 33.7872C12.1192 34.8672 10.1092 35.9572 8.09921 37.0672C6.52921 37.9272 4.97921 38.8272 3.40921 39.6972C2.50921 40.1972 2.04921 40.0772 1.34921 39.2072C1.11921 38.9272 0.929219 38.6072 0.699219 38.2672C1.51922 36.3172 2.86923 34.8072 4.23923 33.3072C4.52923 32.9972 4.79921 32.6772 5.06921 32.3472C5.18921 32.2072 5.2292 31.9672 5.3692 31.8872C6.6592 31.1572 7.28922 29.8172 8.29922 28.8272C8.81923 28.3172 9.41921 27.8672 10.0292 27.4472C11.5592 26.3972 13.1092 25.3772 14.6592 24.3472C14.8692 24.2072 15.0492 24.0172 15.2692 23.9272C17.1392 23.2072 18.7192 21.9972 20.3592 20.8872C21.9992 19.7872 23.6392 18.6872 25.3692 17.7372C25.5292 17.6472 25.6692 17.5172 25.7992 17.3972C26.0292 17.1872 25.9492 16.7072 25.6692 16.6072C25.3792 16.5072 25.0792 16.4172 24.7792 16.3972C21.4892 16.2472 18.2992 15.4272 15.0692 14.8472C13.2992 14.5272 11.5392 14.2072 9.76923 13.8872C9.46923 13.8372 9.15921 13.7772 8.84921 13.7572C6.59921 13.6072 5.13921 12.2072 3.84921 10.5772C3.23921 9.80719 3.31922 9.32719 4.13922 8.71719C4.92922 8.13719 5.79922 7.69719 6.54922 7.02719C7.88923 5.83719 9.22921 4.66719 10.3792 3.27719C11.0692 2.43719 11.9592 1.73719 12.8192 1.04719C13.1192 0.807188 13.5992 0.787188 14.1392 0.617188C14.1892 1.02719 14.2392 1.31719 14.2392 1.60719C14.2692 2.58719 14.3792 2.77719 15.3092 3.02719C15.9092 3.18719 16.5192 3.27719 16.9792 3.68719C17.2292 4.30719 16.5792 4.40719 16.4192 4.77719C16.1692 5.33719 16.1792 5.52719 16.7392 6.02719C16.8692 6.14719 17.0192 6.25719 17.1792 6.38719C17.0992 6.74719 17.0292 7.09719 16.9392 7.52719C16.5992 7.47719 16.2992 7.43719 15.9992 7.38719C15.3392 7.38719 14.9092 7.12719 14.9492 6.40719C14.9692 5.97719 15.0792 5.55719 15.0792 5.13719C15.0792 4.78719 15.0492 4.37719 14.4292 4.31719C14.2592 4.65719 14.0392 5.01719 13.9092 5.40719C13.5492 6.42719 14.0292 7.23719 15.0992 7.43719C15.3892 7.48719 15.7092 7.41719 16.0192 7.39719L16.0492 7.41719ZM25.9292 7.75719C25.9092 7.90719 25.8992 8.06719 25.9292 7.81719C25.9492 8.06719 25.9292 7.90719 25.9292 7.75719C26.1392 7.81719 26.3392 7.87719 26.5492 7.93719C26.5592 7.89719 26.5692 7.84719 26.5792 7.80719C26.3592 7.78719 26.1492 7.76719 25.9292 7.74719V7.75719ZM34.1292 9.64719C33.3092 9.63719 32.4892 9.62719 31.5692 9.60719C31.7492 9.29719 31.7992 9.08719 31.9292 8.99719C32.5592 8.56719 32.1492 8.02719 32.1292 7.52719C31.2192 7.12719 31.5092 6.11719 31.0792 5.36719C30.1892 5.00719 29.2692 4.92719 28.2692 5.15719C28.4592 5.82719 29.0492 5.57719 29.3592 5.82719C29.4892 5.93719 29.6992 6.12719 29.6692 6.23719C29.6192 6.43719 29.4692 6.67719 29.2892 6.77719C28.9392 6.97719 28.5392 7.08719 28.1792 7.22719C28.4592 8.47719 29.6092 8.15719 30.3792 8.62719C30.2892 9.39719 30.5992 10.0072 31.3992 10.1172C32.1292 10.2172 32.8692 10.1972 33.6092 10.1472C33.7892 10.1372 33.9392 9.81719 34.1192 9.65719C34.3592 9.69719 34.5992 9.77719 34.8392 9.76719C35.1392 9.76719 35.4392 9.71719 35.7192 9.60719C35.8392 9.55719 35.8792 9.32719 35.9592 9.16719C35.7592 9.08719 35.5092 8.88719 35.3692 8.94719C34.9392 9.12719 34.5492 9.40719 34.1392 9.65719L34.1292 9.64719ZM21.8092 8.50719C22.0492 8.63719 22.2092 8.78719 22.3292 8.76719C22.6592 8.71719 22.9092 8.47719 22.8292 8.13719C22.7892 7.97719 22.4992 7.87719 22.3192 7.75719C22.1692 7.98719 22.0092 8.21719 21.8092 8.50719ZM23.7492 8.65719C23.8692 8.83719 23.9392 8.99719 23.9692 8.99719C24.1792 8.93719 24.3692 8.83719 24.5692 8.75719C24.5192 8.66719 24.4492 8.49719 24.4092 8.50719C24.1992 8.52719 23.9892 8.60719 23.7492 8.66719V8.65719ZM26.1092 6.87719C26.2392 7.01719 26.3092 7.14719 26.3692 7.14719C26.5292 7.13719 26.6892 7.07719 26.8392 7.01719C26.8492 7.01719 26.7892 6.76719 26.7792 6.76719C26.5692 6.78719 26.3692 6.83719 26.1092 6.88719V6.87719ZM25.8092 9.27719C25.9092 9.31719 26.0192 9.36719 26.1192 9.36719C26.1592 9.36719 26.1992 9.23719 26.2392 9.16719C26.1792 9.15719 26.1192 9.11719 26.0692 9.13719C25.9792 9.16719 25.8892 9.22719 25.7992 9.27719H25.8092ZM33.9392 7.75719C33.9592 7.69719 34.0092 7.63719 33.9992 7.59719C33.9892 7.55719 33.9092 7.52719 33.8692 7.49719C33.8392 7.58719 33.7992 7.67719 33.7692 7.75719H33.9392ZM39.9892 4.35719C40.0492 4.43719 40.0992 4.54719 40.1792 4.57719C40.2392 4.59719 40.3392 4.50719 40.4192 4.46719C40.3592 4.38719 40.3092 4.26719 40.2292 4.23719C40.1692 4.21719 40.0692 4.30719 39.9892 4.35719ZM19.5492 8.21719C19.5392 8.26719 19.5092 8.35719 19.5192 8.36719C19.6092 8.40719 19.6992 8.42719 19.7892 8.45719C19.7992 8.40719 19.8292 8.31719 19.8192 8.30719C19.7292 8.26719 19.6392 8.24719 19.5492 8.21719ZM27.9692 3.97719C27.9692 3.97719 27.8692 3.95719 27.8292 3.97719C27.8092 3.97719 27.8192 4.05719 27.8092 4.09719C27.8592 4.09719 27.9092 4.11719 27.9492 4.09719C27.9692 4.09719 27.9592 4.01719 27.9692 3.97719Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="players" id="players">
+                <div class="container">
+                    <h2 class="players__title">игроки
+                        <img loading="lazy" src="img/players/fonteam-text.png" alt="">
+                    </h2>
+                    <div class="players__content js_players-slider">
+                        <div class="players__content-inner">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="players__item players__item--1">
+                                            <img src="img/players/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="players__item players__item--2">
+                                            <img src="img/players/2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="players__item players__item--3">
+                                            <img src="img/players/3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="players__item players__item--4">
+                                            <img src="img/players/4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="players__item players__item--5">
+                                            <img src="img/players/5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="players__item players__item--6">
+                                            <img src="img/players/6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="players__item players__item--7">
+                                            <img src="img/players/7.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-nav">
+                                <button class="slider-nav__item slider-nav__item--prev js_btn-slide-prev" type="button" aria-label="Предыдущий">
+                                    <svg width="48" height="46" viewBox="0 0 48 46" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.4984 17.4472C12.9384 17.2372 13.4584 17.2372 13.7884 16.7772C14.3784 15.9472 15.1084 16.0072 15.9384 16.5872C16.1984 16.1672 16.3684 15.6972 16.6984 15.3872C16.9984 15.1072 17.4584 14.9972 17.8384 14.7872C18.9284 14.2072 20.0184 13.6272 21.2284 13.2972C21.6384 13.1872 22.0084 12.9272 22.3784 12.7072C23.1584 12.2672 24.0417 12.1139 25.0284 12.2472C25.1984 11.1372 26.0184 10.7672 26.9984 10.6572C27.6184 10.5872 28.2584 10.6372 28.5584 9.91719C28.5984 9.81719 28.7584 9.67719 28.8284 9.69719C30.0484 9.97719 30.7984 8.85719 31.8784 8.67719C32.5284 8.56719 33.3684 8.48719 33.5784 7.51719C33.6284 7.28719 34.1484 7.06719 34.4784 6.99719C35.1984 6.84719 35.9484 6.79719 36.7684 6.68719C36.9584 6.43719 37.1984 6.16719 37.3984 5.85719C37.8184 5.19719 38.3784 4.72719 39.1684 4.63719C40.2384 4.51719 40.9384 3.47719 42.0584 3.51719C42.1084 3.51719 42.1884 3.45719 42.1984 3.40719C42.3984 2.36719 43.4084 2.27719 44.0984 1.81719C44.8084 1.34719 45.5984 0.977188 46.2584 0.617188C47.0584 0.877187 47.3284 1.43719 47.6984 2.07719C47.5284 2.52719 47.4084 3.07719 47.1384 3.54719C46.5884 4.51719 46.1984 5.54719 45.7884 6.56719C45.5884 7.05719 45.1684 7.46719 44.8284 7.90719C44.3784 8.49719 43.8084 9.01719 43.4684 9.65719C42.6884 11.1472 41.7084 12.4672 40.4384 13.5772C40.2584 13.7372 40.0984 13.9472 39.9884 14.1572C39.4084 15.2572 38.4284 15.9272 37.3684 16.4272C35.7484 17.2072 34.1384 17.9772 32.6484 18.9972C32.3984 19.1672 32.1084 19.3272 31.8184 19.4072C30.1984 19.8872 28.8084 20.8172 27.3784 21.6772C27.0084 21.8972 26.6184 22.0872 26.2384 22.2972C24.5584 23.1872 22.8884 24.0772 21.2184 24.9672C21.2784 25.4872 21.6884 25.5372 22.0284 25.6372C25.1084 26.5572 28.1884 27.4572 31.2584 28.3772C32.4984 28.7472 33.7484 29.1172 34.9684 29.5672C36.8284 30.2572 38.2484 31.5072 39.3584 33.1272C39.6484 33.5572 39.8084 33.9972 39.6684 34.6272C39.4684 34.7472 39.2184 34.9272 38.9584 35.0572C38.3984 35.3272 37.8684 35.5772 37.5184 36.1572C37.3084 36.5072 36.8684 36.7172 36.5484 37.0072C36.1784 37.3372 35.7784 37.6372 35.4784 38.0272C34.5784 39.1972 33.5884 40.3372 32.8684 41.6172C31.9784 43.1872 30.5084 44.0972 29.3084 45.3872C28.1784 44.8172 27.1384 44.2772 26.0984 43.7672C25.5484 43.4972 24.9984 43.1372 24.4084 43.0272C23.3484 42.8372 22.8084 42.1772 22.4684 41.2572C23.2484 41.4172 24.0284 41.6072 24.8084 41.7372C24.9984 41.7672 25.2184 41.6472 25.5284 41.5672C25.0884 40.7172 24.4984 40.3672 23.7284 40.2272C22.9184 40.0772 22.6784 40.2972 22.5484 41.3372C21.4984 40.9872 20.7884 40.2872 20.3884 39.2572C20.0084 38.2772 19.4484 37.4172 18.7284 36.6472C18.4084 36.2972 18.2284 35.8172 17.9884 35.3972C17.7284 34.9272 17.4284 34.7372 17.1584 34.9172C16.8184 35.1372 16.8984 35.4372 17.0584 35.7172C17.5184 36.5072 17.2184 37.0972 16.5884 37.6172C16.2084 37.2772 16.2384 36.5672 15.4784 36.3972C15.4784 37.2972 16.0084 37.4872 16.6384 37.5772C16.5784 37.7472 16.5184 37.9172 16.4384 38.1372C15.5784 37.9272 14.7484 37.7372 13.9184 37.5172C13.3284 37.3572 13.1184 37.0772 13.0884 36.4472C13.0784 36.1472 13.1584 35.8272 13.1084 35.5372C13.0884 35.4072 12.8684 35.2972 12.7484 35.1872C11.8484 35.9739 10.8484 36.4772 9.74841 36.6972V38.1172L9.7984 38.0572C9.5184 38.1872 9.23841 38.3172 8.86841 38.4872C8.08841 37.9572 7.1884 37.6872 6.1584 37.8572C5.6884 37.9372 5.1684 37.8272 4.6884 37.7172C3.4884 37.4272 2.29841 37.1172 1.11841 36.7672C0.198409 36.4972 -0.0515918 36.0872 0.00840815 35.1272C0.0184082 34.9472 0.03841 34.7572 0.08841 34.5772C0.40841 33.3272 0.718411 32.0672 1.05841 30.8272C1.20841 30.2972 1.3284 29.7272 1.5984 29.2572C2.4584 27.8072 2.76841 26.1672 3.31841 24.6072C3.76841 23.3272 4.22841 22.0472 4.71841 20.7872C4.81841 20.5172 5.0484 20.2172 5.2984 20.0972C6.1284 19.6972 6.95841 19.2372 7.83841 19.0572C8.88841 18.8472 9.8484 18.5072 10.7984 18.0472C11.3484 17.7772 11.9484 17.6172 12.5184 17.4072C12.5384 17.5672 12.5684 17.7272 12.6084 18.0072C12.6284 17.8372 12.6584 17.7872 12.6384 17.7572C12.5984 17.6572 12.5384 17.5572 12.4884 17.4472H12.4984ZM23.5984 30.5872C23.3584 29.9272 23.1084 29.5272 22.3584 29.4172C22.5184 30.1372 22.7984 30.4872 23.5984 30.5872ZM19.8084 35.5172C19.7284 35.7072 19.6284 35.8472 19.6584 35.8972C19.7584 36.0272 19.8984 36.1372 20.0384 36.2172C20.0684 36.2372 20.1984 36.0972 20.2784 36.0372C20.1284 35.8772 19.9884 35.7072 19.8084 35.5172ZM22.0684 36.8772C21.9884 36.8372 21.8984 36.7972 21.8084 36.7672C21.8084 36.7672 21.7684 36.8572 21.7384 36.8972C21.8184 36.9372 21.9084 36.9772 21.9884 37.0072C21.9884 37.0072 22.0284 36.9172 22.0584 36.8672L22.0684 36.8772ZM15.2884 34.8472C15.2884 34.8472 15.1984 34.8872 15.1484 34.9172C15.1884 34.9972 15.2284 35.0772 15.2784 35.1472C15.2784 35.1472 15.3584 35.1072 15.4084 35.0872C15.3684 35.0072 15.3184 34.9372 15.2784 34.8572L15.2884 34.8472ZM21.7684 39.4072C21.7684 39.4072 21.8584 39.3672 21.9084 39.3472C21.8684 39.2672 21.8284 39.1872 21.7884 39.1072C21.7884 39.1072 21.6984 39.1472 21.6584 39.1572C21.6984 39.2372 21.7384 39.3172 21.7784 39.3972L21.7684 39.4072ZM28.5684 31.8972C28.4484 31.8772 28.3684 31.8672 28.2884 31.8472C28.3184 31.8872 28.3384 31.9572 28.3784 31.9572C28.4284 31.9572 28.4884 31.9272 28.5684 31.8972ZM14.3484 33.0472L14.3284 33.1572L14.4284 33.1272L14.3484 33.0472Z" />
+                                    </svg>
+
+                                </button>
+
+                                <button class="slider-nav__item js_btn-slide-next" type="button" aria-label="Следующий">
+                                    <svg width="48" height="40" viewBox="0 0 48 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0492 7.41719C16.5592 8.15719 17.3692 7.91719 18.0792 8.09719C18.3792 7.81719 18.6492 7.56719 18.9192 7.30719C19.6392 6.61719 20.4092 6.29719 21.4392 6.70719C22.1192 6.97719 22.8892 6.99719 23.6192 7.10719C23.8592 7.14719 24.1392 7.16719 24.3492 7.07719C24.5392 6.99719 24.7792 6.76719 24.7792 6.59719C24.7792 6.42719 24.5492 6.14719 24.3692 6.09719C24.0892 6.02719 23.7592 6.12719 23.4492 6.11719C23.2092 6.11719 22.9292 6.11719 22.7292 5.99719C22.5592 5.89719 22.4192 5.64719 22.3792 5.44719C22.3592 5.35719 22.5992 5.11719 22.7292 5.09719C23.1492 5.05719 23.5892 5.09719 24.0192 5.09719C24.9192 5.09719 25.8292 5.32719 26.9292 5.00719C26.1492 4.30719 25.0792 4.73719 24.5092 4.01719C26.2392 3.38719 27.9792 3.31719 29.8092 3.73719C29.7892 3.89719 29.7692 4.12719 29.7392 4.44719C30.4592 4.67719 31.1792 4.61719 31.8592 4.30719C32.4492 4.03719 33.0092 4.00719 33.6492 4.08719C34.4992 4.19719 35.3792 4.15719 36.2392 4.17719C36.8192 4.19719 37.3092 4.13719 37.6392 3.50719C37.7592 3.26719 38.2692 3.13719 38.5992 3.12719C39.6492 3.09719 40.7092 3.08719 41.7492 3.19719C43.2392 3.33719 44.6892 2.80719 46.1892 3.06719C46.4392 3.10719 46.7392 2.86719 47.0992 2.72719C47.2492 3.04719 47.3992 3.38719 47.5692 3.70719C47.8392 4.24719 47.7992 4.75719 47.5692 5.31719C46.9192 6.91719 46.3092 8.54719 45.6692 10.1472C45.5592 10.4272 45.3792 10.6872 45.2292 10.9572C44.9792 11.3872 44.6192 11.7772 44.4992 12.2372C44.0592 13.8572 43.0292 15.2072 42.4392 16.7572C41.9392 18.0672 41.0992 19.0272 39.8292 19.7572C38.2292 20.6672 36.5692 21.4772 35.0192 22.5172C33.1392 23.7872 30.9892 24.6672 28.9792 25.7472C25.2792 27.7472 21.6092 29.7772 17.9092 31.7872C16.6592 32.4672 15.3892 33.1072 14.1392 33.7872C12.1192 34.8672 10.1092 35.9572 8.09921 37.0672C6.52921 37.9272 4.97921 38.8272 3.40921 39.6972C2.50921 40.1972 2.04921 40.0772 1.34921 39.2072C1.11921 38.9272 0.929219 38.6072 0.699219 38.2672C1.51922 36.3172 2.86923 34.8072 4.23923 33.3072C4.52923 32.9972 4.79921 32.6772 5.06921 32.3472C5.18921 32.2072 5.2292 31.9672 5.3692 31.8872C6.6592 31.1572 7.28922 29.8172 8.29922 28.8272C8.81923 28.3172 9.41921 27.8672 10.0292 27.4472C11.5592 26.3972 13.1092 25.3772 14.6592 24.3472C14.8692 24.2072 15.0492 24.0172 15.2692 23.9272C17.1392 23.2072 18.7192 21.9972 20.3592 20.8872C21.9992 19.7872 23.6392 18.6872 25.3692 17.7372C25.5292 17.6472 25.6692 17.5172 25.7992 17.3972C26.0292 17.1872 25.9492 16.7072 25.6692 16.6072C25.3792 16.5072 25.0792 16.4172 24.7792 16.3972C21.4892 16.2472 18.2992 15.4272 15.0692 14.8472C13.2992 14.5272 11.5392 14.2072 9.76923 13.8872C9.46923 13.8372 9.15921 13.7772 8.84921 13.7572C6.59921 13.6072 5.13921 12.2072 3.84921 10.5772C3.23921 9.80719 3.31922 9.32719 4.13922 8.71719C4.92922 8.13719 5.79922 7.69719 6.54922 7.02719C7.88923 5.83719 9.22921 4.66719 10.3792 3.27719C11.0692 2.43719 11.9592 1.73719 12.8192 1.04719C13.1192 0.807188 13.5992 0.787188 14.1392 0.617188C14.1892 1.02719 14.2392 1.31719 14.2392 1.60719C14.2692 2.58719 14.3792 2.77719 15.3092 3.02719C15.9092 3.18719 16.5192 3.27719 16.9792 3.68719C17.2292 4.30719 16.5792 4.40719 16.4192 4.77719C16.1692 5.33719 16.1792 5.52719 16.7392 6.02719C16.8692 6.14719 17.0192 6.25719 17.1792 6.38719C17.0992 6.74719 17.0292 7.09719 16.9392 7.52719C16.5992 7.47719 16.2992 7.43719 15.9992 7.38719C15.3392 7.38719 14.9092 7.12719 14.9492 6.40719C14.9692 5.97719 15.0792 5.55719 15.0792 5.13719C15.0792 4.78719 15.0492 4.37719 14.4292 4.31719C14.2592 4.65719 14.0392 5.01719 13.9092 5.40719C13.5492 6.42719 14.0292 7.23719 15.0992 7.43719C15.3892 7.48719 15.7092 7.41719 16.0192 7.39719L16.0492 7.41719ZM25.9292 7.75719C25.9092 7.90719 25.8992 8.06719 25.9292 7.81719C25.9492 8.06719 25.9292 7.90719 25.9292 7.75719C26.1392 7.81719 26.3392 7.87719 26.5492 7.93719C26.5592 7.89719 26.5692 7.84719 26.5792 7.80719C26.3592 7.78719 26.1492 7.76719 25.9292 7.74719V7.75719ZM34.1292 9.64719C33.3092 9.63719 32.4892 9.62719 31.5692 9.60719C31.7492 9.29719 31.7992 9.08719 31.9292 8.99719C32.5592 8.56719 32.1492 8.02719 32.1292 7.52719C31.2192 7.12719 31.5092 6.11719 31.0792 5.36719C30.1892 5.00719 29.2692 4.92719 28.2692 5.15719C28.4592 5.82719 29.0492 5.57719 29.3592 5.82719C29.4892 5.93719 29.6992 6.12719 29.6692 6.23719C29.6192 6.43719 29.4692 6.67719 29.2892 6.77719C28.9392 6.97719 28.5392 7.08719 28.1792 7.22719C28.4592 8.47719 29.6092 8.15719 30.3792 8.62719C30.2892 9.39719 30.5992 10.0072 31.3992 10.1172C32.1292 10.2172 32.8692 10.1972 33.6092 10.1472C33.7892 10.1372 33.9392 9.81719 34.1192 9.65719C34.3592 9.69719 34.5992 9.77719 34.8392 9.76719C35.1392 9.76719 35.4392 9.71719 35.7192 9.60719C35.8392 9.55719 35.8792 9.32719 35.9592 9.16719C35.7592 9.08719 35.5092 8.88719 35.3692 8.94719C34.9392 9.12719 34.5492 9.40719 34.1392 9.65719L34.1292 9.64719ZM21.8092 8.50719C22.0492 8.63719 22.2092 8.78719 22.3292 8.76719C22.6592 8.71719 22.9092 8.47719 22.8292 8.13719C22.7892 7.97719 22.4992 7.87719 22.3192 7.75719C22.1692 7.98719 22.0092 8.21719 21.8092 8.50719ZM23.7492 8.65719C23.8692 8.83719 23.9392 8.99719 23.9692 8.99719C24.1792 8.93719 24.3692 8.83719 24.5692 8.75719C24.5192 8.66719 24.4492 8.49719 24.4092 8.50719C24.1992 8.52719 23.9892 8.60719 23.7492 8.66719V8.65719ZM26.1092 6.87719C26.2392 7.01719 26.3092 7.14719 26.3692 7.14719C26.5292 7.13719 26.6892 7.07719 26.8392 7.01719C26.8492 7.01719 26.7892 6.76719 26.7792 6.76719C26.5692 6.78719 26.3692 6.83719 26.1092 6.88719V6.87719ZM25.8092 9.27719C25.9092 9.31719 26.0192 9.36719 26.1192 9.36719C26.1592 9.36719 26.1992 9.23719 26.2392 9.16719C26.1792 9.15719 26.1192 9.11719 26.0692 9.13719C25.9792 9.16719 25.8892 9.22719 25.7992 9.27719H25.8092ZM33.9392 7.75719C33.9592 7.69719 34.0092 7.63719 33.9992 7.59719C33.9892 7.55719 33.9092 7.52719 33.8692 7.49719C33.8392 7.58719 33.7992 7.67719 33.7692 7.75719H33.9392ZM39.9892 4.35719C40.0492 4.43719 40.0992 4.54719 40.1792 4.57719C40.2392 4.59719 40.3392 4.50719 40.4192 4.46719C40.3592 4.38719 40.3092 4.26719 40.2292 4.23719C40.1692 4.21719 40.0692 4.30719 39.9892 4.35719ZM19.5492 8.21719C19.5392 8.26719 19.5092 8.35719 19.5192 8.36719C19.6092 8.40719 19.6992 8.42719 19.7892 8.45719C19.7992 8.40719 19.8292 8.31719 19.8192 8.30719C19.7292 8.26719 19.6392 8.24719 19.5492 8.21719ZM27.9692 3.97719C27.9692 3.97719 27.8692 3.95719 27.8292 3.97719C27.8092 3.97719 27.8192 4.05719 27.8092 4.09719C27.8592 4.09719 27.9092 4.11719 27.9492 4.09719C27.9692 4.09719 27.9592 4.01719 27.9692 3.97719Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="players__btn btn js_players-all" type="button">Все игроки</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <a class="btn-up js_scroll-link js_btn-up" href="#hero">
+            <svg width="31" height="63" viewBox="0 0 31 63" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.70253 25.4098C6.27634 25.0144 6.09024 24.3863 6.22981 23.8357C6.0127 23.6031 5.81884 23.3937 5.61723 23.1844C5.08219 22.6261 4.83406 22.029 5.15198 21.2303C5.36134 20.7031 5.37685 20.106 5.46215 19.5399C5.49317 19.3538 5.50867 19.1367 5.43889 18.9739C5.37685 18.8265 5.19851 18.6404 5.06669 18.6404C4.93486 18.6404 4.71775 18.8188 4.67898 18.9584C4.6247 19.1755 4.70224 19.4314 4.69449 19.6717C4.69449 19.8578 4.69448 20.075 4.60143 20.23C4.52389 20.3619 4.33004 20.4704 4.17495 20.5014C4.10517 20.517 3.91907 20.3309 3.90356 20.23C3.87254 19.9044 3.90356 19.5632 3.90356 19.2297C3.90356 18.5319 4.0819 17.8262 3.83377 16.9733C3.29098 17.5781 3.62441 18.4078 3.06611 18.8498C2.57759 17.5083 2.52331 16.1591 2.84899 14.7401C2.97306 14.7556 3.1514 14.7711 3.39954 14.7944C3.57788 14.2361 3.53136 13.6778 3.29098 13.1505C3.08162 12.693 3.05835 12.2587 3.12039 11.7625C3.20568 11.1034 3.17467 10.421 3.19017 9.75414C3.20568 9.3044 3.15916 8.92445 2.67064 8.66856C2.48454 8.57551 2.38374 8.18006 2.37599 7.92417C2.35272 7.10998 2.34497 6.28804 2.43026 5.48161C2.53882 4.32623 2.12785 3.20188 2.32946 2.03875C2.36048 1.84489 2.17438 1.61227 2.06582 1.33311C2.31395 1.2168 2.57759 1.10049 2.82573 0.96867C3.24445 0.759304 3.63992 0.790321 4.07415 0.96867C5.31482 1.47269 6.57875 1.94569 7.81942 2.44196C8.03654 2.52725 8.23814 2.66683 8.44751 2.78314C8.78094 2.977 9.08335 3.25616 9.44004 3.34921C10.6962 3.69039 11.743 4.48907 12.9449 4.94657C13.9607 5.33427 14.7051 5.98561 15.2712 6.9704C15.9768 8.21106 16.6049 9.49825 17.4113 10.7002C18.3961 12.1579 19.0785 13.8251 19.9159 15.3837C21.4668 18.2527 23.0409 21.0985 24.5995 23.9676C25.1267 24.9368 25.623 25.9216 26.1503 26.8909C26.9877 28.4572 27.833 30.0158 28.6937 31.5744C29.3605 32.7918 30.0584 33.9937 30.733 35.2111C31.1207 35.909 31.0277 36.2657 30.3531 36.8085C30.1359 36.9868 29.8878 37.1342 29.6242 37.3125C28.1121 36.6767 26.9412 35.6298 25.7781 34.5675C25.5377 34.3426 25.2896 34.1333 25.0337 33.9239C24.9251 33.8309 24.739 33.7999 24.677 33.6913C24.1109 32.691 23.0719 32.2025 22.3042 31.4193C21.9088 31.0161 21.5598 30.5509 21.2341 30.0779C20.42 28.8915 19.629 27.6896 18.8304 26.4877C18.7218 26.3248 18.5745 26.1852 18.5047 26.0147C17.9464 24.5646 17.0081 23.3395 16.1474 22.0678C15.2944 20.7961 14.4415 19.5244 13.7048 18.183C13.6351 18.0589 13.5342 17.9503 13.4412 17.8495C13.2784 17.6712 12.9062 17.7332 12.8286 17.9503C12.7511 18.1752 12.6813 18.4078 12.6658 18.6404C12.5495 21.1916 11.9136 23.6651 11.4639 26.1697C11.2157 27.5422 10.9676 28.907 10.7195 30.2795C10.6807 30.5121 10.6342 30.7525 10.6187 30.9928C10.5024 32.7375 9.41678 33.8696 8.15285 34.8699C7.55578 35.3429 7.18358 35.2809 6.71057 34.6451C6.26083 34.0325 5.91965 33.3579 5.40012 32.7763C4.47737 31.7372 3.57013 30.6982 2.4923 29.8065C1.84095 29.2714 1.29816 28.5813 0.763117 27.9144C0.577017 27.6818 0.561508 27.3096 0.429687 26.8909C0.747608 26.8521 0.97248 26.8133 1.19735 26.8133C1.95726 26.7901 2.10459 26.7048 2.29844 25.9837C2.42251 25.5184 2.4923 25.0454 2.81022 24.6887C3.29098 24.4948 3.36852 24.9989 3.65543 25.1229C4.08966 25.3168 4.23699 25.309 4.6247 24.8748C4.71775 24.774 4.80304 24.6577 4.90385 24.5336C5.183 24.5956 5.45439 24.6499 5.78782 24.7197C5.74905 24.9834 5.71804 25.216 5.67927 25.4486C5.67927 25.9604 5.47766 26.2938 4.91936 26.2628C4.58593 26.2473 4.26025 26.162 3.93458 26.162C3.66318 26.162 3.34526 26.1852 3.29873 26.666C3.56238 26.7978 3.84153 26.9684 4.14394 27.0692C4.93487 27.3484 5.56295 26.9762 5.71804 26.1465C5.75681 25.9216 5.70253 25.6735 5.68702 25.4331L5.70253 25.4098ZM5.96617 17.7487C6.08248 17.7642 6.20655 17.772 6.0127 17.7487C6.20655 17.7332 6.08248 17.7487 5.96617 17.7487C6.01269 17.5859 6.05922 17.4308 6.10575 17.2679C6.07473 17.2602 6.03596 17.2524 6.00494 17.2447C5.98943 17.4153 5.97392 17.5781 5.95842 17.7487L5.96617 17.7487ZM7.43171 11.3903C7.42396 12.0261 7.4162 12.662 7.40069 13.3754C7.16031 13.2358 6.99748 13.197 6.92769 13.0962C6.59426 12.6077 6.17553 12.9256 5.78782 12.9411C5.47766 13.6468 4.69448 13.4219 4.11292 13.7553C3.83377 14.4454 3.77174 15.1588 3.95008 15.9342C4.46961 15.7869 4.27576 15.3294 4.46961 15.089C4.55491 14.9882 4.70224 14.8254 4.78754 14.8486C4.94262 14.8874 5.12872 15.0037 5.20626 15.1433C5.36134 15.4147 5.44664 15.7249 5.5552 16.004C6.52447 15.7869 6.27634 14.8952 6.64078 14.2981C7.23786 14.3679 7.71086 14.1275 7.79616 13.5072C7.8737 12.9411 7.85819 12.3673 7.81942 11.7935C7.81166 11.6539 7.56353 11.5376 7.43946 11.398C7.47048 11.2119 7.53251 11.0258 7.52476 10.8397C7.52476 10.6071 7.48599 10.3745 7.40069 10.1574C7.36192 10.0643 7.18358 10.0333 7.05951 9.97126C6.99747 10.1263 6.84239 10.3202 6.88892 10.4288C7.02849 10.7622 7.24561 11.0646 7.43946 11.3825L7.43171 11.3903ZM6.54773 20.9434C6.64854 20.7573 6.76485 20.6333 6.74934 20.5402C6.71057 20.2843 6.52447 20.0905 6.26083 20.1525C6.13676 20.1835 6.05922 20.4084 5.96617 20.548C6.14452 20.6643 6.32286 20.7884 6.54773 20.9434ZM6.66405 19.4391C6.80362 19.3461 6.92769 19.2918 6.92769 19.2685C6.88116 19.1057 6.80362 18.9584 6.74159 18.8033C6.6718 18.8421 6.53998 18.8963 6.54773 18.9273C6.56324 19.0902 6.62527 19.253 6.6718 19.4391L6.66405 19.4391ZM5.2838 17.6091C5.39236 17.5083 5.49317 17.4541 5.49317 17.4075C5.48541 17.2835 5.43889 17.1594 5.39236 17.0431C5.39236 17.0353 5.19851 17.0819 5.19851 17.0896C5.21402 17.2525 5.25279 17.4075 5.29156 17.6091L5.2838 17.6091ZM7.14481 17.8418C7.17582 17.7642 7.21459 17.6789 7.21459 17.6014C7.21459 17.5704 7.11379 17.5393 7.05951 17.5083C7.05175 17.5548 7.02074 17.6014 7.03625 17.6402C7.05951 17.7099 7.10603 17.7797 7.14481 17.8495L7.14481 17.8418ZM5.96617 11.5376C5.91964 11.5221 5.87312 11.4833 5.8421 11.4911C5.81109 11.4988 5.78782 11.5609 5.76456 11.5919C5.83435 11.6152 5.90414 11.6462 5.96617 11.6694L5.96617 11.5376ZM3.32975 6.84632C3.39178 6.7998 3.47708 6.76103 3.50034 6.69899C3.51585 6.65247 3.44606 6.57493 3.41504 6.5129C3.35301 6.55943 3.25996 6.5982 3.2367 6.66023C3.22119 6.70676 3.29098 6.78429 3.32975 6.84632ZM6.32286 22.6959C6.36163 22.7036 6.43142 22.7269 6.43918 22.7191C6.47019 22.6493 6.4857 22.5796 6.50896 22.5098C6.47019 22.502 6.4004 22.4788 6.39265 22.4865C6.36163 22.5563 6.34612 22.6261 6.32286 22.6959ZM3.03509 16.1669C3.03509 16.1669 3.01958 16.2444 3.03509 16.2754C3.03509 16.2909 3.09712 16.2832 3.12814 16.2909C3.12814 16.2522 3.14365 16.2134 3.12814 16.1824C3.12814 16.1669 3.06611 16.1746 3.03509 16.1669Z" />
+                <g clip-path="url(#clip0_4810_112)">
+                    <path d="M14.6663 6.83407C14.6787 6.80334 14.688 6.77875 14.6911 6.76953C14.6291 6.90476 14.6694 6.831 14.6663 6.83407Z" />
+                    <path d="M14.3678 8.18865L14.3398 8.16406C14.3522 8.23168 14.3646 8.29929 14.3833 8.3669C14.3771 8.30851 14.3709 8.25012 14.3678 8.18865Z" />
+                    <path d="M14.1094 9.45563C14.2458 9.39724 14.2489 9.28353 14.2458 9.15445C14.2396 9.02537 14.2272 8.88399 14.283 8.77028L14.3326 8.7334L14.2055 8.62891C14.159 8.90243 14.2117 9.26201 14.1094 9.45563Z" />
+                    <path d="M13.3281 10.1177C13.4615 10.0777 13.3777 10.2652 13.4211 9.96094C13.4025 9.9763 13.3963 9.97938 13.3839 9.9886C13.3746 10.0163 13.3622 10.0531 13.3312 10.1177H13.3281Z" />
+                    <path d="M13.3854 9.98979C13.2559 10.0774 13.4264 9.85519 13.3854 9.98979V9.98979Z" />
+                    <path d="M13.2467 10.604L13.1909 10.4258C13.1041 10.4596 13.0266 10.6163 12.9925 10.5579C12.9863 10.7393 13.0855 10.7055 13.2467 10.604Z" />
+                    <path d="M13.4472 10.7758L13.4224 10.6836C13.3852 10.699 13.3666 10.7235 13.4472 10.7758Z" />
+                    <path d="M13.375 10.4883L13.4215 10.685C13.4835 10.6604 13.5952 10.6604 13.4091 10.5958C13.5052 10.6143 13.4184 10.5743 13.375 10.4914V10.4883Z" />
+                    <path d="M13.457 10.3805C13.5563 10.2852 13.6276 10.1561 13.6927 10.3375C13.7299 9.99939 13.5159 10.0455 13.457 10.3805Z" />
+                    <path d="M14.361 9.52712L14.4478 9.39804L14.3796 9.28125C14.4137 9.33964 14.2835 9.53326 14.361 9.52712Z" />
+                    <path d="M12.6914 11.6889C12.7782 11.7012 12.9457 11.6366 13.0604 11.6243L12.9984 11.4922C12.9209 11.5567 12.8278 11.6827 12.6914 11.6889Z" />
+                    <path d="M13.0586 11.6303L13.1609 11.827C13.2229 11.6549 13.1609 11.6211 13.0586 11.6303Z" />
+                    <path d="M13.8329 10.818C13.7616 10.7104 13.6995 10.5998 13.6406 10.4922C13.6964 10.6213 13.7554 10.7503 13.8267 10.8794L13.8329 10.818Z" />
+                    <path d="M12.4352 12.4301L12.2461 12.3164L12.5283 12.5192L12.4352 12.4301Z" />
+                    <path d="M12.3259 12.9214C12.1523 12.8353 11.9445 13.0258 11.8484 12.9367C11.836 13.0719 11.9756 13.1887 12.1089 13.2963C12.05 13.1857 12.1151 13.0689 12.3259 12.9244V12.9214Z" />
+                    <path d="M12.2985 13.4712C12.2613 13.4159 12.1869 13.3575 12.1094 13.293C12.1404 13.3514 12.1931 13.4098 12.2985 13.4712Z" />
+                    <path d="M13.0311 12.1523C12.9691 12.1646 12.811 12.1923 12.7148 12.2999L13.0063 12.2292C13.0125 12.2046 13.0218 12.18 13.0311 12.1523Z" />
+                    <path d="M13.0182 12.2266H13.0089C12.981 12.3126 12.9624 12.3679 12.9531 12.3925C12.9624 12.371 12.981 12.3218 13.0182 12.2266Z" />
+                    <path d="M13.0377 12.1367C13.0377 12.1367 13.0345 12.1491 13.0312 12.1553C13.0602 12.1491 13.0698 12.1429 13.0377 12.1367Z" />
+                    <path d="M13.5312 11.3203C13.6336 11.4371 13.7452 11.6799 13.984 11.4525C13.8351 11.3664 13.6925 11.4955 13.5312 11.3203Z" />
+                    <path d="M13.3911 12.0477L13.4904 11.8418C13.4222 11.8418 13.3167 11.8787 13.2578 11.8203L13.388 12.0447L13.3911 12.0477Z" />
+                    <path d="M13.4578 12.1514L13.3927 12.0469L13.3555 12.1237L13.4578 12.1514Z" />
+                    <path d="M12.6836 13.1272C12.7952 13.2194 12.7859 13.3177 12.7828 13.4284C12.8727 13.3116 12.9317 13.1917 12.9534 13.0749C12.8603 13.0565 12.7053 13.0012 12.6836 13.1272Z" />
+                    <path d="M12.875 12.6914C12.875 12.6914 12.8813 12.7065 12.8876 12.7126C12.9158 12.7005 12.9252 12.6914 12.875 12.6914Z" />
+                    <path d="M12.5391 14.5096C12.5612 14.5035 12.5864 14.5005 12.6085 14.4944L12.5485 14.4883L12.5391 14.5096Z" />
+                    <path d="M13.0104 13.053C13.0879 12.9669 13.0259 12.9116 12.9453 12.8594C12.9608 12.927 12.9639 12.9977 12.9484 13.0714C12.9887 13.0807 13.0166 13.0807 13.0104 13.053Z" />
+                    <path d="M12.3645 13.7795C12.4451 13.7334 12.5165 13.6842 12.5816 13.6289C12.4699 13.6719 12.2808 13.7611 12.3645 13.7795Z" />
+                    <path d="M12.7973 12.7387C12.7973 12.7387 12.7878 12.7296 12.7878 12.7266C12.7152 12.754 12.7499 12.7509 12.7973 12.7387Z" />
+                    <path d="M12.7969 12.7386C12.8279 12.7847 12.8899 12.8216 12.9457 12.8615C12.9364 12.8062 12.9147 12.757 12.8837 12.7109C12.862 12.7202 12.8279 12.7325 12.7969 12.7386Z" />
+                    <path d="M14.8132 14.8955C14.469 14.8709 14.1775 14.6312 14.5341 14.4376C14.2954 14.2317 13.2504 14.3393 12.6055 14.4991C12.7481 14.5083 12.8752 14.5114 13.0396 14.7203C13.238 14.6527 13.5233 14.2778 13.7961 14.456C13.9419 14.7296 13.6597 14.6742 13.4675 14.8033C13.8923 14.7019 14.0535 15.1629 14.6923 15.1168L14.4752 14.874C14.5713 14.874 14.7264 14.9631 14.8132 14.8986V14.8955Z" />
+                    <path d="M12.717 14.1095L12.6953 14.0234C12.6209 14.1187 12.4814 14.1833 12.1992 14.3031C12.3201 14.4476 12.438 14.4783 12.5434 14.4906L12.6767 14.0788L12.717 14.1095Z" />
+                    <path d="M12.7774 13.6487C13.0874 13.7225 13.1991 13.9253 13.5774 13.8116C13.5867 13.5657 13.3262 13.6334 13.2115 13.4828C13.2208 13.8823 13.0533 13.3629 12.8146 13.6487C12.7774 13.5688 12.7743 13.4981 12.7774 13.4336C12.7216 13.5043 12.6564 13.5719 12.582 13.6364C12.5913 13.6334 12.5975 13.6303 12.6037 13.6272H12.6099C12.6533 13.6118 12.6813 13.6057 12.6533 13.6272C12.6564 13.6272 12.6564 13.6334 12.6595 13.6364C12.703 13.6395 12.7433 13.6487 12.7774 13.6579C12.6844 13.7717 12.6875 13.6733 12.6595 13.6364L12.613 13.6303H12.6099C12.6378 13.7655 12.6689 13.8977 12.703 14.0329C12.7681 13.9499 12.7774 13.8454 12.7836 13.6549L12.7774 13.6487Z" />
+                    <path d="M14.4936 11.6797C14.4715 11.6922 14.4525 11.6922 14.4336 11.6922C14.462 11.7204 14.4841 11.7298 14.4936 11.6797Z" />
+                    <path d="M14.3308 11.8403C14.2967 11.8095 14.1975 11.7849 14.2316 11.6897C14.3122 11.6098 14.3494 11.6927 14.4332 11.6897C14.368 11.6313 14.2719 11.4868 14.1355 11.662L14.1665 11.6897C14.0704 11.8495 13.7138 12.0462 13.6797 12.0185C13.9246 11.9786 14.0983 11.9386 14.3308 11.8372V11.8403Z" />
+                    <path d="M13.7031 12.7578C13.7372 12.8685 13.7713 12.9822 13.8085 13.0928L14.0876 12.9299L13.9326 12.9361C14.0132 12.7486 13.821 12.7855 13.7062 12.7578H13.7031Z" />
+                    <path d="M12.3534 14.5444L11.9844 14.4922L12.4774 14.695L12.3534 14.5444Z" />
+                    <path d="M12.302 14.9746L11.9609 14.9531L12.1439 15.0699L12.302 14.9746Z" />
+                    <path d="M17.5156 39.5195L17.68 39.621C17.6304 39.5749 17.5745 39.541 17.5156 39.5195Z" />
+                    <path d="M17.5945 38.8136L17.2969 38.7891C17.4581 38.8259 17.579 38.8413 17.5945 38.8136Z" />
+                    <path d="M10.7098 25.5703C10.1734 25.6994 9.33312 25.8408 9.97187 25.8377L10.5951 25.807C10.4959 25.7055 10.5703 25.6318 10.7098 25.5703Z" />
+                    <path d="M14.2271 32.9288C14.2922 32.9165 14.3635 32.9042 14.4317 32.8919C14.2023 32.8519 13.9883 32.8151 13.793 32.7812C13.9263 32.8273 14.072 32.8765 14.2271 32.9288Z" />
+                    <path d="M17.0036 33.0938L16.5664 33.272C16.7183 33.2321 16.8641 33.1767 17.0036 33.0938Z" />
+                    <path d="M17.875 43.3984L18.492 43.5275C18.5106 43.3493 18.182 43.42 17.875 43.3984Z" />
+                    <path d="M11.6465 19.3945C11.4325 19.5113 11.3302 19.6066 11.293 19.6926C11.6092 19.5513 12.0588 19.4437 11.6465 19.3945Z" />
+                    <path d="M10.5391 39.0756C10.66 39.1371 10.7933 39.1678 10.9391 39.1678C10.8274 39.1033 10.7003 39.0664 10.5391 39.0756Z" />
+                    <path d="M11.2323 20.0448C11.2881 20.0233 11.316 20.0049 11.3656 19.9834C11.2943 19.8912 11.2416 19.799 11.2912 19.6914C11.0556 19.7959 10.8943 19.9158 11.2323 20.0448Z" />
+                    <path d="M15.002 57.3594C15.002 57.3594 14.9767 57.3813 14.9609 57.3907C14.9957 57.3938 15.002 57.3813 15.002 57.3594Z" />
+                    <path d="M13.0864 61.4034C13.074 61.3635 13.0585 61.2958 13.043 61.2344C13.043 61.2651 13.0554 61.3143 13.0864 61.4034Z" />
+                    <path d="M11.7563 16.7056C11.7121 16.6899 11.7468 16.6117 11.7563 16.7056V16.7056Z" />
+                    <path d="M13.4961 16.3008C13.5426 16.3223 13.5984 16.3377 13.6945 16.3407C13.5953 16.3315 13.5333 16.3161 13.4961 16.3008Z" />
+                    <path d="M14.4336 21.0366V21.0457C14.5378 21.0214 14.5189 21.0244 14.4336 21.0366Z" />
+                    <path d="M11.9762 16.5742C11.9172 16.608 11.8645 16.6449 11.8242 16.6879C11.8614 16.6695 11.911 16.6357 11.9762 16.5742Z" />
+                    <path d="M11.7748 16.5843C11.7996 16.5536 11.8151 16.529 11.8337 16.5044C11.7655 16.4921 11.719 16.5014 11.7748 16.5843Z" />
+                    <path d="M11.75 16.8311C11.7531 16.7789 11.7841 16.7297 11.8244 16.6836C11.7903 16.702 11.7655 16.7082 11.7531 16.702C11.7531 16.7297 11.7531 16.7666 11.7531 16.8311H11.75Z" />
+                    <path d="M15.1902 49.8477C15.1747 49.8538 15.1623 49.8599 15.1406 49.8661C15.3391 49.9644 15.3112 49.9214 15.1902 49.8477Z" />
+                    <path d="M17.1748 28.1059C17.1748 28.1059 17.1495 28.0998 17.1432 28.0938C17.1369 28.0968 17.1274 28.1029 17.1211 28.1059H17.1748Z" />
+                    <path d="M17.6633 28.4474C16.8571 28.2876 16.9563 28.2108 17.1238 28.1094L15.2695 28.1739L17.6664 28.4474H17.6633Z" />
+                    <path d="M17.5829 41.2139L18.1813 40.9956C19.1115 41.2968 18.758 41.4905 19.5952 41.2938C17.5829 41.2139 19.4743 40.3902 17.4433 40.3103L17.8836 40.1689C17.8619 40.2119 17.9798 40.2212 17.9581 40.2642C18.9596 39.9907 16.4945 40.0091 16.8077 39.6342C16.972 39.5051 17.2759 39.419 17.5147 39.5143L17.0216 39.207C17.065 39.1209 17.4247 39.1517 17.3782 39.2346L17.2387 38.7798L17.3007 38.7859C16.9782 38.7152 16.4821 38.5554 16.2713 38.4786C16.5751 38.371 16.4883 38.5401 16.7488 38.5185L16.2558 38.2573C16.7984 38.1682 17.3131 38.3864 17.2263 38.5585C19.3131 38.3741 16.7147 38.3372 17.9519 37.8609L18.203 38.1036C19.3937 37.9776 18.9751 37.784 19.7286 37.5351C19.3379 37.5904 17.8402 38.0268 17.3317 37.7441C17.4929 37.6703 17.5736 37.572 17.1581 37.4152C17.9022 37.4306 17.7255 37.2831 17.6914 37.1048L18.6774 37.1386C18.4015 36.9389 17.896 36.9419 17.4557 36.8159C17.5612 36.6008 18.3301 36.5762 18.9782 36.5393C19.1518 36.1982 17.741 36.7483 17.5705 36.3365C17.9581 36.0568 17.5612 35.8447 16.9782 35.4882C17.3255 35.2946 17.5829 35.5374 17.8712 35.4729L17.0837 35.2762C17.1023 35.2332 17.3472 35.2516 17.4681 35.2639C17.1643 35.1072 16.4759 35.227 16.2124 34.9842C15.1209 34.8951 17.8216 34.5355 16.5875 34.2128C16.8697 34.1483 17.1953 34.262 17.5798 34.2497C16.7736 33.8286 16.9968 33.8901 15.9054 33.5367L16.5596 33.2724C15.8124 33.4629 14.9349 33.1771 14.2186 32.9282C13.8589 32.9927 13.5426 33.048 13.3907 33.088L12.8698 32.7069C13.0341 32.6669 13.3721 32.71 13.7845 32.7806C13.7039 32.753 13.6233 32.7284 13.5488 32.7069C13.9178 32.5839 14.4853 32.6639 15.0372 32.7714C14.8356 32.8114 14.6279 32.8513 14.4232 32.8913C15.0217 32.9958 15.6883 33.0972 16.2682 33.091C16.1534 33.0634 16.0573 33.0173 16.0015 32.965C16.1627 32.9927 16.3085 33.0111 16.4077 33.0019C16.5131 32.9927 16.293 32.9497 16.0418 32.8821L17.1457 32.8237L16.7085 32.7929L17.403 32.3258C16.2961 31.9539 14.6744 31.6158 14.2372 31.0596C15.0372 31.2132 15.5457 31.118 16.4945 31.1487C15.4868 31.2747 16.9193 31.582 16.7116 31.8617C16.8201 31.7173 17.2728 31.7603 17.4309 31.8002L16.5162 31.2716C17.2945 31.3024 17.0992 31.1764 17.4185 31.0534C15.8837 31.118 16.3984 30.6508 15.9333 30.4357C16.4449 30.4357 16.9689 30.4972 16.8449 30.7461C17.9953 30.4941 15.0527 30.3466 16.0294 30.0976C16.0418 30.1591 15.9643 30.1898 16.2217 30.2206C15.7689 30.0669 16.1286 29.7258 16.572 29.818L16.5813 29.8794C16.7612 29.4768 16.5813 28.6378 15.3162 28.5487C15.4806 28.5487 16.8449 28.6378 17.1023 28.6685L12.8605 27.8418C13.9426 27.9309 16.51 27.7435 17.124 28.0969C17.2759 28.0047 17.4526 27.8879 17.0681 27.6728C16.9162 27.7342 15.5116 27.8018 15.4155 27.7096C16.6123 27.4884 16.0573 27.5529 17.0681 27.2702C16.8418 27.3654 15.1612 27.2148 15.217 27.0581C15.4682 27.0888 16.8666 27.0827 17.0402 27.1442L15.4 26.717C15.6945 26.8215 16.7829 26.7661 17.2387 26.6893C16.9224 26.7231 17.2573 26.3512 17.093 26.2437L16.724 26.4004C16.9534 25.964 14.4511 25.9118 14.5473 25.4784C14.8728 25.5399 16.572 25.6567 16.7674 25.4385C15.9457 25.3186 12.8667 24.8976 12.2899 24.4949L12.7488 24.4304L12.2527 24.1231C13.4155 24.3351 15.9364 24.9129 16.9534 25.2203C17.3131 25.0635 17.496 25.1864 17.4402 24.9375C17.865 24.8607 18.1007 25.0881 18.1317 25.1619L18.3674 24.5933C17.4371 24.5964 17.4092 24.1323 16.6465 24.1354L17.6387 24.7838C16.7023 24.7869 14.9845 24.3597 15.155 23.9571C15.5178 23.8618 16.786 24.0739 17.093 24.0708C16.7736 24.0094 16.4759 23.6682 16.6961 23.6375L17.1922 23.8219C17.5147 23.6037 15.9767 23.4224 16.8232 23.1703C16.879 23.0781 17.9519 22.9153 17.4247 22.8876C16.4263 23.0167 13.2729 22.9736 12.5225 22.8538C12.5969 22.8231 13.5209 22.3836 14.0108 22.2883C14.7891 22.15 15.8713 22.5649 16.541 22.4481C16.3023 22.4358 16.0046 22.3436 15.9085 22.3067C16.1069 22.2115 16.6465 22.3651 16.5286 22.1469C15.6511 22.0916 16.5844 21.7105 15.7845 22.0271C15.5302 21.8119 15.9581 21.8089 15.9116 21.5599C15.3535 21.6245 14.0201 21.2956 13.7969 21.0774C14.0108 21.0958 14.293 21.0528 14.4201 21.0344C14.507 20.6072 14.8821 20.3828 14.8883 19.9833C15.0837 19.9495 15.3162 19.762 15.6635 19.8542C15.5209 19.7928 15.248 19.7344 15.2263 19.6084C15.9023 19.384 15.341 19.888 16.1627 19.7221C15.6976 19.6944 15.5116 19.3871 15.2263 19.2027C14.5287 19.2396 15.0899 19.6084 15.3876 19.7897C14.3922 19.7682 13.369 19.4362 12.9721 19.006C12.7675 18.6679 13.5984 18.8769 13.4682 18.8154C13.6667 18.1946 11.9055 18.2469 12.631 17.7428C13.2233 17.5492 13.7597 17.7613 14.1752 17.7244C14.3829 18.001 13.7938 18.1332 13.8031 18.3176L14.0915 18.0963C14.2806 18.1885 14.4232 18.3729 14.2496 18.4651C14.7798 18.3053 14.3829 17.4109 14.8387 16.9376C14.6558 16.8485 14.4759 16.6948 14.262 16.7594L14.3333 16.913C13.8899 17.0421 13.7535 16.6119 13.5364 16.7993C13.2481 16.5873 12.8202 16.3476 13.0899 16.0648L13.6729 16.0249C13.5054 16.0249 13.3101 16.2062 13.4806 16.2892C13.2419 16.1632 14.2961 15.865 13.5612 15.7175L13.1457 15.9111C12.876 15.6991 12.3396 15.4317 12.5628 15.1797C12.0047 15.2842 12.6155 15.2412 11.9427 15.4071C12.7675 15.2688 11.769 16.0587 12.6744 15.8251C11.8744 15.9941 12.2961 16.1386 11.5675 16.366C11.7659 16.366 11.9613 16.2892 11.8186 16.5012C11.8744 16.5135 11.9427 16.5381 11.983 16.5535C11.9768 16.5596 11.9737 16.5627 11.9644 16.5688L11.9892 16.5565C12.0171 16.5658 12.0233 16.5688 11.9985 16.5535C12.0946 16.5043 12.2062 16.4643 12.321 16.452C12.752 16.5688 12.693 16.91 12.9225 17.0298C12.8078 17.1558 12.6961 16.9714 12.4667 17.036L12.8078 17.2173C12.3489 17.2235 11.983 17.5369 11.769 17.2327L11.6946 17.5C11.4 17.6537 11.245 17.8688 11.4217 18.0071C11.2915 18.1301 11.9024 18.3391 11.5396 18.2223L11.7721 18.6525H11.645C11.4962 19.0674 12.3768 19.5315 11.3504 19.9864C11.4621 20.1308 11.6109 20.2783 11.4217 20.5088L10.9411 20.5426C11.0807 20.727 10.3706 21.0713 10.8605 21.1604C9.5179 21.3233 10.4264 22.0271 10.1442 22.3375L10.8016 22.3651C10.7303 22.5833 10.8946 22.7954 11.1303 23.072H11.7287C12.2 23.3148 11.2419 23.659 11.2605 24.0309C11.028 24.0001 11.0993 23.9079 11.2481 23.8465C10.5349 24.0524 10.7551 24.289 11.0342 24.5257C11.3132 24.7593 11.6512 24.9928 11.1117 25.1803C11.3318 25.2848 11.2481 25.3555 11.0807 25.4231C11.0807 25.4139 11.0683 25.4047 11.0497 25.3985C11.0404 25.4077 11.0373 25.4231 11.0373 25.4385C10.9256 25.4815 10.7923 25.5214 10.6869 25.5706C10.845 25.5337 10.9752 25.4969 11.0373 25.463C11.0435 25.5399 11.1117 25.6597 11.2605 25.7765L10.569 25.8103C10.569 25.8103 10.5752 25.8288 10.5845 25.838C10.3179 25.9456 10.9008 25.9363 11.4248 25.8872C11.5334 25.9486 11.6667 26.004 11.8279 26.047C10.7055 26.1115 12.1845 26.3574 10.9783 26.4527C11.5551 26.5449 11.3721 27.0397 12.6124 27.1288C12.4512 27.1288 12.3706 27.1595 12.3644 27.0981C12.2155 27.221 12.0667 27.347 12.4109 27.4699L11.5086 27.5037L12.7054 27.8111C12.1473 27.9678 11.8186 28.0293 11.1334 27.8449C12.1814 28.2751 11.5148 28.1829 12.569 28.5548L11.9799 28.5241C11.9954 28.647 12.7799 28.8652 12.2868 28.9267C11.1396 29.1756 12.0667 30.2882 10.969 30.9735C12.7613 30.8783 10.1504 31.2839 11.5365 31.3454C11.1117 31.3761 10.8667 31.4714 10.5039 31.3454C10.9039 31.7173 9.80317 31.874 10.969 32.1506C10.5411 32.1813 10.3489 32.0584 10.0946 32.0891C10.1846 32.1199 10.4605 32.2121 10.2032 32.2459C9.9489 32.2766 9.84658 32.1844 9.66364 32.1229C9.71945 32.4948 11.0311 32.5624 12.262 32.6178C11.6729 32.7929 11.7504 32.8882 12.5566 33.0419C12.1504 33.0972 11.7256 33.1955 11.5861 32.965C11.5241 33.0941 10.969 33.7395 11.9613 33.7764C11.7101 33.8102 11.8837 33.9547 11.9954 33.9915C11.9303 34.2804 11.8372 34.305 11.9241 34.5908L12.0884 34.5171C13.2822 34.6584 12.3489 34.7599 12.4884 34.9934L12.3644 34.9842C11.49 35.4913 12.7706 35.2209 11.7783 35.7187L12.5225 35.7064C14.1194 35.7925 11.5706 36.1459 12.1783 36.4594L12.6031 36.3611C13.1457 36.5393 10.4264 36.7698 10.228 36.9327C10.0884 36.9665 10.0047 36.8712 9.90549 36.819C8.96287 37.2308 10.876 36.8989 11.0962 37.2247C10.5752 37.2708 9.76906 37.1171 9.67294 37.3322C9.25434 37.4306 11.3628 38.0022 10.3675 38.2758C10.7675 38.2204 11.1675 38.1651 11.4652 38.3219C11.6047 38.5554 9.9613 38.9089 11.214 39.1455C11.1055 39.1732 11.0031 39.1793 10.9039 39.1793C11.2264 39.3637 11.4434 39.7632 12.1132 39.8831C9.62643 39.9876 13.3194 41.0018 11.0373 40.9465L11.1675 41.4905L10.938 41.472C10.7954 41.8132 11.338 41.9484 11.8744 42.0836C11.7225 42.1604 11.5148 42.0959 11.3969 42.0867C10.9566 42.5815 11.0621 42.6337 12.1597 43.0824L11.4496 43.1101C11.8589 43.233 10.3675 43.8139 11.2047 44.3302C11.1272 44.3241 10.9907 44.3087 10.8915 44.2687C11.307 44.5576 10.8419 44.8803 10.6001 45.1631C10.3551 45.4458 10.3303 45.6917 11.5427 45.8208L12.1473 46.2019C12.3272 45.7316 13.1892 46.2971 13.586 46.1097C13.7194 46.3002 12.8605 46.5768 12.7395 46.3432L12.8574 46.3094C11.6109 46.1957 12.4264 46.8903 11.5954 46.8565C11.6884 47.7939 11.0993 48.6913 11.1427 49.5702L11.9923 49.4903L11.9613 49.7946C11.769 49.8714 11.3101 49.8868 11.3256 49.6686C10.8574 49.7731 11.7566 50.0435 11.9365 50.0558C11.6295 50.4769 10.9504 49.8653 10.938 49.9974L11.0186 50.1757L11.1117 50.1388C11.4652 50.2925 11.8217 50.3109 11.8 50.5752C11.6512 50.7381 11.307 50.649 11.2822 50.7135C11.2264 50.7135 11.2016 50.732 11.2698 50.8119L11.2419 51.196L11.8496 51.0577C12.169 51.236 11.8403 51.4204 12.5318 51.2575C11.9923 51.3743 11.9303 51.7339 11.9551 52.0811C11.9799 52.4284 12.0884 52.7634 11.9427 52.8403C12.3706 53.0892 12.3706 53.3258 12.3458 53.6178C12.4481 53.5471 13.0496 53.5195 12.9783 53.7684C11.7628 53.6485 12.476 54.2171 11.6729 54.4046C12.1969 54.2355 11.8962 55.1268 12.6093 54.8564C12.5349 55.0653 12.2 54.8594 11.9613 55.0131C12.2 55.2682 12.1597 55.5448 12.107 55.8337C12.0481 56.1226 11.983 56.4268 12.0946 56.7403C12.2093 56.7526 12.3799 56.6543 12.5659 56.7895C12.383 56.894 12.2093 56.9985 12.045 57.103C12.1256 57.2259 12.6868 57.229 12.3489 57.4472C12.4326 57.4164 12.5628 57.3734 12.6031 57.4564C12.4202 58.0588 12.6372 58.6827 12.752 59.3065C12.814 59.62 12.8636 59.9304 12.8853 60.2439C12.907 60.5543 12.9008 60.8647 12.907 61.1721C12.9318 61.0061 12.969 61.1167 12.9969 61.2458C12.9969 61.1628 13.0775 61.2489 13.1178 61.2335C13.0992 61.4056 13.093 61.5777 13.1085 61.7498C13.1612 61.799 13.1861 61.9373 13.2109 62.0695C13.2357 62.2047 13.2667 62.3307 13.2791 62.3584L13.2481 62.1955C13.2884 62.3061 13.2884 62.2293 13.3225 62.1309C13.3504 62.0326 13.4124 61.9127 13.4589 61.9281C13.4372 61.8052 13.4899 61.6484 13.5705 61.4702C13.645 61.2919 13.7597 61.0952 13.6605 60.8955C13.7256 60.8094 13.7163 60.9723 13.7752 60.9262C13.7101 60.8248 13.7008 60.7018 13.7969 60.4775L13.8186 60.5021C13.9178 59.869 14.1039 59.6016 14.4108 58.8947L14.1845 58.9408C14.2434 58.7902 14.3209 58.7595 14.3953 58.6888C14.0884 58.5044 14.2837 59.116 13.955 58.95C14.1876 58.8548 14.2496 58.5843 14.3085 58.3231C14.3705 58.0618 14.4356 57.8098 14.7674 57.7484C14.8263 57.5148 14.4387 57.8098 14.4884 57.5763L14.6775 57.5179L14.4604 57.4533C14.5256 57.2997 14.7736 57.229 14.9318 57.2259C14.9038 57.2628 14.9473 57.3335 14.9504 57.3734C15.2232 57.1798 15.0186 56.8079 15.1054 56.7434L14.9318 56.9647C14.9132 56.642 15.0093 56.2855 15.0713 55.932C15.1364 55.5786 15.1705 55.2282 14.9752 54.9117L14.786 54.9547C14.5101 54.4722 15.0496 54.5798 14.9659 54.0573L15.0093 54.0788C14.8294 53.9712 14.7426 53.8299 14.7829 53.6854C15 53.8237 15.2883 53.4488 15.5271 53.627C15.1984 53.1046 15.2511 53.3658 14.4977 53.0062L14.8635 52.9355C14.5535 52.8126 14.3798 52.7972 14.3054 52.536C14.6 52.7573 14.8852 52.3823 15.2728 52.6313C15.7131 52.367 15.5457 52.161 15.4062 51.992C15.2666 51.823 15.1612 51.6908 15.8062 51.5802C14.7519 51.3036 15.1488 52.0381 14.9349 51.8937C14.5783 52.0043 14.1566 51.6693 14.2713 51.5003C14.3023 51.3251 15.6976 51.236 15.7441 50.7996C15.7317 50.8426 15.8186 50.8487 15.8062 50.8918C16.1224 50.735 15.4558 50.5598 15.9612 50.3724C15.2728 50.2433 16.0387 50.1111 15.1364 50.0589L15.3038 50.4646C15.1023 50.231 14.0481 49.9913 14.5907 49.6286C14.7767 49.6624 15.0124 49.7792 15.1395 49.8591C15.4217 49.7546 14.9783 49.644 15.2697 49.5364C16.1937 49.5918 15.4186 50.0312 16.0759 50.2894C16.4759 50.1818 15.4806 49.813 16.4511 49.9575C15.2108 49.7516 16.6806 49.5303 15.7379 49.2107L16.3023 49.2445C16.2217 49.1953 15.9643 49.0908 15.9891 49.0047L16.7054 49.1768C16.1069 48.9218 17.3317 48.7281 17.0247 48.4884C16.9658 48.9709 16.3085 48.5806 15.8589 48.7742C15.1426 48.1596 17.4278 48.4669 17.2511 47.7939C17.3193 47.8861 16.8449 48.1227 16.5875 47.9752C16.7271 47.8522 16.9782 47.6894 17.3069 47.6187C17.2449 47.173 16.6744 47.6709 16.3302 47.4742C17.0868 47.3421 16.0573 47.2499 15.8341 47.0501L16.4573 47.0624C16.9224 46.5676 15.1612 46.8995 15.6914 46.457L16.5534 46.669L16.3519 46.4262L17.0713 46.4908C16.5658 46.2203 16.7116 46.1435 16.9472 45.8976C16.4852 45.9468 15.7752 45.8361 15.772 45.6149C16.172 45.4704 16.386 45.7132 16.3209 45.3967C16.7271 45.4766 17.2294 45.5688 16.6123 45.6917C16.8232 45.7101 17.0123 45.7716 17.2201 45.79C17.6852 45.6364 17.3751 45.3813 17.3813 45.2676C17.3503 45.3106 17.31 45.3629 17.2139 45.3874L16.3457 44.908C16.603 44.8404 16.7984 44.9049 16.9875 44.9633C16.9255 44.868 16.6247 44.7974 16.5813 44.6591C17.1209 44.7082 17.6852 44.7113 17.9146 44.9111L17.3627 44.4593C17.6015 44.4347 18.0449 44.2503 18.2402 44.3118C18.5999 44.0782 17.2356 43.694 17.7007 43.3836C17.5922 43.3652 17.4929 43.3283 17.4185 43.2576C17.5705 42.9595 18.3022 42.7075 17.5519 42.3325L18.5968 42.1543C18.3891 41.8685 17.279 42.4002 16.9286 41.9238C16.6247 41.5857 17.8185 41.8224 18.1162 41.7117C17.6108 41.5366 16.5627 41.2261 17.434 40.9403C17.6232 41.0448 17.4619 41.1217 17.5333 41.2169L17.5829 41.2139ZM17.3193 37.7471C17.4712 37.8178 17.9457 37.9623 17.5054 38.0022C16.662 37.907 17.0681 37.8578 17.3193 37.7471ZM15.6666 32.4487C15.9116 32.504 15.7876 32.5778 15.5054 32.6577C15.4465 32.5932 15.4744 32.5225 15.6666 32.4487ZM11.9675 17.7152C11.9675 17.7152 11.9799 17.7213 11.9923 17.7244C11.7659 17.8689 11.8558 17.8166 11.9675 17.7152ZM12.2403 17.4109C12.1752 17.3771 12.107 17.3802 12.0357 17.3894C12.1597 17.414 12.1566 17.4847 12.107 17.5615C12.2434 17.5431 12.3396 17.5062 12.2434 17.4109H12.2403ZM11.521 50.7412L11.6543 50.6828C11.8186 50.8242 11.6791 50.7811 11.521 50.7412Z" />
+                    <path d="M16.6835 33.0742C16.5564 33.0896 16.4169 33.0927 16.2773 33.0927C16.4014 33.1234 16.5471 33.1265 16.6835 33.0742Z" />
+                    <path d="M17.7593 43.3741C17.7593 43.3741 17.7562 43.3801 17.75 43.383C17.7903 43.389 17.8337 43.395 17.874 43.395L17.7593 43.3711V43.3741Z" />
+                    <path d="M16.871 22.3281C16.7841 22.3896 16.6725 22.4234 16.5547 22.4449C16.7097 22.4511 16.8369 22.4265 16.871 22.3281Z" />
+                    <path d="M11.7582 15.7578L11.8295 15.9576C11.8295 15.8623 11.9349 15.8285 12.0156 15.7824C11.9101 15.7824 11.7489 15.8193 11.7582 15.7578Z" />
+                    <path d="M14.5506 14.0922C14.5041 14.0615 14.5475 14.0307 14.501 14H14.3242C14.3304 14.1291 14.4731 14.2182 14.5506 14.0922Z" />
+                    <path d="M13.2604 15.6047C13.6325 15.5986 13.5178 15.4695 13.4682 15.3281C13.4682 15.3373 13.4682 15.3435 13.4682 15.3527C12.9689 15.3005 13.1116 15.4511 13.2635 15.6017L13.2604 15.6047Z" />
+                    <path d="M13.4616 15.2969C13.4492 15.2539 13.4461 15.2109 13.4678 15.1679C13.2694 15.1463 13.4182 15.2201 13.4616 15.2969Z" />
+                    <path d="M12.0317 17.0135C12.1496 16.9489 11.517 16.9612 11.6907 16.9274C11.1821 16.8413 12.2395 17.3823 12.0317 17.0135Z" />
+                    <path d="M14.4831 15.5234L14.0273 15.5634L14.3901 15.6494L14.4831 15.5234Z" />
+                    <path d="M14.0943 16.6148L14.24 16.3966C14.1594 16.3966 14.1129 16.3689 14.0788 16.332C14.057 16.4673 13.9485 16.6179 14.0943 16.6148Z" />
+                    <path d="M14.0799 16.3298C14.0923 16.2591 14.0861 16.1915 14.0117 16.1484C14.0117 16.1884 14.0241 16.2714 14.0799 16.3298Z" />
+                    <path d="M14.613 15.8281L14.5169 15.8896L14.4766 16.0463L14.613 15.8281Z" />
+                    <path d="M13.8711 18.9994L14.023 19.2453C14.2184 19.276 14.3424 19.2115 14.2649 19.1193C14.1316 19.0578 14.0602 18.9656 13.8711 18.9994Z" />
+                    <path d="M15.4046 18.3008C15.293 18.3653 15.172 18.3653 14.9922 18.3991L15.6712 18.4237L15.4046 18.3039V18.3008Z" />
+                    <path d="M15.5898 19.0127C15.7821 19.0404 16.1697 19.3785 16.1077 19.0681C15.9123 19.0404 15.7418 18.7915 15.5898 19.0127Z" />
+                    <path d="M14.6629 22.6564L14.6536 22.5918L13.3203 22.5703L14.6629 22.6564Z" />
+                    <path d="M18.092 25.96C18.4207 25.6803 17.1959 25.8709 17.6145 25.6188C17.2703 25.542 17.2703 25.8248 16.9727 25.7479C17.3385 25.9292 17.1401 26.0184 18.092 25.96Z" />
+                    <path d="M16.9733 25.7515C16.9143 25.7239 16.8461 25.6901 16.75 25.6562C16.843 25.7085 16.9112 25.7331 16.9733 25.7515Z" />
+                    <path d="M13.1992 62.0859C13.2116 62.1474 13.2302 62.2089 13.2488 62.2734C13.2395 62.2335 13.2333 62.1935 13.2271 62.1536L13.1992 62.0859Z" />
+                    <path d="M13.332 62.4445C13.332 62.4445 13.332 62.4721 13.332 62.4875C13.3475 62.5244 13.3599 62.5613 13.3692 62.5981C13.3599 62.5551 13.3382 62.4752 13.3351 62.4414L13.332 62.4445Z" />
+                    <path d="M19.3604 37.2841L19.1216 37.2656C18.8581 37.2871 18.8364 37.3302 18.793 37.4162L19.3635 37.2841H19.3604Z" />
+                    <path d="M18.4611 39.7735L18.4829 39.7305L17.5898 39.7919L18.4611 39.7735Z" />
+                    <path d="M19.3814 41.9055C19.4279 41.8195 19.2449 41.715 19.2915 41.6289C19.4279 41.8195 18.3054 41.9024 19.3814 41.9055Z" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_4810_112">
+                        <rect width="10.0804" height="55.8301" fill="white" transform="translate(9.65234 6.76953)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
+    </div>
+    <script src="./js/app.min.js?_v=20231228164316"></script>
+</body>
+
+</html>
