@@ -1,0 +1,388 @@
+{% set title = "Главная" %}
+{% from "macroWave.html" import wave %}
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include "head.html" %}
+
+<body>
+	<div class="wrapper">
+		{% include "header.html" %}
+		{% include "run-line.html" %}
+		<main>
+
+			{% include "side-line.html" %}
+			<section class="sections">
+				<picture>
+					<source srcset="img/page/bg-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+					<img class="sections__bg" src="img/page/bg.png" alt="">
+				</picture>
+				<img class="sections__side-bg-mob" src="img/page/side-bg-mob.png" alt="">
+				<section class="hero" id="hero">
+					<div class="container">
+						<div class="hero__wrap">
+
+							<div class="hero__logos">
+								<div class="hero__logos-cup">
+									<img src="img/hero/cup-logo.svg" alt="">
+								</div>
+								<div class="hero__logos-fonbet">
+									<img src="img/hero/fonbet-logo.svg" alt="">
+								</div>
+							</div>
+
+							<h1 class="hero__title">
+								<span class="visually-hidden">ВОЛНА поддержки</span>
+								<img src="img/logo.svg" alt="">
+							</h1>
+							<p class="hero__subtitle">ЗАДАЙ ДВИЖЕНИЕ СВОЕЙ&nbsp;КОМАНДЫ!</p>
+							<p class="hero__descr">Поддержи любимый клуб в&nbsp;финале плей-офф FONBET Чемпионата КХЛ!
+								Твое&nbsp;послание
+								увидят
+								спортсмены
+								и&nbsp;болельщики в&nbsp;разных уголках страны. Авторы самых эффектных волн по&nbsp;мнению экспертного
+								жюри
+								получат призы и&nbsp;зададут движение команде на&nbsp;глазах целого стадиона.</p>
+							<button class="hero__btn btn" type="button" data-hystmodal="#modal-start">запусти волну</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="info">
+					<div class="container">
+						<div class="info__wrap">
+							<div class="info__slider waves__slider js_waves-slider">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											{{wave()}}
+										</div>
+										<div class="swiper-slide">
+											{{wave()}}
+										</div>
+									</div>
+								</div>
+								<div class="info__slider-btns slider-btns js_slider-btns">
+									{% include "slider-btns.html" %}
+								</div>
+							</div>
+							<div class="info__text">
+								<p class="info__descr">ПОСМОТРИ<br> ВОЛНЫ ПОДДЕРЖКИ<br> ДЛЯ ЛЮБИМЫХ КОМАНД</p>
+								<p class="info__main">ЗАДАЙ ДВИЖЕНИЕ<br> СВОЕЙ КОМАНДЫ!</p>
+								<p class="info__sub">Fonbet<br> континентальная<br> хоккейная лига</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="steps" id="steps">
+					<div class="container">
+						<h2 class="steps__title title">как это<br> работает</h2>
+
+						<ul class="steps__list">
+							<li class="steps__item">
+								<h3>Зарегистрируйся.</h3>
+								<p>Тебе должно<br> быть 18&nbsp;лет</p>
+							</li>
+							<li class="steps__item">
+								<h3>Пройди модерацию.</h3>
+								<p>Настоящий болельщик избегает грубостей и&nbsp;перехода на&nbsp;личности</p>
+							</li>
+							<li class="steps__item">
+								<h3>Создай волну.</h3>
+								<p>Придумай текст и&nbsp;образ волны, самые оригинальные получат приз&nbsp;жюри</p>
+							</li>
+							<li class="steps__item">
+								<p>Попади в&nbsp;поток и&nbsp;стань одним из&nbsp;лучших. Твою волну подхватит вся страна</p>
+							</li>
+							<li class="steps__item">
+								<h3>Задай движение своей команды!</h3>
+								<p>Поддержка поднимет высоту волны любимой команды</p>
+							</li>
+						</ul>
+
+						<div class="steps__btn-wrap text-center">
+							<button class="btn btn--shadow" type="button">Зарегистрироваться</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="stat" id="stat">
+					<div class="container">
+						<div class="stat__head">
+							<p class="stat__descr">Высота волны у&nbsp;команды зависит от&nbsp;поддержки болельщиков</p>
+							<h2 class="stat__title title">высота<br> волн</h2>
+						</div>
+
+						<div class="stat__slider js_slider-stat">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="stat__item stat__item--1">
+											<span class="stat__item-name">АВТ</span>
+											<p class="stat__item-descr">
+												<span class="stat__item-count">170</span>
+												волн
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="stat__item stat__item--2">
+											<span class="stat__item-name">ММГ</span>
+											<p class="stat__item-descr">
+												<span class="stat__item-count">150</span>
+												волн
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="stat__item stat__item--3">
+											<span class="stat__item-name">ЛОК</span>
+											<p class="stat__item-descr">
+												<span class="stat__item-count">90</span>
+												волн
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="stat__item stat__item--4">
+											<span class="stat__item-name">ТРК</span>
+											<p class="stat__item-descr">
+												<span class="stat__item-count">75</span>
+												волн
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="slider-pagination js_slider-pagination"></div>
+							</div>
+						</div>
+
+						<div class="stat__btn-wrap text-center">
+							<button class="btn btn--shadow" type="button">поддержать команду</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="games">
+					<div class="container">
+						<h2 class="games__title title text-center">ближайшие матчи</h2>
+						<div class="games__wrap">
+							{% include "games-item.html" %}
+							{% include "games-item.html" %}
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section class="waves" id="waves">
+				{% include "run-line.html" %}
+				<picture>
+					<source srcset="img/waves/bg-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+					<img class="waves__bg" src="img/waves/bg.png" alt="" loading="lazy">
+				</picture>
+				<div class="container">
+					<h2 class="waves__title title">все<br> волны</h2>
+
+					<div class="waves__slider js_waves-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									{{wave()}}
+								</div>
+								<div class="swiper-slide">
+									{{wave()}}
+								</div>
+							</div>
+						</div>
+						<div class="waves__slider-btns slider-btns js_slider-btns">
+							{% include "slider-btns.html" %}
+						</div>
+					</div>
+
+					<div class="waves__btn-wrap text-center">
+						<button class="btn btn--shadow" type="button">поддержать команду</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="waves waves--best">
+				<picture>
+					<source srcset="img/waves/bg-best-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+					<img class="waves__bg" src="img/waves/bg-best.png" alt="" loading="lazy">
+				</picture>
+				<div class="container">
+					<h2 class="waves__title title">лучшие<br> волны</h2>
+
+					<div class="waves__slider js_waves-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									{{wave()}}
+								</div>
+								<div class="swiper-slide">
+									{{wave()}}
+								</div>
+							</div>
+						</div>
+						<div class="waves__slider-btns slider-btns js_slider-btns">
+							{% include "slider-btns.html" %}
+						</div>
+					</div>
+
+					<div class="waves__btn-wrap text-center">
+						<button class="btn btn--shadow" type="button">поддержать команду</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="waves waves--white">
+				<picture>
+					<source srcset="img/waves/bg-best2-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+					<img class="waves__bg" src="img/waves/bg-best2.png" alt="" loading="lazy">
+				</picture>
+				<div class="container">
+					<h2 class="waves__title title">самые<br> лучшие волны</h2>
+
+					<div class="waves__slider js_waves-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									{{wave()}}
+								</div>
+								<div class="swiper-slide">
+									{{wave()}}
+								</div>
+							</div>
+						</div>
+						<div class="waves__slider-btns slider-btns js_slider-btns">
+							{% include "slider-btns.html" %}
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="prizes" id="prizes">
+				<picture>
+					<source srcset="img/prizes/bg-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+					<img class="prizes__bg" src="img/prizes/bg.png" alt="" loading="lazy">
+				</picture>
+				<div class="container">
+					<div class="prizes__head">
+						<h2 class="prizes__title title">призы</h2>
+						<p class="prizes__descr">Твоя волна может принести удачу и&nbsp;подарки от&nbsp;FONBET. Авторы лучших
+							посланий получат фрибеты
+							и&nbsp;уникальные призы:</p>
+					</div>
+
+					<div class="prizes__slider js_prizes-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="prizes__item">
+										<div class="prizes__item-img">
+											<img src="img/prizes/posters.png" alt="">
+										</div>
+										<h3 class="prizes__item-title">постер с волной</h3>
+										<div class="prizes__item-descr">
+											<p><b>Его можно взять на&nbsp;матч и&nbsp;развернуть на&nbsp;трибуне.</b></p>
+											<p>Постеры получат 800 пользователей, за которых проголосуют жюри. Забрать постер можно рядом
+												со&nbsp;стадионами финальных игр.</p>
+											<p>Бонусом к&nbsp;подаркам станут фрибеты&nbsp;от&nbsp;FONBET.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="prizes__item">
+										<div class="prizes__item-img">
+											<img src="img/prizes/stick.png" alt="">
+										</div>
+										<h3 class="prizes__item-title">клюшки</h3>
+										<div class="prizes__item-descr">
+											<p><b>Кастомные&nbsp;&mdash; с&nbsp;уникальным дизайном и&nbsp;твоей фамилией.</b></p>
+											<p>Клюшки получат 20&nbsp;пользователей, за которых проголосуют жюри. Подарки будут отправлены
+												победителям почтой.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="prizes__item">
+										<div class="prizes__item-img">
+											<img src="img/prizes/attention.png" alt="">
+										</div>
+										<h3 class="prizes__item-title">внимание арены</h3>
+										<div class="prizes__item-descr">
+											<p><b>Волны покажут на&nbsp;экране стадиона, твои слова поддержки увидят с&nbsp;любой трибуны.</b>
+											</p>
+											<p>На&nbsp;стадион попадут случайные 20&nbsp;волн, которые пользователи отправляли
+												командам-финалистам.</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="slider-pagination js_slider-pagination"></div>
+						</div>
+					</div>
+
+					<div class="prizes__btn-wrap text-center">
+						<button class="btn btn--shadow" type="button">Участвовать в розыгрыше</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="jury" id="jury">
+				<picture>
+					<source srcset="img/jury/bg-top-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+					<img class="jury__bg" src="img/jury/bg-top.png" alt="" loading="lazy">
+				</picture>
+				<div class="container">
+					<div class="jury__text-side">
+						<img src="img/jury/title.svg" alt="">
+					</div>
+					<div class="jury__head">
+						<h2 class="jury__title"><span class="visually-hidden">Жюри</span> <img src="img/jury/title2.svg" alt="">
+						</h2>
+						<p class="jury__descr">Оригинальность волн будут оценивать спортивные эксперты и&nbsp;настоящие болельщики
+						</p>
+					</div>
+
+					<div class="jury__slider js_jury-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="jury__item">
+										<img class="jury__item-img" src="img/jury/kachin.png" alt="">
+										<p class="jury__item-name">Денис<br> Качин</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="jury__item">
+										<img class="jury__item-img" src="img/jury/stubailo.png" alt="">
+										<p class="jury__item-name">Анжелика<br> Cтубайло</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="jury__item">
+										<img class="jury__item-img" src="img/jury/filatov.png" alt="">
+										<p class="jury__item-name">Никита<br> Филатов</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="slider-pagination js_slider-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		{% include "footer.html" %}
+
+	</div>
+	{% include "modal.html" %}
+	<script src="./js/app.min.js"></script>
+</body>
+
+</html>

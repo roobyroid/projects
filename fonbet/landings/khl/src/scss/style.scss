@@ -1,0 +1,52 @@
+/* Import lib styles  */
+@import '../../node_modules/swiper/swiper';
+@import '../../node_modules/swiper/modules/navigation/navigation';
+
+// @import '../../node_modules/swiper/modules/pagination/pagination';
+
+// @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
+// @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
+@import "./lib/hystmodal.min";
+
+/* prettier-ignore */
+@import "utils/media-queries";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/layouts";
+@import "fonts";
+@import "normalize";
+@import "utils/custom-reset";
+
+/* component styles: buttons, headers, links and other small elements */
+@import 'components/title';
+@import 'components/button';
+@import 'components/run-line';
+@import 'components/slider-pagination';
+@import 'components/slider-btns';
+@import 'components/input';
+@import 'components/checkbox';
+@import 'components/textarea';
+@import 'components/wave';
+
+/* common styles, i.e. body, text, etc. */
+@import 'common';
+
+/* block styles: header, footer, any meaningful sections */
+@import 'blocks/header';
+@import 'blocks/side-line';
+@import 'blocks/hero';
+@import 'blocks/info';
+@import 'blocks/steps';
+@import 'blocks/stat';
+@import 'blocks/games';
+@import 'blocks/waves';
+@import 'blocks/prizes';
+@import 'blocks/jury';
+@import 'blocks/modal';
+@import 'blocks/modal-start';
+@import 'blocks/modal-registr';
+@import 'blocks/modal-team';
+@import 'blocks/modal-waves';
+@import 'blocks/modal-words';
+@import 'blocks/modal-launched';
+@import 'blocks/modal-take';

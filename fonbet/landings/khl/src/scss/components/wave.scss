@@ -1,0 +1,78 @@
+.wave {
+	position: relative;
+	min-height: 43rem;
+	padding: 8rem 10rem 7rem;
+
+	@include phone-big {
+		min-height: 160px;
+		padding: 30px 40px 20px;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		filter: drop-shadow(1rem 2rem 2rem rgb(0 0 0 / 50%));
+
+		@include phone-big {
+			filter: drop-shadow(3px 5px 8px rgb(0 0 0 / 50%));
+		}
+	}
+
+	&__inner {
+		width: 100%;
+		max-width: 57rem;
+
+		@include phone-big {
+			max-width: 210px;
+			margin: 0 auto;
+		}
+	}
+
+	&__head {
+		margin: 0 0 3rem;
+		font-size: 1.5rem;
+		line-height: 1;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+
+		@include phone-big {
+			margin: 0 0 11px;
+			font-size: 5px;
+		}
+
+		@include phone {
+			font-size: 5px;
+		}
+	}
+
+	&__descr {
+		margin: 0 0 2rem;
+		font-weight: 800;
+		font-size: 4.5rem;
+		font-family: $f-family--stapel;
+		line-height: 1;
+		text-transform: uppercase;
+
+		@include phone-big {
+			margin: 0 0 9px;
+			font-size: 16px;
+		}
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 2.5rem;
+		line-height: 1;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+
+		@include phone-big {
+			font-size: 8px;
+		}
+	}
+}

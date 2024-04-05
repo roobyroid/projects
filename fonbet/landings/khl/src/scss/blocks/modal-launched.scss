@@ -1,0 +1,124 @@
+.modal-launched {
+	&__window {
+		position: relative;
+
+		@include phone-big-alt {
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: -1;
+				width: 173.8rem;
+				height: 100%;
+				background: url('../img/modal/side-bg.png') no-repeat right/contain;
+				content: '';
+			}
+		}
+
+		@include phone-big {
+			&::before {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				background: url('../img/modal/launched-mob-bg.png') no-repeat center/cover;
+				content: '';
+			}
+		}
+	}
+
+	&__head {
+		width: 100%;
+		max-width: 102rem;
+
+		@include phone-big {
+			margin: 0 0 10px;
+		}
+	}
+
+	&__wave {
+
+
+		@include phone-big-alt {
+			width: 100%;
+			max-width: 75rem;
+			min-height: 35rem;
+			margin: 0 auto;
+
+			.wave__inner {
+				max-width: 47rem;
+			}
+
+			.wave__head {
+				margin: 0 0 2.5rem;
+				font-size: 1.2rem;
+			}
+
+			.wave__descr {
+				font-size: 3.6rem;
+			}
+
+			.wave__name {
+				font-size: 2rem;
+			}
+		}
+
+		@include phone {
+			min-height: 180px;
+			margin: 0 -18px;
+		}
+	}
+
+	&__actions {
+		position: relative;
+		width: 100%;
+		max-width: 67.5rem;
+		margin: 2rem 0 0;
+		margin: 0 auto;
+
+		@include phone-big {
+			margin: 35px 0 0;
+		}
+	}
+
+	&__actions-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem 2rem;
+
+		@include phone-big {
+			gap: 16px;
+		}
+
+		.btn {
+			flex: 0 1 calc(50% - 2rem / 2);
+			min-height: 5.7rem;
+
+			@include phone-big {
+				flex: 0 1 calc(50% - 16px / 2);
+				min-height: 6.4rem;
+			}
+
+			@include phone {
+				flex: 1 1 100%;
+			}
+		}
+	}
+
+	&__actions-links {
+		@include phone-big-alt {
+			position: absolute;
+			bottom: 1rem;
+			left: calc(100% + 1.6rem);
+			width: 16.2rem;
+			margin: 0;
+		}
+
+		@include phone-big {
+			margin: 20px 0 0;
+			text-align: center;
+		}
+	}
+}

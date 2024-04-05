@@ -1,0 +1,197 @@
+.prizes {
+	position: relative;
+	padding: 4.5rem 0;
+	color: #2a2a2a;
+
+	@include phone-big {
+		padding: 30px 0;
+		overflow: hidden;
+	}
+
+	@include phone {
+		padding: 20px 0;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: $c-white;
+		content: '';
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: bottom right;
+
+		@include phone-big {
+			top: 50%;
+			left: 50%;
+			width: auto;
+			max-width: none;
+			height: auto;
+			object-fit: none;
+			transform: translate(-53%, -35%);
+		}
+	}
+
+	&__head {
+		display: flex;
+		gap: 9rem;
+		align-items: center;
+		width: 100%;
+		max-width: 107rem;
+		margin: 0 auto;
+
+		@include phone-big {
+			flex-direction: column;
+			gap: 16px;
+			align-items: flex-start;
+		}
+	}
+
+	&__title {}
+
+	&__descr {}
+
+	&__slider {
+		width: 100%;
+		max-width: 119rem;
+		margin: 0 auto;
+
+		.swiper {
+			padding-top: 6.5rem;
+		}
+
+		.swiper-slide {
+			&:first-child {
+				.prizes__item-img {
+					img {
+						top: -5rem;
+						left: -2rem;
+						width: 25rem;
+					}
+				}
+			}
+
+			&:nth-child(2) {
+				.prizes__item {
+					width: 100%;
+					max-width: 34rem;
+					margin: 0 auto;
+
+					&-img {
+						width: 18rem;
+
+						img {
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				.prizes__item {
+					width: 100%;
+					max-width: 27rem;
+					margin: 0 0 0 auto;
+
+					@include phone-big {
+						margin: 0;
+					}
+
+					&-img {
+						width: 16rem;
+
+						img {
+							top: -2rem;
+							left: -3rem;
+
+							@include phone-big {
+								left: -10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__item {
+		width: 100%;
+		max-width: 36rem;
+
+		@include phone-big {
+			margin: 0 auto;
+		}
+	}
+
+	&__item-img {
+		position: relative;
+		margin: 0 0 5rem;
+
+		@include phone-big {
+			margin: 0 0 35px;
+		}
+
+		@include phone {
+			margin: 0 0 24px;
+		}
+
+		&::before {
+			display: block;
+			width: 15rem;
+			height: 15rem;
+			background: #410CDB;
+			border-radius: 50%;
+			content: '';
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__item-title {
+		min-height: 5.4rem;
+		margin: 0 0 3rem;
+		font-weight: 800;
+		font-size: 3.2rem;
+		font-family: $f-family--stapel;
+		line-height: 0.85;
+		text-transform: uppercase;
+	}
+
+	&__item-descr {
+		p {
+			&:not(:last-child) {
+				margin: 0 0 2.5rem;
+			}
+		}
+	}
+
+	&__btn-wrap {
+		margin: 2.9rem 0 0;
+
+		@include phone {
+			margin: 16px 0 0;
+
+			.btn {
+				font-size: 16px;
+			}
+		}
+	}
+}

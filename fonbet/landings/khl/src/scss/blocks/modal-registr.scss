@@ -1,0 +1,158 @@
+.modal-registr {
+	&__window {
+		position: relative;
+
+		@include phone-big-alt {
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				background: url('../img/modal/registr-bg.png') no-repeat center/cover;
+				content: '';
+			}
+		}
+
+		@include phone-big {
+			display: flex;
+			flex-direction: column;
+			padding: 30px 20px 20px;
+
+			.hystmodal__close {
+				top: 10px;
+				right: 5px;
+			}
+		}
+	}
+
+	&__head {
+		margin: 0 0 2.5rem;
+
+		@include phone-big {
+			margin: 0 0 12px;
+		}
+	}
+
+	&__links {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 60rem;
+		margin: 0 auto 2rem;
+
+		@include phone-big {
+			order: -1;
+			margin: 0 auto 12px;
+		}
+	}
+
+	&__link {
+		font-size: 1.3rem;
+	}
+
+	&__app {
+		padding: .7rem 1.5rem;
+		color: $c-white;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		border: 1px solid #ffffff;
+		border-radius: 8rem;
+		transition: opacity .3s;
+
+		@include phone-big-alt {
+			&:hover {
+				opacity: .8;
+			}
+		}
+
+		@include phone-big {
+			font-size: 10px;
+		}
+
+		@include phone {
+			font-size: 8px;
+		}
+	}
+
+	&__form {
+		width: 100%;
+		max-width: 60rem;
+		margin: 0 auto;
+
+		.input {
+			margin: 0 0 1rem;
+		}
+	}
+
+	&__checkboxes {
+		margin: 0 0 2.5rem;
+
+		@include phone-big {
+			margin: 0 0 17px;
+		}
+	}
+
+	&__checkbox {
+		margin: 0 0 1.5rem;
+
+		@include phone-big {
+			margin: 0 0 6px;
+		}
+	}
+
+	&__actions {
+		width: 100%;
+		max-width: 32.6rem;
+		margin: 0 auto 1.7rem;
+		text-align: center;
+
+		.btn {
+			width: 100%;
+			min-height: 6.4rem;
+			font-size: 2rem;
+		}
+
+		.modal__link {
+			display: inline-block;
+			margin: 1.2rem 0 0;
+			font-size: 1.8rem;
+			line-height: 1.5;
+			text-transform: uppercase;
+
+			@include phone-big {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__footer {
+		position: absolute;
+		right: 7rem;
+		bottom: 2rem;
+		font-size: 1.2rem;
+		text-align: right;
+
+		@include phone-big {
+			position: static;
+			right: auto;
+			bottom: auto;
+			font-size: 10px;
+			text-align: center;
+		}
+	}
+
+	&__footer-logo {
+		display: inline-block;
+		width: 11.1rem;
+		margin: 0 0 1rem;
+
+		@include phone-big {
+			width: 95px;
+			margin: 0 0 7px;
+		}
+	}
+}

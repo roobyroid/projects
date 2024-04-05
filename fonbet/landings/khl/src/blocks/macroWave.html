@@ -1,0 +1,14 @@
+{% macro wave(className = '') %}
+<div class="wave {{ className }}">
+	<picture>
+		<source srcset="img/waves/item-bg-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+		<img class="wave__bg" src="img/waves/item-bg.png" alt="">
+	</picture>
+
+	<div class="wave__inner">
+		<p class="wave__head">волна поддержки 2024 // волна поддержки 2024 //</p>
+		<p class="wave__descr">Уфа, мы&nbsp;знаем точный ответ&nbsp;&mdash; невозможного нет!</p>
+		<p class="wave__name">УФА<br> МАТВЕЙ ПЕРЧИН</p>
+	</div>
+</div>
+{% endmacro %}

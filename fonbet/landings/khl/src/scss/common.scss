@@ -1,0 +1,146 @@
+html {
+	scroll-behavior: smooth;
+	font-size: 10px;
+
+	@media (max-width: 1500px) and (min-width: 768px) {
+		font-size: calc((.54vw));
+	}
+}
+
+body {
+	position: relative;
+	color: $c-text--global;
+	font-weight: $f-weight--global;
+	font-size: $f-size--global;
+	font-family: $f-family--global;
+	line-height: $l-height--global;
+	background-color: $c-body-bg;
+
+	&._lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+
+	@include phone-big {
+		font-size: 18px;
+		background: #141414;
+	}
+
+	@include phone {
+		font-size: 16px;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+
+	main {
+		position: relative;
+		flex: 1 1 auto;
+
+		@include phone-big-alt {
+			position: relative;
+			padding: 0 0 0 9.4rem;
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			background: url('../img/page/grey-layer.png') repeat-y center/cover;
+			content: '';
+		}
+	}
+
+	.header,
+	.footer {
+		flex-shrink: 0;
+	}
+}
+
+.sections {
+	position: relative;
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		max-height: 100%;
+		object-fit: cover;
+		object-position: top;
+
+		@media (max-width: 1500px) and (min-width: 768px) {
+			width: 176rem;
+		}
+
+		@include phone-big {
+			object-position: 0 80%;
+		}
+
+		@include phone {
+			object-position: 0;
+		}
+	}
+
+	&__side-bg-mob {
+		position: absolute;
+		top: 24%;
+		right: 0;
+		z-index: -1;
+		object-fit: cover;
+		object-position: top;
+
+		@include phone-big {
+			top: 20%;
+			width: 55%;
+		}
+
+		@include phone {
+			top: 24%;
+			width: 300px;
+		}
+
+		@media (max-width: 450px) {
+			width: 250px;
+		}
+
+		@include phone-big-alt {
+			display: none;
+		}
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+}
+
+.text-center {
+	text-align: center;
+}
+
+@keyframes faded {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

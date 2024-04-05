@@ -1,0 +1,171 @@
+.hero {
+	position: relative;
+	padding: 8rem 0 34rem;
+
+	@include phone-big {
+		padding: 3rem 0 20rem;
+	}
+
+	@include phone {
+		padding: 2rem 10px 20rem;
+	}
+
+	// &::before {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 75rem;
+	// 	background: linear-gradient(180deg, #000000 0%, rgba(102 102 102 / 0%) 100%);
+	// 	content: '';
+	// }
+
+	&::after {
+		position: absolute;
+		right: 10rem;
+		bottom: -.1rem;
+		z-index: -1;
+		width: 54rem;
+		height: 54rem;
+		background: url('../img/hero/puck.png') no-repeat center/contain;
+		content: '';
+
+		@include phone-big {
+			right: 12px;
+			bottom: -20px;
+			width: 260px;
+			height: 260px;
+		}
+	}
+
+	&__wrap {
+		width: 100%;
+		max-width: 84rem;
+		margin: 0 auto;
+
+		@include phone-big {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__logos {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 0 1.3rem;
+
+		@include phone-big {
+			margin: 0 0 40px;
+		}
+	}
+
+	&__logos-cup {
+		width: 24rem;
+
+		@include phone-big {
+			width: 180px;
+		}
+
+		@include phone {
+			width: 136px;
+		}
+	}
+
+	&__logos-fonbet {
+		width: 22rem;
+
+		@include phone-big {
+			width: 150px;
+		}
+
+		@include phone {
+			width: 102px;
+		}
+	}
+
+	&__title {
+		margin: 0 0 2rem;
+
+		@include phone-big {
+			margin: 0 0 40px;
+		}
+	}
+
+	&__subtitle {
+		position: relative;
+		width: 100%;
+		max-width: 52rem;
+		margin: 0 0 3rem auto;
+		padding: 1.4rem 5.4rem 1.4rem 1.4rem;
+		font-size: 2.5rem;
+		line-height: 1.25;
+		letter-spacing: -0.02em;
+		text-align: right;
+
+		@include phone-big {
+			max-width: none;
+			margin: 0 0 40px;
+			padding: 10px;
+			font-size: 23px;
+			text-align: left;
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: calc((100vw - 84rem) / 2 + 100%);
+			height: 100%;
+			border: 1px solid $c-white;
+			content: '';
+
+			@include phone-big {
+				width: calc((100vw - 700px) / 2 + 100%);
+			}
+
+			@include phone-big {
+				width: calc((100vw - 520px) / 2 + 100%);
+			}
+
+			@include phone {
+				width: calc((100vw - 20px) / 2 + 100%);
+			}
+		}
+	}
+
+	&__descr {
+		width: 100%;
+		max-width: 77rem;
+		margin: 0 0 6.5rem;
+
+		@include phone-big {
+			order: 1;
+			margin: 0;
+			font-size: 18px;
+		}
+
+		@include phone {
+			padding: 0 10px;
+			font-size: 15px;
+		}
+	}
+
+	&__btn {
+		min-height: 5.7rem;
+		padding: 1rem 2rem;
+		font-size: 2.1rem;
+
+		@include phone-big {
+			align-self: center;
+			min-width: 280px;
+			min-height: 6.4rem;
+			margin: 0 0 80px;
+		}
+
+		@include phone {
+			width: 100%;
+		}
+	}
+}

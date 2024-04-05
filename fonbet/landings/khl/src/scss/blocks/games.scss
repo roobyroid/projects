@@ -1,0 +1,192 @@
+.games {
+	padding: 0 0 10rem;
+
+	@include phone-big {
+		padding: 0 5px 85px;
+	}
+
+	&__title {
+		margin: 0 0 3.5rem;
+
+		@include phone-big {
+			margin: 0 0 25px;
+			text-align: left;
+		}
+
+		@include phone {
+			margin: 0 0 16px;
+			font-size: 35px;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		gap: 1.4rem;
+		width: 100%;
+		max-width: 109rem;
+		margin: 0 auto;
+
+		@include phone-big {
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+	}
+
+	&__item {
+		flex: 0 1 calc(50% - 1.4rem / 2);
+
+		@include phone-big {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__event {
+		position: relative;
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 21rem;
+		padding: 2rem;
+		border: 2px solid $c-white;
+
+		@include phone-big {
+			min-height: 140px;
+		}
+
+		@include phone {
+			min-height: 104px;
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 22.8rem;
+			height: 100%;
+			background: url('../img/games/red-gradient.png') no-repeat center/cover;
+			content: '';
+
+			@include phone-big {
+				width: 150px;
+			}
+
+			@include phone {
+				width: 104px;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: -1;
+			width: 22.8rem;
+			height: 100%;
+			background: url('../img/games/blue-gradient.png') no-repeat center/cover;
+			content: '';
+
+			@include phone-big {
+				width: 150px;
+			}
+
+			@include phone {
+				width: 104px;
+			}
+		}
+	}
+
+	&__event-team {
+		font-size: 5rem;
+		font-family: $f-family--stapel;
+		line-height: 0.85;
+		text-transform: uppercase;
+
+		@include phone-big {
+			font-size: 26px;
+		}
+
+		@include phone {
+			font-size: 24px;
+		}
+	}
+
+	&__event-info {
+		font-size: 1.5rem;
+		line-height: 1;
+		letter-spacing: 0.09em;
+		text-align: center;
+		text-transform: uppercase;
+
+		@include phone-big {
+			font-size: 12px;
+		}
+
+		@include phone {
+			font-size: 7px;
+		}
+
+		p {
+			&:first-child {
+				position: relative;
+				margin: 0 0 3rem;
+				padding: 0 0 2.5rem;
+
+				@include phone-big {
+					margin: 0 0 15px;
+					padding: 0 0 12px;
+				}
+
+				&::after {
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					width: 9rem;
+					border-bottom: 1px solid $c-white;
+					transform: translateX(-50%);
+					content: '';
+
+					@include phone-big {
+						width: 65px;
+					}
+
+					@include phone {
+						width: 43px;
+					}
+				}
+			}
+		}
+	}
+
+	&__event-actions {
+		display: flex;
+		gap: 1.9rem;
+		justify-content: center;
+		margin: 1.7rem 0 0;
+
+		@include phone-big {
+			gap: 14px;
+			margin: 12px 0 0;
+		}
+
+		@include phone {
+			gap: 9px;
+			margin: 8px 0 0;
+		}
+
+		.btn {
+			min-height: 4.7rem;
+
+			@include phone-big {
+				min-height: 32px;
+				font-size: 14px;
+			}
+
+			@include phone {
+				min-height: 22px;
+				font-size: 9px;
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+.modal-waves {
+	&__window {
+		position: relative;
+
+		@include phone-big-alt {
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: -1;
+				width: 173.8rem;
+				height: 100%;
+				background: url('../img/modal/side-bg.png') no-repeat right/contain;
+				content: '';
+			}
+		}
+	}
+
+	&__head {
+		margin: 0 0 4rem;
+
+		@include phone-big {
+			margin: 0 0 50px;
+		}
+	}
+
+	&__slider {
+		.swiper {
+			@include phone-big-alt {
+				overflow: visible;
+			}
+		}
+
+		.swiper-wrapper {
+			@include phone-big-alt {
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+		}
+
+		.swiper-slide {
+			height: auto;
+
+			@include phone-big-alt {
+				display: flex;
+				flex: 0 1 calc(33.33% - 20px * 2 / 3);
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		.slider-pagination {
+			margin: 50px 0 0;
+		}
+	}
+
+	&__item {
+		cursor: pointer;
+
+		input {
+			&:checked+.modal-waves__item-label {
+				opacity: .8;
+			}
+		}
+
+		@include phone-big {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		@include phone-big-alt {
+			position: absolute;
+			right: 5rem;
+			bottom: 8rem;
+			z-index: 1;
+			width: 100%;
+			max-width: 32.6rem;
+		}
+
+		@include phone-big {
+			gap: 12px;
+			margin: 22px 0 0;
+		}
+	}
+
+	&__actions-links {
+		text-align: right;
+
+		@include phone-big {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.slider-pagination {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin: 40px 0 0;
+
+	.swiper-pagination-bullet {
+		display: inline-block;
+		flex: 0 1 95px;
+		height: 8px;
+		background: #d0d0d0;
+		border-radius: 0;
+		transition: background .3s;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: $c-red;
+	}
+
+	&.swiper-pagination-lock {
+		display: none;
+	}
+}

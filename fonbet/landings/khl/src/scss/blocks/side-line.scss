@@ -1,0 +1,28 @@
+.side-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 30rem;
+	align-items: center;
+	width: 9.4rem;
+	min-height: 100%;
+	padding: 15rem 2rem;
+	overflow: hidden;
+	background: $c-red;
+
+	@include phone-big {
+		display: none;
+	}
+
+	&__item {
+		font-weight: 500;
+		font-size: 1.2rem;
+		line-height: 1.15;
+		text-transform: uppercase;
+		transform: scale(-1);
+		writing-mode: vertical-rl;
+	}
+}

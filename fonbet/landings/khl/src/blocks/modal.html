@@ -1,0 +1,315 @@
+{% from "macroWave.html" import wave %}
+
+<div class="modal-start modal hystmodal" id="modal-start" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal-start__window modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="modal-start__head">
+				<h2 class="modal__title">отправь<br> волну!</h2>
+				<p class="modal__subtitle">Чтобы выразить поддержку любимой команде,<br>необходимо быть клиентом FONBET</p>
+			</div>
+
+			<div class="modal-start__actions">
+				<button class="btn" type="button">войти с FONBET</button>
+				<button class="btn" type="button" data-hystmodal="#modal-registr">зарегистрироваться</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal-registr modal hystmodal" id="modal-registr" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal-registr__window modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="modal-registr__head">
+				<h2 class="modal__title text-center">регистрация</h2>
+			</div>
+
+			<div class="modal-registr__links">
+				<a class="modal-registr__link modal__link" href="#">Полные правила</a>
+				<a class="modal-registr__app" href="#">ССЫЛКА НА ПРИЛОЖЕНИЕ</a>
+			</div>
+
+			<form class="modal-registr__form">
+				<input class="input" type="tel" placeholder="номер телефона">
+				<input class="input" type="text" placeholder="Дата рождения">
+				<input class="input" type="password" placeholder="придумайте пароль">
+				<input class="input" type="text" placeholder="промокод (КХЛ)">
+
+				<div class="modal-registr__checkboxes">
+					<div class="modal-registr__checkbox checkbox">
+						<input class="visually-hidden" type="checkbox" name="agree" id="agree">
+						<label class="checkbox__label" for="agree">
+							Настоящим даю свое <a class="modal__link" href="#">согласие</a> на&nbsp;обработку персональных данных ООО
+							&laquo;ФОНКОР&raquo;,
+							<a class="modal__link" href="#">согласие</a>
+							на&nbsp;обработку сведений об&nbsp;оказанных операторами услугах связи и&nbsp;передачу сведений ООО
+							&laquo;ФОНКОР&raquo;, а&nbsp;также подтверждаю, что ознакомлен с&nbsp;<a class="modal__link"
+								href="#">правилами</a>.
+						</label>
+					</div>
+					<div class="modal-registr__checkbox checkbox checkbox--aic">
+						<input class="visually-hidden" type="checkbox" name="offers" id="offers">
+						<label class="checkbox__label" for="offers">
+							Получать выгодные <a class="modal__link" href="#">предложения</a>
+						</label>
+					</div>
+				</div>
+
+				<div class="modal-registr__actions">
+					<button class="btn" type="submit" data-hystmodal="#modal-team">зарегистрироваться</button>
+					<a class="modal__link" href="#">я уже с фонбет</a>
+				</div>
+			</form>
+
+			<div class="modal-registr__footer">
+				<a class="modal-registr__footer-logo" href="#"><img src="img/modal/fonbet.svg" alt=""></a>
+				<p>Букмекерская компания FONBET. 2024&nbsp;18+</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal-team modal hystmodal" id="modal-team" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal-team__window modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="modal-team__head">
+				<h2 class="modal__title">Команда<br> твоей волны</h2>
+				<p class="modal__subtitle">Выбери команду, которую хочешь поддержать</p>
+			</div>
+
+			<div class="modal-team__wrap">
+				<div class="modal-team__item">
+					<input class="visually-hidden" type="radio" name="team" id="team-1">
+					<label class="modal-team__item-label" for="team-1">
+						Авт
+					</label>
+				</div>
+				<div class="modal-team__item">
+					<input class="visually-hidden" type="radio" name="team" id="team-2">
+					<label class="modal-team__item-label" for="team-2">
+						ММГ
+					</label>
+				</div>
+				<div class="modal-team__item">
+					<input class="visually-hidden" type="radio" name="team" id="team-3">
+					<label class="modal-team__item-label" for="team-3">
+						ЛОК
+					</label>
+				</div>
+				<div class="modal-team__item">
+					<input class="visually-hidden" type="radio" name="team" id="team-4">
+					<label class="modal-team__item-label" for="team-4">
+						трк
+					</label>
+				</div>
+			</div>
+
+			<div class="modal-team__actions">
+				<button class="btn" type="button" data-hystmodal="#modal-waves">Далее</button>
+				<div class="modal-team__actions-wrap">
+					<a class="modal__link" href="#">скачать приложение</a>
+					<div class="modal-team__checkbox checkbox checkbox--aic">
+						<input class="visually-hidden" type="checkbox" name="team-agree" id="team-agree">
+						<label class="checkbox__label" for="team-agree">
+							<a class="modal__link" href="#">принимаю Условия акции</a>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-team__footer">
+				<a class="modal-team__logo" href="#"><img src="img/modal/fonbet.svg" alt=""></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal-waves modal hystmodal" id="modal-waves" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal-waves__window modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="modal-waves__head">
+				<h2 class="modal__title">Образ<br> волны</h2>
+				<p class="modal__subtitle">Выбери стиль твоей волны</p>
+			</div>
+
+			<div class="modal-waves__slider js_modal-waves-slider">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="modal-waves__item">
+								<input class="visually-hidden" type="radio" name="waves" id="waves-1">
+								<label class="modal-waves__item-label" for="waves-1">
+									<img src="img/modal/waves/1.png" alt="">
+								</label>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-waves__item">
+								<input class="visually-hidden" type="radio" name="waves" id="waves-2">
+								<label class="modal-waves__item-label" for="waves-2">
+									<img src="img/modal/waves/2.png" alt="">
+								</label>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-waves__item">
+								<input class="visually-hidden" type="radio" name="waves" id="waves-3">
+								<label class="modal-waves__item-label" for="waves-3">
+									<img src="img/modal/waves/3.png" alt="">
+								</label>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-waves__item">
+								<input class="visually-hidden" type="radio" name="waves" id="waves-4">
+								<label class="modal-waves__item-label" for="waves-4">
+									<img src="img/modal/waves/4.png" alt="">
+								</label>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-waves__item">
+								<input class="visually-hidden" type="radio" name="waves" id="waves-5">
+								<label class="modal-waves__item-label" for="waves-5">
+									<img src="img/modal/waves/5.png" alt="">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="slider-pagination js_slider-pagination"></div>
+				</div>
+			</div>
+
+			<div class="modal-waves__actions">
+				<button class="btn" type="submit" data-hystmodal="#modal-words">Далее</button>
+				<button class="btn btn--transparent" type="submit" data-hystmodal="#modal-team">обратно</button>
+				<div class="modal-waves__actions-links modal__links">
+					<p><a class="modal__link" href="#">скачать приложение</a></p>
+					<p><a class="modal__link" href="#">Условия акции</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal-words modal hystmodal" id="modal-words" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal-words__window modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="modal-words__head">
+				<h2 class="modal__title">Слова<br> поддержки</h2>
+				<p class="modal__subtitle">Напиши послание команде.<br> Это может быть кричалка, признание в&nbsp;любви,
+					ребус&nbsp;&mdash; разгони
+					воображение!</p>
+			</div>
+
+			<form class="modal-words__form">
+				<input class="input" type="text" placeholder="город">
+				<input class="input" type="text" placeholder="имя">
+				<div class="modal-words__textarea">
+					<textarea class="textarea" placeholder="послание" maxlength="60" required></textarea>
+					<p class="modal-words__textarea-descr">максимум 60&nbsp;символов</p>
+				</div>
+				<div class="modal-words__info">
+					<p><b>Нельзя</b>&nbsp;&mdash; нарушать моральные и&nbsp;этические нормы, использовать нецензурную брань,
+						унижать
+						достоинство других команд по&nbsp;гендерному, религиозному и&nbsp;национальному признаку.</p>
+					<p><b>Можно</b>&nbsp;&mdash; использовать аббревиатуры, прозвища и&nbsp;мемы любимых команд.</p>
+				</div>
+				<div class="modal-words__actions">
+					<button class="btn" type="submit" data-hystmodal="#modal-launched">Далее</button>
+					<button class="btn btn--transparent" type="submit" data-hystmodal="#modal-waves">обратно</button>
+					<div class="modal-words__actions-links modal__links">
+						<p><a class="modal__link" href="#">скачать приложение</a></p>
+						<p><a class="modal__link" href="#">Условия акции</a></p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal-launched modal hystmodal" id="modal-launched" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal-launched__window modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="modal-launched__head">
+				<h2 class="modal__title">волна<br> запущена</h2>
+				<p class="modal__subtitle">Волна появится в&nbsp;потоке после модерации. А&nbsp;пока делись
+					ей&nbsp;в&nbsp;соцсетях!<br> Самые оригинальные волны могут получить призы и&nbsp;возможность показать
+					послание
+					целому стадиону. Если твое послание выберут жюри, ты&nbsp;сможешь забрать постер в&nbsp;одном из&nbsp;городов
+					финала плей-офф FONBET Чемпионата КХЛ.</p>
+			</div>
+
+			{{wave('modal-launched__wave')}}
+			<div class="modal-launched__actions">
+				<div class="modal-launched__actions-wrap">
+					<button class="btn" type="submit" data-hystmodal="#modal-take">хочу постер</button>
+					<a class="btn" download href="#">сохранить</a>
+					<a class="btn js_scroll-link" href="#hero" data-hystclose>на главную</a>
+					<button class="btn" type="submit" data-hystmodal="#modal-team">создать новую волну</button>
+				</div>
+				<div class="modal-launched__actions-links modal__links">
+					<p><a class="modal__link" href="#">скачать приложение</a></p>
+					<p><a class="modal__link" href="#">Условия акции</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal-take modal hystmodal" id="modal-take" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="modal-take__window modal__window hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Close</button>
+			<div class="modal-take__head">
+				<h2 class="modal__title">Забрать<br> постер</h2>
+				<p class="modal__subtitle">Ты&nbsp;&mdash; преданный болельщик!<br> Выбери город, чтобы забрать плакат
+					в&nbsp;случае
+					выигрыша.</p>
+			</div>
+
+			<div class="modal-take__cities">
+				<div class="modal-take__item">
+					<input class="visually-hidden" type="radio" name="city" id="city-1">
+					<label class="btn" for="city-1">
+						ярославль
+					</label>
+				</div>
+				<div class="modal-take__item">
+					<input class="visually-hidden" type="radio" name="city" id="city-2">
+					<label class="btn btn--blue" for="city-2">
+						магнитогорск
+					</label>
+				</div>
+				<div class="modal-take__item">
+					<input class="visually-hidden" type="radio" name="city" id="city-3">
+					<label class="btn" for="city-3">
+						екатеринбург
+					</label>
+				</div>
+				<div class="modal-take__item">
+					<input class="visually-hidden" type="radio" name="city" id="city-4">
+					<label class="btn btn--grey" for="city-4">
+						челябинск
+					</label>
+				</div>
+			</div>
+
+			<div class="modal-take__actions">
+				<div class="modal-take__actions-wrap">
+					<a class="btn" href="#">Забрать постер</a>
+					<a class="btn js_scroll-link" href="#hero" data-hystclose>на главную</a>
+				</div>
+				<div class="modal-take__actions-links modal__links">
+					<p><a class="modal__link" href="#">скачать приложение</a></p>
+					<p><a class="modal__link" href="#">Условия акции</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

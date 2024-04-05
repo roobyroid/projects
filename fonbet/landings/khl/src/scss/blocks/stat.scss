@@ -1,0 +1,177 @@
+.stat {
+	padding: 0 0 9rem;
+
+	@include phone-big {
+		padding: 0 0 120px;
+	}
+
+	&__head {
+
+		@include phone-big-alt {
+			display: flex;
+			gap: 5rem;
+			align-items: flex-start;
+			justify-content: flex-end;
+			padding: 0 6rem;
+		}
+	}
+
+	&__descr {
+		width: 100%;
+		max-width: 31.6rem;
+		letter-spacing: -0.02em;
+
+		@include phone-big {
+			display: none;
+		}
+	}
+
+	&__title {}
+
+	&__slider {
+		@include phone {
+			margin: 0 -10px;
+		}
+
+		.swiper {
+			padding-top: 4rem;
+
+			@include phone-big {
+				padding-top: 140px;
+				padding-bottom: 70px;
+			}
+		}
+
+		.swiper-slide {
+			height: auto;
+		}
+
+		.slider-pagination {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			padding: 0 10px;
+
+			.swiper-pagination-bullet {
+				&:nth-child(2) {
+					&.swiper-pagination-bullet-active {
+						background: #121334;
+					}
+				}
+
+				&:nth-child(3) {
+					&.swiper-pagination-bullet-active {
+						background: #e13c29;
+					}
+				}
+
+				&:nth-child(4) {
+					&.swiper-pagination-bullet-active {
+						background: #4a4f4e;
+					}
+				}
+			}
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 8rem 9rem 0 3rem;
+		font-weight: 800;
+		font-family: $f-family--stapel;
+		line-height: 0.85;
+		text-transform: uppercase;
+
+		@include phone-big {
+			padding: 0 20px;
+		}
+
+		@include phone {
+			padding: 0 10px;
+		}
+
+		&::before {
+			position: absolute;
+			top: -5rem;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			content: '';
+
+			@include phone-big {
+				top: -150px;
+				height: 250%;
+			}
+		}
+
+		&--1 {
+			&::before {
+				background: url('../img/stat/gradient-1.png') no-repeat left/contain;
+			}
+		}
+
+		&--2 {
+			&::before {
+				background: url('../img/stat/gradient-2.png') no-repeat left/contain;
+			}
+		}
+
+		&--3 {
+			&::before {
+				background: url('../img/stat/gradient-3.png') no-repeat left/contain;
+			}
+		}
+
+		&--4 {
+			&::before {
+				background: url('../img/stat/gradient-4.png') no-repeat left/contain;
+			}
+		}
+	}
+
+	&__item-name {
+		margin: 0 0 8rem;
+		font-size: 5rem;
+
+		@include phone-big-alt {
+			transform: scale(-1);
+			writing-mode: vertical-rl;
+		}
+
+		@include phone-big {
+			margin: 0 0 29px;
+		}
+	}
+
+	&__item-descr {
+		margin: auto 0 0;
+		font-size: 6.2rem;
+
+		@include phone-big {
+			font-size: 46px;
+		}
+	}
+
+	&__item-count {
+		display: block;
+		font-size: 10rem;
+
+		@include phone-big {
+			font-size: 74px;
+		}
+	}
+
+	&__btn-wrap {
+		margin: 5.5rem 0 0;
+
+		@include phone-big {
+			display: none;
+		}
+	}
+}

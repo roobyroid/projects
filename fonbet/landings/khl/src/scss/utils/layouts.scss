@@ -1,0 +1,15 @@
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 192rem;
+	margin: 0 auto;
+
+	@include phone-big {
+		max-width: #{$sm-container};
+		padding: 0 10px
+	}
+
+	@include phone {
+		max-width: #{$xs-container}
+	}
+}

@@ -1,0 +1,49 @@
+.checkbox {
+	min-height: 2.5rem;
+
+	input {
+		&:checked+.checkbox__label::before {
+			background-color: $c-red;
+			border-color: $c-white;
+		}
+	}
+
+	&__label {
+		position: relative;
+		display: block;
+		padding-left: 3.6rem;
+		font-size: 1.5rem;
+		cursor: pointer;
+		transition: color .3s;
+
+		@include phone-big {
+			font-size: 12px;
+		}
+
+		@include phone {
+			font-size: 8px;
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			flex-shrink: 0;
+			width: 2.5rem;
+			height: 2.5rem;
+			background: $c-white;
+			border: .5rem solid transparent;
+			border-radius: 4px;
+			transition: background .3s, border .3s;
+			content: '';
+		}
+
+	}
+
+	&--aic {
+		.checkbox__label::before {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}

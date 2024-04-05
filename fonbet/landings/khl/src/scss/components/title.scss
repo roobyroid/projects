@@ -1,0 +1,13 @@
+.title {
+	font-family: $f-family--stapel;
+	text-transform: uppercase;
+	@include h2;
+
+	@include phone-big {
+		font-size: 42px;
+	}
+
+	@include phone {
+		font-size: 40px;
+	}
+}

@@ -1,0 +1,86 @@
+.info {
+	padding: 0 0 18rem;
+
+	@include phone-big {
+		padding: 0 0 57px;
+	}
+
+	&__wrap {
+		display: flex;
+		gap: 2.6rem;
+		max-width: 123.6rem;
+		margin: 0 auto;
+		padding: 0 3rem;
+
+		@include phone-big {
+			display: block;
+			padding: 0;
+		}
+	}
+
+	&__slider.waves__slider {
+		width: 100%;
+		min-width: 0;
+		max-width: 91.5rem;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__slider-btns {
+		gap: 7rem;
+		justify-content: flex-end;
+		margin: 1.7rem 15rem 0 0;
+
+		@include phone-big {
+			gap: 20px;
+			justify-content: flex-start;
+			margin: 10px 0 0;
+
+			.slider-btns__item {
+				width: 49px;
+				height: 52px;
+			}
+		}
+	}
+
+	&__text {
+		padding: 9rem 0 0;
+		color: #141414;
+		font-weight: 500;
+		font-size: 1.2rem;
+		line-height: 1.15;
+		text-transform: uppercase;
+
+		@include phone-big {
+			max-width: 50%;
+			margin: -50px 0 0 auto;
+			padding: 0;
+		}
+	}
+
+	&__descr {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0 0 10rem;
+
+		@include phone-big {
+			display: none;
+		}
+	}
+
+	&__main {
+		margin: 0 0 16rem;
+		font-size: 2.5rem;
+
+		@include phone-big {
+			margin: 0 0 18px;
+			font-size: 12px;
+		}
+	}
+
+	&__sub {
+		@include phone-big {
+			font-size: 9px;
+		}
+	}
+}

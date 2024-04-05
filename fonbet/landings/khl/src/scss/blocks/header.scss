@@ -1,0 +1,158 @@
+.header {
+	position: relative;
+	padding: 1rem 3rem 1rem 2rem;
+	background: $c-body-bg;
+
+	@include phone-big {
+		display: flex;
+		align-items: center;
+		min-height: 50px;
+		padding: 25px 0 18px;
+		background: $c-red;
+	}
+
+	&__wrap {
+
+
+		@include phone-big {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			width: 100vw;
+			height: 100vh;
+			height: 100dvh;
+			min-height: auto;
+			overflow-y: auto;
+			background: $c-body-bg;
+			transform: translateX(-100%);
+			transition: transform .3s;
+			overscroll-behavior-y: contain;
+
+			&._active {
+				transform: translateX(0);
+			}
+		}
+	}
+
+	&__inner {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 8.6rem;
+
+		@include phone-big {
+			flex-direction: column;
+			gap: 0;
+			justify-content: center;
+			padding: 70px 18px 40px;
+		}
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		width: 19.6rem;
+
+		@include phone-big {
+			margin: 0 0 35px;
+		}
+	}
+
+	&__nav {
+		@include phone-big {
+			margin: 0 0 50px;
+		}
+	}
+
+	&__nav-list {
+		display: flex;
+		gap: 3rem;
+		justify-content: center;
+
+		@include phone-big {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__nav-item {}
+
+	&__nav-link {
+		color: $c-white;
+		line-height: 1.25;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+		transition: opacity .3s;
+
+		@include phone-big-alt {
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+
+	&__btn {
+		min-height: 4.4rem;
+		padding: 1rem 1.7rem;
+		font-size: 1.6rem;
+
+		@include phone-big {
+			min-height: 64px;
+			padding: 10px 35px;
+			font-size: 23px;
+		}
+	}
+
+	&__burger {
+		position: relative;
+		z-index: 5;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		align-items: flex-end;
+		justify-content: center;
+		width: 40px;
+		height: 20px;
+		margin: 0 0 0 auto;
+		padding: 5px;
+
+		@include phone-big-alt {
+			display: none;
+		}
+
+		&::before {
+			width: 24px;
+			height: 1px;
+			background: $c-white;
+			transition: transform .3s;
+			content: '';
+		}
+
+		&::after {
+			width: 14px;
+			height: 1px;
+			background: $c-white;
+			transition: transform .3s;
+			content: '';
+		}
+
+		&._active {
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 28px;
+				transform: translate(-50%, -50%) rotate(45deg);
+			}
+
+			&::after {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 28px;
+				transform: translate(-50%, -50%) rotate(-45deg);
+			}
+		}
+	}
+}

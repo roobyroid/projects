@@ -1,0 +1,74 @@
+.modal {
+	&__window {
+		width: 100%;
+		max-width: 120rem;
+		min-height: 80rem;
+		padding: 4rem 5rem;
+		background: #2a2a2a;
+
+		@include phone-big {
+			min-height: 600px;
+			padding: 35px 18px;
+		}
+
+		.hystmodal__close {
+			top: 4rem;
+			right: 4rem;
+			width: 2.9rem;
+			height: 2.9rem;
+			background: url('../img/modal/close.svg') no-repeat center/contain;
+			transition: opacity .3s;
+
+			@include phone-big-alt {
+				&:hover {
+					opacity: .8;
+				}
+			}
+
+			@include phone-big {
+				top: 40px;
+				right: 20px;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+
+	&__title {
+		margin: 0 0 2.5rem;
+		font-weight: 800;
+		font-size: 7rem;
+		font-family: $f-family--stapel;
+		line-height: 0.85;
+		text-transform: uppercase;
+
+		@include phone-big {
+			margin: 0;
+			font-size: 36px;
+		}
+
+		@include phone {
+			font-size: 30px;
+		}
+	}
+
+	&__subtitle {}
+
+	&__links {
+		font-size: 1.4rem;
+		line-height: 1.5;
+		text-transform: uppercase;
+	}
+
+	&__link {
+		color: inherit;
+		border-bottom: 1px solid $c-white;
+		transition: border .3s;
+
+		@include phone-big-alt {
+			&:hover {
+				border-color: transparent;
+			}
+		}
+	}
+}

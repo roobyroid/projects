@@ -1,0 +1,16 @@
+{% macro asideNavItem(items=[], subList = true) %}
+{% for item in items %}
+<li
+	class="aside-nav__item{% if item.active == true %} active{% endif %}{% if subList == true %} aside-nav__item--sublist{% endif %}">
+	<a class="aside-nav__item-head link" href="#">{{ item.name | safe }}</a>
+	{% if subList == true %}
+	<ul class="aside-nav__item-list">
+		<li><a class="link link--grey" href="#">Общая информация</a></li>
+		<li><a class="link link--grey{% if item.activeLink == true %} active{% endif %}" href="#">Каталог</a></li>
+		<li><a class="link link--grey" href="#">Расходные материалы</a></li>
+		<li><a class="link link--grey" href="#">Сервисное обслуживание</a></li>
+	</ul>
+	{% endif %}
+</li>
+{% endfor %}
+{% endmacro %}
