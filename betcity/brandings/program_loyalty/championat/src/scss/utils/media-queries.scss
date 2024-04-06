@@ -1,0 +1,23 @@
+// Media-queries screen width
+$xxl-dim: 1902px;
+$xl-dim: 1582px;
+$lg-dim: 1262px;
+
+// using max-width
+@mixin laptop-big {
+  @media screen and (max-width: #{$xxl-dim}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: #{$xl-dim}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$lg-dim}) {
+    @content;
+  }
+}

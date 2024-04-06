@@ -1,0 +1,98 @@
+.aside {
+  padding: 44px 0 0;
+
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 112px;
+    margin: 0 6px;
+
+  }
+
+  &__logo {
+    width: 93px;
+    margin: 0 auto 20px;
+
+    svg {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__content-text {
+    min-height: 54px;
+    margin: 0 0 0 6px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__content-text-first {
+    font-weight: 400;
+    font-size: 11px;
+
+    p {
+      b {
+        font-weight: 900;
+        font-size: 16px;
+      }
+
+      &:last-child {
+        &::after {
+          display: inline-block;
+          margin: 0 0 0 3px;
+          font-size: 8px;
+          vertical-align: super;
+          transform: translateY(-2px);
+          content: '**';
+        }
+      }
+    }
+  }
+
+  &__content-text-second {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-size: 12px;
+
+    b {
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    p:last-child {
+      &::after {
+        display: inline-block;
+        margin: 0 0 0 3px;
+        color: #06DCFF;
+        font-size: 10px;
+        vertical-align: super;
+        transform: translateY(-5px);
+        content: '*';
+      }
+    }
+  }
+
+  &__cup {
+    width: 26px;
+    margin: 23px auto 0;
+
+    canvas {
+      width: 100%;
+    }
+  }
+
+  &__an-btn {
+    width: 96%;
+    margin: 17px auto 0;
+    font-size: 12px;
+
+  }
+}

@@ -1,0 +1,53 @@
+.an-btn {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 8px 5px;
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #da5035;
+  border-radius: 5px;
+
+  @include laptop {
+    font-size: 10px;
+  }
+
+  @include tablet {
+    font-size: 10px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: -1;
+    display: block;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg, hsl(9deg 73% 74% / 0%), #ed998a 50%, hsl(9deg 73% 74% / 0%));
+    transform: skewX(-15deg) translateX(-300%);
+    animation: flickerBtn 3s linear infinite;
+    content: ""
+  }
+}
+
+@keyframes flickerBtn {
+  0% {
+    transform: skewX(-15deg) translateX(-300%)
+  }
+
+  30% {
+    transform: skewX(-15deg) translateX(300%)
+  }
+
+  to {
+    transform: skewX(-15deg) translateX(300%)
+  }
+}
