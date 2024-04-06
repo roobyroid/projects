@@ -19,7 +19,7 @@ Swiper.use([Navigation, Pagination]);
 function app() {
   initModal();
 
-  const myModal = new HystModal({
+  const modal = new HystModal({
     linkAttributeName: 'data-hystmodal',
   });
 
@@ -174,6 +174,55 @@ function app() {
           slidesPerView: 3,
         },
       },
+    });
+  } catch (e) {}
+
+  try {
+    const modals = document.querySelectorAll('.js_modal');
+
+    modals.forEach((modal) => {
+      const checkboxAgree = modal.querySelector('.js_modal-agree');
+      const modalChoiceItems = modal.querySelectorAll('.js_modal-choice');
+      const btnNext = modal.querySelector('.js_modal-btn-next');
+      const wordsForm = modal.querySelector('.js_modal-words-form');
+
+      let checkAgree = !checkboxAgree;
+      let checkChoice = modalChoiceItems.length === 0;
+
+      const updateNextButton = () => {
+        btnNext.classList.toggle('_disabled', !checkAgree || !checkChoice);
+      };
+
+      if (checkboxAgree) {
+        checkboxAgree.addEventListener('change', () => {
+          checkAgree = checkboxAgree.checked;
+          updateNextButton();
+        });
+      }
+
+      if (modalChoiceItems.length) {
+        modalChoiceItems.forEach((modalChoiceItem) => {
+          modalChoiceItem.addEventListener('click', () => {
+            modalChoiceItems.forEach((item) => {
+              item.style.opacity = '0.3';
+            });
+            modalChoiceItem.style.opacity = '1';
+            checkChoice = true;
+            updateNextButton();
+          });
+        });
+      }
+
+      if (wordsForm) {
+        wordsForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          wordsForm.querySelector('.js_launched-open').click();
+        });
+      }
+
+      if (btnNext) {
+        updateNextButton();
+      }
     });
   } catch (e) {}
 }

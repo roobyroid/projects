@@ -54,7 +54,7 @@ body {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			background: url('../img/page/grey-layer.png') repeat-y center/cover;
+			background: url('../img/page/grey-layer.png') repeat-y top/contain;
 			content: '';
 		}
 	}

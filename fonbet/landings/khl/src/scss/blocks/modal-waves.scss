@@ -57,11 +57,11 @@
 	&__item {
 		cursor: pointer;
 
-		input {
-			&:checked+.modal-waves__item-label {
-				opacity: .8;
-			}
-		}
+		// input {
+		// 	&:checked+.modal-waves__item-label {
+		// 		opacity: 1;
+		// 	}
+		// }
 
 		@include phone-big {
 			display: flex;

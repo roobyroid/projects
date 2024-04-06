@@ -30,6 +30,12 @@
 		background: #5e5e5e;
 	}
 
+	&._disabled {
+		cursor: default;
+		opacity: .5;
+		pointer-events: none;
+	}
+
 	@include phone-big {
 		min-height: 55px;
 		padding: 7px 20px;

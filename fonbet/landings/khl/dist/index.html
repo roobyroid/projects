@@ -15,33 +15,31 @@
 
     <link rel="icon" href="./files/favicon.ico">
 
-    <link href="./css/style.min.css?_v=20240405163556" rel="stylesheet" />
+    <link href="./css/style.min.css?_v=20240406122156" rel="stylesheet" />
 </head>
 
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="container">
-                <div class="header__wrap js_header-menu">
-                    <div class="header__inner">
-                        <div class="header__logo">
-                            <img src="img/logo.svg" alt="">
-                        </div>
-                        <nav class="header__nav">
-                            <ul class="header__nav-list">
-                                <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#steps">механика</a></li>
-                                <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#stat">команды</a></li>
-                                <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#waves">все волны</a></li>
-                                <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#prizes">призы</a></li>
-                                <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#jury">жюри</a></li>
-                            </ul>
-                        </nav>
-                        <button class="header__btn btn" type="button">запусти волну</button>
+            <div class="header__wrap js_header-menu">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="img/logo.svg" alt="">
                     </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#steps">механика</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#stat">команды</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#waves">все волны</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#prizes">призы</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link js_scroll-link" href="#jury">жюри</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn btn" type="button">запусти волну</button>
                 </div>
-
-                <button class="header__burger js_burger" type="button"></button>
             </div>
+
+            <button class="header__burger js_burger" type="button"></button>
         </div>
         <div class="run-line">
             волна поддержки 2024 // волна поддержки 2024 // волна поддержки 2024 // волна поддержки 2024 // волна поддержки 2024
@@ -142,6 +140,22 @@
                                             </div>
 
                                         </div>
+                                        <div class="swiper-slide">
+
+                                            <div class="wave ">
+                                                <picture>
+                                                    <source srcset="img/waves/item-bg-mob.png" type="image/jpeg" media="(max-width: 767.98px)">
+                                                    <img class="wave__bg" src="img/waves/item-bg.png" alt="">
+                                                </picture>
+
+                                                <div class="wave__inner">
+                                                    <p class="wave__head">волна поддержки 2024 // волна поддержки 2024 //</p>
+                                                    <p class="wave__descr">Уфа, мы&nbsp;знаем точный ответ&nbsp;&mdash; невозможного нет!</p>
+                                                    <p class="wave__name">УФА<br> МАТВЕЙ ПЕРЧИН</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="info__slider-btns slider-btns js_slider-btns">
@@ -194,7 +208,7 @@
                         </ul>
 
                         <div class="steps__btn-wrap text-center">
-                            <button class="btn btn--shadow" type="button">Зарегистрироваться</button>
+                            <button class="btn btn--shadow" type="button" data-hystmodal="#modal-start">Зарегистрироваться</button>
                         </div>
                     </div>
                 </section>
@@ -251,7 +265,7 @@
                         </div>
 
                         <div class="stat__btn-wrap text-center">
-                            <button class="btn btn--shadow" type="button">поддержать команду</button>
+                            <button class="btn btn--shadow" type="button" data-hystmodal="#modal-start">поддержать команду</button>
                         </div>
                     </div>
                 </section>
@@ -366,7 +380,7 @@
                     </div>
 
                     <div class="waves__btn-wrap text-center">
-                        <button class="btn btn--shadow" type="button">поддержать команду</button>
+                        <button class="btn btn--shadow" type="button" data-hystmodal="#modal-start">поддержать команду</button>
                     </div>
                 </div>
             </section>
@@ -432,7 +446,7 @@
                     </div>
 
                     <div class="waves__btn-wrap text-center">
-                        <button class="btn btn--shadow" type="button">поддержать команду</button>
+                        <button class="btn btn--shadow" type="button" data-hystmodal="#modal-start">поддержать команду</button>
                     </div>
                 </div>
             </section>
@@ -565,7 +579,7 @@
                     </div>
 
                     <div class="prizes__btn-wrap text-center">
-                        <button class="btn btn--shadow" type="button">Участвовать в розыгрыше</button>
+                        <button class="btn btn--shadow" type="button" data-hystmodal="#modal-start">Участвовать в розыгрыше</button>
                     </div>
                 </div>
             </section>
@@ -689,7 +703,7 @@
         </div>
     </div>
 
-    <div class="modal-team modal hystmodal" id="modal-team" aria-hidden="true">
+    <div class="modal-team modal hystmodal js_modal" id="modal-team" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="modal-team__window modal__window hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Close</button>
@@ -699,25 +713,25 @@
                 </div>
 
                 <div class="modal-team__wrap">
-                    <div class="modal-team__item">
+                    <div class="modal-team__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="team" id="team-1">
                         <label class="modal-team__item-label" for="team-1">
                             Авт
                         </label>
                     </div>
-                    <div class="modal-team__item">
+                    <div class="modal-team__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="team" id="team-2">
                         <label class="modal-team__item-label" for="team-2">
                             ММГ
                         </label>
                     </div>
-                    <div class="modal-team__item">
+                    <div class="modal-team__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="team" id="team-3">
                         <label class="modal-team__item-label" for="team-3">
                             ЛОК
                         </label>
                     </div>
-                    <div class="modal-team__item">
+                    <div class="modal-team__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="team" id="team-4">
                         <label class="modal-team__item-label" for="team-4">
                             трк
@@ -726,11 +740,11 @@
                 </div>
 
                 <div class="modal-team__actions">
-                    <button class="btn" type="button" data-hystmodal="#modal-waves">Далее</button>
+                    <button class="btn js_modal-btn-next _disabled" type="button" data-hystmodal="#modal-waves">Далее</button>
                     <div class="modal-team__actions-wrap">
                         <a class="modal__link" href="#">скачать приложение</a>
                         <div class="modal-team__checkbox checkbox checkbox--aic">
-                            <input class="visually-hidden" type="checkbox" name="team-agree" id="team-agree">
+                            <input class="visually-hidden js_modal-agree" type="checkbox" name="team-agree" id="team-agree">
                             <label class="checkbox__label" for="team-agree">
                                 <a class="modal__link" href="#">принимаю Условия акции</a>
                             </label>
@@ -745,7 +759,7 @@
         </div>
     </div>
 
-    <div class="modal-waves modal hystmodal" id="modal-waves" aria-hidden="true">
+    <div class="modal-waves modal hystmodal js_modal" id="modal-waves" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="modal-waves__window modal__window hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Close</button>
@@ -758,7 +772,7 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="modal-waves__item">
+                                <div class="modal-waves__item js_modal-choice">
                                     <input class="visually-hidden" type="radio" name="waves" id="waves-1">
                                     <label class="modal-waves__item-label" for="waves-1">
                                         <img src="img/modal/waves/1.png" alt="">
@@ -766,7 +780,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="modal-waves__item">
+                                <div class="modal-waves__item js_modal-choice">
                                     <input class="visually-hidden" type="radio" name="waves" id="waves-2">
                                     <label class="modal-waves__item-label" for="waves-2">
                                         <img src="img/modal/waves/2.png" alt="">
@@ -774,7 +788,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="modal-waves__item">
+                                <div class="modal-waves__item js_modal-choice">
                                     <input class="visually-hidden" type="radio" name="waves" id="waves-3">
                                     <label class="modal-waves__item-label" for="waves-3">
                                         <img src="img/modal/waves/3.png" alt="">
@@ -782,7 +796,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="modal-waves__item">
+                                <div class="modal-waves__item js_modal-choice">
                                     <input class="visually-hidden" type="radio" name="waves" id="waves-4">
                                     <label class="modal-waves__item-label" for="waves-4">
                                         <img src="img/modal/waves/4.png" alt="">
@@ -790,7 +804,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="modal-waves__item">
+                                <div class="modal-waves__item js_modal-choice">
                                     <input class="visually-hidden" type="radio" name="waves" id="waves-5">
                                     <label class="modal-waves__item-label" for="waves-5">
                                         <img src="img/modal/waves/5.png" alt="">
@@ -803,7 +817,7 @@
                 </div>
 
                 <div class="modal-waves__actions">
-                    <button class="btn" type="submit" data-hystmodal="#modal-words">Далее</button>
+                    <button class="btn js_modal-btn-next _disabled" type="submit" data-hystmodal="#modal-words">Далее</button>
                     <button class="btn btn--transparent" type="submit" data-hystmodal="#modal-team">обратно</button>
                     <div class="modal-waves__actions-links modal__links">
                         <p><a class="modal__link" href="#">скачать приложение</a></p>
@@ -814,7 +828,7 @@
         </div>
     </div>
 
-    <div class="modal-words modal hystmodal" id="modal-words" aria-hidden="true">
+    <div class="modal-words modal hystmodal js_modal" id="modal-words" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="modal-words__window modal__window hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Close</button>
@@ -825,9 +839,9 @@
                         воображение!</p>
                 </div>
 
-                <form class="modal-words__form">
-                    <input class="input" type="text" placeholder="город">
-                    <input class="input" type="text" placeholder="имя">
+                <form class="modal-words__form js_modal-words-form">
+                    <input class="input" type="text" placeholder="город" maxlength="30" required>
+                    <input class="input" type="text" placeholder="имя" maxlength="30" required>
                     <div class="modal-words__textarea">
                         <textarea class="textarea" placeholder="послание" maxlength="60" required></textarea>
                         <p class="modal-words__textarea-descr">максимум 60&nbsp;символов</p>
@@ -839,7 +853,8 @@
                         <p><b>Можно</b>&nbsp;&mdash; использовать аббревиатуры, прозвища и&nbsp;мемы любимых команд.</p>
                     </div>
                     <div class="modal-words__actions">
-                        <button class="btn" type="submit" data-hystmodal="#modal-launched">Далее</button>
+                        <button class="btn" type="submit">Далее</button>
+                        <button class="js_launched-open visiually-hidden" data-hystmodal="#modal-launched"></button>
                         <button class="btn btn--transparent" type="submit" data-hystmodal="#modal-waves">обратно</button>
                         <div class="modal-words__actions-links modal__links">
                             <p><a class="modal__link" href="#">скачать приложение</a></p>
@@ -894,7 +909,7 @@
         </div>
     </div>
 
-    <div class="modal-take modal hystmodal" id="modal-take" aria-hidden="true">
+    <div class="modal-take modal hystmodal js_modal" id="modal-take" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="modal-take__window modal__window hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Close</button>
@@ -906,25 +921,25 @@
                 </div>
 
                 <div class="modal-take__cities">
-                    <div class="modal-take__item">
+                    <div class="modal-take__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="city" id="city-1">
                         <label class="btn" for="city-1">
                             ярославль
                         </label>
                     </div>
-                    <div class="modal-take__item">
+                    <div class="modal-take__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="city" id="city-2">
                         <label class="btn btn--blue" for="city-2">
                             магнитогорск
                         </label>
                     </div>
-                    <div class="modal-take__item">
+                    <div class="modal-take__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="city" id="city-3">
                         <label class="btn" for="city-3">
                             екатеринбург
                         </label>
                     </div>
-                    <div class="modal-take__item">
+                    <div class="modal-take__item js_modal-choice">
                         <input class="visually-hidden" type="radio" name="city" id="city-4">
                         <label class="btn btn--grey" for="city-4">
                             челябинск
@@ -934,7 +949,7 @@
 
                 <div class="modal-take__actions">
                     <div class="modal-take__actions-wrap">
-                        <a class="btn" href="#">Забрать постер</a>
+                        <a class="btn js_modal-btn-next _disabled" href="#">Забрать постер</a>
                         <a class="btn js_scroll-link" href="#hero" data-hystclose>на главную</a>
                     </div>
                     <div class="modal-take__actions-links modal__links">
@@ -945,7 +960,7 @@
             </div>
         </div>
     </div>
-    <script src="./js/app.min.js?_v=20240405163556"></script>
+    <script src="./js/app.min.js?_v=20240406122156"></script>
 </body>
 
 </html>

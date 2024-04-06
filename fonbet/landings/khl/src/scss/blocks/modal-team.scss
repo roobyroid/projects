@@ -82,12 +82,6 @@
 			}
 		}
 
-		input {
-			&:checked+.modal-team__item-label {
-				opacity: .8;
-			}
-		}
-
 	}
 
 	&__item-label {

@@ -44,10 +44,11 @@
       }
     }
 
-    // &.swiper-button-disabled {
-    //   opacity: .5;
-    //   pointer-events: none;
-    // }
+    &.swiper-button-disabled {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
 
     &.swiper-button-lock {
       display: none;
