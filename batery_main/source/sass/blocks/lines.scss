@@ -1,0 +1,107 @@
+.lines {
+  padding: 0 0 13rem;
+  overflow-x: hidden;
+
+  @include md {
+    padding: 0 0 100px;
+  }
+
+  &--first {
+    @include md {
+      padding: 0 0 50px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    white-space: nowrap;
+    gap: 8rem;
+    font-weight: 900;
+    font-family: $font-family-DrukWide;
+    font-size: 4.4rem;
+    padding: .3rem 0;
+    color: $colorRed;
+    line-height: 1;
+    text-transform: uppercase;
+
+    span {
+      flex-shrink: 0;
+    }
+
+    @include md {
+      font-size: 32px;
+      gap: 5rem;
+    }
+
+    @include xs {
+      font-size: 25px;
+    }
+  }
+
+  &__brands {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: $colorRed;
+    margin: 0 0 0 -150rem;
+    padding: 7px 0 5px;
+
+    @include md {
+      gap: 12px;
+    }
+
+    img {
+      flex-shrink: 0;
+
+      &:nth-child(3n+1) {
+        margin: 0 4rem;
+
+        @include md {
+          width: 123px;
+          margin: 0 1rem;
+        }
+      }
+
+      &:nth-child(3n+2) {
+        @include md {
+          width: 87px;
+        }
+      }
+
+      &:nth-child(3n+3) {
+        @include md {
+          width: 127px;
+        }
+      }
+    }
+  }
+
+  &__item {
+    white-space: nowrap;
+    font-weight: 500;
+    font-family: $font-family-DrukWide;
+    font-size: 6.4rem;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 7px 0 5px;
+
+    @include md {
+      font-size: 32px;
+    }
+
+    @include xs {
+      font-size: 28px;
+    }
+
+    &:first-child {
+      background: $colorBlack;
+      color: $colorRed;
+    }
+
+    &:last-child {
+      color: rgba(0, 0, 0, 0.9);
+      background: $colorRed;
+      margin: 0 0 0 -150rem;
+    }
+  }
+}

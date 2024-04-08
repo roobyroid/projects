@@ -1,0 +1,199 @@
+body {
+
+  // &.lang-ru {
+
+  //   .title,
+  //   .faq__question {
+  //     font-weight: 500;
+  //     font-family: $font-family-DrukCyr;
+  //   }
+
+  //   @media (min-width: 992px) {
+  //     .hero__title .title {
+  //       font-size: 5.4rem;
+  //     }
+  //   }
+  // }
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+
+  @include xs {
+    overflow-x: clip;
+  }
+}
+
+.scroll-lock--menu {
+
+  .header__wrap {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.lightning-left {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 52rem;
+
+  @include md {
+    display: none;
+  }
+}
+
+.lightning-right {
+  position: absolute;
+  top: 30%;
+  width: 52rem;
+  right: 0;
+  z-index: -1;
+
+  @include md {
+    display: none;
+  }
+}
+
+
+.bg-line {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  width: 100%;
+  object-fit: cover;
+
+  @include md {
+    top: 17%;
+  }
+
+  @include xs {
+    max-width: none;
+    width: 575px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+    top: 20%;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 108rem;
+  object-fit: cover;
+
+  @include md {
+    height: 800px;
+  }
+
+  @include xs {
+    height: 600px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-family: $font-family-DrukWide;
+  font-size: 6.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include md {
+    font-size: 32px;
+  }
+
+  @include sm {
+    font-size: 26px;
+  }
+
+  @include xs {
+    font-size: 20px;
+  }
+}
+
+.btn {
+  position: relative;
+  min-width: 54rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 8.6rem;
+  color: $colorWhite;
+  font-size: 2.7rem;
+  font-weight: 700;
+  padding: 0 7rem;
+  border-radius: 6rem;
+  background: $colorRed;
+  text-transform: uppercase;
+  transition: opacity .3s;
+
+  @include md {
+    min-width: auto;
+    min-height: 62px;
+    font-size: 28px;
+    padding: 0 60px;
+  }
+
+  @include xs {
+    width: 100%;
+    font-size: 21px;
+    padding: 0 25px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.scroll-down {
+  font-size: 1.4rem;
+  color: $colorWhite;
+  text-align: center;
+
+
+  &__btn {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: $colorBlack;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid $colorRed;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 0 2rem;
+    transition: background .3s;
+
+    &:hover {
+      background: $colorRed;
+
+      svg {
+        fill: $colorBlack;
+      }
+    }
+
+    svg {
+      width: 1.7rem;
+      height: 2.8rem;
+      fill: $colorRed;
+      transition: fill .3s;
+    }
+  }
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

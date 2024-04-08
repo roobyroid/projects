@@ -1,0 +1,184 @@
+.faq {
+  padding: 0 0 10rem;
+
+  @include md {
+    padding: 0 0 60px;
+  }
+
+  @include xs {
+    padding: 0 0 40px;
+  }
+
+  &__title {
+    color: $colorRed;
+    font-family: $font-family-DrukCyr;
+    font-weight: 500;
+    font-size: 11.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin: 0 0 4rem;
+
+    @include md {
+      font-size: 72px;
+    }
+
+    @include xs {
+      font-size: 60px;
+    }
+  }
+
+  &__wrap {}
+
+  &__item {
+    background-color: #1a1a1a;
+
+    &:not(:last-child) {
+      margin: 0 0 2rem;
+
+      @include xs {
+        margin: 0 0 10px;
+      }
+    }
+
+    &.open {
+      .faq__question-el {
+        transform: rotate(-45deg);
+      }
+
+      .faq__answer {
+        opacity: 1;
+        padding-bottom: 2rem;
+        box-sizing: content-box;
+
+        @include sm {
+          padding-bottom: 15px;
+        }
+
+        @include xs {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    color: $colorWhite;
+    background: transparent;
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    border: none;
+    padding: 4rem 3rem 3rem 3rem;
+    cursor: pointer;
+    transition: color .3s;
+
+    &:hover {
+      color: $colorRed;
+
+      .faq__question-el {
+
+        &::before,
+        &::after {
+          background: $colorRed;
+        }
+      }
+    }
+
+    @include md {
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    @include sm {
+      font-size: 20px;
+      padding: 15px;
+    }
+
+    @include xs {
+      font-size: 14px;
+      padding: 12px 10px;
+    }
+  }
+
+  &__question-el {
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    margin: 0 0 0 2rem;
+    transition: transform .3s;
+
+    @include xs {
+      width: 14px;
+      height: 14px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      height: .4rem;
+      border-radius: .4rem;
+      background-color: $colorRed;
+      transition: background .3s;
+
+      @include xs {
+        height: 2px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: .4rem;
+      border-radius: .4rem;
+      background-color: $colorRed;
+      transition: background .3s;
+
+      @include xs {
+        width: 2px;
+      }
+    }
+  }
+
+  &__answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    transition: all 0.3s ease-out;
+
+    @include sm {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    @include xs {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    margin: 70px 0 0;
+
+    @include md {
+      margin: 40px 0 0;
+    }
+  }
+}

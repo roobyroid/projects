@@ -1,0 +1,300 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+
+    @include md {
+      padding: 30px 0;
+      justify-content: space-between;
+    }
+
+    @include xs {
+      padding: 20px 0;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 6.4rem;
+    height: 3.2rem;
+    background: transparent;
+    z-index: 6;
+    cursor: pointer;
+    position: relative;
+    margin: 0 5.4rem 0 0;
+    border: none;
+
+    @include md {
+      width: 37px;
+      height: 20px;
+    }
+
+    &:hover {
+
+      span,
+      &::before,
+      &::after {
+        background: $colorRed;
+      }
+    }
+
+    @include md {
+      margin: 0 15px 0 0;
+    }
+
+    span {
+      background: $colorWhite;
+      width: 5rem;
+      height: .4rem;
+      margin: 1rem 0;
+      flex-shrink: 0;
+      border-radius: .4rem;
+      pointer-events: none;
+      transition: 0.3s;
+
+      @include md {
+        width: 31px;
+        height: 3px;
+        margin: 8px 0;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      background: $colorWhite;
+      width: 6rem;
+      height: .4rem;
+      flex-shrink: 0;
+      border-radius: .4rem;
+      transition: 0.3s;
+
+      @include md {
+        width: 37px;
+        height: 3px;
+      }
+    }
+
+    &::after {
+      width: 4rem;
+
+      @include md {
+        width: 25px;
+      }
+    }
+
+    &.active {
+      span {
+        transform: scale(0);
+      }
+
+      &::before {
+        width: 4rem;
+        left: calc(50% - 2rem);
+        position: absolute;
+        top: 1.4rem;
+        transform: rotate(45deg);
+
+        @include md {
+          width: 25px;
+          top: 8px;
+          left: calc(50% - 14px);
+        }
+      }
+
+      &::after {
+        position: absolute;
+        left: calc(50% - 2rem);
+        bottom: 1.4rem;
+        transform: rotate(-45deg);
+
+        @include md {
+          left: calc(50% - 14px);
+          bottom: 9px;
+        }
+      }
+    }
+  }
+
+
+
+  &__logo {
+    max-width: 30.7rem;
+    width: 100%;
+    flex-shrink: 0;
+    margin: 0 auto;
+    transform: translateX(43%);
+
+    @include md {
+      max-width: 220px;
+      transform: translateX(0);
+    }
+
+    @include xs {
+      max-width: 193px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 2rem;
+    margin: 0 0 0 auto;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__link {
+    padding: 1rem 3.5rem;
+    background: $colorRed;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $colorWhite;
+    text-decoration: underline;
+    transition: opacity .3s;
+    border-radius: 3rem;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &--black {
+      background: $colorBlack;
+    }
+  }
+
+  &__lang {
+    min-width: 8.6rem;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    @include md {
+      font-size: 18px;
+      min-width: 65px;
+      margin: 0 0 0 15px;
+      order: 1;
+    }
+
+    @include xs {
+      min-width: 56px;
+      font-size: 15px;
+    }
+
+    &.open {
+
+      .header__lang-head {
+        border-radius: 15px 15px 0 0;
+        border-bottom: none;
+
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+
+      ul {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+      }
+    }
+
+    ul {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+      padding: .5rem .5rem 1rem 2rem;
+      border: 1px solid $colorRed;
+      border-top: none;
+      transition: opacity 0.3s, visibility 0.3s;
+
+      @include md {
+        border: none;
+      }
+
+      li {
+
+        button {
+          margin: 0 0 1rem;
+          font-size: inherit;
+          font-weight: inherit;
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          color: #fff;
+          transition: color .3s;
+
+          &:hover {
+            color: $colorRed;
+          }
+        }
+      }
+    }
+  }
+
+  &__lang-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color .3s;
+    padding: 1rem 2rem;
+    background: #000000;
+    border: 1px solid $colorRed;
+    border-radius: 3rem;
+    min-height: 5.2rem;
+
+    @include md {
+      border: none;
+      padding-right: 0;
+      background: transparent;
+    }
+
+    @media (min-width: 992px) {
+
+      &:hover {
+        color: $colorRed;
+
+        svg {
+          stroke: $colorRed;
+        }
+      }
+    }
+
+
+
+    svg {
+      width: 2.2rem;
+      height: 1rem;
+      flex-shrink: 0;
+      stroke: $colorWhite;
+      margin: 0 0 0 .9rem;
+      transition: stroke .3s, transform 0.3s;
+
+      @include md {
+        width: 15px;
+        height: 8px;
+        margin: 0 0 0 7px;
+      }
+    }
+  }
+
+  &__menu {}
+}

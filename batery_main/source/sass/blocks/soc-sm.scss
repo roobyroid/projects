@@ -1,0 +1,70 @@
+.soc-sm {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3rem;
+  border: 1px solid $colorRed;
+  padding: 1rem 1.6rem 1rem 2.7rem;
+
+  &>p {
+    margin: 0 2.9rem 0 0;
+    line-height: 1.11;
+  }
+
+  &__wrap {
+    display: flex;
+    font-size: 1.8rem;
+  }
+
+  &__item {
+    width: 3.8rem;
+    height: 3.8rem;
+    padding: .5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 0.1rem solid $colorRed;
+    border-radius: 50%;
+    transition: background .3s, border .3s;
+
+    &:hover {
+      background: $colorRed;
+      border-color: transparent;
+
+      svg {
+        fill: $colorBlack;
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 1rem 0 0;
+    }
+
+    &:first-child {
+      svg {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 .1rem 0 0;
+      }
+    }
+
+    &:nth-child(2) {
+      svg {
+        width: 2rem;
+        height: 1.5rem;
+      }
+    }
+
+    &:last-child {
+      svg {
+        width: 1.5rem;
+        height: 2rem;
+      }
+    }
+
+    svg {
+      fill: $colorRed;
+      transition: fill .3s;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  background: $colorBlack;
+  z-index: 2;
+  transition: 0.3s;
+  min-height: 100vh;
+
+  .container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    overflow: auto;
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    @include md {
+      justify-content: flex-start;
+      padding: 12rem 3rem 7rem;
+    }
+
+    &:before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: $colorBlack;
+      height: 12rem;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &__actions {
+    display: none;
+
+    @include md {
+      display: block;
+    }
+  }
+
+  &__item {
+    li {
+      position: relative;
+      text-align: center;
+      font-weight: 500;
+      font-size: 3.6rem;
+      padding: 2rem calc((100vw - 163.8rem) / 2 + 3rem);
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: $colorRed;
+      }
+
+      @include md {
+        font-size: 22px;
+        padding: 15px 0;
+      }
+
+      @include xs {
+        font-size: 21px;
+      }
+    }
+
+    a {
+      color: $colorWhite;
+      transition: color .3s;
+
+      &:hover {
+        color: $colorRed;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 7rem;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__nav {
+    margin: 0 0 2rem;
+
+    li {
+      text-align: left;
+
+      @include md {
+        text-align: center;
+      }
+    }
+  }
+
+  .soc-sm {
+    align-self: center;
+    margin: auto 0 0;
+    display: none;
+    font-size: 17px;
+
+    @include md {
+      display: flex;
+    }
+  }
+}

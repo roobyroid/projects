@@ -1,0 +1,302 @@
+.benefits {
+  padding: 0 0 26rem;
+  overflow-x: hidden;
+
+  @include md {
+    padding: 0 0 80px;
+
+    .container {
+      position: relative;
+    }
+  }
+
+  @include xs {
+    padding: 0 0 60px;
+  }
+
+  &__head {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    margin: 0 0 6rem;
+
+    @include md {
+      margin: 0 0 45px;
+    }
+
+    .title {
+      max-width: 70rem;
+      margin: 0 2rem 0 0;
+
+      @include md {
+        max-width: 500px;
+      }
+
+      @include xs {
+        max-width: 220px;
+      }
+    }
+  }
+
+  &__head-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 20rem;
+
+    @include md {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 20px;
+    }
+  }
+
+  &__pagination {
+    font-family: $font-family-DrukWide;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 6.4rem;
+
+    @include md {
+      font-size: 37px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+
+    @include md {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__nav-btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.6rem;
+    height: 7.6rem;
+    border: 0.1rem solid $colorRed;
+    border-radius: 50%;
+    padding: 1rem;
+    background: transparent;
+    cursor: pointer;
+    transition: border .3s;
+
+    @include md {
+      width: 48px;
+      height: 48px;
+      // border-color: $colorBlack;
+    }
+
+    @include xs {
+      width: 36px;
+      height: 36px;
+    }
+
+    &:hover {
+
+      svg {
+        fill: $colorRed;
+      }
+    }
+
+    &:first-child {
+      margin: 0 3rem 0 0;
+
+      @include md {
+        margin: 0 20px 0 0;
+      }
+
+      @include xs {
+        margin: 0 10px 0 0;
+      }
+    }
+
+    svg {
+      width: 3.3rem;
+      height: 3rem;
+      fill: $colorWhite;
+      transition: fill .3s;
+      transform: rotate(60deg);
+      margin: .2rem 0 0;
+
+      @include md {
+        width: 15px;
+        height: 25px;
+        margin: 0;
+        // fill: $colorBlack;
+      }
+
+      @include xs {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &--prev {
+      svg {
+        transform: rotate(-120deg);
+      }
+    }
+  }
+
+  &__slider {
+    margin: 0 -3rem 0 0;
+
+    @include md {
+      margin: 0 -30px;
+    }
+
+    .swiper {
+      padding: 2.5rem 0 .5rem;
+    }
+  }
+
+  &__item {
+    padding: 0 3rem 0 0;
+
+    @include md {
+      margin: 0 10px;
+      padding: 0;
+    }
+
+    &:hover {
+
+      .benefits__item-inner {
+        transform: translateY(-2rem);
+        background: $colorBlack;
+        color: $colorWhite;
+      }
+
+      .benefits__item-icon svg {
+        fill: $colorWhite;
+      }
+
+      .benefits__item-name {
+        border-color: $colorWhite;
+      }
+    }
+  }
+
+  &__item-inner {
+    position: relative;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4rem;
+    background-color: $colorWhite;
+    color: $colorBlack;
+    padding: 6rem 4rem;
+    overflow: hidden;
+    transition: border .3s, background .3s, color .3s, transform .3s;
+
+    @include md {
+      min-height: 400px;
+      padding: 40px 25px;
+    }
+
+    @include xs {
+      min-height: 315px;
+    }
+  }
+
+  &__item-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__item-icon {
+    max-width: 3.5rem;
+    margin: 0 0 2rem;
+
+    svg {
+      fill: $colorBlack;
+      transition: fill .3s;
+    }
+  }
+
+  &__item-content {
+    margin: auto 0 0;
+    width: 100%;
+  }
+
+  &__item-num {
+    display: inline-block;
+    font-family: $font-family-DrukCyr;
+    font-size: 3.6rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin: 0 0 3rem;
+
+    @include md {
+      font-size: 28px;
+      margin: 0 0 20px;
+    }
+
+    @include xs {
+      font-size: 23px;
+    }
+  }
+
+  &__item-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 3rem 0 0;
+    line-height: 1.33;
+    min-height: 10rem;
+
+    @include md {
+      font-size: 18px;
+      min-height: 70px;
+      padding: 20px 0 0;
+    }
+
+    @include xs {
+      min-height: 60px;
+      font-size: 14px;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    margin: 7rem 0 0;
+
+    @include md {
+      margin: 117px 0 0;
+
+      .btn {
+        background: $colorBlack;
+
+        span:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__footer-mob {
+    display: none;
+
+    @include md {
+      display: block;
+    }
+  }
+}

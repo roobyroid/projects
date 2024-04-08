@@ -1,0 +1,188 @@
+.cards {
+  padding: 0 0 18rem;
+
+  @include md {
+    padding: 70px 0;
+    overflow: clip;
+  }
+
+  @include xs {
+    padding: 44px 0;
+  }
+
+  &__wrap {
+    max-width: 108rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @include md {
+      max-width: 750px;
+    }
+  }
+
+  &__item {
+    position: sticky;
+    top: 3rem;
+    border-radius: 4.4rem;
+    background: $colorBlack;
+    color: $colorWhite;
+    box-shadow: 0 0 9rem rgba($color: #FF004F, $alpha: .4);
+    padding: 8rem;
+
+    @include md {
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 2rem rgba($color: #FF004F, $alpha: .4);
+    }
+
+    @include xs {
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    &:first-child {
+      &::before {
+        content: '';
+        width: 64rem;
+        height: 73rem;
+        max-height: 100%;
+        background: url('../img/cards/1.png') no-repeat center/contain;
+        position: absolute;
+        top: -12rem;
+        right: -10rem;
+        z-index: -1;
+
+        @include md {
+          top: -60px;
+        }
+
+        @include sm {
+          width: 290px;
+          height: 250px;
+          top: -40px;
+          right: -22px;
+        }
+
+        @include xs {
+          width: 220px;
+          height: 200px;
+          top: -40px;
+          right: -62px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        content: '';
+        width: 56rem;
+        height: 57rem;
+        max-height: 100%;
+        background: url('../img/cards/2.png') no-repeat center/contain;
+        position: absolute;
+        top: 0;
+        right: -8rem;
+        z-index: -1;
+
+        @include sm {
+          width: 290px;
+          height: 250px;
+          right: -40px;
+        }
+
+        @include xs {
+          width: 400px;
+          height: 230px;
+          top: 0;
+          right: -60px;
+          background: url('../img/cards/2-mob.png') no-repeat center/contain;
+        }
+      }
+    }
+  }
+
+  &__item-inner {
+    max-width: 44.6rem;
+    font-size: 2.4rem;
+
+    @include md {
+      max-width: 300px;
+      font-size: 16px;
+    }
+
+    @include xs {
+      font-size: 12px;
+      max-width: 210px;
+    }
+
+  }
+
+
+  &__item-name {
+    text-transform: uppercase;
+    font-family: $font-family-DrukWide;
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0 0 4rem;
+
+    @include md {
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      margin: 0 0 20px;
+    }
+
+    @include xs {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__item-list {
+    color: $colorWhite;
+    margin: 0 0 5rem;
+
+    @include md {
+      margin: 0 0 30px;
+    }
+
+    @include xs {
+      margin: 0 0 20px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin: 0 0 3rem;
+
+        @include md {
+          margin: 0 0 20px;
+        }
+
+        @include xs {
+          margin: 0 0 15px;
+        }
+      }
+    }
+
+    svg {
+      max-width: 3.2rem;
+      max-height: 3.2rem;
+      flex-shrink: 0;
+      fill: $colorWhite;
+      margin: 0 2rem 0 0;
+
+      @include md {
+        max-width: 20px;
+        max-height: 20px;
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+
+  &__item-text {
+    font-weight: 600;
+    color: $colorRed;
+  }
+}

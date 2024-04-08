@@ -1,0 +1,108 @@
+.soc {
+  padding: 0 0 13rem;
+
+  @include md {
+    padding: 0 0 70px;
+  }
+
+  @include xs {
+    padding: 0 0 50px;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    @include md {
+      gap: 35px;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+
+    @include md {
+      font-weight: 900;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 3.5rem;
+
+    @include xs {
+      gap: 15px;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    width: 14rem;
+    height: 14rem;
+    border: 0.1rem solid $colorRed;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $colorBlack;
+    padding: 1rem;
+    transition: background .3s, border .3s;
+
+    @include md {
+      width: 84px;
+      height: 84px;
+    }
+
+    &:hover {
+      background: $colorRed;
+      border-color: transparent;
+
+      svg {
+        fill: $colorBlack;
+      }
+    }
+
+    &:first-child {
+      svg {
+        width: 7.3rem;
+        height: 7.3rem;
+
+        @include md {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      svg {
+        width: 7.1rem;
+        height: 4.7rem;
+
+        @include md {
+          width: 40px;
+          height: 25px;
+        }
+      }
+    }
+
+    &:last-child {
+      svg {
+        width: 4.7rem;
+        height: 7rem;
+
+        @include md {
+          width: 30px;
+          height: 50px;
+        }
+      }
+    }
+
+    svg {
+      fill: $colorRed;
+      transition: fill .3s;
+    }
+  }
+}

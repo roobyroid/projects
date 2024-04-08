@@ -1,0 +1,245 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  padding: 20rem 0 13rem;
+
+  @include md {
+    padding: 160px 0 60px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 5rem;
+
+    @include md {
+      margin: 0 0 30px;
+    }
+
+    h1 {
+      font-family: $font-family-DrukCyr;
+      font-weight: 900;
+      margin: 0 0 -4rem 5rem;
+
+      @include md {
+        margin: 0 0 5px;
+      }
+
+      @include xs {
+        font-size: 26px;
+      }
+    }
+  }
+
+  &__title-img {
+    max-width: 106rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @include md {
+      max-width: 500px;
+    }
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .1rem;
+    margin: 0 0 9rem;
+
+    @include md {
+      font-size: 18px;
+      letter-spacing: 0;
+      margin: 0 0 70px;
+    }
+
+
+    @include xs {
+      font-size: 15px;
+    }
+
+    span {
+      color: rgba(255, 255, 255, 0.9);
+
+      &:not(:last-of-type) {
+        &::after {
+          content: '|';
+          margin: 0 1rem;
+        }
+      }
+    }
+
+    p {
+      color: $colorRed;
+      margin: 1rem 0 0;
+
+      @include md {}
+    }
+  }
+
+  &__side {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    right: 7rem;
+    bottom: 11.5rem;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__soc {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+
+    &.open {
+
+      .hero__soc-inner {
+        height: 36rem;
+      }
+
+      .hero__soc-open {
+        display: none;
+      }
+
+      .soc-sm__wrap {
+        display: flex;
+      }
+
+      .hero__soc-close {
+        display: block;
+      }
+    }
+  }
+
+  &__soc-inner {
+    overflow: hidden;
+    height: 22.7rem;
+    width: 6.2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: height .5s;
+    border: none;
+    background: $colorBlack;
+    align-items: center;
+    transition: height .3s;
+    padding: 2.7rem .5rem .5rem .5rem;
+
+    &>p {
+      flex-shrink: 0;
+      writing-mode: vertical-rl;
+      margin: 0 0 2.9rem;
+    }
+
+    .soc-sm__wrap {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: .7rem;
+
+      .soc-sm__item {
+        margin: 0;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__soc-open {
+    width: 3rem;
+    height: 3.4rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        fill: $colorRed;
+      }
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $colorWhite;
+      transition: fill .3s;
+    }
+  }
+
+  &__soc-close {
+    display: none;
+    position: relative;
+    width: 3.8rem;
+    height: 3.8rem;
+    flex-shrink: 0;
+    background: $colorBlack;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0 .8rem;
+    transform: rotate(-45deg);
+
+    &:hover {
+
+      &::before,
+      &::after {
+        background: $colorWhite;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.7rem;
+      height: 2px;
+      transform: translate(-50%, -50%);
+      border-radius: .2rem;
+      background: $colorRed;
+      transform: translate(-50%, -50%);
+      transition: background .3s;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 1.7rem;
+      width: 2px;
+      border-radius: .4rem;
+      background: $colorRed;
+      transform: translate(-50%, -50%);
+      transition: background .3s;
+    }
+  }
+
+  &__btn {}
+}
