@@ -7077,8 +7077,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  z-index: 1;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -7142,10 +7140,6 @@ button,
   cursor: pointer;
   -webkit-transition: border .3s;
   transition: border .3s;
-}
-
-.benefits__nav-btn:hover svg {
-  fill: #FF004F;
 }
 
 .benefits__nav-btn:first-child {
@@ -7695,6 +7689,10 @@ button,
     stroke: #FF004F;
   }
 
+  .benefits__nav-btn:hover {
+    border-color: #FF004F;
+  }
+
   .payments__slider .slider-pagination {
     display: none;
   }
@@ -8026,6 +8024,7 @@ button,
   .benefits__nav-btn {
     width: 48px;
     height: 48px;
+    border-color: #000;
   }
 
   .benefits__nav-btn:first-child {
@@ -8104,7 +8103,7 @@ button,
     max-width: 250px;
     height: 350px;
     display: block;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     overflow: hidden;
   }
 
@@ -8412,6 +8411,10 @@ button,
 
   .payments__title {
     margin: 0 0 20px;
+  }
+
+  .payments__slide {
+    padding: 0 10px;
   }
 
   .payments__slide .payments__screens-item {

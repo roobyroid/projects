@@ -104,6 +104,10 @@
       padding: 0 20px;
     }
 
+    @include xs {
+      padding: 0 10px;
+    }
+
     .payments__screens-item {
       display: none;
 
@@ -111,7 +115,7 @@
         max-width: 250px;
         height: 350px;
         display: block;
-        margin: 0 auto 30px;
+        margin: 0 auto;
         overflow: hidden;
       }
 
