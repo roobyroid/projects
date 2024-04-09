@@ -11,8 +11,16 @@ const lang = () => {
       en: 'Affiliate Program',
       ru: 'Партнёрская программа',
     },
+    menuItem2: {
+      en: 'Benefits of Empire Partners',
+      ru: 'Преимущества Empire Partners',
+    },
+    menuItem3: {
+      en: 'Quick payments to Empire Partners',
+      ru: 'Быстрые выплаты веб-мастерам по запросу',
+    },
     menuItem4: {
-      en: 'Communication with the manager',
+      en: 'Communication with manager',
       ru: 'Связаться с менеджером',
     },
     signUpHeader: {
@@ -162,7 +170,7 @@ const lang = () => {
       ru: 'TRON (trc20)',
     },
     question6: {
-      en: 'What is the minimum withdrawal amount?',
+      en: 'What is the minimum payment?',
       ru: 'Какая минимальная сумма вывода?',
     },
     answer6: {
@@ -170,7 +178,7 @@ const lang = () => {
       ru: 'Минимальная сумма вывода денег с аффилиэйт счета - 100$.',
     },
     question7: {
-      en: 'Does your affiliate program provide creatives?',
+      en: 'Does your affiliate programe offer creatives?',
       ru: 'Предоставляет ли ваша аффилиейт программа креативы?',
     },
     answer7: {
@@ -180,12 +188,12 @@ const lang = () => {
       рекламных кампаний, либо вы можете их увидеть в своем личном кабинете.`,
     },
     question8: {
-      en: 'How often do you make payments?',
-      ru: 'Как часто вы проводите выплаты?',
+      en: 'Where can I get promo materials?',
+      ru: 'Где я могу получить промо-материалы?',
     },
     answer8: {
-      en: 'At the moment we pay partners twice a month.',
-      ru: 'На данный момент мы платим партнерам два раза в месяц',
+      en: '',
+      ru: '',
     },
     btnPartner: {
       en: 'Become a partner',
