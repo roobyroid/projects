@@ -6560,6 +6560,7 @@ button,
   -webkit-transition: 0.3s;
   transition: 0.3s;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .menu .container {
