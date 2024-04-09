@@ -7174,21 +7174,6 @@ button,
   padding: 0 3rem 0 0;
 }
 
-.benefits__item:hover .benefits__item-inner {
-  -webkit-transform: translateY(-2rem);
-  transform: translateY(-2rem);
-  background: #000;
-  color: #fff;
-}
-
-.benefits__item:hover .benefits__item-icon svg {
-  fill: #fff;
-}
-
-.benefits__item:hover .benefits__item-name {
-  border-color: #fff;
-}
-
 .benefits__item-inner {
   position: relative;
   min-height: 50rem;
@@ -7693,6 +7678,21 @@ button,
     border-color: #FF004F;
   }
 
+  .benefits__item:hover .benefits__item-inner {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+    background: #000;
+    color: #fff;
+  }
+
+  .benefits__item:hover .benefits__item-icon svg {
+    fill: #fff;
+  }
+
+  .benefits__item:hover .benefits__item-name {
+    border-color: #fff;
+  }
+
   .payments__slider .slider-pagination {
     display: none;
   }
@@ -8039,6 +8039,21 @@ button,
 
   .benefits__slider {
     margin: 0 -30px;
+  }
+
+  .benefits__slider .swiper .swiper-slide.swiper-slide-active .benefits__item-inner {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+    background: #000;
+    color: #fff;
+  }
+
+  .benefits__slider .swiper .swiper-slide.swiper-slide-active .benefits__item-icon svg {
+    fill: #fff;
+  }
+
+  .benefits__slider .swiper .swiper-slide.swiper-slide-active .benefits__item-name {
+    border-color: #fff;
   }
 
   .benefits__item {

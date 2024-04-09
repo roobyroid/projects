@@ -134,7 +134,6 @@
         width: 15px;
         height: 25px;
         margin: 0;
-        // fill: $colorBlack;
       }
 
       @include xs {
@@ -159,6 +158,28 @@
 
     .swiper {
       padding: 2.5rem 0 .5rem;
+
+      .swiper-slide {
+
+        &.swiper-slide-active {
+          @include md {
+
+            .benefits__item-inner {
+              transform: translateY(-2rem);
+              background: $colorBlack;
+              color: $colorWhite;
+            }
+
+            .benefits__item-icon svg {
+              fill: $colorWhite;
+            }
+
+            .benefits__item-name {
+              border-color: $colorWhite;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -170,20 +191,22 @@
       padding: 0;
     }
 
-    &:hover {
+    @media (min-width: 992px) {
+      &:hover {
 
-      .benefits__item-inner {
-        transform: translateY(-2rem);
-        background: $colorBlack;
-        color: $colorWhite;
-      }
+        .benefits__item-inner {
+          transform: translateY(-2rem);
+          background: $colorBlack;
+          color: $colorWhite;
+        }
 
-      .benefits__item-icon svg {
-        fill: $colorWhite;
-      }
+        .benefits__item-icon svg {
+          fill: $colorWhite;
+        }
 
-      .benefits__item-name {
-        border-color: $colorWhite;
+        .benefits__item-name {
+          border-color: $colorWhite;
+        }
       }
     }
   }
