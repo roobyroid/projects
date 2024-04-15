@@ -36,7 +36,7 @@
     "gulp-html-beautify": "^1.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-plumber": "^1.2.1",
