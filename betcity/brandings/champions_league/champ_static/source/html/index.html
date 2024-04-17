@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,
+maximum-scale=1, user-scalable=no, viewport-fit=contain" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title></title>
+  <style>
+    @font-face {
+      font-family: 'StyreneALC';
+      src: url('StyreneALC-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'StyreneALC';
+      src: url('StyreneALC-Black.woff') format('woff');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Nekst';
+      src: url('Nekst-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preload" href="StyreneALC-Regular.woff" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="StyreneALC-Black.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preload" href="Nekst-Bold.woff" as="font" type="font/woff" crossorigin />
+</head>
+
+<body>
+  <a class="body-wrap" href="%banner.reference_user1%" target="%banner.target%">
+    <div class="bg">
+      <img src="img/bg.jpg" alt="" />
+    </div>
+    <div class="header">
+      <div class="header__wrap">
+        <div class="header__logo">
+          <picture>
+            <img src="img/logo.svg" />
+          </picture>
+        </div>
+        <div class="header__bonus">
+          <div class="header__bonus-first">
+            <div class="header__bonus-first-text banner-text">
+              <p class="banner-text__top text-anim js_anim-el">
+                100&nbsp;000&nbsp;<span>&#8381;</span>
+              </p>
+              <p class="banner-text__top banner-text__top--promocode text-anim js_anim-el">
+                500 <span>&#8381;</span> <small>x</small> 3
+              </p>
+              <p class="banner-text__bottom text-anim text-anim--2 js_anim-el">
+                Новым игрокам
+              </p>
+            </div>
+
+            <!-- <div class="promocode">
+              <p class="promocode__head text-anim js_anim-el">промокод</p>
+              <p data-autobet="PROMOCODE" class="promocode__val text-anim text-anim--2 js_anim-el">NEW3</p>
+            </div> -->
+          </div>
+          <div class="header__bonus-second">
+            <div class="event">
+              <div class="event__logo js_event-logo-one">
+                <img data-autobet="LOGO1" src="img/logo-1.svg" alt="" />
+              </div>
+              <div class="event__content">
+                <div class="event__head">
+                  <div class="event__title" data-autobet="CHAMP">
+                    лига чемпионов
+                  </div>
+                  <div class="event__time">
+                    <div class="event__time-item">
+                      <span data-autobet="STARTDATE">17.04</span>
+                    </div>
+                    <div class="event__time-item">
+                      <span data-autobet="STARTTIME"> 22:00</span>
+                    </div>
+                  </div>
+                  <div class="event__live hidden">live</div>
+                </div>
+
+                <div class="event__teams">
+                  <div class="event__team-item js_event-team-one" data-autobet="TEAM1">
+                    ман сити
+                  </div>
+                  <div class="event__team-item js_event-team-two" data-autobet="TEAM2">
+                    реал
+                  </div>
+                </div>
+                <div class="event__nums">
+                  <div class="event__nums-item">
+                    <span data-autobet="QUOTE1">1.68</span>
+                  </div>
+                  <div class="event__nums-item">
+                    <span data-autobet="QUOTEX">4.40</span>
+                  </div>
+                  <div class="event__nums-item">
+                    <span data-autobet="QUOTE2">5.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="event__logo event__logo--second js_event-logo-two">
+                <img data-autobet="LOGO2" src="img/logo-2.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <div class="header__an-btn an-btn">получить бонус</div>
+        </div>
+      </div>
+
+      <div class="header__reklama">
+        <div class="header__reklama-18"><img src="img/fonts/18p.svg" /></div>
+        <div class="header__reklama-text">
+          <img src="img/fonts/betcity.ru.svg" />
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <p class="header__textline" data-autobet="DISCLAIMER">
+          *До 100 000 рублей в виде фрибетов**.** Фрибет – предоставляемый
+          компанией бонус, которым клиент компании может воспользоваться для
+          заключения пари с ООО «Фортуна». Сроки проведения акции: с
+          14.11.2022 (00:00:00 МСК) по 31.12.2024 (23:59:59 МСК). Для участия
+          в акции участнику необходимо зарегистрироваться и сделать ставку от
+          500 рублей на любое событие с кф. от 1.8 на сайте www.betcity.ru или
+          в мобильном приложении Бетсити. Полные правила акции, информацию об
+          организаторе, призовом фонде, количестве призов или выигрышей,
+          сроках, месте и порядке получения призов или выигрышей можно узнать
+          на сайте www.betcity.ru. Розыгрыш происходит в момент совершения
+          события. Источник информации об организаторе основанных на риске
+          игр, пари, о правилах их проведения, о призовом фонде таких игр,
+          пари, о количестве призов или выигрышей, о сроках, месте и порядке
+          получения призов или выигрышей можно узнать на сайте www.betcity.ru.
+        </p>
+      </div>
+    </div>
+    <div class="aside">
+      <div class="aside__wrap">
+        <div class="aside__item aside__item--left">
+          <div class="aside__logo">
+            <img src="img/logo.svg" alt="logo" />
+          </div>
+
+          <div class="aside__content">
+            <div class="aside__content-first">
+              <div class="aside__content-text banner-text banner-text--aside">
+                <p class="banner-text__top text-anim js_anim-el">
+                  100&nbsp;000&nbsp;<span>&#8381;</span>
+                </p>
+                <p class="banner-text__top banner-text__top--promocode text-anim js_anim-el">
+                  500 <span>&#8381;</span> <small>x</small> 3
+                </p>
+                <p class="banner-text__bottom text-anim text-anim--2 js_anim-el">
+                  Новым игрокам
+                </p>
+              </div>
+              <!-- <div class="promocode promocode--aside">
+                <p class="promocode__head text-anim js_anim-el">промокод</p>
+                <p data-autobet="PROMOCODE" class="promocode__val text-anim text-anim--2 js_anim-el">NEW3</p>
+              </div> -->
+              <div class="aside__img">
+                <img src="img/ball.png" alt="" />
+              </div>
+            </div>
+            <div class="aside__content-second">
+              <div class="aside__team team-aside">
+                <div class="team-aside__title" data-autobet="CHAMP">
+                  лига<br />
+                  чемпионов
+                </div>
+                <div class="team-aside__time">
+                  <div class="team-aside__time-item">
+                    <span data-autobet="STARTDATE">09.04 </span>
+                  </div>
+                  <div class="team-aside__time-item">
+                    <span data-autobet="STARTTIME">22:00</span>
+                  </div>
+                </div>
+                <div class="team-aside__img">
+                  <img data-autobet="LOGO1" src="img/logo-1.svg" alt="l" />
+                </div>
+                <div data-autobet="TEAM1" class="team-aside__name">
+                  ман сити
+                </div>
+                <div class="team-aside__nums">
+                  <div class="team-aside__nums-item">
+                    <span class="team-aside__nums-item-top">1</span>
+                    <span class="team-aside__nums-item-val active" data-autobet="QUOTE1">1.68</span>
+                  </div>
+                  <div class="team-aside__nums-item">
+                    <span class="team-aside__nums-item-top">Х</span>
+                    <span class="team-aside__nums-item-val" data-autobet="QUOTEX">4.40</span>
+                  </div>
+                  <div class="team-aside__nums-item">
+                    <span class="team-aside__nums-item-top">2</span>
+                    <span class="team-aside__nums-item-val" data-autobet="QUOTE2">5.00</span>
+                  </div>
+                </div>
+                <span class="team-aside__nums-single" data-autobet="QUOTE1">1.68</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__an-btn an-btn">получить бонус</div>
+        </div>
+
+        <div class="fluid-center-block"></div>
+
+        <div class="aside__item aside__item--right">
+          <div class="aside__logo">
+            <img src="img/logo.svg" alt="logo" />
+          </div>
+          <div class="aside__content">
+            <div class="aside__content-first">
+              <div class="aside__content-text banner-text banner-text--aside">
+                <p class="banner-text__top text-anim js_anim-el">
+                  100&nbsp;000&nbsp;<span>&#8381;</span>
+                </p>
+                <p class="banner-text__top banner-text__top--promocode text-anim js_anim-el">
+                  500 <span>&#8381;</span> <small>x</small> 3
+                </p>
+                <p class="banner-text__bottom text-anim text-anim--2 js_anim-el">
+                  Новым игрокам
+                </p>
+              </div>
+              <!-- <div class="promocode promocode--aside">
+                <p class="promocode__head text-anim js_anim-el">промокод</p>
+                <p data-autobet="PROMOCODE" class="promocode__val text-anim text-anim--2 js_anim-el">NEW3</p>
+              </div> -->
+              <div class="aside__img aside__img--right">
+                <img src="img/ball.png" alt="" />
+              </div>
+            </div>
+            <div class="aside__content-second">
+              <div class="aside__team team-aside">
+                <div class="team-aside__title" data-autobet="CHAMP">
+                  лига<br />
+                  чемпионов
+                </div>
+                <div class="team-aside__time">
+                  <div class="team-aside__time-item">
+                    <span data-autobet="STARTDATE">09.04 </span>
+                  </div>
+                  <div class="team-aside__time-item">
+                    <span data-autobet="STARTTIME">22:00</span>
+                  </div>
+                </div>
+                <div class="team-aside__img">
+                  <img data-autobet="LOGO2" src="img/logo-2.svg" alt="l" />
+                </div>
+                <div data-autobet="TEAM2" class="team-aside__name">реал</div>
+                <div class="team-aside__nums">
+                  <div class="team-aside__nums-item">
+                    <span class="team-aside__nums-item-top">1</span>
+                    <span class="team-aside__nums-item-val" data-autobet="QUOTE1">1.68</span>
+                  </div>
+                  <div class="team-aside__nums-item">
+                    <span class="team-aside__nums-item-top">Х</span>
+                    <span class="team-aside__nums-item-val" data-autobet="QUOTEX">4.40</span>
+                  </div>
+                  <div class="team-aside__nums-item">
+                    <span class="team-aside__nums-item-top">2</span>
+                    <span class="team-aside__nums-item-val active" data-autobet="QUOTE2">5.00</span>
+                  </div>
+                </div>
+                <span class="team-aside__nums-single" data-autobet="QUOTE2">2.55</span>
+              </div>
+            </div>
+          </div>
+          <div class="aside__an-btn an-btn">получить бонус</div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

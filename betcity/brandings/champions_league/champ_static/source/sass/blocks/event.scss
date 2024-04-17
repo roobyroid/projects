@@ -1,0 +1,140 @@
+.event {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  min-width: 607px;
+  max-width: 630px;
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin: 20px 0 0 0;
+
+    &--second {
+      margin: 20px 0 0 10px;
+    }
+  }
+
+  &__content {
+    flex-shrink: 0;
+    max-width: 350px;
+    margin: 0 4px;
+  }
+
+  &__head {
+    position: relative;
+    text-align: center;
+    padding: 0 0 57px;
+
+    &::before {
+      content: '';
+      width: 34px;
+      height: 34px;
+      background: url('../img/ball.png') no-repeat center/cover;
+      position: absolute;
+      left: 50%;
+      bottom: 7px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: #06DCFF;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0 0 3px;
+  }
+
+  &__time {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  &__time-item {
+    &:first-child {
+      &::after {
+        content: '/';
+        flex-shrink: 0;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  &__live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 2px 0 0;
+    font-weight: 900;
+
+    &::after {
+      content: '';
+      width: 7px;
+      height: 7px;
+      flex-shrink: 0;
+      background-color: #CE0000;
+      border-radius: 50px;
+      margin: 0 0 2px 5px;
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__teams {
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 10px;
+  }
+
+  &__team-item {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #06DCFF;
+    width: 50%;
+    padding: 0 10px 0 0;
+    overflow: hidden;
+
+    &:last-of-type {
+      padding: 0;
+      text-align: right;
+    }
+  }
+
+  &__nums {
+    width: 205px;
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+  }
+
+  &__nums-item {
+    flex: 0 1 33.33%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #051854;
+    height: 22px;
+    padding: 1px 3px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 3px;
+    background: #fff;
+    overflow: hidden;
+  }
+}
