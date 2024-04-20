@@ -375,7 +375,7 @@ template {
 }
 
 /**
- * Swiper 7.3.2
+ * Swiper 7.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -383,7 +383,7 @@ template {
  *
  * Released under the MIT License
  *
- * Released on: December 13, 2021
+ * Released on: December 24, 2021
  */
 
 @font-face {
@@ -6250,12 +6250,12 @@ button,
   border-radius: 6rem;
   background: #FF004F;
   text-transform: uppercase;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .scroll-down {
@@ -6281,8 +6281,8 @@ button,
   justify-content: center;
   padding: 1rem;
   margin: 0 0 2rem;
-  -webkit-transition: background .3s;
-  transition: background .3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .scroll-down__btn:hover {
@@ -6297,8 +6297,36 @@ button,
   width: 1.7rem;
   height: 2.8rem;
   fill: #FF004F;
-  -webkit-transition: fill .3s;
-  transition: fill .3s;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 600px;
+  border-radius: 40px;
+  background: #fff;
+  padding: 60px;
+}
+
+.modal__content .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 5px;
+}
+
+.modal__content .btn {
+  margin: 25px 0 0;
 }
 
 @-webkit-keyframes faded {
@@ -8317,6 +8345,19 @@ button,
     width: 100%;
     font-size: 21px;
     padding: 0 25px;
+  }
+
+  .modal__content {
+    padding: 30px 20px;
+    max-width: calc(100% - 30px);
+  }
+
+  .modal__content .title {
+    font-size: 24px;
+  }
+
+  .modal__content .btn {
+    margin: 10px 0 0;
   }
 
   .header__wrap {

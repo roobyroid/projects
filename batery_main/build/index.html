@@ -18,6 +18,7 @@
 
 <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
 
+<link href="https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.min.css">
 
   <title>Batery Partners</title>
@@ -47,8 +48,8 @@
         <img src="img/page/logo.svg" alt="">
       </div>
       <div class="header__actions">
-        <a class="header__link" data-lang="signUpHeader" href="#">Sign Up</a>
-        <a class="header__link header__link--black" data-lang="logInHeader" href="#">Log In</a>
+        <a class="header__link" data-lang="signUpHeader" data-hystmodal="#modalGeoSignUp" href="#">Sign Up</a>
+        <a class="header__link header__link--black" data-lang="logInHeader" data-hystmodal="#modalGeoLogin" href="#">Log In</a>
       </div>
 
     </div>
@@ -57,8 +58,8 @@
   <div class="header__menu menu js_menu">
     <div class="container">
       <ul class="menu__actions menu__item">
-        <li><a data-lang="signUpHeader" href="#">Sign Up</a></li>
-        <li><a data-lang="logInHeader" href="#">Log In</a></li>
+        <li><a data-lang="signUpHeader" data-hystmodal="#modalGeoSignUp" href="#">Sign Up</a></li>
+        <li><a data-lang="logInHeader" data-hystmodal="#modalGeoLogin" href="#">Log In</a></li>
       </ul>
       <!-- <p class="menu__title title">MENU</p> -->
       <nav class="menu__nav menu__item">
@@ -121,7 +122,7 @@
               <span data-lang="itemHero3">Inhouse offers</span>
               <p data-lang="countryHero"> IN / BD / PK / TR / CA </p>
             </div>
-            <a class="hero__btn btn" data-lang="btnHero" href="#">REGISTRATION</a>
+            <a class="hero__btn btn" data-lang="btnHero" data-hystmodal="#modalGeoSignUp" href="#">REGISTRATION</a>
           </div>
         </div>
 
@@ -665,7 +666,38 @@
       </section>
     </main>
   </div>
+
+  <div class="modal hystmodal" id="modalGeoLogin" aria-hidden="true">
+		<div class="hystmodal__wrap">
+			<div class="modal__content hystmodal__window" role="dialog" aria-modal="true">
+				<h2 data-lang="modalTitle" class="title"></h2>
+				<a class="btn" href="https://batery.affijet.com/login">IN BD PK</a>
+				<a class="btn" href="https://fon.affijet.com/login">TR CA</a>
+				<a data-lang="modalBtn" class="btn" href="https://batery.affijet.com/login"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal hystmodal" id="modalGeoSignUp" aria-hidden="true">
+		<div class="hystmodal__wrap">
+			<div class="modal__content hystmodal__window" role="dialog" aria-modal="true">
+				<h2 data-lang="modalTitle" class="title"></h2>
+				<a class="btn" href="https://batery.affijet.com/registration">IN BD PK</a>
+				<a class="btn" href="https://fon.affijet.com/registration">TR CA</a>
+				<a data-lang="modalBtn" class="btn" href="https://batery.affijet.com/registration"></a>
+			</div>
+		</div>
+	</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.js"></script>
   <script src="js/scripts.min.js"></script>
+  <script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const myModal = new HystModal({
+				linkAttributeName: "data-hystmodal",
+			});
+		})
+	</script>
 </body>
 
 </html>

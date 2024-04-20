@@ -1,5 +1,4 @@
 body {
-
   // &.lang-ru {
 
   //   .title,
@@ -26,7 +25,6 @@ body {
 }
 
 .scroll-lock--menu {
-
   .header__wrap {
     position: relative;
     z-index: 3;
@@ -55,7 +53,6 @@ body {
     display: none;
   }
 }
-
 
 .bg-line {
   position: absolute;
@@ -132,7 +129,7 @@ body {
   border-radius: 6rem;
   background: $colorRed;
   text-transform: uppercase;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 
   @include md {
     min-width: auto;
@@ -148,7 +145,7 @@ body {
   }
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 }
 
@@ -156,7 +153,6 @@ body {
   font-size: 1.4rem;
   color: $colorWhite;
   text-align: center;
-
 
   &__btn {
     width: 6rem;
@@ -169,7 +165,7 @@ body {
     justify-content: center;
     padding: 1rem;
     margin: 0 0 2rem;
-    transition: background .3s;
+    transition: background 0.3s;
 
     &:hover {
       background: $colorRed;
@@ -183,8 +179,42 @@ body {
       width: 1.7rem;
       height: 2.8rem;
       fill: $colorRed;
-      transition: fill .3s;
+      transition: fill 0.3s;
     }
+  }
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  border-radius: 40px;
+  background: #fff;
+  padding: 60px;
+}
+
+.modal__content .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 5px;
+}
+
+.modal__content .btn {
+  margin: 25px 0 0;
+}
+
+@include xs {
+  .modal__content {
+    padding: 30px 20px;
+    max-width: calc(100% - 30px);
+  }
+  .modal__content .title {
+    font-size: 24px;
+  }
+  .modal__content .btn {
+    margin: 10px 0 0;
   }
 }
 

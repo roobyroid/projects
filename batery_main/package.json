@@ -60,6 +60,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "@babel/core": "^7.24.4",
     "@fancyapps/ui": "^4.0.29",
     "animate.css": "^4.1.1",
     "gsap": "^3.12.2",
